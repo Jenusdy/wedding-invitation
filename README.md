@@ -9,7 +9,7 @@ Just Simple Wedding Digital Invitation. <br>
 3. Create new .env file and run php artisan key:generate
 4. Setting .env and adjust with your config local database
 5. run command npm install
-6. run command npm install vue-infine-loading
+6. run command npm install vue-infinite-loading
 7. run command npm install laravel-mix (optional)
 8. run command npm run dev (for compiling vue.js file)
 

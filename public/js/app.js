@@ -2489,6 +2489,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-glide-js */ "./node_modules/vue-glide-js/dist/vue-glide.common.js");
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_glide_js__WEBPACK_IMPORTED_MODULE_0__);
+var _components;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -2509,7 +2515,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: (_components = {}, _defineProperty(_components, vue_glide_js__WEBPACK_IMPORTED_MODULE_0__.Glide.name, vue_glide_js__WEBPACK_IMPORTED_MODULE_0__.Glide), _defineProperty(_components, vue_glide_js__WEBPACK_IMPORTED_MODULE_0__.GlideSlide.name, vue_glide_js__WEBPACK_IMPORTED_MODULE_0__.GlideSlide), _components)
+});
 
 /***/ }),
 
@@ -2795,7 +2813,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _views_Home_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/Home.vue */ "./resources/js/views/Home.vue");
 /* harmony import */ var _route__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./route */ "./resources/js/route.js");
 /* harmony import */ var vue_infinite_scroll__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-infinite-scroll */ "./node_modules/vue-infinite-scroll/vue-infinite-scroll.js");
@@ -2804,8 +2822,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_clipboards__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-clipboards */ "./node_modules/vue-clipboards/dist/vue-clipboards.es.js");
 /* harmony import */ var vue_sweetalert2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue-sweetalert2 */ "./node_modules/vue-sweetalert2/dist/vue-sweetalert.umd.js");
 /* harmony import */ var vue_sweetalert2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(vue_sweetalert2__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var sweetalert2_src_sweetalert2_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! sweetalert2/src/sweetalert2.scss */ "./node_modules/sweetalert2/src/sweetalert2.scss");
-/* harmony import */ var sweetalert2_src_variables_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! sweetalert2/src/variables.scss */ "./node_modules/sweetalert2/src/variables.scss");
+/* harmony import */ var particles_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! particles.vue */ "./node_modules/particles.vue/dist/particles.vue.js");
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-glide-js */ "./node_modules/vue-glide-js/dist/vue-glide.common.js");
+/* harmony import */ var vue_glide_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(vue_glide_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var vue_glide_js_dist_vue_glide_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-glide-js/dist/vue-glide.css */ "./node_modules/vue-glide-js/dist/vue-glide.css");
+/* harmony import */ var sweetalert2_src_sweetalert2_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! sweetalert2/src/sweetalert2.scss */ "./node_modules/sweetalert2/src/sweetalert2.scss");
+/* harmony import */ var sweetalert2_src_variables_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! sweetalert2/src/variables.scss */ "./node_modules/sweetalert2/src/variables.scss");
 
 
 
@@ -2816,14 +2838,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_9__["default"].use(vue_clipboards__WEBPACK_IMPORTED_MODULE_5__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_9__["default"].use(vue_paycard__WEBPACK_IMPORTED_MODULE_4__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_9__["default"].use((vue_sweetalert2__WEBPACK_IMPORTED_MODULE_6___default())); // Register Vue Components
-// Vue.component('comment', require('./components/Comment.vue').default);
-// Vue.component('guestbook', require('./components/FormGuestBook.vue').default);
-// Initialize Vue
 
-var app = new vue__WEBPACK_IMPORTED_MODULE_9__["default"]({
+
+
+vue__WEBPACK_IMPORTED_MODULE_12__["default"].use((vue_glide_js__WEBPACK_IMPORTED_MODULE_8___default()));
+vue__WEBPACK_IMPORTED_MODULE_12__["default"].use(vue_clipboards__WEBPACK_IMPORTED_MODULE_5__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_12__["default"].use(vue_paycard__WEBPACK_IMPORTED_MODULE_4__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_12__["default"].use((vue_sweetalert2__WEBPACK_IMPORTED_MODULE_6___default()));
+vue__WEBPACK_IMPORTED_MODULE_12__["default"].use(particles_vue__WEBPACK_IMPORTED_MODULE_7__["default"]); // Initialize Vue
+
+var app = new vue__WEBPACK_IMPORTED_MODULE_12__["default"]({
   el: '#root',
   router: _route__WEBPACK_IMPORTED_MODULE_2__["default"],
   render: function render(h) {
@@ -2918,7 +2942,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".swal2-popup.swal2-toast {\n  box-sizing: border-box;\n  grid-column: 1/4 !important;\n  grid-row: 1/4 !important;\n  grid-template-columns: min-content auto min-content;\n  padding: 1em;\n  overflow-y: hidden;\n  background: #fff;\n  box-shadow: 0 0 1px rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.075), 1px 2px 4px rgba(0, 0, 0, 0.075), 1px 3px 8px rgba(0, 0, 0, 0.075), 2px 4px 16px rgba(0, 0, 0, 0.075);\n  pointer-events: all;\n}\n.swal2-popup.swal2-toast > * {\n  grid-column: 2;\n}\n.swal2-popup.swal2-toast .swal2-title {\n  margin: 0.5em 1em;\n  padding: 0;\n  font-size: 1em;\n  text-align: initial;\n}\n.swal2-popup.swal2-toast .swal2-loading {\n  justify-content: center;\n}\n.swal2-popup.swal2-toast .swal2-input {\n  height: 2em;\n  margin: 0.5em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-validation-message {\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-footer {\n  margin: 0.5em 0 0;\n  padding: 0.5em 0 0;\n  font-size: 0.8em;\n}\n.swal2-popup.swal2-toast .swal2-close {\n  grid-column: 3/3;\n  grid-row: 1/99;\n  align-self: center;\n  width: 0.8em;\n  height: 0.8em;\n  margin: 0;\n  font-size: 2em;\n}\n.swal2-popup.swal2-toast .swal2-html-container {\n  margin: 0.5em 1em;\n  padding: 0;\n  overflow: initial;\n  font-size: 1em;\n  text-align: initial;\n}\n.swal2-popup.swal2-toast .swal2-html-container:empty {\n  padding: 0;\n}\n.swal2-popup.swal2-toast .swal2-loader {\n  grid-column: 1;\n  grid-row: 1/99;\n  align-self: center;\n  width: 2em;\n  height: 2em;\n  margin: 0.25em;\n}\n.swal2-popup.swal2-toast .swal2-icon {\n  grid-column: 1;\n  grid-row: 1/99;\n  align-self: center;\n  width: 2em;\n  min-width: 2em;\n  height: 2em;\n  margin: 0 0.5em 0 0;\n}\n.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {\n  display: flex;\n  align-items: center;\n  font-size: 1.8em;\n  font-weight: bold;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {\n  top: 0.875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-actions {\n  justify-content: flex-start;\n  height: auto;\n  margin: 0;\n  margin-top: 0.5em;\n  padding: 0 0.5em;\n}\n.swal2-popup.swal2-toast .swal2-styled {\n  margin: 0.25em 0.5em;\n  padding: 0.4em 0.6em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-success {\n  border-color: #a5dc86;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 1.6em;\n  height: 3em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.8em;\n  left: -0.5em;\n  transform: rotate(-45deg);\n  transform-origin: 2em 2em;\n  border-radius: 4em 0 0 4em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.25em;\n  left: 0.9375em;\n  transform-origin: 0 1.5em;\n  border-radius: 0 4em 4em 0;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-fix {\n  top: 0;\n  left: 0.4375em;\n  width: 0.4375em;\n  height: 2.6875em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {\n  height: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 1.125em;\n  left: 0.1875em;\n  width: 0.75em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {\n  top: 0.9375em;\n  right: 0.1875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {\n  animation: swal2-toast-animate-success-line-tip 0.75s;\n}\n.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {\n  animation: swal2-toast-animate-success-line-long 0.75s;\n}\n.swal2-popup.swal2-toast.swal2-show {\n  animation: swal2-toast-show 0.5s;\n}\n.swal2-popup.swal2-toast.swal2-hide {\n  animation: swal2-toast-hide 0.1s forwards;\n}\n\ndiv:where(.swal2-container) {\n  display: grid;\n  position: fixed;\n  z-index: 1060;\n  inset: 0;\n  box-sizing: border-box;\n  grid-template-areas: \"top-start     top            top-end\" \"center-start  center         center-end\" \"bottom-start  bottom-center  bottom-end\";\n  grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);\n  height: 100%;\n  padding: 0.625em;\n  overflow-x: hidden;\n  transition: background-color 0.1s;\n  -webkit-overflow-scrolling: touch;\n}\ndiv:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swal2-noanimation {\n  background: rgba(0, 0, 0, 0.4);\n}\ndiv:where(.swal2-container).swal2-backdrop-hide {\n  background: transparent !important;\n}\ndiv:where(.swal2-container).swal2-top-start, div:where(.swal2-container).swal2-center-start, div:where(.swal2-container).swal2-bottom-start {\n  grid-template-columns: minmax(0, 1fr) auto auto;\n}\ndiv:where(.swal2-container).swal2-top, div:where(.swal2-container).swal2-center, div:where(.swal2-container).swal2-bottom {\n  grid-template-columns: auto minmax(0, 1fr) auto;\n}\ndiv:where(.swal2-container).swal2-top-end, div:where(.swal2-container).swal2-center-end, div:where(.swal2-container).swal2-bottom-end {\n  grid-template-columns: auto auto minmax(0, 1fr);\n}\ndiv:where(.swal2-container).swal2-top-start > .swal2-popup {\n  align-self: start;\n}\ndiv:where(.swal2-container).swal2-top > .swal2-popup {\n  grid-column: 2;\n  place-self: start center;\n}\ndiv:where(.swal2-container).swal2-top-end > .swal2-popup, div:where(.swal2-container).swal2-top-right > .swal2-popup {\n  grid-column: 3;\n  place-self: start end;\n}\ndiv:where(.swal2-container).swal2-center-start > .swal2-popup, div:where(.swal2-container).swal2-center-left > .swal2-popup {\n  grid-row: 2;\n  align-self: center;\n}\ndiv:where(.swal2-container).swal2-center > .swal2-popup {\n  grid-column: 2;\n  grid-row: 2;\n  place-self: center center;\n}\ndiv:where(.swal2-container).swal2-center-end > .swal2-popup, div:where(.swal2-container).swal2-center-right > .swal2-popup {\n  grid-column: 3;\n  grid-row: 2;\n  place-self: center end;\n}\ndiv:where(.swal2-container).swal2-bottom-start > .swal2-popup, div:where(.swal2-container).swal2-bottom-left > .swal2-popup {\n  grid-column: 1;\n  grid-row: 3;\n  align-self: end;\n}\ndiv:where(.swal2-container).swal2-bottom > .swal2-popup {\n  grid-column: 2;\n  grid-row: 3;\n  place-self: end center;\n}\ndiv:where(.swal2-container).swal2-bottom-end > .swal2-popup, div:where(.swal2-container).swal2-bottom-right > .swal2-popup {\n  grid-column: 3;\n  grid-row: 3;\n  place-self: end end;\n}\ndiv:where(.swal2-container).swal2-grow-row > .swal2-popup, div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {\n  grid-column: 1/4;\n  width: 100%;\n}\ndiv:where(.swal2-container).swal2-grow-column > .swal2-popup, div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {\n  grid-row: 1/4;\n  align-self: stretch;\n}\ndiv:where(.swal2-container).swal2-no-transition {\n  transition: none !important;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup) {\n  display: none;\n  position: relative;\n  box-sizing: border-box;\n  grid-template-columns: minmax(0, 100%);\n  width: 32em;\n  max-width: 100%;\n  padding: 0 0 1.25em;\n  border: none;\n  border-radius: 5px;\n  background: #fff;\n  color: #545454;\n  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n  font-size: 1rem;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup):focus {\n  outline: none;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup).swal2-loading {\n  overflow-y: hidden;\n}\ndiv:where(.swal2-container) h2:where(.swal2-title) {\n  position: relative;\n  max-width: 100%;\n  margin: 0;\n  padding: 0.8em 1em 0;\n  color: inherit;\n  font-size: 1.875em;\n  font-weight: 600;\n  text-align: center;\n  text-transform: none;\n  word-wrap: break-word;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions) {\n  display: flex;\n  z-index: 1;\n  box-sizing: border-box;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: center;\n  width: auto;\n  margin: 1.25em auto 0;\n  padding: 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled] {\n  opacity: 0.4;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));\n}\ndiv:where(.swal2-container) div:where(.swal2-loader) {\n  display: none;\n  align-items: center;\n  justify-content: center;\n  width: 2.2em;\n  height: 2.2em;\n  margin: 0 1.875em;\n  animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n  border-width: 0.25em;\n  border-style: solid;\n  border-radius: 100%;\n  border-color: #2778c4 transparent #2778c4 transparent;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled) {\n  margin: 0.3125em;\n  padding: 0.625em 1.1em;\n  transition: box-shadow 0.1s;\n  box-shadow: 0 0 0 3px transparent;\n  font-weight: 500;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {\n  cursor: pointer;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #7066e0;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {\n  box-shadow: 0 0 0 3px rgba(112, 102, 224, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-deny {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #dc3741;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus {\n  box-shadow: 0 0 0 3px rgba(220, 55, 65, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #6e7881;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {\n  box-shadow: 0 0 0 3px rgba(110, 120, 129, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {\n  box-shadow: 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled):focus {\n  outline: none;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner {\n  border: 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-footer) {\n  margin: 1em 0 0;\n  padding: 1em 1em 0;\n  border-top: 1px solid #eee;\n  color: inherit;\n  font-size: 1em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-timer-progress-bar-container {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  grid-column: auto !important;\n  overflow: hidden;\n  border-bottom-right-radius: 5px;\n  border-bottom-left-radius: 5px;\n}\ndiv:where(.swal2-container) div:where(.swal2-timer-progress-bar) {\n  width: 100%;\n  height: 0.25em;\n  background: rgba(0, 0, 0, 0.2);\n}\ndiv:where(.swal2-container) img:where(.swal2-image) {\n  max-width: 100%;\n  margin: 2em auto 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-close) {\n  z-index: 2;\n  align-items: center;\n  justify-content: center;\n  width: 1.2em;\n  height: 1.2em;\n  margin-top: 0;\n  margin-right: 0;\n  margin-bottom: -1.2em;\n  padding: 0;\n  overflow: hidden;\n  transition: color 0.1s, box-shadow 0.1s;\n  border: none;\n  border-radius: 5px;\n  background: transparent;\n  color: #ccc;\n  font-family: monospace;\n  font-size: 2.5em;\n  cursor: pointer;\n  justify-self: end;\n}\ndiv:where(.swal2-container) button:where(.swal2-close):hover {\n  transform: none;\n  background: transparent;\n  color: #f27474;\n}\ndiv:where(.swal2-container) button:where(.swal2-close):focus {\n  outline: none;\n  box-shadow: inset 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {\n  border: 0;\n}\ndiv:where(.swal2-container) .swal2-html-container {\n  z-index: 1;\n  justify-content: center;\n  margin: 1em 1.6em 0.3em;\n  padding: 0;\n  overflow: auto;\n  color: inherit;\n  font-size: 1.125em;\n  font-weight: normal;\n  line-height: normal;\n  text-align: center;\n  word-wrap: break-word;\n  word-break: break-word;\n}\ndiv:where(.swal2-container) input:where(.swal2-input),\ndiv:where(.swal2-container) input:where(.swal2-file),\ndiv:where(.swal2-container) textarea:where(.swal2-textarea),\ndiv:where(.swal2-container) select:where(.swal2-select),\ndiv:where(.swal2-container) div:where(.swal2-radio),\ndiv:where(.swal2-container) label:where(.swal2-checkbox) {\n  margin: 1em 2em 3px;\n}\ndiv:where(.swal2-container) input:where(.swal2-input),\ndiv:where(.swal2-container) input:where(.swal2-file),\ndiv:where(.swal2-container) textarea:where(.swal2-textarea) {\n  box-sizing: border-box;\n  width: auto;\n  transition: border-color 0.1s, box-shadow 0.1s;\n  border: 1px solid #d9d9d9;\n  border-radius: 0.1875em;\n  background: transparent;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;\n  color: inherit;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,\ndiv:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {\n  border-color: #f27474 !important;\n  box-shadow: 0 0 2px #f27474 !important;\n}\ndiv:where(.swal2-container) input:where(.swal2-input):focus,\ndiv:where(.swal2-container) input:where(.swal2-file):focus,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea):focus {\n  border: 1px solid #b4dbed;\n  outline: none;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) input:where(.swal2-input)::-moz-placeholder, div:where(.swal2-container) input:where(.swal2-file)::-moz-placeholder, div:where(.swal2-container) textarea:where(.swal2-textarea)::-moz-placeholder {\n  color: #ccc;\n}\ndiv:where(.swal2-container) input:where(.swal2-input)::placeholder,\ndiv:where(.swal2-container) input:where(.swal2-file)::placeholder,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {\n  color: #ccc;\n}\ndiv:where(.swal2-container) .swal2-range {\n  margin: 1em 2em 3px;\n  background: #fff;\n}\ndiv:where(.swal2-container) .swal2-range input {\n  width: 80%;\n}\ndiv:where(.swal2-container) .swal2-range output {\n  width: 20%;\n  color: inherit;\n  font-weight: 600;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-range input,\ndiv:where(.swal2-container) .swal2-range output {\n  height: 2.625em;\n  padding: 0;\n  font-size: 1.125em;\n  line-height: 2.625em;\n}\ndiv:where(.swal2-container) .swal2-input {\n  height: 2.625em;\n  padding: 0 0.75em;\n}\ndiv:where(.swal2-container) .swal2-file {\n  width: 75%;\n  margin-right: auto;\n  margin-left: auto;\n  background: transparent;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-textarea {\n  height: 6.75em;\n  padding: 0.75em;\n}\ndiv:where(.swal2-container) .swal2-select {\n  min-width: 50%;\n  max-width: 100%;\n  padding: 0.375em 0.625em;\n  background: transparent;\n  color: inherit;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-radio,\ndiv:where(.swal2-container) .swal2-checkbox {\n  align-items: center;\n  justify-content: center;\n  background: #fff;\n  color: inherit;\n}\ndiv:where(.swal2-container) .swal2-radio label,\ndiv:where(.swal2-container) .swal2-checkbox label {\n  margin: 0 0.6em;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-radio input,\ndiv:where(.swal2-container) .swal2-checkbox input {\n  flex-shrink: 0;\n  margin: 0 0.4em;\n}\ndiv:where(.swal2-container) label:where(.swal2-input-label) {\n  display: flex;\n  justify-content: center;\n  margin: 1em auto 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-validation-message) {\n  align-items: center;\n  justify-content: center;\n  margin: 1em 0 0;\n  padding: 0.625em;\n  overflow: hidden;\n  background: #f0f0f0;\n  color: #666666;\n  font-size: 1em;\n  font-weight: 300;\n}\ndiv:where(.swal2-container) div:where(.swal2-validation-message)::before {\n  content: \"!\";\n  display: inline-block;\n  width: 1.5em;\n  min-width: 1.5em;\n  height: 1.5em;\n  margin: 0 0.625em;\n  border-radius: 50%;\n  background-color: #f27474;\n  color: #fff;\n  font-weight: 600;\n  line-height: 1.5em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-progress-steps {\n  flex-wrap: wrap;\n  align-items: center;\n  max-width: 100%;\n  margin: 1.25em auto;\n  padding: 0;\n  background: transparent;\n  font-weight: 600;\n}\ndiv:where(.swal2-container) .swal2-progress-steps li {\n  display: inline-block;\n  position: relative;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {\n  z-index: 20;\n  flex-shrink: 0;\n  width: 2em;\n  height: 2em;\n  border-radius: 2em;\n  background: #2778c4;\n  color: #fff;\n  line-height: 2em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {\n  background: #2778c4;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {\n  background: #add8e6;\n  color: #fff;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {\n  background: #add8e6;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line {\n  z-index: 10;\n  flex-shrink: 0;\n  width: 2.5em;\n  height: 0.4em;\n  margin: 0 -1px;\n  background: #2778c4;\n}\n\ndiv:where(.swal2-icon) {\n  position: relative;\n  box-sizing: content-box;\n  justify-content: center;\n  width: 5em;\n  height: 5em;\n  margin: 2.5em auto 0.6em;\n  border: 0.25em solid transparent;\n  border-radius: 50%;\n  border-color: #000;\n  font-family: inherit;\n  line-height: 5em;\n  cursor: default;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n}\ndiv:where(.swal2-icon) .swal2-icon-content {\n  display: flex;\n  align-items: center;\n  font-size: 3.75em;\n}\ndiv:where(.swal2-icon).swal2-error {\n  border-color: #f27474;\n  color: #f27474;\n}\ndiv:where(.swal2-icon).swal2-error .swal2-x-mark {\n  position: relative;\n  flex-grow: 1;\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {\n  display: block;\n  position: absolute;\n  top: 2.3125em;\n  width: 2.9375em;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #f27474;\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 1.0625em;\n  transform: rotate(45deg);\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 1em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-error.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {\n  animation: swal2-animate-error-x-mark 0.5s;\n}\ndiv:where(.swal2-icon).swal2-warning {\n  border-color: #facea8;\n  color: #f8bb86;\n}\ndiv:where(.swal2-icon).swal2-warning.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-i-mark 0.5s;\n}\ndiv:where(.swal2-icon).swal2-info {\n  border-color: #9de0f6;\n  color: #3fc3ee;\n}\ndiv:where(.swal2-icon).swal2-info.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-i-mark 0.8s;\n}\ndiv:where(.swal2-icon).swal2-question {\n  border-color: #c9dae1;\n  color: #87adbd;\n}\ndiv:where(.swal2-icon).swal2-question.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-question-mark 0.8s;\n}\ndiv:where(.swal2-icon).swal2-success {\n  border-color: #a5dc86;\n  color: #a5dc86;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 3.75em;\n  height: 7.5em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.4375em;\n  left: -2.0635em;\n  transform: rotate(-45deg);\n  transform-origin: 3.75em 3.75em;\n  border-radius: 7.5em 0 0 7.5em;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.6875em;\n  left: 1.875em;\n  transform: rotate(-45deg);\n  transform-origin: 0 3.75em;\n  border-radius: 0 7.5em 7.5em 0;\n}\ndiv:where(.swal2-icon).swal2-success .swal2-success-ring {\n  position: absolute;\n  z-index: 2;\n  top: -0.25em;\n  left: -0.25em;\n  box-sizing: content-box;\n  width: 100%;\n  height: 100%;\n  border: 0.25em solid rgba(165, 220, 134, 0.3);\n  border-radius: 50%;\n}\ndiv:where(.swal2-icon).swal2-success .swal2-success-fix {\n  position: absolute;\n  z-index: 1;\n  top: 0.5em;\n  left: 1.625em;\n  width: 0.4375em;\n  height: 5.625em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line] {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #a5dc86;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 2.875em;\n  left: 0.8125em;\n  width: 1.5625em;\n  transform: rotate(45deg);\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {\n  top: 2.375em;\n  right: 0.5em;\n  width: 2.9375em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip {\n  animation: swal2-animate-success-line-tip 0.75s;\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long {\n  animation: swal2-animate-success-line-long 0.75s;\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {\n  animation: swal2-rotate-success-circular-line 4.25s ease-in;\n}\n\n[class^=swal2] {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.swal2-show {\n  animation: swal2-show 0.3s;\n}\n\n.swal2-hide {\n  animation: swal2-hide 0.15s forwards;\n}\n\n.swal2-noanimation {\n  transition: none;\n}\n\n.swal2-scrollbar-measure {\n  position: absolute;\n  top: -9999px;\n  width: 50px;\n  height: 50px;\n  overflow: scroll;\n}\n\n.swal2-rtl .swal2-close {\n  margin-right: initial;\n  margin-left: 0;\n}\n.swal2-rtl .swal2-timer-progress-bar {\n  right: 0;\n  left: auto;\n}\n\n@keyframes swal2-toast-show {\n  0% {\n    transform: translateY(-0.625em) rotateZ(2deg);\n  }\n  33% {\n    transform: translateY(0) rotateZ(-2deg);\n  }\n  66% {\n    transform: translateY(0.3125em) rotateZ(2deg);\n  }\n  100% {\n    transform: translateY(0) rotateZ(0deg);\n  }\n}\n@keyframes swal2-toast-hide {\n  100% {\n    transform: rotateZ(1deg);\n    opacity: 0;\n  }\n}\n@keyframes swal2-toast-animate-success-line-tip {\n  0% {\n    top: 0.5625em;\n    left: 0.0625em;\n    width: 0;\n  }\n  54% {\n    top: 0.125em;\n    left: 0.125em;\n    width: 0;\n  }\n  70% {\n    top: 0.625em;\n    left: -0.25em;\n    width: 1.625em;\n  }\n  84% {\n    top: 1.0625em;\n    left: 0.75em;\n    width: 0.5em;\n  }\n  100% {\n    top: 1.125em;\n    left: 0.1875em;\n    width: 0.75em;\n  }\n}\n@keyframes swal2-toast-animate-success-line-long {\n  0% {\n    top: 1.625em;\n    right: 1.375em;\n    width: 0;\n  }\n  65% {\n    top: 1.25em;\n    right: 0.9375em;\n    width: 0;\n  }\n  84% {\n    top: 0.9375em;\n    right: 0;\n    width: 1.125em;\n  }\n  100% {\n    top: 0.9375em;\n    right: 0.1875em;\n    width: 1.375em;\n  }\n}\n@keyframes swal2-show {\n  0% {\n    transform: scale(0.7);\n  }\n  45% {\n    transform: scale(1.05);\n  }\n  80% {\n    transform: scale(0.95);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes swal2-hide {\n  0% {\n    transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(0.5);\n    opacity: 0;\n  }\n}\n@keyframes swal2-animate-success-line-tip {\n  0% {\n    top: 1.1875em;\n    left: 0.0625em;\n    width: 0;\n  }\n  54% {\n    top: 1.0625em;\n    left: 0.125em;\n    width: 0;\n  }\n  70% {\n    top: 2.1875em;\n    left: -0.375em;\n    width: 3.125em;\n  }\n  84% {\n    top: 3em;\n    left: 1.3125em;\n    width: 1.0625em;\n  }\n  100% {\n    top: 2.8125em;\n    left: 0.8125em;\n    width: 1.5625em;\n  }\n}\n@keyframes swal2-animate-success-line-long {\n  0% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n  }\n  65% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n  }\n  84% {\n    top: 2.1875em;\n    right: 0;\n    width: 3.4375em;\n  }\n  100% {\n    top: 2.375em;\n    right: 0.5em;\n    width: 2.9375em;\n  }\n}\n@keyframes swal2-rotate-success-circular-line {\n  0% {\n    transform: rotate(-45deg);\n  }\n  5% {\n    transform: rotate(-45deg);\n  }\n  12% {\n    transform: rotate(-405deg);\n  }\n  100% {\n    transform: rotate(-405deg);\n  }\n}\n@keyframes swal2-animate-error-x-mark {\n  0% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n  }\n  50% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n  }\n  80% {\n    margin-top: -0.375em;\n    transform: scale(1.15);\n  }\n  100% {\n    margin-top: 0;\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes swal2-animate-error-icon {\n  0% {\n    transform: rotateX(100deg);\n    opacity: 0;\n  }\n  100% {\n    transform: rotateX(0deg);\n    opacity: 1;\n  }\n}\n@keyframes swal2-rotate-loading {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes swal2-animate-question-mark {\n  0% {\n    transform: rotateY(-360deg);\n  }\n  100% {\n    transform: rotateY(0);\n  }\n}\n@keyframes swal2-animate-i-mark {\n  0% {\n    transform: rotateZ(45deg);\n    opacity: 0;\n  }\n  25% {\n    transform: rotateZ(-25deg);\n    opacity: 0.4;\n  }\n  50% {\n    transform: rotateZ(15deg);\n    opacity: 0.8;\n  }\n  75% {\n    transform: rotateZ(-5deg);\n    opacity: 1;\n  }\n  100% {\n    transform: rotateX(0);\n    opacity: 1;\n  }\n}\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n  overflow: hidden;\n}\nbody.swal2-height-auto {\n  height: auto !important;\n}\nbody.swal2-no-backdrop .swal2-container {\n  background-color: transparent !important;\n  pointer-events: none;\n}\nbody.swal2-no-backdrop .swal2-container .swal2-popup {\n  pointer-events: all;\n}\nbody.swal2-no-backdrop .swal2-container .swal2-modal {\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);\n}\n@media print {\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n    overflow-y: scroll !important;\n  }\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) > [aria-hidden=true] {\n    display: none;\n  }\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {\n    position: static !important;\n  }\n}\nbody.swal2-toast-shown .swal2-container {\n  box-sizing: border-box;\n  width: 360px;\n  max-width: 100%;\n  background-color: transparent;\n  pointer-events: none;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top {\n  inset: 0 auto auto 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right {\n  inset: 0 0 auto auto;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-start, body.swal2-toast-shown .swal2-container.swal2-top-left {\n  inset: 0 auto auto 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-start, body.swal2-toast-shown .swal2-container.swal2-center-left {\n  inset: 50% auto auto 0;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center {\n  inset: 50% auto auto 50%;\n  transform: translate(-50%, -50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-end, body.swal2-toast-shown .swal2-container.swal2-center-right {\n  inset: 50% 0 auto auto;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-start, body.swal2-toast-shown .swal2-container.swal2-bottom-left {\n  inset: auto auto 0 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom {\n  inset: auto auto 0 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown .swal2-container.swal2-bottom-right {\n  inset: auto 0 0 auto;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".swal2-popup.swal2-toast {\n  box-sizing: border-box;\n  grid-column: 1/4 !important;\n  grid-row: 1/4 !important;\n  grid-template-columns: min-content auto min-content;\n  padding: 1em;\n  overflow-y: hidden;\n  background: #fff;\n  box-shadow: 0 0 1px rgba(0, 0, 0, 0.075), 0 1px 2px rgba(0, 0, 0, 0.075), 1px 2px 4px rgba(0, 0, 0, 0.075), 1px 3px 8px rgba(0, 0, 0, 0.075), 2px 4px 16px rgba(0, 0, 0, 0.075);\n  pointer-events: all;\n}\n.swal2-popup.swal2-toast > * {\n  grid-column: 2;\n}\n.swal2-popup.swal2-toast .swal2-title {\n  margin: 0.5em 1em;\n  padding: 0;\n  font-size: 1em;\n  text-align: initial;\n}\n.swal2-popup.swal2-toast .swal2-loading {\n  justify-content: center;\n}\n.swal2-popup.swal2-toast .swal2-input {\n  height: 2em;\n  margin: 0.5em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-validation-message {\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-footer {\n  margin: 0.5em 0 0;\n  padding: 0.5em 0 0;\n  font-size: 0.8em;\n}\n.swal2-popup.swal2-toast .swal2-close {\n  grid-column: 3/3;\n  grid-row: 1/99;\n  align-self: center;\n  width: 0.8em;\n  height: 0.8em;\n  margin: 0;\n  font-size: 2em;\n}\n.swal2-popup.swal2-toast .swal2-html-container {\n  margin: 0.5em 1em;\n  padding: 0;\n  overflow: initial;\n  font-size: 1em;\n  text-align: initial;\n}\n.swal2-popup.swal2-toast .swal2-html-container:empty {\n  padding: 0;\n}\n.swal2-popup.swal2-toast .swal2-loader {\n  grid-column: 1;\n  grid-row: 1/99;\n  align-self: center;\n  width: 2em;\n  height: 2em;\n  margin: 0.25em;\n}\n.swal2-popup.swal2-toast .swal2-icon {\n  grid-column: 1;\n  grid-row: 1/99;\n  align-self: center;\n  width: 2em;\n  min-width: 2em;\n  height: 2em;\n  margin: 0 0.5em 0 0;\n}\n.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {\n  display: flex;\n  align-items: center;\n  font-size: 1.8em;\n  font-weight: bold;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {\n  top: 0.875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-actions {\n  justify-content: flex-start;\n  height: auto;\n  margin: 0;\n  margin-top: 0.5em;\n  padding: 0 0.5em;\n}\n.swal2-popup.swal2-toast .swal2-styled {\n  margin: 0.25em 0.5em;\n  padding: 0.4em 0.6em;\n  font-size: 1em;\n}\n.swal2-popup.swal2-toast .swal2-success {\n  border-color: #a5dc86;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 1.6em;\n  height: 3em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.8em;\n  left: -0.5em;\n  transform: rotate(-45deg);\n  transform-origin: 2em 2em;\n  border-radius: 4em 0 0 4em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.25em;\n  left: 0.9375em;\n  transform-origin: 0 1.5em;\n  border-radius: 0 4em 4em 0;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-ring {\n  width: 2em;\n  height: 2em;\n}\n.swal2-popup.swal2-toast .swal2-success .swal2-success-fix {\n  top: 0;\n  left: 0.4375em;\n  width: 0.4375em;\n  height: 2.6875em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {\n  height: 0.3125em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 1.125em;\n  left: 0.1875em;\n  width: 0.75em;\n}\n.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {\n  top: 0.9375em;\n  right: 0.1875em;\n  width: 1.375em;\n}\n.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {\n  animation: swal2-toast-animate-success-line-tip 0.75s;\n}\n.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {\n  animation: swal2-toast-animate-success-line-long 0.75s;\n}\n.swal2-popup.swal2-toast.swal2-show {\n  animation: swal2-toast-show 0.5s;\n}\n.swal2-popup.swal2-toast.swal2-hide {\n  animation: swal2-toast-hide 0.1s forwards;\n}\n\ndiv:where(.swal2-container) {\n  display: grid;\n  position: fixed;\n  z-index: 1060;\n  inset: 0;\n  box-sizing: border-box;\n  grid-template-areas: \"top-start     top            top-end\" \"center-start  center         center-end\" \"bottom-start  bottom-center  bottom-end\";\n  grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);\n  height: 100%;\n  padding: 0.625em;\n  overflow-x: hidden;\n  transition: background-color 0.1s;\n  -webkit-overflow-scrolling: touch;\n}\ndiv:where(.swal2-container).swal2-backdrop-show, div:where(.swal2-container).swal2-noanimation {\n  background: rgba(0, 0, 0, 0.4);\n}\ndiv:where(.swal2-container).swal2-backdrop-hide {\n  background: transparent !important;\n}\ndiv:where(.swal2-container).swal2-top-start, div:where(.swal2-container).swal2-center-start, div:where(.swal2-container).swal2-bottom-start {\n  grid-template-columns: minmax(0, 1fr) auto auto;\n}\ndiv:where(.swal2-container).swal2-top, div:where(.swal2-container).swal2-center, div:where(.swal2-container).swal2-bottom {\n  grid-template-columns: auto minmax(0, 1fr) auto;\n}\ndiv:where(.swal2-container).swal2-top-end, div:where(.swal2-container).swal2-center-end, div:where(.swal2-container).swal2-bottom-end {\n  grid-template-columns: auto auto minmax(0, 1fr);\n}\ndiv:where(.swal2-container).swal2-top-start > .swal2-popup {\n  align-self: start;\n}\ndiv:where(.swal2-container).swal2-top > .swal2-popup {\n  grid-column: 2;\n  place-self: start center;\n}\ndiv:where(.swal2-container).swal2-top-end > .swal2-popup, div:where(.swal2-container).swal2-top-right > .swal2-popup {\n  grid-column: 3;\n  place-self: start end;\n}\ndiv:where(.swal2-container).swal2-center-start > .swal2-popup, div:where(.swal2-container).swal2-center-left > .swal2-popup {\n  grid-row: 2;\n  align-self: center;\n}\ndiv:where(.swal2-container).swal2-center > .swal2-popup {\n  grid-column: 2;\n  grid-row: 2;\n  place-self: center center;\n}\ndiv:where(.swal2-container).swal2-center-end > .swal2-popup, div:where(.swal2-container).swal2-center-right > .swal2-popup {\n  grid-column: 3;\n  grid-row: 2;\n  place-self: center end;\n}\ndiv:where(.swal2-container).swal2-bottom-start > .swal2-popup, div:where(.swal2-container).swal2-bottom-left > .swal2-popup {\n  grid-column: 1;\n  grid-row: 3;\n  align-self: end;\n}\ndiv:where(.swal2-container).swal2-bottom > .swal2-popup {\n  grid-column: 2;\n  grid-row: 3;\n  place-self: end center;\n}\ndiv:where(.swal2-container).swal2-bottom-end > .swal2-popup, div:where(.swal2-container).swal2-bottom-right > .swal2-popup {\n  grid-column: 3;\n  grid-row: 3;\n  place-self: end end;\n}\ndiv:where(.swal2-container).swal2-grow-row > .swal2-popup, div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {\n  grid-column: 1/4;\n  width: 100%;\n}\ndiv:where(.swal2-container).swal2-grow-column > .swal2-popup, div:where(.swal2-container).swal2-grow-fullscreen > .swal2-popup {\n  grid-row: 1/4;\n  align-self: stretch;\n}\ndiv:where(.swal2-container).swal2-no-transition {\n  transition: none !important;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup) {\n  display: none;\n  position: relative;\n  box-sizing: border-box;\n  grid-template-columns: minmax(0, 100%);\n  width: 32em;\n  max-width: 100%;\n  padding: 0 0 1.25em;\n  border: none;\n  border-radius: 5px;\n  background: #fff;\n  color: #545454;\n  font-family: inherit;\n  font-size: 1rem;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup):focus {\n  outline: none;\n}\ndiv:where(.swal2-container) div:where(.swal2-popup).swal2-loading {\n  overflow-y: hidden;\n}\ndiv:where(.swal2-container) h2:where(.swal2-title) {\n  position: relative;\n  max-width: 100%;\n  margin: 0;\n  padding: 0.8em 1em 0;\n  color: inherit;\n  font-size: 1.875em;\n  font-weight: 600;\n  text-align: center;\n  text-transform: none;\n  word-wrap: break-word;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions) {\n  display: flex;\n  z-index: 1;\n  box-sizing: border-box;\n  flex-wrap: wrap;\n  align-items: center;\n  justify-content: center;\n  width: auto;\n  margin: 1.25em auto 0;\n  padding: 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled[disabled] {\n  opacity: 0.4;\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));\n}\ndiv:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:active {\n  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));\n}\ndiv:where(.swal2-container) div:where(.swal2-loader) {\n  display: none;\n  align-items: center;\n  justify-content: center;\n  width: 2.2em;\n  height: 2.2em;\n  margin: 0 1.875em;\n  animation: swal2-rotate-loading 1.5s linear 0s infinite normal;\n  border-width: 0.25em;\n  border-style: solid;\n  border-radius: 100%;\n  border-color: #2778c4 transparent #2778c4 transparent;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled) {\n  margin: 0.3125em;\n  padding: 0.625em 1.1em;\n  transition: box-shadow 0.1s;\n  box-shadow: 0 0 0 3px transparent;\n  font-weight: 500;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled):not([disabled]) {\n  cursor: pointer;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #7066e0;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {\n  box-shadow: 0 0 0 3px rgba(112, 102, 224, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-deny {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #dc3741;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-deny:focus {\n  box-shadow: 0 0 0 3px rgba(220, 55, 65, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {\n  border: 0;\n  border-radius: 0.25em;\n  background: initial;\n  background-color: #6e7881;\n  color: #fff;\n  font-size: 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {\n  box-shadow: 0 0 0 3px rgba(110, 120, 129, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled).swal2-default-outline:focus {\n  box-shadow: 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-styled):focus {\n  outline: none;\n}\ndiv:where(.swal2-container) button:where(.swal2-styled)::-moz-focus-inner {\n  border: 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-footer) {\n  margin: 1em 0 0;\n  padding: 1em 1em 0;\n  border-top: 1px solid #eee;\n  color: inherit;\n  font-size: 1em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-timer-progress-bar-container {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  grid-column: auto !important;\n  overflow: hidden;\n  border-bottom-right-radius: 5px;\n  border-bottom-left-radius: 5px;\n}\ndiv:where(.swal2-container) div:where(.swal2-timer-progress-bar) {\n  width: 100%;\n  height: 0.25em;\n  background: rgba(0, 0, 0, 0.2);\n}\ndiv:where(.swal2-container) img:where(.swal2-image) {\n  max-width: 100%;\n  margin: 2em auto 1em;\n}\ndiv:where(.swal2-container) button:where(.swal2-close) {\n  z-index: 2;\n  align-items: center;\n  justify-content: center;\n  width: 1.2em;\n  height: 1.2em;\n  margin-top: 0;\n  margin-right: 0;\n  margin-bottom: -1.2em;\n  padding: 0;\n  overflow: hidden;\n  transition: color 0.1s, box-shadow 0.1s;\n  border: none;\n  border-radius: 5px;\n  background: transparent;\n  color: #ccc;\n  font-family: monospace;\n  font-size: 2.5em;\n  cursor: pointer;\n  justify-self: end;\n}\ndiv:where(.swal2-container) button:where(.swal2-close):hover {\n  transform: none;\n  background: transparent;\n  color: #f27474;\n}\ndiv:where(.swal2-container) button:where(.swal2-close):focus {\n  outline: none;\n  box-shadow: inset 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) button:where(.swal2-close)::-moz-focus-inner {\n  border: 0;\n}\ndiv:where(.swal2-container) .swal2-html-container {\n  z-index: 1;\n  justify-content: center;\n  margin: 1em 1.6em 0.3em;\n  padding: 0;\n  overflow: auto;\n  color: inherit;\n  font-size: 1.125em;\n  font-weight: normal;\n  line-height: normal;\n  text-align: center;\n  word-wrap: break-word;\n  word-break: break-word;\n}\ndiv:where(.swal2-container) input:where(.swal2-input),\ndiv:where(.swal2-container) input:where(.swal2-file),\ndiv:where(.swal2-container) textarea:where(.swal2-textarea),\ndiv:where(.swal2-container) select:where(.swal2-select),\ndiv:where(.swal2-container) div:where(.swal2-radio),\ndiv:where(.swal2-container) label:where(.swal2-checkbox) {\n  margin: 1em 2em 3px;\n}\ndiv:where(.swal2-container) input:where(.swal2-input),\ndiv:where(.swal2-container) input:where(.swal2-file),\ndiv:where(.swal2-container) textarea:where(.swal2-textarea) {\n  box-sizing: border-box;\n  width: auto;\n  transition: border-color 0.1s, box-shadow 0.1s;\n  border: 1px solid #d9d9d9;\n  border-radius: 0.1875em;\n  background: transparent;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;\n  color: inherit;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) input:where(.swal2-input).swal2-inputerror,\ndiv:where(.swal2-container) input:where(.swal2-file).swal2-inputerror,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea).swal2-inputerror {\n  border-color: #f27474 !important;\n  box-shadow: 0 0 2px #f27474 !important;\n}\ndiv:where(.swal2-container) input:where(.swal2-input):focus,\ndiv:where(.swal2-container) input:where(.swal2-file):focus,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea):focus {\n  border: 1px solid #b4dbed;\n  outline: none;\n  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);\n}\ndiv:where(.swal2-container) input:where(.swal2-input)::-moz-placeholder, div:where(.swal2-container) input:where(.swal2-file)::-moz-placeholder, div:where(.swal2-container) textarea:where(.swal2-textarea)::-moz-placeholder {\n  color: #ccc;\n}\ndiv:where(.swal2-container) input:where(.swal2-input)::placeholder,\ndiv:where(.swal2-container) input:where(.swal2-file)::placeholder,\ndiv:where(.swal2-container) textarea:where(.swal2-textarea)::placeholder {\n  color: #ccc;\n}\ndiv:where(.swal2-container) .swal2-range {\n  margin: 1em 2em 3px;\n  background: #fff;\n}\ndiv:where(.swal2-container) .swal2-range input {\n  width: 80%;\n}\ndiv:where(.swal2-container) .swal2-range output {\n  width: 20%;\n  color: inherit;\n  font-weight: 600;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-range input,\ndiv:where(.swal2-container) .swal2-range output {\n  height: 2.625em;\n  padding: 0;\n  font-size: 1.125em;\n  line-height: 2.625em;\n}\ndiv:where(.swal2-container) .swal2-input {\n  height: 2.625em;\n  padding: 0 0.75em;\n}\ndiv:where(.swal2-container) .swal2-file {\n  width: 75%;\n  margin-right: auto;\n  margin-left: auto;\n  background: transparent;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-textarea {\n  height: 6.75em;\n  padding: 0.75em;\n}\ndiv:where(.swal2-container) .swal2-select {\n  min-width: 50%;\n  max-width: 100%;\n  padding: 0.375em 0.625em;\n  background: transparent;\n  color: inherit;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-radio,\ndiv:where(.swal2-container) .swal2-checkbox {\n  align-items: center;\n  justify-content: center;\n  background: #fff;\n  color: inherit;\n}\ndiv:where(.swal2-container) .swal2-radio label,\ndiv:where(.swal2-container) .swal2-checkbox label {\n  margin: 0 0.6em;\n  font-size: 1.125em;\n}\ndiv:where(.swal2-container) .swal2-radio input,\ndiv:where(.swal2-container) .swal2-checkbox input {\n  flex-shrink: 0;\n  margin: 0 0.4em;\n}\ndiv:where(.swal2-container) label:where(.swal2-input-label) {\n  display: flex;\n  justify-content: center;\n  margin: 1em auto 0;\n}\ndiv:where(.swal2-container) div:where(.swal2-validation-message) {\n  align-items: center;\n  justify-content: center;\n  margin: 1em 0 0;\n  padding: 0.625em;\n  overflow: hidden;\n  background: #f0f0f0;\n  color: #666666;\n  font-size: 1em;\n  font-weight: 300;\n}\ndiv:where(.swal2-container) div:where(.swal2-validation-message)::before {\n  content: \"!\";\n  display: inline-block;\n  width: 1.5em;\n  min-width: 1.5em;\n  height: 1.5em;\n  margin: 0 0.625em;\n  border-radius: 50%;\n  background-color: #f27474;\n  color: #fff;\n  font-weight: 600;\n  line-height: 1.5em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-progress-steps {\n  flex-wrap: wrap;\n  align-items: center;\n  max-width: 100%;\n  margin: 1.25em auto;\n  padding: 0;\n  background: transparent;\n  font-weight: 600;\n}\ndiv:where(.swal2-container) .swal2-progress-steps li {\n  display: inline-block;\n  position: relative;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step {\n  z-index: 20;\n  flex-shrink: 0;\n  width: 2em;\n  height: 2em;\n  border-radius: 2em;\n  background: #2778c4;\n  color: #fff;\n  line-height: 2em;\n  text-align: center;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {\n  background: #2778c4;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {\n  background: #add8e6;\n  color: #fff;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line {\n  background: #add8e6;\n}\ndiv:where(.swal2-container) .swal2-progress-steps .swal2-progress-step-line {\n  z-index: 10;\n  flex-shrink: 0;\n  width: 2.5em;\n  height: 0.4em;\n  margin: 0 -1px;\n  background: #2778c4;\n}\n\ndiv:where(.swal2-icon) {\n  position: relative;\n  box-sizing: content-box;\n  justify-content: center;\n  width: 5em;\n  height: 5em;\n  margin: 2.5em auto 0.6em;\n  border: 0.25em solid transparent;\n  border-radius: 50%;\n  border-color: #000;\n  font-family: inherit;\n  line-height: 5em;\n  cursor: default;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n          user-select: none;\n}\ndiv:where(.swal2-icon) .swal2-icon-content {\n  display: flex;\n  align-items: center;\n  font-size: 3.75em;\n}\ndiv:where(.swal2-icon).swal2-error {\n  border-color: #f27474;\n  color: #f27474;\n}\ndiv:where(.swal2-icon).swal2-error .swal2-x-mark {\n  position: relative;\n  flex-grow: 1;\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line] {\n  display: block;\n  position: absolute;\n  top: 2.3125em;\n  width: 2.9375em;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #f27474;\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=left] {\n  left: 1.0625em;\n  transform: rotate(45deg);\n}\ndiv:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line][class$=right] {\n  right: 1em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-error.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-error.swal2-icon-show .swal2-x-mark {\n  animation: swal2-animate-error-x-mark 0.5s;\n}\ndiv:where(.swal2-icon).swal2-warning {\n  border-color: #facea8;\n  color: #f8bb86;\n}\ndiv:where(.swal2-icon).swal2-warning.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-warning.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-i-mark 0.5s;\n}\ndiv:where(.swal2-icon).swal2-info {\n  border-color: #9de0f6;\n  color: #3fc3ee;\n}\ndiv:where(.swal2-icon).swal2-info.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-info.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-i-mark 0.8s;\n}\ndiv:where(.swal2-icon).swal2-question {\n  border-color: #c9dae1;\n  color: #87adbd;\n}\ndiv:where(.swal2-icon).swal2-question.swal2-icon-show {\n  animation: swal2-animate-error-icon 0.5s;\n}\ndiv:where(.swal2-icon).swal2-question.swal2-icon-show .swal2-icon-content {\n  animation: swal2-animate-question-mark 0.8s;\n}\ndiv:where(.swal2-icon).swal2-success {\n  border-color: #a5dc86;\n  color: #a5dc86;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line] {\n  position: absolute;\n  width: 3.75em;\n  height: 7.5em;\n  transform: rotate(45deg);\n  border-radius: 50%;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=left] {\n  top: -0.4375em;\n  left: -2.0635em;\n  transform: rotate(-45deg);\n  transform-origin: 3.75em 3.75em;\n  border-radius: 7.5em 0 0 7.5em;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-circular-line][class$=right] {\n  top: -0.6875em;\n  left: 1.875em;\n  transform: rotate(-45deg);\n  transform-origin: 0 3.75em;\n  border-radius: 0 7.5em 7.5em 0;\n}\ndiv:where(.swal2-icon).swal2-success .swal2-success-ring {\n  position: absolute;\n  z-index: 2;\n  top: -0.25em;\n  left: -0.25em;\n  box-sizing: content-box;\n  width: 100%;\n  height: 100%;\n  border: 0.25em solid rgba(165, 220, 134, 0.3);\n  border-radius: 50%;\n}\ndiv:where(.swal2-icon).swal2-success .swal2-success-fix {\n  position: absolute;\n  z-index: 1;\n  top: 0.5em;\n  left: 1.625em;\n  width: 0.4375em;\n  height: 5.625em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line] {\n  display: block;\n  position: absolute;\n  z-index: 2;\n  height: 0.3125em;\n  border-radius: 0.125em;\n  background-color: #a5dc86;\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=tip] {\n  top: 2.875em;\n  left: 0.8125em;\n  width: 1.5625em;\n  transform: rotate(45deg);\n}\ndiv:where(.swal2-icon).swal2-success [class^=swal2-success-line][class$=long] {\n  top: 2.375em;\n  right: 0.5em;\n  width: 2.9375em;\n  transform: rotate(-45deg);\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-tip {\n  animation: swal2-animate-success-line-tip 0.75s;\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-line-long {\n  animation: swal2-animate-success-line-long 0.75s;\n}\ndiv:where(.swal2-icon).swal2-success.swal2-icon-show .swal2-success-circular-line-right {\n  animation: swal2-rotate-success-circular-line 4.25s ease-in;\n}\n\n[class^=swal2] {\n  -webkit-tap-highlight-color: transparent;\n}\n\n.swal2-show {\n  animation: swal2-show 0.3s;\n}\n\n.swal2-hide {\n  animation: swal2-hide 0.15s forwards;\n}\n\n.swal2-noanimation {\n  transition: none;\n}\n\n.swal2-scrollbar-measure {\n  position: absolute;\n  top: -9999px;\n  width: 50px;\n  height: 50px;\n  overflow: scroll;\n}\n\n.swal2-rtl .swal2-close {\n  margin-right: initial;\n  margin-left: 0;\n}\n.swal2-rtl .swal2-timer-progress-bar {\n  right: 0;\n  left: auto;\n}\n\n@keyframes swal2-toast-show {\n  0% {\n    transform: translateY(-0.625em) rotateZ(2deg);\n  }\n  33% {\n    transform: translateY(0) rotateZ(-2deg);\n  }\n  66% {\n    transform: translateY(0.3125em) rotateZ(2deg);\n  }\n  100% {\n    transform: translateY(0) rotateZ(0deg);\n  }\n}\n@keyframes swal2-toast-hide {\n  100% {\n    transform: rotateZ(1deg);\n    opacity: 0;\n  }\n}\n@keyframes swal2-toast-animate-success-line-tip {\n  0% {\n    top: 0.5625em;\n    left: 0.0625em;\n    width: 0;\n  }\n  54% {\n    top: 0.125em;\n    left: 0.125em;\n    width: 0;\n  }\n  70% {\n    top: 0.625em;\n    left: -0.25em;\n    width: 1.625em;\n  }\n  84% {\n    top: 1.0625em;\n    left: 0.75em;\n    width: 0.5em;\n  }\n  100% {\n    top: 1.125em;\n    left: 0.1875em;\n    width: 0.75em;\n  }\n}\n@keyframes swal2-toast-animate-success-line-long {\n  0% {\n    top: 1.625em;\n    right: 1.375em;\n    width: 0;\n  }\n  65% {\n    top: 1.25em;\n    right: 0.9375em;\n    width: 0;\n  }\n  84% {\n    top: 0.9375em;\n    right: 0;\n    width: 1.125em;\n  }\n  100% {\n    top: 0.9375em;\n    right: 0.1875em;\n    width: 1.375em;\n  }\n}\n@keyframes swal2-show {\n  0% {\n    transform: scale(0.7);\n  }\n  45% {\n    transform: scale(1.05);\n  }\n  80% {\n    transform: scale(0.95);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n@keyframes swal2-hide {\n  0% {\n    transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    transform: scale(0.5);\n    opacity: 0;\n  }\n}\n@keyframes swal2-animate-success-line-tip {\n  0% {\n    top: 1.1875em;\n    left: 0.0625em;\n    width: 0;\n  }\n  54% {\n    top: 1.0625em;\n    left: 0.125em;\n    width: 0;\n  }\n  70% {\n    top: 2.1875em;\n    left: -0.375em;\n    width: 3.125em;\n  }\n  84% {\n    top: 3em;\n    left: 1.3125em;\n    width: 1.0625em;\n  }\n  100% {\n    top: 2.8125em;\n    left: 0.8125em;\n    width: 1.5625em;\n  }\n}\n@keyframes swal2-animate-success-line-long {\n  0% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n  }\n  65% {\n    top: 3.375em;\n    right: 2.875em;\n    width: 0;\n  }\n  84% {\n    top: 2.1875em;\n    right: 0;\n    width: 3.4375em;\n  }\n  100% {\n    top: 2.375em;\n    right: 0.5em;\n    width: 2.9375em;\n  }\n}\n@keyframes swal2-rotate-success-circular-line {\n  0% {\n    transform: rotate(-45deg);\n  }\n  5% {\n    transform: rotate(-45deg);\n  }\n  12% {\n    transform: rotate(-405deg);\n  }\n  100% {\n    transform: rotate(-405deg);\n  }\n}\n@keyframes swal2-animate-error-x-mark {\n  0% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n  }\n  50% {\n    margin-top: 1.625em;\n    transform: scale(0.4);\n    opacity: 0;\n  }\n  80% {\n    margin-top: -0.375em;\n    transform: scale(1.15);\n  }\n  100% {\n    margin-top: 0;\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes swal2-animate-error-icon {\n  0% {\n    transform: rotateX(100deg);\n    opacity: 0;\n  }\n  100% {\n    transform: rotateX(0deg);\n    opacity: 1;\n  }\n}\n@keyframes swal2-rotate-loading {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes swal2-animate-question-mark {\n  0% {\n    transform: rotateY(-360deg);\n  }\n  100% {\n    transform: rotateY(0);\n  }\n}\n@keyframes swal2-animate-i-mark {\n  0% {\n    transform: rotateZ(45deg);\n    opacity: 0;\n  }\n  25% {\n    transform: rotateZ(-25deg);\n    opacity: 0.4;\n  }\n  50% {\n    transform: rotateZ(15deg);\n    opacity: 0.8;\n  }\n  75% {\n    transform: rotateZ(-5deg);\n    opacity: 1;\n  }\n  100% {\n    transform: rotateX(0);\n    opacity: 1;\n  }\n}\nbody.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n  overflow: hidden;\n}\nbody.swal2-height-auto {\n  height: auto !important;\n}\nbody.swal2-no-backdrop .swal2-container {\n  background-color: transparent !important;\n  pointer-events: none;\n}\nbody.swal2-no-backdrop .swal2-container .swal2-popup {\n  pointer-events: all;\n}\nbody.swal2-no-backdrop .swal2-container .swal2-modal {\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);\n}\n@media print {\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {\n    overflow-y: scroll !important;\n  }\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) > [aria-hidden=true] {\n    display: none;\n  }\n  body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {\n    position: static !important;\n  }\n}\nbody.swal2-toast-shown .swal2-container {\n  box-sizing: border-box;\n  width: 360px;\n  max-width: 100%;\n  background-color: transparent;\n  pointer-events: none;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top {\n  inset: 0 auto auto 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right {\n  inset: 0 0 auto auto;\n}\nbody.swal2-toast-shown .swal2-container.swal2-top-start, body.swal2-toast-shown .swal2-container.swal2-top-left {\n  inset: 0 auto auto 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-start, body.swal2-toast-shown .swal2-container.swal2-center-left {\n  inset: 50% auto auto 0;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center {\n  inset: 50% auto auto 50%;\n  transform: translate(-50%, -50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-center-end, body.swal2-toast-shown .swal2-container.swal2-center-right {\n  inset: 50% 0 auto auto;\n  transform: translateY(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-start, body.swal2-toast-shown .swal2-container.swal2-bottom-left {\n  inset: auto auto 0 0;\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom {\n  inset: auto auto 0 50%;\n  transform: translateX(-50%);\n}\nbody.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown .swal2-container.swal2-bottom-right {\n  inset: auto 0 0 auto;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2949,6 +2973,30 @@ ___CSS_LOADER_EXPORT___.push([module.id, "", ""]);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-glide-js/dist/vue-glide.css":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-glide-js/dist/vue-glide.css ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".glide{position:relative;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.glide *{-webkit-box-sizing:inherit;box-sizing:inherit}.glide__slides,.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-ms-touch-action:pan-Y;touch-action:pan-Y;padding:0;white-space:nowrap;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;will-change:transform}.glide__slide,.glide__slides--dragging{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide__slide{width:100%;height:100%;-ms-flex-negative:0;flex-shrink:0;white-space:normal;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{-webkit-user-select:none;user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows,.glide__bullets{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.glide--rtl{direction:rtl}", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Home.vue?vue&type=style&index=0&id=63cd6604&scoped=true&lang=css&":
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/views/Home.vue?vue&type=style&index=0&id=63cd6604&scoped=true&lang=css& ***!
@@ -2966,7 +3014,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.text-thelast[data-v-63cd6604] {\r\n    color: rgba(206, 180, 108, 0.75);\n}\n.divider-thelast[data-v-63cd6604] {\r\n    margin: 0 auto;\r\n    width: 15%;\r\n    margin-top: 3px;\r\n    border: 0;\r\n    height: 1px;\r\n    background-image: linear-gradient(\r\n        to right,\r\n        rgba(255, 255, 255, 0),\r\n        rgba(206, 180, 108, 0.75),\r\n        rgba(255, 255, 255, 0)\r\n    );\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.text-thelast[data-v-63cd6604] {\n    color: rgba(206, 180, 108, 0.75);\n}\n.divider-thelast[data-v-63cd6604] {\n    margin: 0 auto;\n    width: 15%;\n    margin-top: 3px;\n    border: 0;\n    height: 1px;\n    background-image: linear-gradient(\n        to right,\n        rgba(255, 255, 255, 0),\n        rgba(206, 180, 108, 0.75),\n        rgba(255, 255, 255, 0)\n    );\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2990,7 +3038,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.music-box[data-v-3e7718b4] {\r\n        position: fixed;\r\n        width: 37px;\r\n        height: 160px;\r\n        z-index: 9;\r\n        bottom: 81px;\r\n        right: 10px;\n}\n.music-box .music-holder[data-v-3e7718b4] {\r\n        width: 100%;\r\n        height: 100%;\r\n        position: absolute;\r\n        right: 0;\r\n        bottom: -30px;\r\n        visibility: hidden;\r\n        opacity: 0;\r\n        transition: all 0.5s ease-out;\n}\n.music-box button[data-v-3e7718b4] {\r\n        background: #FBFBFB;\r\n        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);\r\n        width: 37px;\r\n        height: 37px;\r\n        font-size: 18px;\r\n        font-size: 1rem;\r\n        outline: 0;\r\n        padding: 0;\r\n        margin: 0;\r\n        position: absolute;\r\n        right: 0;\r\n        bottom: 20px;\r\n        border-radius: 50%;\r\n        border: 0px;\n}\n.music-box button i[data-v-3e7718b4] {\r\n        font-size: 20px;\n}\n.music-box .toggle-music-box[data-v-3e7718b4] {\r\n        top: -50px;\r\n        visibility: visible;\r\n        opacity: 1;\n}\n.music[data-v-3e7718b4] {\r\n        padding: 0;\r\n        background: none !important;\r\n        position: relative;\r\n        top: 103px;\r\n        right: 180px;\n}\n.music[data-v-3e7718b4]:focus {\r\n        outline: none;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.music-box[data-v-3e7718b4] {\n        position: fixed;\n        width: 37px;\n        height: 160px;\n        z-index: 9;\n        bottom: 81px;\n        right: 10px;\n}\n.music-box .music-holder[data-v-3e7718b4] {\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        right: 0;\n        bottom: -30px;\n        visibility: hidden;\n        opacity: 0;\n        transition: all 0.5s ease-out;\n}\n.music-box button[data-v-3e7718b4] {\n        background: #FBFBFB;\n        box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);\n        width: 37px;\n        height: 37px;\n        font-size: 18px;\n        font-size: 1rem;\n        outline: 0;\n        padding: 0;\n        margin: 0;\n        position: absolute;\n        right: 0;\n        bottom: 20px;\n        border-radius: 50%;\n        border: 0px;\n}\n.music-box button i[data-v-3e7718b4] {\n        font-size: 20px;\n}\n.music-box .toggle-music-box[data-v-3e7718b4] {\n        top: -50px;\n        visibility: visible;\n        opacity: 1;\n}\n.music[data-v-3e7718b4] {\n        padding: 0;\n        background: none !important;\n        position: relative;\n        top: 103px;\n        right: 180px;\n}\n.music[data-v-3e7718b4]:focus {\n        outline: none;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3014,7 +3062,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-5788d634] {\r\n    border-color: #d6ba8d;\r\n    border-radius: 0.9rem;\r\n    border-width: 2px;\r\n    margin-left: auto;\r\n    margin-right: auto;\r\n    max-width: 100%;\r\n    overflow: hidden;\r\n    position: relative;\r\n    height: auto;\n}\n.tw-text-grey-darker[data-v-5788d634] {\r\n    --tw-text-opacity: 1;\r\n    color: rgba(96,111,123,var(--tw-text-opacity));\n}\n.carousel-cell[data-v-5788d634] {\r\n  margin-right: 10px;\r\n  height: 100px;\n}\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-5788d634] {\n    border-color: #d6ba8d;\n    border-radius: 0.9rem;\n    border-width: 2px;\n    margin-left: auto;\n    margin-right: auto;\n    max-width: 100%;\n    overflow: hidden;\n    position: relative;\n    height: auto;\n}\n.tw-text-grey-darker[data-v-5788d634] {\n    --tw-text-opacity: 1;\n    color: rgba(96,111,123,var(--tw-text-opacity));\n}\n.carousel-cell[data-v-5788d634] {\n  margin-right: 10px;\n  height: 100px;\n}\n\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3038,7 +3086,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.white-space[data-v-3b0b9885] {\r\n    white-space: pre-line;\n}\n.comment[data-v-3b0b9885] {\r\n    color: rgb(51, 51, 51);\r\n    font-size: 14px;\r\n    font-weight: 400 !important;\r\n    line-height: 24px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.white-space[data-v-3b0b9885] {\n    white-space: pre-line;\n}\n.comment[data-v-3b0b9885] {\n    color: rgb(51, 51, 51);\n    font-size: 14px;\n    font-weight: 400 !important;\n    line-height: 24px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3062,7 +3110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.title[data-v-782a0546] {\r\n    font-family: Greenlight Script;\n}\n@media only screen and (min-width: 768px) {\n.tw-bg-cover[data-v-782a0546] {\n}\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.title[data-v-782a0546] {\n    font-family: Greenlight Script;\n}\n@media only screen and (min-width: 768px) {\n.tw-bg-cover[data-v-782a0546] {\n}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3086,7 +3134,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.m-name[data-v-4fc729d8] {\r\n    font-family: Greenlight Script;\n}\n.pl[data-v-4fc729d8] {\r\n    width: 200px;\r\n    height: 200px;\r\n    padding: 1rem;\r\n    background-size: contain;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    mask-image: url('/fawcet-vilda/public/assets/images/mask.png');\r\n    -webkit-mask-image:  url('/fawcet-vilda/public/assets/images/mask.png');\r\n    mask-size: 200px;\r\n    -webkit-mask-size: 200px;\r\n    mask-repeat: no-repeat;\r\n    -webkit-mask-repeat: no-repeat;\r\n    mask-position: center;\r\n    -webkit-mask-position: center;\r\n    background-image: url('/fawcet-vilda/public/assets/images/cpp.jpeg');\n}\n.pw[data-v-4fc729d8] {\r\n    width: 200px;\r\n    height: 200px;\r\n    padding: 1rem;\r\n    background-size: contain;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    mask-image: url('/fawcet-vilda/public/assets/images/mask.png');\r\n    -webkit-mask-image:  url('/fawcet-vilda/public/assets/images/mask.png');\r\n    mask-size: 200px;\r\n    -webkit-mask-size: 200px;\r\n    mask-repeat: no-repeat;\r\n    -webkit-mask-repeat: no-repeat;\r\n    mask-position: center;\r\n    -webkit-mask-position: center;\r\n    background-image: url('/fawcet-vilda/public/assets/images/cpw.jpeg');\n}\n.divider[data-v-4fc729d8] {\r\n    margin: 0 auto;\r\n    width: 35%;\r\n    margin-bottom: 20px;\r\n    margin-top: 10px;\r\n    border: 0;\r\n    height: 1px;\r\n    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(206, 180, 108, 0.75), rgba(255, 255, 255, 0));\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.m-name[data-v-4fc729d8] {\n    font-family: Greenlight Script;\n}\n.pl[data-v-4fc729d8] {\n    width: 200px;\n    height: 200px;\n    padding: 1rem;\n    background-size: contain;\n    background-position: center;\n    background-repeat: no-repeat;\n    mask-image: url('/fawcet-vilda/public/assets/images/mask.png');\n    -webkit-mask-image:  url('/fawcet-vilda/public/assets/images/mask.png');\n    mask-size: 200px;\n    -webkit-mask-size: 200px;\n    mask-repeat: no-repeat;\n    -webkit-mask-repeat: no-repeat;\n    mask-position: center;\n    -webkit-mask-position: center;\n    background-image: url('/fawcet-vilda/public/assets/images/cpp.jpeg');\n}\n.pw[data-v-4fc729d8] {\n    width: 200px;\n    height: 200px;\n    padding: 1rem;\n    background-size: contain;\n    background-position: center;\n    background-repeat: no-repeat;\n    mask-image: url('/fawcet-vilda/public/assets/images/mask.png');\n    -webkit-mask-image:  url('/fawcet-vilda/public/assets/images/mask.png');\n    mask-size: 200px;\n    -webkit-mask-size: 200px;\n    mask-repeat: no-repeat;\n    -webkit-mask-repeat: no-repeat;\n    mask-position: center;\n    -webkit-mask-position: center;\n    background-image: url('/fawcet-vilda/public/assets/images/cpw.jpeg');\n}\n.divider[data-v-4fc729d8] {\n    margin: 0 auto;\n    width: 35%;\n    margin-bottom: 20px;\n    margin-top: 10px;\n    border: 0;\n    height: 1px;\n    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(206, 180, 108, 0.75), rgba(255, 255, 255, 0));\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3110,7 +3158,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".card-item *[data-v-947d80ea]{box-sizing:border-box}.card-item[data-v-947d80ea] :focus{outline:0}.wrapper[data-v-947d80ea]{min-height:100vh;display:flex;padding:50px 15px}@media screen and (max-width:700px),(max-height:500px){.wrapper[data-v-947d80ea]{flex-wrap:wrap;flex-direction:column}}.card-item[data-v-947d80ea]{max-width:430px;height:270px;margin-left:auto;margin-right:auto;position:relative;z-index:2;width:100%}@media screen and (max-width:480px){.card-item[data-v-947d80ea]{max-width:310px;height:220px;width:90%}}@media screen and (max-width:360px){.card-item[data-v-947d80ea]{height:180px}}.card-item.-active .card-item__side.-front[data-v-947d80ea]{transform:perspective(1000px) rotateY(180deg) rotateX(0) rotateZ(0)}.card-item.-active .card-item__side.-back[data-v-947d80ea]{transform:perspective(1000px) rotateY(0) rotateX(0) rotateZ(0)}.card-item__focus[data-v-947d80ea]{position:absolute;z-index:3;border-radius:5px;left:0;top:0;width:100%;height:100%;transition:all .35s cubic-bezier(.71, .03, .56, .85);opacity:0;pointer-events:none;overflow:hidden;border:2px solid rgba(255,255,255,.65)}.card-item__focus[data-v-947d80ea]:after{content:\"\";position:absolute;top:0;left:0;width:100%;background:#08142f;height:100%;border-radius:5px;filter:blur(25px);opacity:.5}.card-item__focus.-active[data-v-947d80ea]{opacity:1}.card-item__side[data-v-947d80ea]{border-radius:15px;overflow:hidden;box-shadow:0 20px 60px 0 rgba(14,42,90,.55);transform:perspective(2000px) rotateY(0) rotateX(0) rotate(0);transform-style:preserve-3d;transition:all .8s cubic-bezier(.71, .03, .56, .85);backface-visibility:hidden;height:100%}.card-item__side.-back[data-v-947d80ea]{position:absolute;top:0;left:0;width:100%;transform:perspective(2000px) rotateY(-180deg) rotateX(0) rotate(0);z-index:2;padding:0;height:100%}.card-item__side.-back .card-item__cover[data-v-947d80ea]{transform:rotateY(-180deg)}.card-item__bg[data-v-947d80ea]{max-width:100%;display:block;max-height:100%;height:100%;width:100%;-o-object-fit:cover;object-fit:cover}.card-item__cover[data-v-947d80ea]{height:100%;position:absolute;height:100%;background-color:#1c1d27;background-image:linear-gradient(147deg,#354fce 0,#0c296b 74%);left:0;top:0;width:100%;border-radius:15px;overflow:hidden}.card-item__cover[data-v-947d80ea]:after{content:\"\";position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(6,2,29,.45)}.card-item__top[data-v-947d80ea]{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:40px;padding:0 10px}@media screen and (max-width:480px){.card-item__top[data-v-947d80ea]{margin-bottom:25px}}@media screen and (max-width:360px){.card-item__top[data-v-947d80ea]{margin-bottom:15px}}.card-item__chip[data-v-947d80ea]{width:60px}@media screen and (max-width:480px){.card-item__chip[data-v-947d80ea]{width:50px}}@media screen and (max-width:360px){.card-item__chip[data-v-947d80ea]{width:40px}}.card-item__type[data-v-947d80ea]{height:45px;position:relative;display:flex;justify-content:flex-end;max-width:100px;margin-left:auto;width:100%}@media screen and (max-width:480px){.card-item__type[data-v-947d80ea]{height:40px;max-width:90px}}@media screen and (max-width:360px){.card-item__type[data-v-947d80ea]{height:30px}}.card-item__typeImg[data-v-947d80ea]{max-width:100%;-o-object-fit:contain;object-fit:contain;max-height:100%;-o-object-position:top right;object-position:top right}.card-item__info[data-v-947d80ea]{color:#fff;width:100%;padding:10px 15px;font-weight:500;display:block;cursor:pointer}@media screen and (max-width:480px){.card-item__info[data-v-947d80ea]{padding:10px}}.card-item__holder[data-v-947d80ea]{opacity:.7;font-size:13px;margin-bottom:6px}@media screen and (max-width:480px){.card-item__holder[data-v-947d80ea]{font-size:12px;margin-bottom:5px}}.card-item__wrapper[data-v-947d80ea]{font-family:\"Source Code Pro\",monospace;padding:25px 15px;position:relative;z-index:4;height:100%;text-shadow:7px 6px 10px rgba(14,42,90,.8);-webkit-user-select:none;-moz-user-select:none;user-select:none}@media screen and (max-width:480px){.card-item__wrapper[data-v-947d80ea]{padding:20px 10px}}.card-item__name[data-v-947d80ea]{font-size:18px;line-height:1;white-space:nowrap;overflow:hidden;text-transform:uppercase}@media screen and (max-width:480px){.card-item__name[data-v-947d80ea]{font-size:16px}}.card-item__nameItem[data-v-947d80ea]{display:inline-block;min-width:8px;position:relative}\n@media screen and (max-width:480px) {\n.card-item__number[data-v-947d80ea]{\n        color:#fff;\n        font-size:16px;\n        margin-bottom:15px;\n        padding:10px 10px\n}\n}\n@media screen and (max-width:360px) {\n.card-item__number[data-v-947d80ea]{\n        color:#fff;\n        font-size:16px;\n        margin-bottom:10px;\n        padding:10px 10px\n}\n}\n.card-item__numberItem[data-v-947d80ea]{\n    width:16px;\n    display:inline-block;\n    color:#fff;\n    font-size:19px;\n}\n.card-item__numberItem.-active[data-v-947d80ea]{\n    width:30px\n}\n@media screen and (\n    max-width:480px\n){\n.card-item__numberItem[data-v-947d80ea]{\n        width:13px\n}\n.card-item__numberItem.-active[data-v-947d80ea]{\n        width:16px\n}\n}@media screen and (max-width:360px){\n.card-item__numberItem[data-v-947d80ea]{\n        width:12px\n}\n.card-item__numberItem.-active[data-v-947d80ea]{\n        width:8px\n}\n}\n.card-item__content[data-v-947d80ea]{\n    color:#fff;\n    display:flex;\n    align-items:flex-start\n}\n.card-item__date[data-v-947d80ea]{flex-wrap:wrap;font-size:18px;margin-left:auto;padding:10px;display:inline-flex;width:80px;white-space:nowrap;flex-shrink:0;cursor:pointer}.card-item__date label[data-v-947d80ea]{cursor:pointer}@media screen and (max-width:480px){.card-item__date[data-v-947d80ea]{font-size:16px}}.card-item__dateItem[data-v-947d80ea]{position:relative}.card-item__dateItem span[data-v-947d80ea]{width:22px;display:inline-block}.card-item__dateTitle[data-v-947d80ea]{opacity:.7;font-size:13px;padding-bottom:6px;width:100%}@media screen and (max-width:480px){.card-item__dateTitle[data-v-947d80ea]{font-size:12px;padding-bottom:5px}}.card-item__band[data-v-947d80ea]{background:rgba(0,0,19,.8);width:100%;height:50px;margin-top:30px;position:relative;z-index:2}@media screen and (max-width:480px){.card-item__band[data-v-947d80ea]{margin-top:20px}}@media screen and (max-width:360px){.card-item__band[data-v-947d80ea]{height:40px;margin-top:10px}}.card-item__cvv[data-v-947d80ea]{text-align:right;position:relative;z-index:2;padding:15px}.card-item__cvv .card-item__type[data-v-947d80ea]{opacity:.7}@media screen and (max-width:360px){.card-item__cvv[data-v-947d80ea]{padding:10px 15px}}.card-item__cvvTitle[data-v-947d80ea]{padding-right:10px;font-size:15px;font-weight:500;color:#fff;margin-bottom:5px}.card-item__cvvBand[data-v-947d80ea]{height:45px;background:#fff;margin-bottom:30px;text-align:right;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#1a3b5d;font-size:18px;border-radius:4px;box-shadow:0 10px 20px -7px rgba(32,56,117,.35)}@media screen and (max-width:480px){.card-item__cvvBand[data-v-947d80ea]{height:40px;margin-bottom:20px}}@media screen and (max-width:360px){.card-item__cvvBand[data-v-947d80ea]{margin-bottom:15px}}.card-list[data-v-947d80ea]{margin-bottom:-130px}@media screen and (max-width:480px){.card-list[data-v-947d80ea]{margin-bottom:-120px}}.slide-fade-up-enter-active[data-v-947d80ea]{transition:all .25s ease-in-out;transition-delay:.1s;position:relative}.slide-fade-up-leave-active[data-v-947d80ea]{transition:all .25s ease-in-out;position:absolute}.slide-fade-up-enter[data-v-947d80ea]{opacity:0;transform:translateY(15px);pointer-events:none}.slide-fade-up-leave-to[data-v-947d80ea]{opacity:0;transform:translateY(-15px);pointer-events:none}.slide-fade-right-enter-active[data-v-947d80ea]{transition:all .25s ease-in-out;transition-delay:.1s;position:relative}.slide-fade-right-leave-active[data-v-947d80ea]{transition:all .25s ease-in-out;position:absolute}.slide-fade-right-enter[data-v-947d80ea]{opacity:0;transform:translateX(10px) rotate(45deg);pointer-events:none}.slide-fade-right-leave-to[data-v-947d80ea]{opacity:0;transform:translateX(-10px) rotate(45deg);pointer-events:none}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".card-item *[data-v-947d80ea]{box-sizing:border-box}.card-item[data-v-947d80ea] :focus{outline:0}.wrapper[data-v-947d80ea]{min-height:100vh;display:flex;padding:50px 15px}@media screen and (max-width:700px),(max-height:500px){.wrapper[data-v-947d80ea]{flex-wrap:wrap;flex-direction:column}}.card-item[data-v-947d80ea]{max-width:430px;height:270px;margin-left:auto;margin-right:auto;position:relative;z-index:2;width:100%}@media screen and (max-width:480px){.card-item[data-v-947d80ea]{max-width:310px;height:220px;width:90%}}@media screen and (max-width:360px){.card-item[data-v-947d80ea]{height:180px}}.card-item.-active .card-item__side.-front[data-v-947d80ea]{transform:perspective(1000px) rotateY(180deg) rotateX(0) rotateZ(0)}.card-item.-active .card-item__side.-back[data-v-947d80ea]{transform:perspective(1000px) rotateY(0) rotateX(0) rotateZ(0)}.card-item__focus[data-v-947d80ea]{position:absolute;z-index:3;border-radius:5px;left:0;top:0;width:100%;height:100%;transition:all .35s cubic-bezier(.71, .03, .56, .85);opacity:0;pointer-events:none;overflow:hidden;border:2px solid rgba(255,255,255,.65)}.card-item__focus[data-v-947d80ea]:after{content:\"\";position:absolute;top:0;left:0;width:100%;background:#08142f;height:100%;border-radius:5px;filter:blur(25px);opacity:.5}.card-item__focus.-active[data-v-947d80ea]{opacity:1}.card-item__side[data-v-947d80ea]{border-radius:15px;overflow:hidden;box-shadow:0 20px 60px 0 rgba(14,42,90,.55);transform:perspective(2000px) rotateY(0) rotateX(0) rotate(0);transform-style:preserve-3d;transition:all .8s cubic-bezier(.71, .03, .56, .85);backface-visibility:hidden;height:100%}.card-item__side.-back[data-v-947d80ea]{position:absolute;top:0;left:0;width:100%;transform:perspective(2000px) rotateY(-180deg) rotateX(0) rotate(0);z-index:2;padding:0;height:100%}.card-item__side.-back .card-item__cover[data-v-947d80ea]{transform:rotateY(-180deg)}.card-item__bg[data-v-947d80ea]{max-width:100%;display:block;max-height:100%;height:100%;width:100%;-o-object-fit:cover;object-fit:cover}.card-item__cover[data-v-947d80ea]{height:100%;position:absolute;height:100%;background-color:#1c1d27;background-image:linear-gradient(147deg,#354fce 0,#0c296b 74%);left:0;top:0;width:100%;border-radius:15px;overflow:hidden}.card-item__cover[data-v-947d80ea]:after{content:\"\";position:absolute;left:0;top:0;width:100%;height:100%;background:rgba(6,2,29,.45)}.card-item__top[data-v-947d80ea]{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:40px;padding:0 10px}@media screen and (max-width:480px){.card-item__top[data-v-947d80ea]{margin-bottom:25px}}@media screen and (max-width:360px){.card-item__top[data-v-947d80ea]{margin-bottom:15px}}.card-item__chip[data-v-947d80ea]{width:60px}@media screen and (max-width:480px){.card-item__chip[data-v-947d80ea]{width:50px}}@media screen and (max-width:360px){.card-item__chip[data-v-947d80ea]{width:40px}}.card-item__type[data-v-947d80ea]{height:45px;position:relative;display:flex;justify-content:flex-end;max-width:100px;margin-left:auto;width:100%}@media screen and (max-width:480px){.card-item__type[data-v-947d80ea]{height:40px;max-width:90px}}@media screen and (max-width:360px){.card-item__type[data-v-947d80ea]{height:30px}}.card-item__typeImg[data-v-947d80ea]{max-width:100%;-o-object-fit:contain;object-fit:contain;max-height:100%;-o-object-position:top right;object-position:top right}.card-item__info[data-v-947d80ea]{color:#fff;width:100%;max-width:calc(100% - 85px);padding:10px 15px;font-weight:500;display:block;cursor:pointer}@media screen and (max-width:480px){.card-item__info[data-v-947d80ea]{padding:10px}}.card-item__holder[data-v-947d80ea]{opacity:.7;font-size:13px;margin-bottom:6px}@media screen and (max-width:480px){.card-item__holder[data-v-947d80ea]{font-size:12px;margin-bottom:5px}}.card-item__wrapper[data-v-947d80ea]{font-family:\"Source Code Pro\",monospace;padding:25px 15px;position:relative;z-index:4;height:100%;text-shadow:7px 6px 10px rgba(14,42,90,.8);-webkit-user-select:none;-moz-user-select:none;user-select:none}@media screen and (max-width:480px){.card-item__wrapper[data-v-947d80ea]{padding:20px 10px}}.card-item__name[data-v-947d80ea]{font-size:18px;line-height:1;white-space:nowrap;overflow:hidden;text-transform:uppercase}@media screen and (max-width:480px){.card-item__name[data-v-947d80ea]{font-size:16px}}.card-item__nameItem[data-v-947d80ea]{display:inline-block;min-width:8px;position:relative}.card-item__number[data-v-947d80ea]{font-weight:500;line-height:1;color:#fff;font-size:27px;margin-bottom:25px;display:inline-block;padding:10px 15px;cursor:pointer}@media screen and (max-width:480px){.card-item__number[data-v-947d80ea]{font-size:21px;margin-bottom:15px;padding:10px 10px}}@media screen and (max-width:360px){.card-item__number[data-v-947d80ea]{font-size:19px;margin-bottom:10px;padding:10px 10px}}.card-item__numberItem[data-v-947d80ea]{width:16px;display:inline-block}.card-item__numberItem.-active[data-v-947d80ea]{width:30px}@media screen and (max-width:480px){.card-item__numberItem[data-v-947d80ea]{width:13px}.card-item__numberItem.-active[data-v-947d80ea]{width:16px}}@media screen and (max-width:360px){.card-item__numberItem[data-v-947d80ea]{width:12px}.card-item__numberItem.-active[data-v-947d80ea]{width:8px}}.card-item__content[data-v-947d80ea]{color:#fff;display:flex;align-items:flex-start}.card-item__date[data-v-947d80ea]{flex-wrap:wrap;font-size:18px;margin-left:auto;padding:10px;display:inline-flex;width:80px;white-space:nowrap;flex-shrink:0;cursor:pointer}.card-item__date label[data-v-947d80ea]{cursor:pointer}@media screen and (max-width:480px){.card-item__date[data-v-947d80ea]{font-size:16px}}.card-item__dateItem[data-v-947d80ea]{position:relative}.card-item__dateItem span[data-v-947d80ea]{width:22px;display:inline-block}.card-item__dateTitle[data-v-947d80ea]{opacity:.7;font-size:13px;padding-bottom:6px;width:100%}@media screen and (max-width:480px){.card-item__dateTitle[data-v-947d80ea]{font-size:12px;padding-bottom:5px}}.card-item__band[data-v-947d80ea]{background:rgba(0,0,19,.8);width:100%;height:50px;margin-top:30px;position:relative;z-index:2}@media screen and (max-width:480px){.card-item__band[data-v-947d80ea]{margin-top:20px}}@media screen and (max-width:360px){.card-item__band[data-v-947d80ea]{height:40px;margin-top:10px}}.card-item__cvv[data-v-947d80ea]{text-align:right;position:relative;z-index:2;padding:15px}.card-item__cvv .card-item__type[data-v-947d80ea]{opacity:.7}@media screen and (max-width:360px){.card-item__cvv[data-v-947d80ea]{padding:10px 15px}}.card-item__cvvTitle[data-v-947d80ea]{padding-right:10px;font-size:15px;font-weight:500;color:#fff;margin-bottom:5px}.card-item__cvvBand[data-v-947d80ea]{height:45px;background:#fff;margin-bottom:30px;text-align:right;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;color:#1a3b5d;font-size:18px;border-radius:4px;box-shadow:0 10px 20px -7px rgba(32,56,117,.35)}@media screen and (max-width:480px){.card-item__cvvBand[data-v-947d80ea]{height:40px;margin-bottom:20px}}@media screen and (max-width:360px){.card-item__cvvBand[data-v-947d80ea]{margin-bottom:15px}}.card-list[data-v-947d80ea]{margin-bottom:-130px}@media screen and (max-width:480px){.card-list[data-v-947d80ea]{margin-bottom:-120px}}.slide-fade-up-enter-active[data-v-947d80ea]{transition:all .25s ease-in-out;transition-delay:.1s;position:relative}.slide-fade-up-leave-active[data-v-947d80ea]{transition:all .25s ease-in-out;position:absolute}.slide-fade-up-enter[data-v-947d80ea]{opacity:0;transform:translateY(15px);pointer-events:none}.slide-fade-up-leave-to[data-v-947d80ea]{opacity:0;transform:translateY(-15px);pointer-events:none}.slide-fade-right-enter-active[data-v-947d80ea]{transition:all .25s ease-in-out;transition-delay:.1s;position:relative}.slide-fade-right-leave-active[data-v-947d80ea]{transition:all .25s ease-in-out;position:absolute}.slide-fade-right-enter[data-v-947d80ea]{opacity:0;transform:translateX(10px) rotate(45deg);pointer-events:none}.slide-fade-right-leave-to[data-v-947d80ea]{opacity:0;transform:translateX(-10px) rotate(45deg);pointer-events:none}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3463,16 +3511,6 @@ module.exports = "/images/vendor/vue-paycard/src/aura.png?fbd7ce08aa4579ec82d7e9
 
 /***/ }),
 
-/***/ "./node_modules/vue-paycard/src/assets/images/bri.png":
-/*!************************************************************!*\
-  !*** ./node_modules/vue-paycard/src/assets/images/bri.png ***!
-  \************************************************************/
-/***/ ((module) => {
-
-module.exports = "/images/vendor/vue-paycard/src/bri.png?f91196c66b7a133fd5a5b27bdfbb8ab7";
-
-/***/ }),
-
 /***/ "./node_modules/vue-paycard/src/assets/images/chip.png":
 /*!*************************************************************!*\
   !*** ./node_modules/vue-paycard/src/assets/images/chip.png ***!
@@ -3642,6 +3680,238 @@ module.exports = "/images/vendor/vue-paycard/src/visaelectron.png?9d253a615cb9cf
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./node_modules/particles.vue/dist/particles.vue.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/particles.vue/dist/particles.vue.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesComponent": () => (/* binding */ __vue_component__),
+/* harmony export */   "default": () => (/* binding */ VueParticles)
+/* harmony export */ });
+/* harmony import */ var vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/index.js");
+/* harmony import */ var tsparticles_engine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tsparticles-engine */ "./node_modules/tsparticles-engine/esm/index.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+
+
+
+
+/******************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
+    var e = new Error(message);
+    return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
+};
+
+let Particles = class Particles extends vue__WEBPACK_IMPORTED_MODULE_1__["default"] {
+    mounted() {
+        this.$nextTick(() => __awaiter(this, void 0, void 0, function* () {
+            var _a;
+            if (!this.id) {
+                throw new Error("Prop 'id' is required!");
+            }
+            if (this.particlesInit) {
+                yield this.particlesInit(tsparticles_engine__WEBPACK_IMPORTED_MODULE_2__.tsParticles);
+            }
+            const cb = (container) => {
+                this.container = container;
+                if (this.container && this.particlesLoaded) {
+                    this.particlesLoaded(this.container);
+                }
+            };
+            const container = yield (this.url
+                ? tsparticles_engine__WEBPACK_IMPORTED_MODULE_2__.tsParticles.loadJSON(this.id, this.url)
+                : tsparticles_engine__WEBPACK_IMPORTED_MODULE_2__.tsParticles.load(this.id, (_a = this.options) !== null && _a !== void 0 ? _a : {}));
+            cb(container);
+        }));
+    }
+    beforeDestroy() {
+        var _a;
+        (_a = this.container) === null || _a === void 0 ? void 0 : _a.destroy();
+    }
+};
+__decorate([
+    (0,vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Prop)({ required: true })
+], Particles.prototype, "id", void 0);
+__decorate([
+    (0,vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Prop)()
+], Particles.prototype, "options", void 0);
+__decorate([
+    (0,vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Prop)()
+], Particles.prototype, "url", void 0);
+__decorate([
+    (0,vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Prop)()
+], Particles.prototype, "particlesLoaded", void 0);
+__decorate([
+    (0,vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Prop)()
+], Particles.prototype, "particlesInit", void 0);
+Particles = __decorate([
+    vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__.Component
+], Particles);
+var script = Particles;
+
+function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
+    if (typeof shadowMode !== 'boolean') {
+        createInjectorSSR = createInjector;
+        createInjector = shadowMode;
+        shadowMode = false;
+    }
+    // Vue.extend constructor export interop.
+    const options = typeof script === 'function' ? script.options : script;
+    // render functions
+    if (template && template.render) {
+        options.render = template.render;
+        options.staticRenderFns = template.staticRenderFns;
+        options._compiled = true;
+        // functional template
+        if (isFunctionalTemplate) {
+            options.functional = true;
+        }
+    }
+    // scopedId
+    if (scopeId) {
+        options._scopeId = scopeId;
+    }
+    let hook;
+    if (moduleIdentifier) {
+        // server build
+        hook = function (context) {
+            // 2.3 injection
+            context =
+                context || // cached call
+                    (this.$vnode && this.$vnode.ssrContext) || // stateful
+                    (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext); // functional
+            // 2.2 with runInNewContext: true
+            if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+                context = __VUE_SSR_CONTEXT__;
+            }
+            // inject component styles
+            if (style) {
+                style.call(this, createInjectorSSR(context));
+            }
+            // register component module identifier for async chunk inference
+            if (context && context._registeredComponents) {
+                context._registeredComponents.add(moduleIdentifier);
+            }
+        };
+        // used by ssr in case component is cached and beforeCreate
+        // never gets called
+        options._ssrRegister = hook;
+    }
+    else if (style) {
+        hook = shadowMode
+            ? function (context) {
+                style.call(this, createInjectorShadow(context, this.$root.$options.shadowRoot));
+            }
+            : function (context) {
+                style.call(this, createInjector(context));
+            };
+    }
+    if (hook) {
+        if (options.functional) {
+            // register for functional component in vue file
+            const originalRender = options.render;
+            options.render = function renderWithStyleInjection(h, context) {
+                hook.call(context);
+                return originalRender(h, context);
+            };
+        }
+        else {
+            // inject component registration as beforeCreate hook
+            const existing = options.beforeCreate;
+            options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
+        }
+    }
+    return script;
+}
+
+/* script */
+const __vue_script__ = script;
+
+/* template */
+var __vue_render__ = function () {
+  var _vm = this;
+  var _h = _vm.$createElement;
+  var _c = _vm._self._c || _h;
+  return _c("div", { attrs: { id: _vm.id } })
+};
+var __vue_staticRenderFns__ = [];
+__vue_render__._withStripped = true;
+
+  /* style */
+  const __vue_inject_styles__ = undefined;
+  /* scoped */
+  const __vue_scope_id__ = undefined;
+  /* module identifier */
+  const __vue_module_identifier__ = undefined;
+  /* functional template */
+  const __vue_is_functional_template__ = false;
+  /* style inject */
+  
+  /* style inject SSR */
+  
+  /* style inject shadow dom */
+  
+
+  
+  const __vue_component__ = /*#__PURE__*/normalizeComponent(
+    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
+    __vue_inject_styles__,
+    __vue_script__,
+    __vue_scope_id__,
+    __vue_is_functional_template__,
+    __vue_module_identifier__,
+    false,
+    undefined,
+    undefined,
+    undefined
+  );
+
+const VueParticles = {
+    install: (vue) => {
+        vue.component("Particles", __vue_component__);
+        vue.component("vue-particles", __vue_component__);
+    },
+};
+
+
 
 
 /***/ }),
@@ -3897,6 +4167,36 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_variables_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/vue-glide-js/dist/vue-glide.css":
+/*!******************************************************!*\
+  !*** ./node_modules/vue-glide-js/dist/vue-glide.css ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_glide_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./vue-glide.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-glide-js/dist/vue-glide.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_glide_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_vue_glide_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -4386,6 +4686,7487 @@ module.exports = function (list, options) {
     lastIdentifiers = newLastIdentifiers;
   };
 };
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Canvas.js":
+/*!************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Canvas.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Canvas": () => (/* binding */ Canvas)
+/* harmony export */ });
+/* harmony import */ var _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Utils/CanvasUtils */ "./node_modules/tsparticles-engine/esm/Utils/CanvasUtils.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Utils/ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+/* harmony import */ var _Utils_Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+
+
+
+
+function setTransformValue(factor, newFactor, key) {
+    const newValue = newFactor[key];
+    if (newValue !== undefined) {
+        factor[key] = (factor[key] ?? 1) * newValue;
+    }
+}
+class Canvas {
+    constructor(container) {
+        this.container = container;
+        this._applyPostDrawUpdaters = (particle) => {
+            for (const updater of this._postDrawUpdaters) {
+                updater.afterDraw && updater.afterDraw(particle);
+            }
+        };
+        this._applyPreDrawUpdaters = (ctx, particle, radius, zOpacity, colorStyles, transform) => {
+            for (const updater of this._preDrawUpdaters) {
+                if (updater.getColorStyles) {
+                    const { fill, stroke } = updater.getColorStyles(particle, ctx, radius, zOpacity);
+                    if (fill) {
+                        colorStyles.fill = fill;
+                    }
+                    if (stroke) {
+                        colorStyles.stroke = stroke;
+                    }
+                }
+                if (updater.getTransformValues) {
+                    const updaterTransform = updater.getTransformValues(particle);
+                    for (const key in updaterTransform) {
+                        setTransformValue(transform, updaterTransform, key);
+                    }
+                }
+                updater.beforeDraw && updater.beforeDraw(particle);
+            }
+        };
+        this._applyResizePlugins = () => {
+            for (const plugin of this._resizePlugins) {
+                plugin.resize && plugin.resize();
+            }
+        };
+        this._getPluginParticleColors = (particle) => {
+            let fColor, sColor;
+            for (const plugin of this._colorPlugins) {
+                if (!fColor && plugin.particleFillColor) {
+                    fColor = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.rangeColorToHsl)(plugin.particleFillColor(particle));
+                }
+                if (!sColor && plugin.particleStrokeColor) {
+                    sColor = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.rangeColorToHsl)(plugin.particleStrokeColor(particle));
+                }
+                if (fColor && sColor) {
+                    break;
+                }
+            }
+            return [fColor, sColor];
+        };
+        this._initCover = () => {
+            const options = this.container.actualOptions, cover = options.backgroundMask.cover, color = cover.color, coverRgb = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.rangeColorToRgb)(color);
+            if (coverRgb) {
+                const coverColor = {
+                    ...coverRgb,
+                    a: cover.opacity,
+                };
+                this._coverColorStyle = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromRgb)(coverColor, coverColor.a);
+            }
+        };
+        this._initStyle = () => {
+            const element = this.element, options = this.container.actualOptions;
+            if (!element) {
+                return;
+            }
+            if (this._fullScreen) {
+                this._originalStyle = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.deepExtend)({}, element.style);
+                this._setFullScreenStyle();
+            }
+            else {
+                this._resetOriginalStyle();
+            }
+            for (const key in options.style) {
+                if (!key || !options.style) {
+                    continue;
+                }
+                const value = options.style[key];
+                if (!value) {
+                    continue;
+                }
+                element.style.setProperty(key, value, "important");
+            }
+        };
+        this._initTrail = async () => {
+            const options = this.container.actualOptions, trail = options.particles.move.trail, trailFill = trail.fill;
+            if (!trail.enable) {
+                return;
+            }
+            if (trailFill.color) {
+                const fillColor = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.rangeColorToRgb)(trailFill.color);
+                if (!fillColor) {
+                    return;
+                }
+                const trail = options.particles.move.trail;
+                this._trailFill = {
+                    color: {
+                        ...fillColor,
+                    },
+                    opacity: 1 / trail.length,
+                };
+            }
+            else {
+                await new Promise((resolve, reject) => {
+                    if (!trailFill.image) {
+                        return;
+                    }
+                    const img = document.createElement("img");
+                    img.addEventListener("load", () => {
+                        this._trailFill = {
+                            image: img,
+                            opacity: 1 / trail.length,
+                        };
+                        resolve();
+                    });
+                    img.addEventListener("error", (evt) => {
+                        reject(evt.error);
+                    });
+                    img.src = trailFill.image;
+                });
+            }
+        };
+        this._paintBase = (baseColor) => {
+            this.draw((ctx) => (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.paintBase)(ctx, this.size, baseColor));
+        };
+        this._paintImage = (image, opacity) => {
+            this.draw((ctx) => (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.paintImage)(ctx, this.size, image, opacity));
+        };
+        this._repairStyle = () => {
+            const element = this.element;
+            if (!element) {
+                return;
+            }
+            this._safeMutationObserver((observer) => observer.disconnect());
+            this._initStyle();
+            this.initBackground();
+            this._safeMutationObserver((observer) => observer.observe(element, { attributes: true }));
+        };
+        this._resetOriginalStyle = () => {
+            const element = this.element, originalStyle = this._originalStyle;
+            if (!(element && originalStyle)) {
+                return;
+            }
+            const style = element.style;
+            style.position = originalStyle.position;
+            style.zIndex = originalStyle.zIndex;
+            style.top = originalStyle.top;
+            style.left = originalStyle.left;
+            style.width = originalStyle.width;
+            style.height = originalStyle.height;
+        };
+        this._safeMutationObserver = (callback) => {
+            if (!this._mutationObserver) {
+                return;
+            }
+            callback(this._mutationObserver);
+        };
+        this._setFullScreenStyle = () => {
+            const element = this.element;
+            if (!element) {
+                return;
+            }
+            const priority = "important", style = element.style;
+            style.setProperty("position", "fixed", priority);
+            style.setProperty("z-index", this.container.actualOptions.fullScreen.zIndex.toString(10), priority);
+            style.setProperty("top", "0", priority);
+            style.setProperty("left", "0", priority);
+            style.setProperty("width", "100%", priority);
+            style.setProperty("height", "100%", priority);
+        };
+        this.size = {
+            height: 0,
+            width: 0,
+        };
+        this._context = null;
+        this._generated = false;
+        this._preDrawUpdaters = [];
+        this._postDrawUpdaters = [];
+        this._resizePlugins = [];
+        this._colorPlugins = [];
+    }
+    get _fullScreen() {
+        return this.container.actualOptions.fullScreen.enable;
+    }
+    clear() {
+        const options = this.container.actualOptions, trail = options.particles.move.trail, trailFill = this._trailFill;
+        if (options.backgroundMask.enable) {
+            this.paint();
+        }
+        else if (trail.enable && trail.length > 0 && trailFill) {
+            if (trailFill.color) {
+                this._paintBase((0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromRgb)(trailFill.color, trailFill.opacity));
+            }
+            else if (trailFill.image) {
+                this._paintImage(trailFill.image, trailFill.opacity);
+            }
+        }
+        else {
+            this.draw((ctx) => {
+                (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.clear)(ctx, this.size);
+            });
+        }
+    }
+    destroy() {
+        this.stop();
+        if (this._generated) {
+            const element = this.element;
+            element && element.remove();
+        }
+        else {
+            this._resetOriginalStyle();
+        }
+        this._preDrawUpdaters = [];
+        this._postDrawUpdaters = [];
+        this._resizePlugins = [];
+        this._colorPlugins = [];
+    }
+    draw(cb) {
+        const ctx = this._context;
+        if (!ctx) {
+            return;
+        }
+        return cb(ctx);
+    }
+    drawParticle(particle, delta) {
+        if (particle.spawning || particle.destroyed) {
+            return;
+        }
+        const radius = particle.getRadius();
+        if (radius <= 0) {
+            return;
+        }
+        const pfColor = particle.getFillColor(), psColor = particle.getStrokeColor() ?? pfColor;
+        let [fColor, sColor] = this._getPluginParticleColors(particle);
+        if (!fColor) {
+            fColor = pfColor;
+        }
+        if (!sColor) {
+            sColor = psColor;
+        }
+        if (!fColor && !sColor) {
+            return;
+        }
+        this.draw((ctx) => {
+            const container = this.container, options = container.actualOptions, zIndexOptions = particle.options.zIndex, zOpacityFactor = (1 - particle.zIndexFactor) ** zIndexOptions.opacityRate, opacity = particle.bubble.opacity ?? particle.opacity?.value ?? 1, strokeOpacity = particle.strokeOpacity ?? opacity, zOpacity = opacity * zOpacityFactor, zStrokeOpacity = strokeOpacity * zOpacityFactor, transform = {}, colorStyles = {
+                fill: fColor ? (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromHsl)(fColor, zOpacity) : undefined,
+            };
+            colorStyles.stroke = sColor ? (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromHsl)(sColor, zStrokeOpacity) : colorStyles.fill;
+            this._applyPreDrawUpdaters(ctx, particle, radius, zOpacity, colorStyles, transform);
+            (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.drawParticle)({
+                container,
+                context: ctx,
+                particle,
+                delta,
+                colorStyles,
+                backgroundMask: options.backgroundMask.enable,
+                composite: options.backgroundMask.composite,
+                radius: radius * (1 - particle.zIndexFactor) ** zIndexOptions.sizeRate,
+                opacity: zOpacity,
+                shadow: particle.options.shadow,
+                transform,
+            });
+            this._applyPostDrawUpdaters(particle);
+        });
+    }
+    drawParticlePlugin(plugin, particle, delta) {
+        this.draw((ctx) => (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.drawParticlePlugin)(ctx, plugin, particle, delta));
+    }
+    drawPlugin(plugin, delta) {
+        this.draw((ctx) => (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.drawPlugin)(ctx, plugin, delta));
+    }
+    async init() {
+        this._safeMutationObserver((obs) => obs.disconnect());
+        this._mutationObserver = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.safeMutationObserver)((records) => {
+            for (const record of records) {
+                if (record.type === "attributes" && record.attributeName === "style") {
+                    this._repairStyle();
+                }
+            }
+        });
+        this.resize();
+        this._initStyle();
+        this._initCover();
+        try {
+            await this._initTrail();
+        }
+        catch (e) {
+            (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.getLogger)().error(e);
+        }
+        this.initBackground();
+        this._safeMutationObserver((obs) => {
+            if (!this.element) {
+                return;
+            }
+            obs.observe(this.element, { attributes: true });
+        });
+        this.initUpdaters();
+        this.initPlugins();
+        this.paint();
+    }
+    initBackground() {
+        const options = this.container.actualOptions, background = options.background, element = this.element;
+        if (!element) {
+            return;
+        }
+        const elementStyle = element.style;
+        if (!elementStyle) {
+            return;
+        }
+        if (background.color) {
+            const color = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.rangeColorToRgb)(background.color);
+            elementStyle.backgroundColor = color ? (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromRgb)(color, background.opacity) : "";
+        }
+        else {
+            elementStyle.backgroundColor = "";
+        }
+        elementStyle.backgroundImage = background.image || "";
+        elementStyle.backgroundPosition = background.position || "";
+        elementStyle.backgroundRepeat = background.repeat || "";
+        elementStyle.backgroundSize = background.size || "";
+    }
+    initPlugins() {
+        this._resizePlugins = [];
+        for (const [, plugin] of this.container.plugins) {
+            if (plugin.resize) {
+                this._resizePlugins.push(plugin);
+            }
+            if (plugin.particleFillColor || plugin.particleStrokeColor) {
+                this._colorPlugins.push(plugin);
+            }
+        }
+    }
+    initUpdaters() {
+        this._preDrawUpdaters = [];
+        this._postDrawUpdaters = [];
+        for (const updater of this.container.particles.updaters) {
+            if (updater.afterDraw) {
+                this._postDrawUpdaters.push(updater);
+            }
+            if (updater.getColorStyles || updater.getTransformValues || updater.beforeDraw) {
+                this._preDrawUpdaters.push(updater);
+            }
+        }
+    }
+    loadCanvas(canvas) {
+        if (this._generated && this.element) {
+            this.element.remove();
+        }
+        this._generated =
+            canvas.dataset && _Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.generatedAttribute in canvas.dataset
+                ? canvas.dataset[_Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.generatedAttribute] === "true"
+                : this._generated;
+        this.element = canvas;
+        this.element.ariaHidden = "true";
+        this._originalStyle = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.deepExtend)({}, this.element.style);
+        this.size.height = canvas.offsetHeight;
+        this.size.width = canvas.offsetWidth;
+        this._context = this.element.getContext("2d");
+        this._safeMutationObserver((obs) => {
+            if (!this.element) {
+                return;
+            }
+            obs.observe(this.element, { attributes: true });
+        });
+        this.container.retina.init();
+        this.initBackground();
+    }
+    paint() {
+        const options = this.container.actualOptions;
+        this.draw((ctx) => {
+            if (options.backgroundMask.enable && options.backgroundMask.cover) {
+                (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.clear)(ctx, this.size);
+                this._paintBase(this._coverColorStyle);
+            }
+            else {
+                this._paintBase();
+            }
+        });
+    }
+    resize() {
+        if (!this.element) {
+            return false;
+        }
+        const container = this.container, pxRatio = container.retina.pixelRatio, size = container.canvas.size, newSize = {
+            width: this.element.offsetWidth * pxRatio,
+            height: this.element.offsetHeight * pxRatio,
+        };
+        if (newSize.height === size.height &&
+            newSize.width === size.width &&
+            newSize.height === this.element.height &&
+            newSize.width === this.element.width) {
+            return false;
+        }
+        const oldSize = { ...size };
+        this.element.width = size.width = this.element.offsetWidth * pxRatio;
+        this.element.height = size.height = this.element.offsetHeight * pxRatio;
+        if (this.container.started) {
+            this.resizeFactor = {
+                width: size.width / oldSize.width,
+                height: size.height / oldSize.height,
+            };
+        }
+        return true;
+    }
+    stop() {
+        this._safeMutationObserver((obs) => obs.disconnect());
+        this._mutationObserver = undefined;
+        this.draw((ctx) => (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_2__.clear)(ctx, this.size));
+    }
+    async windowResize() {
+        if (!this.element || !this.resize()) {
+            return;
+        }
+        const container = this.container, needsRefresh = container.updateActualOptions();
+        container.particles.setDensity();
+        this._applyResizePlugins();
+        if (needsRefresh) {
+            await container.refresh();
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Container.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Container.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Container": () => (/* binding */ Container)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Canvas__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Canvas */ "./node_modules/tsparticles-engine/esm/Core/Canvas.js");
+/* harmony import */ var _Utils_EventListeners__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Utils/EventListeners */ "./node_modules/tsparticles-engine/esm/Core/Utils/EventListeners.js");
+/* harmony import */ var _Options_Classes_Options__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Options/Classes/Options */ "./node_modules/tsparticles-engine/esm/Options/Classes/Options.js");
+/* harmony import */ var _Particles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Particles */ "./node_modules/tsparticles-engine/esm/Core/Particles.js");
+/* harmony import */ var _Retina__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Retina */ "./node_modules/tsparticles-engine/esm/Core/Retina.js");
+/* harmony import */ var _Utils_Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Utils/OptionsUtils */ "./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js");
+
+
+
+
+
+
+
+
+
+function guardCheck(container) {
+    return container && !container.destroyed;
+}
+function initDelta(value, fpsLimit = 60, smooth = false) {
+    return {
+        value,
+        factor: smooth ? 60 / fpsLimit : (60 * value) / 1000,
+    };
+}
+function loadContainerOptions(engine, container, ...sourceOptionsArr) {
+    const options = new _Options_Classes_Options__WEBPACK_IMPORTED_MODULE_0__.Options(engine, container);
+    (0,_Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_1__.loadOptions)(options, ...sourceOptionsArr);
+    return options;
+}
+const defaultPathGeneratorKey = "default", defaultPathGenerator = {
+    generate: (p) => p.velocity,
+    init: () => {
+    },
+    update: () => {
+    },
+    reset: () => {
+    },
+};
+class Container {
+    constructor(engine, id, sourceOptions) {
+        this.id = id;
+        this._intersectionManager = (entries) => {
+            if (!guardCheck(this) || !this.actualOptions.pauseOnOutsideViewport) {
+                return;
+            }
+            for (const entry of entries) {
+                if (entry.target !== this.interactivity.element) {
+                    continue;
+                }
+                (entry.isIntersecting ? this.play : this.pause)();
+            }
+        };
+        this._nextFrame = async (timestamp) => {
+            try {
+                if (!this.smooth &&
+                    this.lastFrameTime !== undefined &&
+                    timestamp < this.lastFrameTime + 1000 / this.fpsLimit) {
+                    this.draw(false);
+                    return;
+                }
+                this.lastFrameTime ??= timestamp;
+                const delta = initDelta(timestamp - this.lastFrameTime, this.fpsLimit, this.smooth);
+                this.addLifeTime(delta.value);
+                this.lastFrameTime = timestamp;
+                if (delta.value > 1000) {
+                    this.draw(false);
+                    return;
+                }
+                await this.particles.draw(delta);
+                if (!this.alive()) {
+                    this.destroy();
+                    return;
+                }
+                if (this.getAnimationStatus()) {
+                    this.draw(false);
+                }
+            }
+            catch (e) {
+                (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.getLogger)().error(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.errorPrefix} in animation loop`, e);
+            }
+        };
+        this._engine = engine;
+        this.fpsLimit = 120;
+        this.smooth = false;
+        this._delay = 0;
+        this._duration = 0;
+        this._lifeTime = 0;
+        this._firstStart = true;
+        this.started = false;
+        this.destroyed = false;
+        this._paused = true;
+        this.lastFrameTime = 0;
+        this.zLayers = 100;
+        this.pageHidden = false;
+        this._sourceOptions = sourceOptions;
+        this._initialSourceOptions = sourceOptions;
+        this.retina = new _Retina__WEBPACK_IMPORTED_MODULE_4__.Retina(this);
+        this.canvas = new _Canvas__WEBPACK_IMPORTED_MODULE_5__.Canvas(this);
+        this.particles = new _Particles__WEBPACK_IMPORTED_MODULE_6__.Particles(this._engine, this);
+        this.pathGenerators = new Map();
+        this.interactivity = {
+            mouse: {
+                clicking: false,
+                inside: false,
+            },
+        };
+        this.plugins = new Map();
+        this.drawers = new Map();
+        this._options = loadContainerOptions(this._engine, this);
+        this.actualOptions = loadContainerOptions(this._engine, this);
+        this._eventListeners = new _Utils_EventListeners__WEBPACK_IMPORTED_MODULE_7__.EventListeners(this);
+        if (typeof IntersectionObserver !== "undefined" && IntersectionObserver) {
+            this._intersectionObserver = new IntersectionObserver((entries) => this._intersectionManager(entries));
+        }
+        this._engine.dispatchEvent("containerBuilt", { container: this });
+    }
+    get options() {
+        return this._options;
+    }
+    get sourceOptions() {
+        return this._sourceOptions;
+    }
+    addClickHandler(callback) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        const el = this.interactivity.element;
+        if (!el) {
+            return;
+        }
+        const clickOrTouchHandler = (e, pos, radius) => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            const pxRatio = this.retina.pixelRatio, posRetina = {
+                x: pos.x * pxRatio,
+                y: pos.y * pxRatio,
+            }, particles = this.particles.quadTree.queryCircle(posRetina, radius * pxRatio);
+            callback(e, particles);
+        };
+        const clickHandler = (e) => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            const mouseEvent = e, pos = {
+                x: mouseEvent.offsetX || mouseEvent.clientX,
+                y: mouseEvent.offsetY || mouseEvent.clientY,
+            };
+            clickOrTouchHandler(e, pos, 1);
+        };
+        const touchStartHandler = () => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            touched = true;
+            touchMoved = false;
+        };
+        const touchMoveHandler = () => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            touchMoved = true;
+        };
+        const touchEndHandler = (e) => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            if (touched && !touchMoved) {
+                const touchEvent = e;
+                let lastTouch = touchEvent.touches[touchEvent.touches.length - 1];
+                if (!lastTouch) {
+                    lastTouch = touchEvent.changedTouches[touchEvent.changedTouches.length - 1];
+                    if (!lastTouch) {
+                        return;
+                    }
+                }
+                const element = this.canvas.element, canvasRect = element ? element.getBoundingClientRect() : undefined, pos = {
+                    x: lastTouch.clientX - (canvasRect ? canvasRect.left : 0),
+                    y: lastTouch.clientY - (canvasRect ? canvasRect.top : 0),
+                };
+                clickOrTouchHandler(e, pos, Math.max(lastTouch.radiusX, lastTouch.radiusY));
+            }
+            touched = false;
+            touchMoved = false;
+        };
+        const touchCancelHandler = () => {
+            if (!guardCheck(this)) {
+                return;
+            }
+            touched = false;
+            touchMoved = false;
+        };
+        let touched = false, touchMoved = false;
+        el.addEventListener("click", clickHandler);
+        el.addEventListener("touchstart", touchStartHandler);
+        el.addEventListener("touchmove", touchMoveHandler);
+        el.addEventListener("touchend", touchEndHandler);
+        el.addEventListener("touchcancel", touchCancelHandler);
+    }
+    addLifeTime(value) {
+        this._lifeTime += value;
+    }
+    addPath(key, generator, override = false) {
+        if (!guardCheck(this) || (!override && this.pathGenerators.has(key))) {
+            return false;
+        }
+        this.pathGenerators.set(key, generator ?? defaultPathGenerator);
+        return true;
+    }
+    alive() {
+        return !this._duration || this._lifeTime <= this._duration;
+    }
+    destroy() {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this.stop();
+        this.particles.destroy();
+        this.canvas.destroy();
+        for (const [, drawer] of this.drawers) {
+            drawer.destroy && drawer.destroy(this);
+        }
+        for (const key of this.drawers.keys()) {
+            this.drawers.delete(key);
+        }
+        this._engine.plugins.destroy(this);
+        this.destroyed = true;
+        const mainArr = this._engine.dom(), idx = mainArr.findIndex((t) => t === this);
+        if (idx >= 0) {
+            mainArr.splice(idx, 1);
+        }
+        this._engine.dispatchEvent("containerDestroyed", { container: this });
+    }
+    draw(force) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        let refreshTime = force;
+        this._drawAnimationFrame = requestAnimationFrame(async (timestamp) => {
+            if (refreshTime) {
+                this.lastFrameTime = undefined;
+                refreshTime = false;
+            }
+            await this._nextFrame(timestamp);
+        });
+    }
+    async export(type, options = {}) {
+        for (const [, plugin] of this.plugins) {
+            if (!plugin.export) {
+                continue;
+            }
+            const res = await plugin.export(type, options);
+            if (!res.supported) {
+                continue;
+            }
+            return res.blob;
+        }
+        (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.getLogger)().error(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.errorPrefix} - Export plugin with type ${type} not found`);
+    }
+    getAnimationStatus() {
+        return !this._paused && !this.pageHidden && guardCheck(this);
+    }
+    handleClickMode(mode) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this.particles.handleClickMode(mode);
+        for (const [, plugin] of this.plugins) {
+            plugin.handleClickMode && plugin.handleClickMode(mode);
+        }
+    }
+    async init() {
+        if (!guardCheck(this)) {
+            return;
+        }
+        const shapes = this._engine.plugins.getSupportedShapes();
+        for (const type of shapes) {
+            const drawer = this._engine.plugins.getShapeDrawer(type);
+            if (drawer) {
+                this.drawers.set(type, drawer);
+            }
+        }
+        this._options = loadContainerOptions(this._engine, this, this._initialSourceOptions, this.sourceOptions);
+        this.actualOptions = loadContainerOptions(this._engine, this, this._options);
+        const availablePlugins = this._engine.plugins.getAvailablePlugins(this);
+        for (const [id, plugin] of availablePlugins) {
+            this.plugins.set(id, plugin);
+        }
+        this.retina.init();
+        await this.canvas.init();
+        this.updateActualOptions();
+        this.canvas.initBackground();
+        this.canvas.resize();
+        this.zLayers = this.actualOptions.zLayers;
+        this._duration = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_8__.getRangeValue)(this.actualOptions.duration) * 1000;
+        this._delay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_8__.getRangeValue)(this.actualOptions.delay) * 1000;
+        this._lifeTime = 0;
+        this.fpsLimit = this.actualOptions.fpsLimit > 0 ? this.actualOptions.fpsLimit : 120;
+        this.smooth = this.actualOptions.smooth;
+        for (const [, drawer] of this.drawers) {
+            drawer.init && (await drawer.init(this));
+        }
+        for (const [, plugin] of this.plugins) {
+            plugin.init && (await plugin.init());
+        }
+        this._engine.dispatchEvent("containerInit", { container: this });
+        this.particles.init();
+        this.particles.setDensity();
+        for (const [, plugin] of this.plugins) {
+            plugin.particlesSetup && plugin.particlesSetup();
+        }
+        this._engine.dispatchEvent("particlesSetup", { container: this });
+    }
+    async loadTheme(name) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this._currentTheme = name;
+        await this.refresh();
+    }
+    pause() {
+        if (!guardCheck(this)) {
+            return;
+        }
+        if (this._drawAnimationFrame !== undefined) {
+            cancelAnimationFrame(this._drawAnimationFrame);
+            delete this._drawAnimationFrame;
+        }
+        if (this._paused) {
+            return;
+        }
+        for (const [, plugin] of this.plugins) {
+            plugin.pause && plugin.pause();
+        }
+        if (!this.pageHidden) {
+            this._paused = true;
+        }
+        this._engine.dispatchEvent("containerPaused", { container: this });
+    }
+    play(force) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        const needsUpdate = this._paused || force;
+        if (this._firstStart && !this.actualOptions.autoPlay) {
+            this._firstStart = false;
+            return;
+        }
+        if (this._paused) {
+            this._paused = false;
+        }
+        if (needsUpdate) {
+            for (const [, plugin] of this.plugins) {
+                if (plugin.play) {
+                    plugin.play();
+                }
+            }
+        }
+        this._engine.dispatchEvent("containerPlay", { container: this });
+        this.draw(needsUpdate || false);
+    }
+    async refresh() {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this.stop();
+        return this.start();
+    }
+    async reset() {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this._initialSourceOptions = undefined;
+        this._options = loadContainerOptions(this._engine, this);
+        this.actualOptions = loadContainerOptions(this._engine, this, this._options);
+        return this.refresh();
+    }
+    setNoise(noiseOrGenerator, init, update) {
+        if (!guardCheck(this)) {
+            return;
+        }
+        this.setPath(noiseOrGenerator, init, update);
+    }
+    setPath(pathOrGenerator, init, update) {
+        if (!pathOrGenerator || !guardCheck(this)) {
+            return;
+        }
+        const pathGenerator = { ...defaultPathGenerator };
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.isFunction)(pathOrGenerator)) {
+            pathGenerator.generate = pathOrGenerator;
+            if (init) {
+                pathGenerator.init = init;
+            }
+            if (update) {
+                pathGenerator.update = update;
+            }
+        }
+        else {
+            const oldGenerator = pathGenerator;
+            pathGenerator.generate = pathOrGenerator.generate || oldGenerator.generate;
+            pathGenerator.init = pathOrGenerator.init || oldGenerator.init;
+            pathGenerator.update = pathOrGenerator.update || oldGenerator.update;
+        }
+        this.addPath(defaultPathGeneratorKey, pathGenerator, true);
+    }
+    async start() {
+        if (!guardCheck(this) || this.started) {
+            return;
+        }
+        await this.init();
+        this.started = true;
+        await new Promise((resolve) => {
+            this._delayTimeout = setTimeout(async () => {
+                this._eventListeners.addListeners();
+                if (this.interactivity.element instanceof HTMLElement && this._intersectionObserver) {
+                    this._intersectionObserver.observe(this.interactivity.element);
+                }
+                for (const [, plugin] of this.plugins) {
+                    plugin.start && (await plugin.start());
+                }
+                this._engine.dispatchEvent("containerStarted", { container: this });
+                this.play();
+                resolve();
+            }, this._delay);
+        });
+    }
+    stop() {
+        if (!guardCheck(this) || !this.started) {
+            return;
+        }
+        if (this._delayTimeout) {
+            clearTimeout(this._delayTimeout);
+            delete this._delayTimeout;
+        }
+        this._firstStart = true;
+        this.started = false;
+        this._eventListeners.removeListeners();
+        this.pause();
+        this.particles.clear();
+        this.canvas.stop();
+        if (this.interactivity.element instanceof HTMLElement && this._intersectionObserver) {
+            this._intersectionObserver.unobserve(this.interactivity.element);
+        }
+        for (const [, plugin] of this.plugins) {
+            plugin.stop && plugin.stop();
+        }
+        for (const key of this.plugins.keys()) {
+            this.plugins.delete(key);
+        }
+        this._sourceOptions = this._options;
+        this._engine.dispatchEvent("containerStopped", { container: this });
+    }
+    updateActualOptions() {
+        this.actualOptions.responsive = [];
+        const newMaxWidth = this.actualOptions.setResponsive(this.canvas.size.width, this.retina.pixelRatio, this._options);
+        this.actualOptions.setTheme(this._currentTheme);
+        if (this.responsiveMaxWidth === newMaxWidth) {
+            return false;
+        }
+        this.responsiveMaxWidth = newMaxWidth;
+        return true;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Engine.js":
+/*!************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Engine.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Engine": () => (/* binding */ Engine)
+/* harmony export */ });
+/* harmony import */ var _Utils_Constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Container */ "./node_modules/tsparticles-engine/esm/Core/Container.js");
+/* harmony import */ var _Utils_EventDispatcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Utils/EventDispatcher */ "./node_modules/tsparticles-engine/esm/Utils/EventDispatcher.js");
+/* harmony import */ var _Utils_Plugins__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Utils/Plugins */ "./node_modules/tsparticles-engine/esm/Core/Utils/Plugins.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+
+
+
+async function getDataFromUrl(data) {
+    const url = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromSingleOrMultiple)(data.url, data.index);
+    if (!url) {
+        return data.fallback;
+    }
+    const response = await fetch(url);
+    if (response.ok) {
+        return response.json();
+    }
+    (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.getLogger)().error(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.errorPrefix} ${response.status} while retrieving config file`);
+    return data.fallback;
+}
+function isParamsEmpty(params) {
+    return !params.id && !params.element && !params.url && !params.options;
+}
+function isParams(obj) {
+    return !isParamsEmpty(obj);
+}
+class Engine {
+    constructor() {
+        this._configs = new Map();
+        this._domArray = [];
+        this._eventDispatcher = new _Utils_EventDispatcher__WEBPACK_IMPORTED_MODULE_2__.EventDispatcher();
+        this._initialized = false;
+        this.plugins = new _Utils_Plugins__WEBPACK_IMPORTED_MODULE_3__.Plugins(this);
+    }
+    get configs() {
+        const res = {};
+        for (const [name, config] of this._configs) {
+            res[name] = config;
+        }
+        return res;
+    }
+    get version() {
+        return "2.12.0";
+    }
+    addConfig(nameOrConfig, config) {
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(nameOrConfig)) {
+            if (config) {
+                config.name = nameOrConfig;
+                this._configs.set(nameOrConfig, config);
+            }
+        }
+        else {
+            this._configs.set(nameOrConfig.name ?? "default", nameOrConfig);
+        }
+    }
+    addEventListener(type, listener) {
+        this._eventDispatcher.addEventListener(type, listener);
+    }
+    async addInteractor(name, interactorInitializer, refresh = true) {
+        this.plugins.addInteractor(name, interactorInitializer);
+        await this.refresh(refresh);
+    }
+    async addMover(name, moverInitializer, refresh = true) {
+        this.plugins.addParticleMover(name, moverInitializer);
+        await this.refresh(refresh);
+    }
+    async addParticleUpdater(name, updaterInitializer, refresh = true) {
+        this.plugins.addParticleUpdater(name, updaterInitializer);
+        await this.refresh(refresh);
+    }
+    async addPathGenerator(name, generator, refresh = true) {
+        this.plugins.addPathGenerator(name, generator);
+        await this.refresh(refresh);
+    }
+    async addPlugin(plugin, refresh = true) {
+        this.plugins.addPlugin(plugin);
+        await this.refresh(refresh);
+    }
+    async addPreset(preset, options, override = false, refresh = true) {
+        this.plugins.addPreset(preset, options, override);
+        await this.refresh(refresh);
+    }
+    async addShape(shape, drawer, initOrRefresh, afterEffectOrRefresh, destroyOrRefresh, refresh = true) {
+        let customDrawer;
+        let realRefresh = refresh, realInit, realAfterEffect, realDestroy;
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isBoolean)(initOrRefresh)) {
+            realRefresh = initOrRefresh;
+            realInit = undefined;
+        }
+        else {
+            realInit = initOrRefresh;
+        }
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isBoolean)(afterEffectOrRefresh)) {
+            realRefresh = afterEffectOrRefresh;
+            realAfterEffect = undefined;
+        }
+        else {
+            realAfterEffect = afterEffectOrRefresh;
+        }
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isBoolean)(destroyOrRefresh)) {
+            realRefresh = destroyOrRefresh;
+            realDestroy = undefined;
+        }
+        else {
+            realDestroy = destroyOrRefresh;
+        }
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isFunction)(drawer)) {
+            customDrawer = {
+                afterEffect: realAfterEffect,
+                destroy: realDestroy,
+                draw: drawer,
+                init: realInit,
+            };
+        }
+        else {
+            customDrawer = drawer;
+        }
+        this.plugins.addShapeDrawer(shape, customDrawer);
+        await this.refresh(realRefresh);
+    }
+    dispatchEvent(type, args) {
+        this._eventDispatcher.dispatchEvent(type, args);
+    }
+    dom() {
+        return this._domArray;
+    }
+    domItem(index) {
+        const dom = this.dom(), item = dom[index];
+        if (!item || item.destroyed) {
+            dom.splice(index, 1);
+            return;
+        }
+        return item;
+    }
+    init() {
+        if (this._initialized) {
+            return;
+        }
+        this._initialized = true;
+    }
+    async load(tagIdOrOptionsOrParams, options) {
+        return this.loadFromArray(tagIdOrOptionsOrParams, options);
+    }
+    async loadFromArray(tagIdOrOptionsOrParams, optionsOrIndex, index) {
+        let params;
+        if (!isParams(tagIdOrOptionsOrParams)) {
+            params = {};
+            if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(tagIdOrOptionsOrParams)) {
+                params.id = tagIdOrOptionsOrParams;
+            }
+            else {
+                params.options = tagIdOrOptionsOrParams;
+            }
+            if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(optionsOrIndex)) {
+                params.index = optionsOrIndex;
+            }
+            else {
+                params.options = optionsOrIndex ?? params.options;
+            }
+            params.index = index ?? params.index;
+        }
+        else {
+            params = tagIdOrOptionsOrParams;
+        }
+        return this._loadParams(params);
+    }
+    async loadJSON(tagId, pathConfigJson, index) {
+        let url, id;
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(pathConfigJson) || pathConfigJson === undefined) {
+            url = tagId;
+        }
+        else {
+            id = tagId;
+            url = pathConfigJson;
+        }
+        return this._loadParams({ id: id, url, index });
+    }
+    async refresh(refresh = true) {
+        if (!refresh) {
+            return;
+        }
+        this.dom().forEach((t) => t.refresh());
+    }
+    removeEventListener(type, listener) {
+        this._eventDispatcher.removeEventListener(type, listener);
+    }
+    async set(id, element, options, index) {
+        const params = { index };
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(id)) {
+            params.id = id;
+        }
+        else {
+            params.element = id;
+        }
+        if (element instanceof HTMLElement) {
+            params.element = element;
+        }
+        else {
+            params.options = element;
+        }
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(options)) {
+            params.index = options;
+        }
+        else {
+            params.options = options ?? params.options;
+        }
+        return this._loadParams(params);
+    }
+    async setJSON(id, element, pathConfigJson, index) {
+        const params = {};
+        if (id instanceof HTMLElement) {
+            params.element = id;
+            params.url = element;
+            params.index = pathConfigJson;
+        }
+        else {
+            params.id = id;
+            params.element = element;
+            params.url = pathConfigJson;
+            params.index = index;
+        }
+        return this._loadParams(params);
+    }
+    setOnClickHandler(callback) {
+        const dom = this.dom();
+        if (!dom.length) {
+            throw new Error(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.errorPrefix} can only set click handlers after calling tsParticles.load()`);
+        }
+        for (const domItem of dom) {
+            domItem.addClickHandler(callback);
+        }
+    }
+    async _loadParams(params) {
+        const id = params.id ?? `tsparticles${Math.floor((0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_4__.getRandom)() * 10000)}`, { index, url } = params, options = url ? await getDataFromUrl({ fallback: params.options, url, index }) : params.options;
+        let domContainer = params.element ?? document.getElementById(id);
+        if (!domContainer) {
+            domContainer = document.createElement("div");
+            domContainer.id = id;
+            document.body.append(domContainer);
+        }
+        const currentOptions = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromSingleOrMultiple)(options, index), dom = this.dom(), oldIndex = dom.findIndex((v) => v.id === id);
+        if (oldIndex >= 0) {
+            const old = this.domItem(oldIndex);
+            if (old && !old.destroyed) {
+                old.destroy();
+                dom.splice(oldIndex, 1);
+            }
+        }
+        let canvasEl;
+        if (domContainer.tagName.toLowerCase() === "canvas") {
+            canvasEl = domContainer;
+            canvasEl.dataset[_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.generatedAttribute] = "false";
+        }
+        else {
+            const existingCanvases = domContainer.getElementsByTagName("canvas");
+            if (existingCanvases.length) {
+                canvasEl = existingCanvases[0];
+                canvasEl.dataset[_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.generatedAttribute] = "false";
+            }
+            else {
+                canvasEl = document.createElement("canvas");
+                canvasEl.dataset[_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.generatedAttribute] = "true";
+                domContainer.appendChild(canvasEl);
+            }
+        }
+        if (!canvasEl.style.width) {
+            canvasEl.style.width = "100%";
+        }
+        if (!canvasEl.style.height) {
+            canvasEl.style.height = "100%";
+        }
+        const newItem = new _Container__WEBPACK_IMPORTED_MODULE_5__.Container(this, id, currentOptions);
+        if (oldIndex >= 0) {
+            dom.splice(oldIndex, 0, newItem);
+        }
+        else {
+            dom.push(newItem);
+        }
+        newItem.canvas.loadCanvas(canvasEl);
+        await newItem.start();
+        return newItem;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Particle.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Particle.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Particle": () => (/* binding */ Particle)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Utils/ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+/* harmony import */ var _Options_Classes_Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Options/Classes/Interactivity/Interactivity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Interactivity.js");
+/* harmony import */ var _Utils_Vector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Utils/Vector */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js");
+/* harmony import */ var _Utils_Vector3d__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Utils/Vector3d */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector3d.js");
+/* harmony import */ var _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Utils/CanvasUtils */ "./node_modules/tsparticles-engine/esm/Utils/CanvasUtils.js");
+/* harmony import */ var _Utils_Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+/* harmony import */ var _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Utils/OptionsUtils */ "./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js");
+
+
+
+
+
+
+
+
+
+const fixOutMode = (data) => {
+    if (!(0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isInArray)(data.outMode, data.checkModes)) {
+        return;
+    }
+    const diameter = data.radius * 2;
+    if (data.coord > data.maxCoord - diameter) {
+        data.setCb(-data.radius);
+    }
+    else if (data.coord < diameter) {
+        data.setCb(data.radius);
+    }
+};
+class Particle {
+    constructor(engine, id, container, position, overrideOptions, group) {
+        this.container = container;
+        this._calcPosition = (container, position, zIndex, tryCount = 0) => {
+            for (const [, plugin] of container.plugins) {
+                const pluginPos = plugin.particlePosition !== undefined ? plugin.particlePosition(position, this) : undefined;
+                if (pluginPos) {
+                    return _Utils_Vector3d__WEBPACK_IMPORTED_MODULE_1__.Vector3d.create(pluginPos.x, pluginPos.y, zIndex);
+                }
+            }
+            const canvasSize = container.canvas.size, exactPosition = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.calcExactPositionOrRandomFromSize)({
+                size: canvasSize,
+                position: position,
+            }), pos = _Utils_Vector3d__WEBPACK_IMPORTED_MODULE_1__.Vector3d.create(exactPosition.x, exactPosition.y, zIndex), radius = this.getRadius(), outModes = this.options.move.outModes, fixHorizontal = (outMode) => {
+                fixOutMode({
+                    outMode,
+                    checkModes: ["bounce", "bounce-horizontal"],
+                    coord: pos.x,
+                    maxCoord: container.canvas.size.width,
+                    setCb: (value) => (pos.x += value),
+                    radius,
+                });
+            }, fixVertical = (outMode) => {
+                fixOutMode({
+                    outMode,
+                    checkModes: ["bounce", "bounce-vertical"],
+                    coord: pos.y,
+                    maxCoord: container.canvas.size.height,
+                    setCb: (value) => (pos.y += value),
+                    radius,
+                });
+            };
+            fixHorizontal(outModes.left ?? outModes.default);
+            fixHorizontal(outModes.right ?? outModes.default);
+            fixVertical(outModes.top ?? outModes.default);
+            fixVertical(outModes.bottom ?? outModes.default);
+            if (this._checkOverlap(pos, tryCount)) {
+                return this._calcPosition(container, undefined, zIndex, tryCount + 1);
+            }
+            return pos;
+        };
+        this._calculateVelocity = () => {
+            const baseVelocity = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getParticleBaseVelocity)(this.direction), res = baseVelocity.copy(), moveOptions = this.options.move;
+            if (moveOptions.direction === "inside" || moveOptions.direction === "outside") {
+                return res;
+            }
+            const rad = (Math.PI / 180) * (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getRangeValue)(moveOptions.angle.value), radOffset = (Math.PI / 180) * (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getRangeValue)(moveOptions.angle.offset), range = {
+                left: radOffset - rad / 2,
+                right: radOffset + rad / 2,
+            };
+            if (!moveOptions.straight) {
+                res.angle += (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.randomInRange)((0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.setRangeValue)(range.left, range.right));
+            }
+            if (moveOptions.random && typeof moveOptions.speed === "number") {
+                res.length *= (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getRandom)();
+            }
+            return res;
+        };
+        this._checkOverlap = (pos, tryCount = 0) => {
+            const collisionsOptions = this.options.collisions, radius = this.getRadius();
+            if (!collisionsOptions.enable) {
+                return false;
+            }
+            const overlapOptions = collisionsOptions.overlap;
+            if (overlapOptions.enable) {
+                return false;
+            }
+            const retries = overlapOptions.retries;
+            if (retries >= 0 && tryCount > retries) {
+                throw new Error(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.errorPrefix} particle is overlapping and can't be placed`);
+            }
+            return !!this.container.particles.find((particle) => (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getDistance)(pos, particle.position) < radius + particle.getRadius());
+        };
+        this._getRollColor = (color) => {
+            if (!color || !this.roll || (!this.backColor && !this.roll.alter)) {
+                return color;
+            }
+            const backFactor = this.roll.horizontal && this.roll.vertical ? 2 : 1, backSum = this.roll.horizontal ? Math.PI / 2 : 0, rolled = Math.floor(((this.roll.angle ?? 0) + backSum) / (Math.PI / backFactor)) % 2;
+            if (!rolled) {
+                return color;
+            }
+            if (this.backColor) {
+                return this.backColor;
+            }
+            if (this.roll.alter) {
+                return (0,_Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_4__.alterHsl)(color, this.roll.alter.type, this.roll.alter.value);
+            }
+            return color;
+        };
+        this._initPosition = (position) => {
+            const container = this.container, zIndexValue = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getRangeValue)(this.options.zIndex.value);
+            this.position = this._calcPosition(container, position, (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.clamp)(zIndexValue, 0, container.zLayers));
+            this.initialPosition = this.position.copy();
+            const canvasSize = container.canvas.size;
+            this.moveCenter = {
+                ...(0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.getPosition)(this.options.move.center, canvasSize),
+                radius: this.options.move.center.radius ?? 0,
+                mode: this.options.move.center.mode ?? "percent",
+            };
+            this.direction = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getParticleDirectionAngle)(this.options.move.direction, this.position, this.moveCenter);
+            switch (this.options.move.direction) {
+                case "inside":
+                    this.outType = "inside";
+                    break;
+                case "outside":
+                    this.outType = "outside";
+                    break;
+            }
+            this.offset = _Utils_Vector__WEBPACK_IMPORTED_MODULE_5__.Vector.origin;
+        };
+        this._loadShapeData = (shapeOptions, reduceDuplicates) => {
+            const shapeData = shapeOptions.options[this.shape];
+            if (!shapeData) {
+                return;
+            }
+            return (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)({
+                close: shapeOptions.close,
+                fill: shapeOptions.fill,
+            }, (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromSingleOrMultiple)(shapeData, this.id, reduceDuplicates));
+        };
+        this._engine = engine;
+        this.init(id, position, overrideOptions, group);
+    }
+    destroy(override) {
+        if (this.unbreakable || this.destroyed) {
+            return;
+        }
+        this.destroyed = true;
+        this.bubble.inRange = false;
+        this.slow.inRange = false;
+        const container = this.container, pathGenerator = this.pathGenerator;
+        for (const [, plugin] of container.plugins) {
+            if (plugin.particleDestroyed) {
+                plugin.particleDestroyed(this, override);
+            }
+        }
+        for (const updater of container.particles.updaters) {
+            if (updater.particleDestroyed) {
+                updater.particleDestroyed(this, override);
+            }
+        }
+        if (pathGenerator) {
+            pathGenerator.reset(this);
+        }
+    }
+    draw(delta) {
+        const container = this.container;
+        for (const [, plugin] of container.plugins) {
+            container.canvas.drawParticlePlugin(plugin, this, delta);
+        }
+        container.canvas.drawParticle(this, delta);
+    }
+    getFillColor() {
+        return this._getRollColor(this.bubble.color ?? (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_6__.getHslFromAnimation)(this.color));
+    }
+    getMass() {
+        return (this.getRadius() ** 2 * Math.PI) / 2;
+    }
+    getPosition() {
+        return {
+            x: this.position.x + this.offset.x,
+            y: this.position.y + this.offset.y,
+            z: this.position.z,
+        };
+    }
+    getRadius() {
+        return this.bubble.radius ?? this.size.value;
+    }
+    getStrokeColor() {
+        return this._getRollColor(this.bubble.color ?? (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_6__.getHslFromAnimation)(this.strokeColor));
+    }
+    init(id, position, overrideOptions, group) {
+        const container = this.container, engine = this._engine;
+        this.id = id;
+        this.group = group;
+        this.fill = true;
+        this.pathRotation = false;
+        this.close = true;
+        this.lastPathTime = 0;
+        this.destroyed = false;
+        this.unbreakable = false;
+        this.rotation = 0;
+        this.misplaced = false;
+        this.retina = {
+            maxDistance: {},
+        };
+        this.outType = "normal";
+        this.ignoresResizeRatio = true;
+        const pxRatio = container.retina.pixelRatio, mainOptions = container.actualOptions, particlesOptions = (0,_Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_7__.loadParticlesOptions)(this._engine, container, mainOptions.particles), shapeType = particlesOptions.shape.type, { reduceDuplicates } = particlesOptions;
+        this.shape = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromSingleOrMultiple)(shapeType, this.id, reduceDuplicates);
+        const shapeOptions = particlesOptions.shape;
+        if (overrideOptions && overrideOptions.shape && overrideOptions.shape.type) {
+            const overrideShapeType = overrideOptions.shape.type, shape = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromSingleOrMultiple)(overrideShapeType, this.id, reduceDuplicates);
+            if (shape) {
+                this.shape = shape;
+                shapeOptions.load(overrideOptions.shape);
+            }
+        }
+        this.shapeData = this._loadShapeData(shapeOptions, reduceDuplicates);
+        particlesOptions.load(overrideOptions);
+        const shapeData = this.shapeData;
+        if (shapeData) {
+            particlesOptions.load(shapeData.particles);
+        }
+        const interactivity = new _Options_Classes_Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_8__.Interactivity(engine, container);
+        interactivity.load(container.actualOptions.interactivity);
+        interactivity.load(particlesOptions.interactivity);
+        this.interactivity = interactivity;
+        this.fill = shapeData?.fill ?? particlesOptions.shape.fill;
+        this.close = shapeData?.close ?? particlesOptions.shape.close;
+        this.options = particlesOptions;
+        const pathOptions = this.options.move.path;
+        this.pathDelay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getValue)(pathOptions.delay) * 1000;
+        if (pathOptions.generator) {
+            this.pathGenerator = this._engine.plugins.getPathGenerator(pathOptions.generator);
+            if (this.pathGenerator && container.addPath(pathOptions.generator, this.pathGenerator)) {
+                this.pathGenerator.init(container);
+            }
+        }
+        container.retina.initParticle(this);
+        this.size = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.initParticleNumericAnimationValue)(this.options.size, pxRatio);
+        this.bubble = {
+            inRange: false,
+        };
+        this.slow = {
+            inRange: false,
+            factor: 1,
+        };
+        this._initPosition(position);
+        this.initialVelocity = this._calculateVelocity();
+        this.velocity = this.initialVelocity.copy();
+        this.moveDecay = 1 - (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.getRangeValue)(this.options.move.decay);
+        const particles = container.particles;
+        particles.needsSort = particles.needsSort || particles.lastZIndex < this.position.z;
+        particles.lastZIndex = this.position.z;
+        this.zIndexFactor = this.position.z / container.zLayers;
+        this.sides = 24;
+        let drawer = container.drawers.get(this.shape);
+        if (!drawer) {
+            drawer = this._engine.plugins.getShapeDrawer(this.shape);
+            if (drawer) {
+                container.drawers.set(this.shape, drawer);
+            }
+        }
+        if (drawer && drawer.loadShape) {
+            drawer.loadShape(this);
+        }
+        const sideCountFunc = drawer?.getSidesCount;
+        if (sideCountFunc) {
+            this.sides = sideCountFunc(this);
+        }
+        this.spawning = false;
+        this.shadowColor = (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_6__.rangeColorToRgb)(this.options.shadow.color);
+        for (const updater of container.particles.updaters) {
+            updater.init(this);
+        }
+        for (const mover of container.particles.movers) {
+            mover.init && mover.init(this);
+        }
+        if (drawer && drawer.particleInit) {
+            drawer.particleInit(container, this);
+        }
+        for (const [, plugin] of container.plugins) {
+            plugin.particleCreated && plugin.particleCreated(this);
+        }
+    }
+    isInsideCanvas() {
+        const radius = this.getRadius(), canvasSize = this.container.canvas.size, position = this.position;
+        return (position.x >= -radius &&
+            position.y >= -radius &&
+            position.y <= canvasSize.height + radius &&
+            position.x <= canvasSize.width + radius);
+    }
+    isVisible() {
+        return !this.destroyed && !this.spawning && this.isInsideCanvas();
+    }
+    reset() {
+        for (const updater of this.container.particles.updaters) {
+            updater.reset && updater.reset(this);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Particles.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Particles.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Particles": () => (/* binding */ Particles)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Utils_InteractionManager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Utils/InteractionManager */ "./node_modules/tsparticles-engine/esm/Core/Utils/InteractionManager.js");
+/* harmony import */ var _Particle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Particle */ "./node_modules/tsparticles-engine/esm/Core/Particle.js");
+/* harmony import */ var _Utils_Point__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Utils/Point */ "./node_modules/tsparticles-engine/esm/Core/Utils/Point.js");
+/* harmony import */ var _Utils_QuadTree__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Utils/QuadTree */ "./node_modules/tsparticles-engine/esm/Core/Utils/QuadTree.js");
+/* harmony import */ var _Utils_Rectangle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils/Rectangle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js");
+/* harmony import */ var _Utils_Constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+
+
+
+
+
+
+
+const qTreeCapacity = 4;
+const qTreeRectangle = (canvasSize) => {
+    return new _Utils_Rectangle__WEBPACK_IMPORTED_MODULE_0__.Rectangle(-canvasSize.width / 4, -canvasSize.height / 4, (canvasSize.width * 3) / 2, (canvasSize.height * 3) / 2);
+};
+class Particles {
+    constructor(engine, container) {
+        this._applyDensity = (options, manualCount, group) => {
+            if (!options.number.density?.enable) {
+                return;
+            }
+            const numberOptions = options.number, densityFactor = this._initDensityFactor(numberOptions.density), optParticlesNumber = numberOptions.value, optParticlesLimit = numberOptions.limit > 0 ? numberOptions.limit : optParticlesNumber, particlesNumber = Math.min(optParticlesNumber, optParticlesLimit) * densityFactor + manualCount, particlesCount = Math.min(this.count, this.filter((t) => t.group === group).length);
+            this.limit = numberOptions.limit * densityFactor;
+            if (particlesCount < particlesNumber) {
+                this.push(Math.abs(particlesNumber - particlesCount), undefined, options, group);
+            }
+            else if (particlesCount > particlesNumber) {
+                this.removeQuantity(particlesCount - particlesNumber, group);
+            }
+        };
+        this._initDensityFactor = (densityOptions) => {
+            const container = this._container;
+            if (!container.canvas.element || !densityOptions.enable) {
+                return 1;
+            }
+            const canvas = container.canvas.element, pxRatio = container.retina.pixelRatio;
+            return (canvas.width * canvas.height) / (densityOptions.factor * pxRatio ** 2 * densityOptions.area);
+        };
+        this._pushParticle = (position, overrideOptions, group, initializer) => {
+            try {
+                let particle = this.pool.pop();
+                if (particle) {
+                    particle.init(this._nextId, position, overrideOptions, group);
+                }
+                else {
+                    particle = new _Particle__WEBPACK_IMPORTED_MODULE_1__.Particle(this._engine, this._nextId, this._container, position, overrideOptions, group);
+                }
+                let canAdd = true;
+                if (initializer) {
+                    canAdd = initializer(particle);
+                }
+                if (!canAdd) {
+                    return;
+                }
+                this._array.push(particle);
+                this._zArray.push(particle);
+                this._nextId++;
+                this._engine.dispatchEvent("particleAdded", {
+                    container: this._container,
+                    data: {
+                        particle,
+                    },
+                });
+                return particle;
+            }
+            catch (e) {
+                (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.getLogger)().warning(`${_Utils_Constants__WEBPACK_IMPORTED_MODULE_3__.errorPrefix} adding particle: ${e}`);
+                return;
+            }
+        };
+        this._removeParticle = (index, group, override) => {
+            const particle = this._array[index];
+            if (!particle || particle.group !== group) {
+                return false;
+            }
+            particle.destroy(override);
+            const zIdx = this._zArray.indexOf(particle);
+            this._array.splice(index, 1);
+            this._zArray.splice(zIdx, 1);
+            this.pool.push(particle);
+            this._engine.dispatchEvent("particleRemoved", {
+                container: this._container,
+                data: {
+                    particle,
+                },
+            });
+            return true;
+        };
+        this._engine = engine;
+        this._container = container;
+        this._nextId = 0;
+        this._array = [];
+        this._zArray = [];
+        this.pool = [];
+        this.limit = 0;
+        this.needsSort = false;
+        this.lastZIndex = 0;
+        this._interactionManager = new _Utils_InteractionManager__WEBPACK_IMPORTED_MODULE_4__.InteractionManager(engine, container);
+        const canvasSize = container.canvas.size;
+        this.quadTree = new _Utils_QuadTree__WEBPACK_IMPORTED_MODULE_5__.QuadTree(qTreeRectangle(canvasSize), qTreeCapacity);
+        this.movers = this._engine.plugins.getMovers(container, true);
+        this.updaters = this._engine.plugins.getUpdaters(container, true);
+    }
+    get count() {
+        return this._array.length;
+    }
+    addManualParticles() {
+        const container = this._container, options = container.actualOptions;
+        for (const particle of options.manualParticles) {
+            this.addParticle(particle.position ? (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.getPosition)(particle.position, container.canvas.size) : undefined, particle.options);
+        }
+    }
+    addParticle(position, overrideOptions, group, initializer) {
+        const container = this._container, options = container.actualOptions, limit = options.particles.number.limit;
+        if (limit > 0) {
+            const countToRemove = this.count + 1 - limit;
+            if (countToRemove > 0) {
+                this.removeQuantity(countToRemove);
+            }
+        }
+        return this._pushParticle(position, overrideOptions, group, initializer);
+    }
+    clear() {
+        this._array = [];
+        this._zArray = [];
+    }
+    destroy() {
+        this._array = [];
+        this._zArray = [];
+        this.movers = [];
+        this.updaters = [];
+    }
+    async draw(delta) {
+        const container = this._container;
+        container.canvas.clear();
+        await this.update(delta);
+        for (const [, plugin] of container.plugins) {
+            container.canvas.drawPlugin(plugin, delta);
+        }
+        for (const p of this._zArray) {
+            p.draw(delta);
+        }
+    }
+    filter(condition) {
+        return this._array.filter(condition);
+    }
+    find(condition) {
+        return this._array.find(condition);
+    }
+    handleClickMode(mode) {
+        this._interactionManager.handleClickMode(mode);
+    }
+    init() {
+        const container = this._container, options = container.actualOptions;
+        this.lastZIndex = 0;
+        this.needsSort = false;
+        let handled = false;
+        this.updaters = this._engine.plugins.getUpdaters(container, true);
+        this._interactionManager.init();
+        for (const [, plugin] of container.plugins) {
+            if (plugin.particlesInitialization !== undefined) {
+                handled = plugin.particlesInitialization();
+            }
+            if (handled) {
+                break;
+            }
+        }
+        this._interactionManager.init();
+        for (const [, pathGenerator] of container.pathGenerators) {
+            pathGenerator.init(container);
+        }
+        this.addManualParticles();
+        if (!handled) {
+            for (const group in options.particles.groups) {
+                const groupOptions = options.particles.groups[group];
+                for (let i = this.count, j = 0; j < groupOptions.number?.value && i < options.particles.number.value; i++, j++) {
+                    this.addParticle(undefined, groupOptions, group);
+                }
+            }
+            for (let i = this.count; i < options.particles.number.value; i++) {
+                this.addParticle();
+            }
+        }
+    }
+    push(nb, mouse, overrideOptions, group) {
+        this.pushing = true;
+        for (let i = 0; i < nb; i++) {
+            this.addParticle(mouse?.position, overrideOptions, group);
+        }
+        this.pushing = false;
+    }
+    async redraw() {
+        this.clear();
+        this.init();
+        await this.draw({ value: 0, factor: 0 });
+    }
+    remove(particle, group, override) {
+        this.removeAt(this._array.indexOf(particle), undefined, group, override);
+    }
+    removeAt(index, quantity = 1, group, override) {
+        if (index < 0 || index > this.count) {
+            return;
+        }
+        let deleted = 0;
+        for (let i = index; deleted < quantity && i < this.count; i++) {
+            this._removeParticle(i--, group, override) && deleted++;
+        }
+    }
+    removeQuantity(quantity, group) {
+        this.removeAt(0, quantity, group);
+    }
+    setDensity() {
+        const options = this._container.actualOptions, groups = options.particles.groups;
+        for (const group in groups) {
+            this._applyDensity(groups[group], 0, group);
+        }
+        this._applyDensity(options.particles, options.manualParticles.length);
+    }
+    async update(delta) {
+        const container = this._container, particlesToDelete = new Set();
+        this.quadTree = new _Utils_QuadTree__WEBPACK_IMPORTED_MODULE_5__.QuadTree(qTreeRectangle(container.canvas.size), qTreeCapacity);
+        for (const [, pathGenerator] of container.pathGenerators) {
+            pathGenerator.update();
+        }
+        for (const [, plugin] of container.plugins) {
+            plugin.update && plugin.update(delta);
+        }
+        for (const particle of this._array) {
+            const resizeFactor = container.canvas.resizeFactor;
+            if (resizeFactor && !particle.ignoresResizeRatio) {
+                particle.position.x *= resizeFactor.width;
+                particle.position.y *= resizeFactor.height;
+                particle.initialPosition.x *= resizeFactor.width;
+                particle.initialPosition.y *= resizeFactor.height;
+            }
+            particle.ignoresResizeRatio = false;
+            await this._interactionManager.reset(particle);
+            for (const [, plugin] of this._container.plugins) {
+                if (particle.destroyed) {
+                    break;
+                }
+                if (plugin.particleUpdate) {
+                    plugin.particleUpdate(particle, delta);
+                }
+            }
+            for (const mover of this.movers) {
+                mover.isEnabled(particle) && mover.move(particle, delta);
+            }
+            if (particle.destroyed) {
+                particlesToDelete.add(particle);
+                continue;
+            }
+            this.quadTree.insert(new _Utils_Point__WEBPACK_IMPORTED_MODULE_6__.Point(particle.getPosition(), particle));
+        }
+        if (particlesToDelete.size) {
+            const checkDelete = (p) => !particlesToDelete.has(p);
+            this._array = this.filter(checkDelete);
+            this._zArray = this._zArray.filter(checkDelete);
+            this.pool.push(...particlesToDelete);
+        }
+        await this._interactionManager.externalInteract(delta);
+        for (const particle of this._array) {
+            for (const updater of this.updaters) {
+                updater.update(particle, delta);
+            }
+            if (!particle.destroyed && !particle.spawning) {
+                await this._interactionManager.particlesInteract(particle, delta);
+            }
+        }
+        delete container.canvas.resizeFactor;
+        if (this.needsSort) {
+            const zArray = this._zArray;
+            zArray.sort((a, b) => b.position.z - a.position.z || a.id - b.id);
+            this.lastZIndex = zArray[zArray.length - 1].position.z;
+            this.needsSort = false;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Retina.js":
+/*!************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Retina.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Retina": () => (/* binding */ Retina)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+class Retina {
+    constructor(container) {
+        this.container = container;
+        this.pixelRatio = 1;
+        this.reduceFactor = 1;
+    }
+    init() {
+        const container = this.container, options = container.actualOptions;
+        this.pixelRatio = !options.detectRetina || (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isSsr)() ? 1 : window.devicePixelRatio;
+        this.reduceFactor = 1;
+        const ratio = this.pixelRatio;
+        if (container.canvas.element) {
+            const element = container.canvas.element;
+            container.canvas.size.width = element.offsetWidth * ratio;
+            container.canvas.size.height = element.offsetHeight * ratio;
+        }
+        const particles = options.particles, moveOptions = particles.move;
+        this.attractDistance = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.attract.distance) * ratio;
+        this.maxSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.gravity.maxSpeed) * ratio;
+        this.sizeAnimationSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(particles.size.animation.speed) * ratio;
+    }
+    initParticle(particle) {
+        const options = particle.options, ratio = this.pixelRatio, moveOptions = options.move, moveDistance = moveOptions.distance, props = particle.retina;
+        props.attractDistance = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.attract.distance) * ratio;
+        props.moveDrift = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.drift) * ratio;
+        props.moveSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.speed) * ratio;
+        props.sizeAnimationSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(options.size.animation.speed) * ratio;
+        const maxDistance = props.maxDistance;
+        maxDistance.horizontal = moveDistance.horizontal !== undefined ? moveDistance.horizontal * ratio : undefined;
+        maxDistance.vertical = moveDistance.vertical !== undefined ? moveDistance.vertical * ratio : undefined;
+        props.maxSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(moveOptions.gravity.maxSpeed) * ratio;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Circle.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Circle.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Circle": () => (/* binding */ Circle)
+/* harmony export */ });
+/* harmony import */ var _Range__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range */ "./node_modules/tsparticles-engine/esm/Core/Utils/Range.js");
+/* harmony import */ var _Rectangle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Rectangle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+class Circle extends _Range__WEBPACK_IMPORTED_MODULE_0__.Range {
+    constructor(x, y, radius) {
+        super(x, y);
+        this.radius = radius;
+    }
+    contains(point) {
+        return (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getDistance)(point, this.position) <= this.radius;
+    }
+    intersects(range) {
+        const pos1 = this.position, pos2 = range.position, distPos = { x: Math.abs(pos2.x - pos1.x), y: Math.abs(pos2.y - pos1.y) }, r = this.radius;
+        if (range instanceof Circle) {
+            const rSum = r + range.radius, dist = Math.sqrt(distPos.x ** 2 + distPos.y ** 2);
+            return rSum > dist;
+        }
+        else if (range instanceof _Rectangle__WEBPACK_IMPORTED_MODULE_2__.Rectangle) {
+            const { width, height } = range.size, edges = Math.pow(distPos.x - width, 2) + Math.pow(distPos.y - height, 2);
+            return (edges <= r ** 2 ||
+                (distPos.x <= r + width && distPos.y <= r + height) ||
+                distPos.x <= width ||
+                distPos.y <= height);
+        }
+        return false;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "generatedAttribute": () => (/* binding */ generatedAttribute),
+/* harmony export */   "mouseDownEvent": () => (/* binding */ mouseDownEvent),
+/* harmony export */   "mouseUpEvent": () => (/* binding */ mouseUpEvent),
+/* harmony export */   "mouseLeaveEvent": () => (/* binding */ mouseLeaveEvent),
+/* harmony export */   "mouseOutEvent": () => (/* binding */ mouseOutEvent),
+/* harmony export */   "mouseMoveEvent": () => (/* binding */ mouseMoveEvent),
+/* harmony export */   "touchStartEvent": () => (/* binding */ touchStartEvent),
+/* harmony export */   "touchEndEvent": () => (/* binding */ touchEndEvent),
+/* harmony export */   "touchMoveEvent": () => (/* binding */ touchMoveEvent),
+/* harmony export */   "touchCancelEvent": () => (/* binding */ touchCancelEvent),
+/* harmony export */   "resizeEvent": () => (/* binding */ resizeEvent),
+/* harmony export */   "visibilityChangeEvent": () => (/* binding */ visibilityChangeEvent),
+/* harmony export */   "errorPrefix": () => (/* binding */ errorPrefix)
+/* harmony export */ });
+const generatedAttribute = "generated";
+const mouseDownEvent = "pointerdown";
+const mouseUpEvent = "pointerup";
+const mouseLeaveEvent = "pointerleave";
+const mouseOutEvent = "pointerout";
+const mouseMoveEvent = "pointermove";
+const touchStartEvent = "touchstart";
+const touchEndEvent = "touchend";
+const touchMoveEvent = "touchmove";
+const touchCancelEvent = "touchcancel";
+const resizeEvent = "resize";
+const visibilityChangeEvent = "visibilitychange";
+const errorPrefix = "tsParticles - Error";
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/EventListeners.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/EventListeners.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EventListeners": () => (/* binding */ EventListeners)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+
+
+function manageListener(element, event, handler, add, options) {
+    if (add) {
+        let addOptions = { passive: true };
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isBoolean)(options)) {
+            addOptions.capture = options;
+        }
+        else if (options !== undefined) {
+            addOptions = options;
+        }
+        element.addEventListener(event, handler, addOptions);
+    }
+    else {
+        const removeOptions = options;
+        element.removeEventListener(event, handler, removeOptions);
+    }
+}
+class EventListeners {
+    constructor(container) {
+        this.container = container;
+        this._doMouseTouchClick = (e) => {
+            const container = this.container, options = container.actualOptions;
+            if (this._canPush) {
+                const mouseInteractivity = container.interactivity.mouse, mousePos = mouseInteractivity.position;
+                if (!mousePos) {
+                    return;
+                }
+                mouseInteractivity.clickPosition = { ...mousePos };
+                mouseInteractivity.clickTime = new Date().getTime();
+                const onClick = options.interactivity.events.onClick;
+                (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.executeOnSingleOrMultiple)(onClick.mode, (mode) => this.container.handleClickMode(mode));
+            }
+            if (e.type === "touchend") {
+                setTimeout(() => this._mouseTouchFinish(), 500);
+            }
+        };
+        this._handleThemeChange = (e) => {
+            const mediaEvent = e, container = this.container, options = container.options, defaultThemes = options.defaultThemes, themeName = mediaEvent.matches ? defaultThemes.dark : defaultThemes.light, theme = options.themes.find((theme) => theme.name === themeName);
+            if (theme && theme.default.auto) {
+                container.loadTheme(themeName);
+            }
+        };
+        this._handleVisibilityChange = () => {
+            const container = this.container, options = container.actualOptions;
+            this._mouseTouchFinish();
+            if (!options.pauseOnBlur) {
+                return;
+            }
+            if (document && document.hidden) {
+                container.pageHidden = true;
+                container.pause();
+            }
+            else {
+                container.pageHidden = false;
+                if (container.getAnimationStatus()) {
+                    container.play(true);
+                }
+                else {
+                    container.draw(true);
+                }
+            }
+        };
+        this._handleWindowResize = async () => {
+            if (this._resizeTimeout) {
+                clearTimeout(this._resizeTimeout);
+                delete this._resizeTimeout;
+            }
+            this._resizeTimeout = setTimeout(async () => {
+                const canvas = this.container.canvas;
+                canvas && (await canvas.windowResize());
+            }, this.container.actualOptions.interactivity.events.resize.delay * 1000);
+        };
+        this._manageInteractivityListeners = (mouseLeaveTmpEvent, add) => {
+            const handlers = this._handlers, container = this.container, options = container.actualOptions;
+            const interactivityEl = container.interactivity.element;
+            if (!interactivityEl) {
+                return;
+            }
+            const html = interactivityEl, canvasEl = container.canvas.element;
+            if (canvasEl) {
+                canvasEl.style.pointerEvents = html === canvasEl ? "initial" : "none";
+            }
+            if (!(options.interactivity.events.onHover.enable || options.interactivity.events.onClick.enable)) {
+                return;
+            }
+            manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseMoveEvent, handlers.mouseMove, add);
+            manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.touchStartEvent, handlers.touchStart, add);
+            manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.touchMoveEvent, handlers.touchMove, add);
+            if (!options.interactivity.events.onClick.enable) {
+                manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.touchEndEvent, handlers.touchEnd, add);
+            }
+            else {
+                manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.touchEndEvent, handlers.touchEndClick, add);
+                manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseUpEvent, handlers.mouseUp, add);
+                manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseDownEvent, handlers.mouseDown, add);
+            }
+            manageListener(interactivityEl, mouseLeaveTmpEvent, handlers.mouseLeave, add);
+            manageListener(interactivityEl, _Constants__WEBPACK_IMPORTED_MODULE_1__.touchCancelEvent, handlers.touchCancel, add);
+        };
+        this._manageListeners = (add) => {
+            const handlers = this._handlers, container = this.container, options = container.actualOptions, detectType = options.interactivity.detectsOn, canvasEl = container.canvas.element;
+            let mouseLeaveTmpEvent = _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseLeaveEvent;
+            if (detectType === "window") {
+                container.interactivity.element = window;
+                mouseLeaveTmpEvent = _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseOutEvent;
+            }
+            else if (detectType === "parent" && canvasEl) {
+                container.interactivity.element = canvasEl.parentElement ?? canvasEl.parentNode;
+            }
+            else {
+                container.interactivity.element = canvasEl;
+            }
+            this._manageMediaMatch(add);
+            this._manageResize(add);
+            this._manageInteractivityListeners(mouseLeaveTmpEvent, add);
+            if (document) {
+                manageListener(document, _Constants__WEBPACK_IMPORTED_MODULE_1__.visibilityChangeEvent, handlers.visibilityChange, add, false);
+            }
+        };
+        this._manageMediaMatch = (add) => {
+            const handlers = this._handlers, mediaMatch = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.safeMatchMedia)("(prefers-color-scheme: dark)");
+            if (!mediaMatch) {
+                return;
+            }
+            if (mediaMatch.addEventListener !== undefined) {
+                manageListener(mediaMatch, "change", handlers.themeChange, add);
+                return;
+            }
+            if (mediaMatch.addListener === undefined) {
+                return;
+            }
+            if (add) {
+                mediaMatch.addListener(handlers.oldThemeChange);
+            }
+            else {
+                mediaMatch.removeListener(handlers.oldThemeChange);
+            }
+        };
+        this._manageResize = (add) => {
+            const handlers = this._handlers, container = this.container, options = container.actualOptions;
+            if (!options.interactivity.events.resize) {
+                return;
+            }
+            if (typeof ResizeObserver === "undefined") {
+                manageListener(window, _Constants__WEBPACK_IMPORTED_MODULE_1__.resizeEvent, handlers.resize, add);
+                return;
+            }
+            const canvasEl = container.canvas.element;
+            if (this._resizeObserver && !add) {
+                if (canvasEl) {
+                    this._resizeObserver.unobserve(canvasEl);
+                }
+                this._resizeObserver.disconnect();
+                delete this._resizeObserver;
+            }
+            else if (!this._resizeObserver && add && canvasEl) {
+                this._resizeObserver = new ResizeObserver(async (entries) => {
+                    const entry = entries.find((e) => e.target === canvasEl);
+                    if (!entry) {
+                        return;
+                    }
+                    await this._handleWindowResize();
+                });
+                this._resizeObserver.observe(canvasEl);
+            }
+        };
+        this._mouseDown = () => {
+            const { interactivity } = this.container;
+            if (!interactivity) {
+                return;
+            }
+            const { mouse } = interactivity;
+            mouse.clicking = true;
+            mouse.downPosition = mouse.position;
+        };
+        this._mouseTouchClick = (e) => {
+            const container = this.container, options = container.actualOptions, { mouse } = container.interactivity;
+            mouse.inside = true;
+            let handled = false;
+            const mousePosition = mouse.position;
+            if (!mousePosition || !options.interactivity.events.onClick.enable) {
+                return;
+            }
+            for (const [, plugin] of container.plugins) {
+                if (!plugin.clickPositionValid) {
+                    continue;
+                }
+                handled = plugin.clickPositionValid(mousePosition);
+                if (handled) {
+                    break;
+                }
+            }
+            if (!handled) {
+                this._doMouseTouchClick(e);
+            }
+            mouse.clicking = false;
+        };
+        this._mouseTouchFinish = () => {
+            const interactivity = this.container.interactivity;
+            if (!interactivity) {
+                return;
+            }
+            const mouse = interactivity.mouse;
+            delete mouse.position;
+            delete mouse.clickPosition;
+            delete mouse.downPosition;
+            interactivity.status = _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseLeaveEvent;
+            mouse.inside = false;
+            mouse.clicking = false;
+        };
+        this._mouseTouchMove = (e) => {
+            const container = this.container, options = container.actualOptions, interactivity = container.interactivity, canvasEl = container.canvas.element;
+            if (!interactivity || !interactivity.element) {
+                return;
+            }
+            interactivity.mouse.inside = true;
+            let pos;
+            if (e.type.startsWith("pointer")) {
+                this._canPush = true;
+                const mouseEvent = e;
+                if (interactivity.element === window) {
+                    if (canvasEl) {
+                        const clientRect = canvasEl.getBoundingClientRect();
+                        pos = {
+                            x: mouseEvent.clientX - clientRect.left,
+                            y: mouseEvent.clientY - clientRect.top,
+                        };
+                    }
+                }
+                else if (options.interactivity.detectsOn === "parent") {
+                    const source = mouseEvent.target, target = mouseEvent.currentTarget;
+                    if (source && target && canvasEl) {
+                        const sourceRect = source.getBoundingClientRect(), targetRect = target.getBoundingClientRect(), canvasRect = canvasEl.getBoundingClientRect();
+                        pos = {
+                            x: mouseEvent.offsetX + 2 * sourceRect.left - (targetRect.left + canvasRect.left),
+                            y: mouseEvent.offsetY + 2 * sourceRect.top - (targetRect.top + canvasRect.top),
+                        };
+                    }
+                    else {
+                        pos = {
+                            x: mouseEvent.offsetX ?? mouseEvent.clientX,
+                            y: mouseEvent.offsetY ?? mouseEvent.clientY,
+                        };
+                    }
+                }
+                else if (mouseEvent.target === canvasEl) {
+                    pos = {
+                        x: mouseEvent.offsetX ?? mouseEvent.clientX,
+                        y: mouseEvent.offsetY ?? mouseEvent.clientY,
+                    };
+                }
+            }
+            else {
+                this._canPush = e.type !== "touchmove";
+                if (canvasEl) {
+                    const touchEvent = e, lastTouch = touchEvent.touches[touchEvent.touches.length - 1], canvasRect = canvasEl.getBoundingClientRect();
+                    pos = {
+                        x: lastTouch.clientX - (canvasRect.left ?? 0),
+                        y: lastTouch.clientY - (canvasRect.top ?? 0),
+                    };
+                }
+            }
+            const pxRatio = container.retina.pixelRatio;
+            if (pos) {
+                pos.x *= pxRatio;
+                pos.y *= pxRatio;
+            }
+            interactivity.mouse.position = pos;
+            interactivity.status = _Constants__WEBPACK_IMPORTED_MODULE_1__.mouseMoveEvent;
+        };
+        this._touchEnd = (e) => {
+            const evt = e, touches = Array.from(evt.changedTouches);
+            for (const touch of touches) {
+                this._touches.delete(touch.identifier);
+            }
+            this._mouseTouchFinish();
+        };
+        this._touchEndClick = (e) => {
+            const evt = e, touches = Array.from(evt.changedTouches);
+            for (const touch of touches) {
+                this._touches.delete(touch.identifier);
+            }
+            this._mouseTouchClick(e);
+        };
+        this._touchStart = (e) => {
+            const evt = e, touches = Array.from(evt.changedTouches);
+            for (const touch of touches) {
+                this._touches.set(touch.identifier, performance.now());
+            }
+            this._mouseTouchMove(e);
+        };
+        this._canPush = true;
+        this._touches = new Map();
+        this._handlers = {
+            mouseDown: () => this._mouseDown(),
+            mouseLeave: () => this._mouseTouchFinish(),
+            mouseMove: (e) => this._mouseTouchMove(e),
+            mouseUp: (e) => this._mouseTouchClick(e),
+            touchStart: (e) => this._touchStart(e),
+            touchMove: (e) => this._mouseTouchMove(e),
+            touchEnd: (e) => this._touchEnd(e),
+            touchCancel: (e) => this._touchEnd(e),
+            touchEndClick: (e) => this._touchEndClick(e),
+            visibilityChange: () => this._handleVisibilityChange(),
+            themeChange: (e) => this._handleThemeChange(e),
+            oldThemeChange: (e) => this._handleThemeChange(e),
+            resize: () => {
+                this._handleWindowResize();
+            },
+        };
+    }
+    addListeners() {
+        this._manageListeners(true);
+    }
+    removeListeners() {
+        this._manageListeners(false);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/ExternalInteractorBase.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/ExternalInteractorBase.js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ExternalInteractorBase": () => (/* binding */ ExternalInteractorBase)
+/* harmony export */ });
+class ExternalInteractorBase {
+    constructor(container) {
+        this.container = container;
+        this.type = "external";
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/InteractionManager.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/InteractionManager.js ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "InteractionManager": () => (/* binding */ InteractionManager)
+/* harmony export */ });
+class InteractionManager {
+    constructor(engine, container) {
+        this.container = container;
+        this._engine = engine;
+        this._interactors = engine.plugins.getInteractors(this.container, true);
+        this._externalInteractors = [];
+        this._particleInteractors = [];
+    }
+    async externalInteract(delta) {
+        for (const interactor of this._externalInteractors) {
+            interactor.isEnabled() && (await interactor.interact(delta));
+        }
+    }
+    handleClickMode(mode) {
+        for (const interactor of this._externalInteractors) {
+            interactor.handleClickMode && interactor.handleClickMode(mode);
+        }
+    }
+    init() {
+        this._externalInteractors = [];
+        this._particleInteractors = [];
+        for (const interactor of this._interactors) {
+            switch (interactor.type) {
+                case "external":
+                    this._externalInteractors.push(interactor);
+                    break;
+                case "particles":
+                    this._particleInteractors.push(interactor);
+                    break;
+            }
+            interactor.init();
+        }
+    }
+    async particlesInteract(particle, delta) {
+        for (const interactor of this._externalInteractors) {
+            interactor.clear(particle, delta);
+        }
+        for (const interactor of this._particleInteractors) {
+            interactor.isEnabled(particle) && (await interactor.interact(particle, delta));
+        }
+    }
+    async reset(particle) {
+        for (const interactor of this._externalInteractors) {
+            interactor.isEnabled() && interactor.reset(particle);
+        }
+        for (const interactor of this._particleInteractors) {
+            interactor.isEnabled(particle) && interactor.reset(particle);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/ParticlesInteractorBase.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/ParticlesInteractorBase.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesInteractorBase": () => (/* binding */ ParticlesInteractorBase)
+/* harmony export */ });
+class ParticlesInteractorBase {
+    constructor(container) {
+        this.container = container;
+        this.type = "particles";
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Plugins.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Plugins.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Plugins": () => (/* binding */ Plugins)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+function getItemsFromInitializer(container, map, initializers, force = false) {
+    let res = map.get(container);
+    if (!res || force) {
+        res = [...initializers.values()].map((t) => t(container));
+        map.set(container, res);
+    }
+    return res;
+}
+class Plugins {
+    constructor(engine) {
+        this._engine = engine;
+        this.plugins = [];
+        this._initializers = {
+            interactors: new Map(),
+            movers: new Map(),
+            updaters: new Map(),
+        };
+        this.interactors = new Map();
+        this.movers = new Map();
+        this.updaters = new Map();
+        this.presets = new Map();
+        this.drawers = new Map();
+        this.pathGenerators = new Map();
+    }
+    addInteractor(name, initInteractor) {
+        this._initializers.interactors.set(name, initInteractor);
+    }
+    addParticleMover(name, initMover) {
+        this._initializers.movers.set(name, initMover);
+    }
+    addParticleUpdater(name, initUpdater) {
+        this._initializers.updaters.set(name, initUpdater);
+    }
+    addPathGenerator(type, pathGenerator) {
+        !this.getPathGenerator(type) && this.pathGenerators.set(type, pathGenerator);
+    }
+    addPlugin(plugin) {
+        !this.getPlugin(plugin.id) && this.plugins.push(plugin);
+    }
+    addPreset(presetKey, options, override = false) {
+        (override || !this.getPreset(presetKey)) && this.presets.set(presetKey, options);
+    }
+    addShapeDrawer(types, drawer) {
+        (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.executeOnSingleOrMultiple)(types, (type) => {
+            !this.getShapeDrawer(type) && this.drawers.set(type, drawer);
+        });
+    }
+    destroy(container) {
+        this.updaters.delete(container);
+        this.movers.delete(container);
+        this.interactors.delete(container);
+    }
+    getAvailablePlugins(container) {
+        const res = new Map();
+        for (const plugin of this.plugins) {
+            plugin.needsPlugin(container.actualOptions) && res.set(plugin.id, plugin.getPlugin(container));
+        }
+        return res;
+    }
+    getInteractors(container, force = false) {
+        return getItemsFromInitializer(container, this.interactors, this._initializers.interactors, force);
+    }
+    getMovers(container, force = false) {
+        return getItemsFromInitializer(container, this.movers, this._initializers.movers, force);
+    }
+    getPathGenerator(type) {
+        return this.pathGenerators.get(type);
+    }
+    getPlugin(plugin) {
+        return this.plugins.find((t) => t.id === plugin);
+    }
+    getPreset(preset) {
+        return this.presets.get(preset);
+    }
+    getShapeDrawer(type) {
+        return this.drawers.get(type);
+    }
+    getSupportedShapes() {
+        return this.drawers.keys();
+    }
+    getUpdaters(container, force = false) {
+        return getItemsFromInitializer(container, this.updaters, this._initializers.updaters, force);
+    }
+    loadOptions(options, sourceOptions) {
+        for (const plugin of this.plugins) {
+            plugin.loadOptions(options, sourceOptions);
+        }
+    }
+    loadParticlesOptions(container, options, ...sourceOptions) {
+        const updaters = this.updaters.get(container);
+        if (!updaters) {
+            return;
+        }
+        for (const updater of updaters) {
+            updater.loadOptions && updater.loadOptions(options, ...sourceOptions);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Point.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Point.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Point": () => (/* binding */ Point)
+/* harmony export */ });
+class Point {
+    constructor(position, particle) {
+        this.position = position;
+        this.particle = particle;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/QuadTree.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/QuadTree.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "QuadTree": () => (/* binding */ QuadTree)
+/* harmony export */ });
+/* harmony import */ var _Circle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Circle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Circle.js");
+/* harmony import */ var _Rectangle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Rectangle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+class QuadTree {
+    constructor(rectangle, capacity) {
+        this.rectangle = rectangle;
+        this.capacity = capacity;
+        this._subdivide = () => {
+            const { x, y } = this.rectangle.position, { width, height } = this.rectangle.size, { capacity } = this;
+            for (let i = 0; i < 4; i++) {
+                this._subs.push(new QuadTree(new _Rectangle__WEBPACK_IMPORTED_MODULE_0__.Rectangle(x + (width / 2) * (i % 2), y + (height / 2) * (Math.round(i / 2) - (i % 2)), width / 2, height / 2), capacity));
+            }
+            this._divided = true;
+        };
+        this._points = [];
+        this._divided = false;
+        this._subs = [];
+    }
+    insert(point) {
+        if (!this.rectangle.contains(point.position)) {
+            return false;
+        }
+        if (this._points.length < this.capacity) {
+            this._points.push(point);
+            return true;
+        }
+        if (!this._divided) {
+            this._subdivide();
+        }
+        return this._subs.some((sub) => sub.insert(point));
+    }
+    query(range, check, found) {
+        const res = found || [];
+        if (!range.intersects(this.rectangle)) {
+            return [];
+        }
+        for (const p of this._points) {
+            if (!range.contains(p.position) &&
+                (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getDistance)(range.position, p.position) > p.particle.getRadius() &&
+                (!check || check(p.particle))) {
+                continue;
+            }
+            res.push(p.particle);
+        }
+        if (this._divided) {
+            for (const sub of this._subs) {
+                sub.query(range, check, res);
+            }
+        }
+        return res;
+    }
+    queryCircle(position, radius, check) {
+        return this.query(new _Circle__WEBPACK_IMPORTED_MODULE_2__.Circle(position.x, position.y, radius), check);
+    }
+    queryRectangle(position, size, check) {
+        return this.query(new _Rectangle__WEBPACK_IMPORTED_MODULE_0__.Rectangle(position.x, position.y, size.width, size.height), check);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Range.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Range.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Range": () => (/* binding */ Range)
+/* harmony export */ });
+class Range {
+    constructor(x, y) {
+        this.position = {
+            x: x,
+            y: y,
+        };
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Rectangle": () => (/* binding */ Rectangle)
+/* harmony export */ });
+/* harmony import */ var _Circle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Circle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Circle.js");
+/* harmony import */ var _Range__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Range */ "./node_modules/tsparticles-engine/esm/Core/Utils/Range.js");
+
+
+class Rectangle extends _Range__WEBPACK_IMPORTED_MODULE_0__.Range {
+    constructor(x, y, width, height) {
+        super(x, y);
+        this.size = {
+            height: height,
+            width: width,
+        };
+    }
+    contains(point) {
+        const w = this.size.width, h = this.size.height, pos = this.position;
+        return point.x >= pos.x && point.x <= pos.x + w && point.y >= pos.y && point.y <= pos.y + h;
+    }
+    intersects(range) {
+        if (range instanceof _Circle__WEBPACK_IMPORTED_MODULE_1__.Circle) {
+            range.intersects(this);
+        }
+        const w = this.size.width, h = this.size.height, pos1 = this.position, pos2 = range.position, size2 = range instanceof Rectangle ? range.size : { width: 0, height: 0 }, w2 = size2.width, h2 = size2.height;
+        return pos2.x < pos1.x + w && pos2.x + w2 > pos1.x && pos2.y < pos1.y + h && pos2.y + h2 > pos1.y;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Vector": () => (/* binding */ Vector)
+/* harmony export */ });
+/* harmony import */ var _Vector3d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Vector3d */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector3d.js");
+
+class Vector extends _Vector3d__WEBPACK_IMPORTED_MODULE_0__.Vector3d {
+    constructor(xOrCoords, y) {
+        super(xOrCoords, y, 0);
+    }
+    static get origin() {
+        return Vector.create(0, 0);
+    }
+    static clone(source) {
+        return Vector.create(source.x, source.y);
+    }
+    static create(x, y) {
+        return new Vector(x, y);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector3d.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Core/Utils/Vector3d.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Vector3d": () => (/* binding */ Vector3d)
+/* harmony export */ });
+/* harmony import */ var _Constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+class Vector3d {
+    constructor(xOrCoords, y, z) {
+        this._updateFromAngle = (angle, length) => {
+            this.x = Math.cos(angle) * length;
+            this.y = Math.sin(angle) * length;
+        };
+        if (!(0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(xOrCoords) && xOrCoords) {
+            this.x = xOrCoords.x;
+            this.y = xOrCoords.y;
+            const coords3d = xOrCoords;
+            this.z = coords3d.z ? coords3d.z : 0;
+        }
+        else if (xOrCoords !== undefined && y !== undefined) {
+            this.x = xOrCoords;
+            this.y = y;
+            this.z = z ?? 0;
+        }
+        else {
+            throw new Error(`${_Constants__WEBPACK_IMPORTED_MODULE_1__.errorPrefix} Vector3d not initialized correctly`);
+        }
+    }
+    static get origin() {
+        return Vector3d.create(0, 0, 0);
+    }
+    get angle() {
+        return Math.atan2(this.y, this.x);
+    }
+    set angle(angle) {
+        this._updateFromAngle(angle, this.length);
+    }
+    get length() {
+        return Math.sqrt(this.getLengthSq());
+    }
+    set length(length) {
+        this._updateFromAngle(this.angle, length);
+    }
+    static clone(source) {
+        return Vector3d.create(source.x, source.y, source.z);
+    }
+    static create(x, y, z) {
+        return new Vector3d(x, y, z);
+    }
+    add(v) {
+        return Vector3d.create(this.x + v.x, this.y + v.y, this.z + v.z);
+    }
+    addTo(v) {
+        this.x += v.x;
+        this.y += v.y;
+        this.z += v.z;
+    }
+    copy() {
+        return Vector3d.clone(this);
+    }
+    distanceTo(v) {
+        return this.sub(v).length;
+    }
+    distanceToSq(v) {
+        return this.sub(v).getLengthSq();
+    }
+    div(n) {
+        return Vector3d.create(this.x / n, this.y / n, this.z / n);
+    }
+    divTo(n) {
+        this.x /= n;
+        this.y /= n;
+        this.z /= n;
+    }
+    getLengthSq() {
+        return this.x ** 2 + this.y ** 2;
+    }
+    mult(n) {
+        return Vector3d.create(this.x * n, this.y * n, this.z * n);
+    }
+    multTo(n) {
+        this.x *= n;
+        this.y *= n;
+        this.z *= n;
+    }
+    normalize() {
+        const length = this.length;
+        if (length != 0) {
+            this.multTo(1.0 / length);
+        }
+    }
+    rotate(angle) {
+        return Vector3d.create(this.x * Math.cos(angle) - this.y * Math.sin(angle), this.x * Math.sin(angle) + this.y * Math.cos(angle), 0);
+    }
+    setTo(c) {
+        this.x = c.x;
+        this.y = c.y;
+        const v3d = c;
+        this.z = v3d.z ? v3d.z : 0;
+    }
+    sub(v) {
+        return Vector3d.create(this.x - v.x, this.y - v.y, this.z - v.z);
+    }
+    subFrom(v) {
+        this.x -= v.x;
+        this.y -= v.y;
+        this.z -= v.z;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimatableColor.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/AnimatableColor.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimatableColor": () => (/* binding */ AnimatableColor)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _HslAnimation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HslAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/HslAnimation.js");
+/* harmony import */ var _OptionsColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+
+
+
+class AnimatableColor extends _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor {
+    constructor() {
+        super();
+        this.animation = new _HslAnimation__WEBPACK_IMPORTED_MODULE_1__.HslAnimation();
+    }
+    static create(source, data) {
+        const color = new AnimatableColor();
+        color.load(source);
+        if (data !== undefined) {
+            if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.isString)(data) || (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_2__.isArray)(data)) {
+                color.load({ value: data });
+            }
+            else {
+                color.load(data);
+            }
+        }
+        return color;
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        const colorAnimation = data.animation;
+        if (colorAnimation !== undefined) {
+            if (colorAnimation.enable !== undefined) {
+                this.animation.h.load(colorAnimation);
+            }
+            else {
+                this.animation.load(data.animation);
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimationOptions": () => (/* binding */ AnimationOptions),
+/* harmony export */   "RangedAnimationOptions": () => (/* binding */ RangedAnimationOptions)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class AnimationOptions {
+    constructor() {
+        this.count = 0;
+        this.enable = false;
+        this.speed = 1;
+        this.decay = 0;
+        this.delay = 0;
+        this.sync = false;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.count !== undefined) {
+            this.count = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.count);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.speed !== undefined) {
+            this.speed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.speed);
+        }
+        if (data.decay !== undefined) {
+            this.decay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.decay);
+        }
+        if (data.delay !== undefined) {
+            this.delay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.delay);
+        }
+        if (data.sync !== undefined) {
+            this.sync = data.sync;
+        }
+    }
+}
+class RangedAnimationOptions extends AnimationOptions {
+    constructor() {
+        super();
+        this.mode = "auto";
+        this.startValue = "random";
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        if (data.minimumValue !== undefined) {
+            this.minimumValue = data.minimumValue;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        if (data.startValue !== undefined) {
+            this.startValue = data.startValue;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Background/Background.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Background/Background.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Background": () => (/* binding */ Background)
+/* harmony export */ });
+/* harmony import */ var _OptionsColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+
+class Background {
+    constructor() {
+        this.color = new _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor();
+        this.color.value = "";
+        this.image = "";
+        this.position = "";
+        this.repeat = "";
+        this.size = "";
+        this.opacity = 1;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.color !== undefined) {
+            this.color = _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor.create(this.color, data.color);
+        }
+        if (data.image !== undefined) {
+            this.image = data.image;
+        }
+        if (data.position !== undefined) {
+            this.position = data.position;
+        }
+        if (data.repeat !== undefined) {
+            this.repeat = data.repeat;
+        }
+        if (data.size !== undefined) {
+            this.size = data.size;
+        }
+        if (data.opacity !== undefined) {
+            this.opacity = data.opacity;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMask.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMask.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BackgroundMask": () => (/* binding */ BackgroundMask)
+/* harmony export */ });
+/* harmony import */ var _BackgroundMaskCover__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BackgroundMaskCover */ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMaskCover.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+class BackgroundMask {
+    constructor() {
+        this.composite = "destination-out";
+        this.cover = new _BackgroundMaskCover__WEBPACK_IMPORTED_MODULE_0__.BackgroundMaskCover();
+        this.enable = false;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.composite !== undefined) {
+            this.composite = data.composite;
+        }
+        if (data.cover !== undefined) {
+            const cover = data.cover;
+            const color = ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isString)(data.cover) ? { color: data.cover } : data.cover);
+            this.cover.load(cover.color !== undefined ? cover : { color: color });
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMaskCover.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMaskCover.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BackgroundMaskCover": () => (/* binding */ BackgroundMaskCover)
+/* harmony export */ });
+/* harmony import */ var _OptionsColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+
+class BackgroundMaskCover {
+    constructor() {
+        this.color = new _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor();
+        this.color.value = "#fff";
+        this.opacity = 1;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.color !== undefined) {
+            this.color = _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor.create(this.color, data.color);
+        }
+        if (data.opacity !== undefined) {
+            this.opacity = data.opacity;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/ColorAnimation.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/ColorAnimation.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ColorAnimation": () => (/* binding */ ColorAnimation)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class ColorAnimation {
+    constructor() {
+        this.count = 0;
+        this.enable = false;
+        this.offset = 0;
+        this.speed = 1;
+        this.delay = 0;
+        this.decay = 0;
+        this.sync = true;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.count !== undefined) {
+            this.count = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.count);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.offset !== undefined) {
+            this.offset = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.offset);
+        }
+        if (data.speed !== undefined) {
+            this.speed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.speed);
+        }
+        if (data.decay !== undefined) {
+            this.decay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.decay);
+        }
+        if (data.delay !== undefined) {
+            this.delay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.delay);
+        }
+        if (data.sync !== undefined) {
+            this.sync = data.sync;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/FullScreen/FullScreen.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/FullScreen/FullScreen.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FullScreen": () => (/* binding */ FullScreen)
+/* harmony export */ });
+class FullScreen {
+    constructor() {
+        this.enable = true;
+        this.zIndex = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.zIndex !== undefined) {
+            this.zIndex = data.zIndex;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/HslAnimation.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/HslAnimation.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HslAnimation": () => (/* binding */ HslAnimation)
+/* harmony export */ });
+/* harmony import */ var _ColorAnimation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/ColorAnimation.js");
+
+class HslAnimation {
+    constructor() {
+        this.h = new _ColorAnimation__WEBPACK_IMPORTED_MODULE_0__.ColorAnimation();
+        this.s = new _ColorAnimation__WEBPACK_IMPORTED_MODULE_0__.ColorAnimation();
+        this.l = new _ColorAnimation__WEBPACK_IMPORTED_MODULE_0__.ColorAnimation();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.h.load(data.h);
+        this.s.load(data.s);
+        this.l.load(data.l);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ClickEvent.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ClickEvent.js ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ClickEvent": () => (/* binding */ ClickEvent)
+/* harmony export */ });
+class ClickEvent {
+    constructor() {
+        this.enable = false;
+        this.mode = [];
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/DivEvent.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/DivEvent.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DivEvent": () => (/* binding */ DivEvent)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+class DivEvent {
+    constructor() {
+        this.selectors = [];
+        this.enable = false;
+        this.mode = [];
+        this.type = "circle";
+    }
+    get el() {
+        return this.elementId;
+    }
+    set el(value) {
+        this.elementId = value;
+    }
+    get elementId() {
+        return this.ids;
+    }
+    set elementId(value) {
+        this.ids = value;
+    }
+    get ids() {
+        return (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.executeOnSingleOrMultiple)(this.selectors, (t) => t.replace("#", ""));
+    }
+    set ids(value) {
+        this.selectors = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.executeOnSingleOrMultiple)(value, (t) => `#${t}`);
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        const ids = data.ids ?? data.elementId ?? data.el;
+        if (ids !== undefined) {
+            this.ids = ids;
+        }
+        if (data.selectors !== undefined) {
+            this.selectors = data.selectors;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        if (data.type !== undefined) {
+            this.type = data.type;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Events.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Events.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Events": () => (/* binding */ Events)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _ClickEvent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ClickEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ClickEvent.js");
+/* harmony import */ var _DivEvent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DivEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/DivEvent.js");
+/* harmony import */ var _HoverEvent__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HoverEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/HoverEvent.js");
+/* harmony import */ var _ResizeEvent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ResizeEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ResizeEvent.js");
+
+
+
+
+
+class Events {
+    constructor() {
+        this.onClick = new _ClickEvent__WEBPACK_IMPORTED_MODULE_0__.ClickEvent();
+        this.onDiv = new _DivEvent__WEBPACK_IMPORTED_MODULE_1__.DivEvent();
+        this.onHover = new _HoverEvent__WEBPACK_IMPORTED_MODULE_2__.HoverEvent();
+        this.resize = new _ResizeEvent__WEBPACK_IMPORTED_MODULE_3__.ResizeEvent();
+    }
+    get onclick() {
+        return this.onClick;
+    }
+    set onclick(value) {
+        this.onClick = value;
+    }
+    get ondiv() {
+        return this.onDiv;
+    }
+    set ondiv(value) {
+        this.onDiv = value;
+    }
+    get onhover() {
+        return this.onHover;
+    }
+    set onhover(value) {
+        this.onHover = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.onClick.load(data.onClick ?? data.onclick);
+        const onDiv = data.onDiv ?? data.ondiv;
+        if (onDiv !== undefined) {
+            this.onDiv = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_4__.executeOnSingleOrMultiple)(onDiv, (t) => {
+                const tmp = new _DivEvent__WEBPACK_IMPORTED_MODULE_1__.DivEvent();
+                tmp.load(t);
+                return tmp;
+            });
+        }
+        this.onHover.load(data.onHover ?? data.onhover);
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_4__.isBoolean)(data.resize)) {
+            this.resize.enable = data.resize;
+        }
+        else {
+            this.resize.load(data.resize);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/HoverEvent.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/HoverEvent.js ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HoverEvent": () => (/* binding */ HoverEvent)
+/* harmony export */ });
+/* harmony import */ var _Parallax__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Parallax */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Parallax.js");
+
+class HoverEvent {
+    constructor() {
+        this.enable = false;
+        this.mode = [];
+        this.parallax = new _Parallax__WEBPACK_IMPORTED_MODULE_0__.Parallax();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        this.parallax.load(data.parallax);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Parallax.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Parallax.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Parallax": () => (/* binding */ Parallax)
+/* harmony export */ });
+class Parallax {
+    constructor() {
+        this.enable = false;
+        this.force = 2;
+        this.smooth = 10;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.force !== undefined) {
+            this.force = data.force;
+        }
+        if (data.smooth !== undefined) {
+            this.smooth = data.smooth;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ResizeEvent.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ResizeEvent.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ResizeEvent": () => (/* binding */ ResizeEvent)
+/* harmony export */ });
+class ResizeEvent {
+    constructor() {
+        this.delay = 0.5;
+        this.enable = true;
+    }
+    load(data) {
+        if (data === undefined) {
+            return;
+        }
+        if (data.delay !== undefined) {
+            this.delay = data.delay;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Interactivity.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Interactivity.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Interactivity": () => (/* binding */ Interactivity)
+/* harmony export */ });
+/* harmony import */ var _Events_Events__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Events/Events */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Events.js");
+/* harmony import */ var _Modes_Modes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Modes/Modes */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Modes/Modes.js");
+
+
+class Interactivity {
+    constructor(engine, container) {
+        this.detectsOn = "window";
+        this.events = new _Events_Events__WEBPACK_IMPORTED_MODULE_0__.Events();
+        this.modes = new _Modes_Modes__WEBPACK_IMPORTED_MODULE_1__.Modes(engine, container);
+    }
+    get detect_on() {
+        return this.detectsOn;
+    }
+    set detect_on(value) {
+        this.detectsOn = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        const detectsOn = data.detectsOn ?? data.detect_on;
+        if (detectsOn !== undefined) {
+            this.detectsOn = detectsOn;
+        }
+        this.events.load(data.events);
+        this.modes.load(data.modes);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Modes/Modes.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Modes/Modes.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Modes": () => (/* binding */ Modes)
+/* harmony export */ });
+class Modes {
+    constructor(engine, container) {
+        this._engine = engine;
+        this._container = container;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (!this._container) {
+            return;
+        }
+        const interactors = this._engine.plugins.interactors.get(this._container);
+        if (!interactors) {
+            return;
+        }
+        for (const interactor of interactors) {
+            if (!interactor.loadModeOptions) {
+                continue;
+            }
+            interactor.loadModeOptions(this, data);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/ManualParticle.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/ManualParticle.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ManualParticle": () => (/* binding */ ManualParticle)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+class ManualParticle {
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.position) {
+            this.position = {
+                x: data.position.x ?? 50,
+                y: data.position.y ?? 50,
+                mode: data.position.mode ?? "percent",
+            };
+        }
+        if (data.options) {
+            this.options = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)({}, data.options);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Options.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Options.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Options": () => (/* binding */ Options)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Background_Background__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Background/Background */ "./node_modules/tsparticles-engine/esm/Options/Classes/Background/Background.js");
+/* harmony import */ var _BackgroundMask_BackgroundMask__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BackgroundMask/BackgroundMask */ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMask.js");
+/* harmony import */ var _FullScreen_FullScreen__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FullScreen/FullScreen */ "./node_modules/tsparticles-engine/esm/Options/Classes/FullScreen/FullScreen.js");
+/* harmony import */ var _Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Interactivity/Interactivity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Interactivity.js");
+/* harmony import */ var _ManualParticle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ManualParticle */ "./node_modules/tsparticles-engine/esm/Options/Classes/ManualParticle.js");
+/* harmony import */ var _Responsive__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Responsive */ "./node_modules/tsparticles-engine/esm/Options/Classes/Responsive.js");
+/* harmony import */ var _Theme_Theme__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Theme/Theme */ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/Theme.js");
+/* harmony import */ var _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Utils/OptionsUtils */ "./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+
+
+
+
+
+
+
+class Options {
+    constructor(engine, container) {
+        this._findDefaultTheme = (mode) => {
+            return (this.themes.find((theme) => theme.default.value && theme.default.mode === mode) ??
+                this.themes.find((theme) => theme.default.value && theme.default.mode === "any"));
+        };
+        this._importPreset = (preset) => {
+            this.load(this._engine.plugins.getPreset(preset));
+        };
+        this._engine = engine;
+        this._container = container;
+        this.autoPlay = true;
+        this.background = new _Background_Background__WEBPACK_IMPORTED_MODULE_0__.Background();
+        this.backgroundMask = new _BackgroundMask_BackgroundMask__WEBPACK_IMPORTED_MODULE_1__.BackgroundMask();
+        this.defaultThemes = {};
+        this.delay = 0;
+        this.fullScreen = new _FullScreen_FullScreen__WEBPACK_IMPORTED_MODULE_2__.FullScreen();
+        this.detectRetina = true;
+        this.duration = 0;
+        this.fpsLimit = 120;
+        this.interactivity = new _Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_3__.Interactivity(engine, container);
+        this.manualParticles = [];
+        this.particles = (0,_Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_4__.loadParticlesOptions)(this._engine, this._container);
+        this.pauseOnBlur = true;
+        this.pauseOnOutsideViewport = true;
+        this.responsive = [];
+        this.smooth = false;
+        this.style = {};
+        this.themes = [];
+        this.zLayers = 100;
+    }
+    get backgroundMode() {
+        return this.fullScreen;
+    }
+    set backgroundMode(value) {
+        this.fullScreen.load(value);
+    }
+    get fps_limit() {
+        return this.fpsLimit;
+    }
+    set fps_limit(value) {
+        this.fpsLimit = value;
+    }
+    get retina_detect() {
+        return this.detectRetina;
+    }
+    set retina_detect(value) {
+        this.detectRetina = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.preset !== undefined) {
+            (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_5__.executeOnSingleOrMultiple)(data.preset, (preset) => this._importPreset(preset));
+        }
+        if (data.autoPlay !== undefined) {
+            this.autoPlay = data.autoPlay;
+        }
+        if (data.delay !== undefined) {
+            this.delay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_6__.setRangeValue)(data.delay);
+        }
+        const detectRetina = data.detectRetina ?? data.retina_detect;
+        if (detectRetina !== undefined) {
+            this.detectRetina = detectRetina;
+        }
+        if (data.duration !== undefined) {
+            this.duration = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_6__.setRangeValue)(data.duration);
+        }
+        const fpsLimit = data.fpsLimit ?? data.fps_limit;
+        if (fpsLimit !== undefined) {
+            this.fpsLimit = fpsLimit;
+        }
+        if (data.pauseOnBlur !== undefined) {
+            this.pauseOnBlur = data.pauseOnBlur;
+        }
+        if (data.pauseOnOutsideViewport !== undefined) {
+            this.pauseOnOutsideViewport = data.pauseOnOutsideViewport;
+        }
+        if (data.zLayers !== undefined) {
+            this.zLayers = data.zLayers;
+        }
+        this.background.load(data.background);
+        const fullScreen = data.fullScreen ?? data.backgroundMode;
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_5__.isBoolean)(fullScreen)) {
+            this.fullScreen.enable = fullScreen;
+        }
+        else {
+            this.fullScreen.load(fullScreen);
+        }
+        this.backgroundMask.load(data.backgroundMask);
+        this.interactivity.load(data.interactivity);
+        if (data.manualParticles) {
+            this.manualParticles = data.manualParticles.map((t) => {
+                const tmp = new _ManualParticle__WEBPACK_IMPORTED_MODULE_7__.ManualParticle();
+                tmp.load(t);
+                return tmp;
+            });
+        }
+        this.particles.load(data.particles);
+        this.style = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_5__.deepExtend)(this.style, data.style);
+        this._engine.plugins.loadOptions(this, data);
+        if (data.smooth !== undefined) {
+            this.smooth = data.smooth;
+        }
+        const interactors = this._engine.plugins.interactors.get(this._container);
+        if (interactors) {
+            for (const interactor of interactors) {
+                if (interactor.loadOptions) {
+                    interactor.loadOptions(this, data);
+                }
+            }
+        }
+        if (data.responsive !== undefined) {
+            for (const responsive of data.responsive) {
+                const optResponsive = new _Responsive__WEBPACK_IMPORTED_MODULE_8__.Responsive();
+                optResponsive.load(responsive);
+                this.responsive.push(optResponsive);
+            }
+        }
+        this.responsive.sort((a, b) => a.maxWidth - b.maxWidth);
+        if (data.themes !== undefined) {
+            for (const theme of data.themes) {
+                const existingTheme = this.themes.find((t) => t.name === theme.name);
+                if (!existingTheme) {
+                    const optTheme = new _Theme_Theme__WEBPACK_IMPORTED_MODULE_9__.Theme();
+                    optTheme.load(theme);
+                    this.themes.push(optTheme);
+                }
+                else {
+                    existingTheme.load(theme);
+                }
+            }
+        }
+        this.defaultThemes.dark = this._findDefaultTheme("dark")?.name;
+        this.defaultThemes.light = this._findDefaultTheme("light")?.name;
+    }
+    setResponsive(width, pxRatio, defaultOptions) {
+        this.load(defaultOptions);
+        const responsiveOptions = this.responsive.find((t) => t.mode === "screen" && screen ? t.maxWidth > screen.availWidth : t.maxWidth * pxRatio > width);
+        this.load(responsiveOptions?.options);
+        return responsiveOptions?.maxWidth;
+    }
+    setTheme(name) {
+        if (name) {
+            const chosenTheme = this.themes.find((theme) => theme.name === name);
+            if (chosenTheme) {
+                this.load(chosenTheme.options);
+            }
+        }
+        else {
+            const mediaMatch = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_5__.safeMatchMedia)("(prefers-color-scheme: dark)"), clientDarkMode = mediaMatch && mediaMatch.matches, defaultTheme = this._findDefaultTheme(clientDarkMode ? "dark" : "light");
+            if (defaultTheme) {
+                this.load(defaultTheme.options);
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js ***!
+  \*****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "OptionsColor": () => (/* binding */ OptionsColor)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+class OptionsColor {
+    constructor() {
+        this.value = "";
+    }
+    static create(source, data) {
+        const color = new OptionsColor();
+        color.load(source);
+        if (data !== undefined) {
+            if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(data) || (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(data)) {
+                color.load({ value: data });
+            }
+            else {
+                color.load(data);
+            }
+        }
+        return color;
+    }
+    load(data) {
+        if (data?.value === undefined) {
+            return;
+        }
+        this.value = data.value;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounce.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounce.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesBounce": () => (/* binding */ ParticlesBounce)
+/* harmony export */ });
+/* harmony import */ var _ParticlesBounceFactor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ParticlesBounceFactor */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounceFactor.js");
+
+class ParticlesBounce {
+    constructor() {
+        this.horizontal = new _ParticlesBounceFactor__WEBPACK_IMPORTED_MODULE_0__.ParticlesBounceFactor();
+        this.vertical = new _ParticlesBounceFactor__WEBPACK_IMPORTED_MODULE_0__.ParticlesBounceFactor();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.horizontal.load(data.horizontal);
+        this.vertical.load(data.vertical);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounceFactor.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounceFactor.js ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesBounceFactor": () => (/* binding */ ParticlesBounceFactor)
+/* harmony export */ });
+/* harmony import */ var _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+
+class ParticlesBounceFactor extends _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__.ValueWithRandom {
+    constructor() {
+        super();
+        this.random.minimumValue = 0.1;
+        this.value = 1;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/Collisions.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/Collisions.js ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Collisions": () => (/* binding */ Collisions)
+/* harmony export */ });
+/* harmony import */ var _CollisionsAbsorb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CollisionsAbsorb */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsAbsorb.js");
+/* harmony import */ var _CollisionsOverlap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CollisionsOverlap */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsOverlap.js");
+/* harmony import */ var _Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Bounce/ParticlesBounce */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounce.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+
+class Collisions {
+    constructor() {
+        this.absorb = new _CollisionsAbsorb__WEBPACK_IMPORTED_MODULE_0__.CollisionsAbsorb();
+        this.bounce = new _Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_1__.ParticlesBounce();
+        this.enable = false;
+        this.maxSpeed = 50;
+        this.mode = "bounce";
+        this.overlap = new _CollisionsOverlap__WEBPACK_IMPORTED_MODULE_2__.CollisionsOverlap();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.absorb.load(data.absorb);
+        this.bounce.load(data.bounce);
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.maxSpeed !== undefined) {
+            this.maxSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_3__.setRangeValue)(data.maxSpeed);
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        this.overlap.load(data.overlap);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsAbsorb.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsAbsorb.js ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CollisionsAbsorb": () => (/* binding */ CollisionsAbsorb)
+/* harmony export */ });
+class CollisionsAbsorb {
+    constructor() {
+        this.speed = 2;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.speed !== undefined) {
+            this.speed = data.speed;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsOverlap.js":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsOverlap.js ***!
+  \*******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CollisionsOverlap": () => (/* binding */ CollisionsOverlap)
+/* harmony export */ });
+class CollisionsOverlap {
+    constructor() {
+        this.enable = true;
+        this.retries = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.retries !== undefined) {
+            this.retries = data.retries;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Move.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Move.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Move": () => (/* binding */ Move)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _MoveAngle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MoveAngle */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAngle.js");
+/* harmony import */ var _MoveAttract__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MoveAttract */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAttract.js");
+/* harmony import */ var _MoveCenter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./MoveCenter */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveCenter.js");
+/* harmony import */ var _MoveGravity__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MoveGravity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveGravity.js");
+/* harmony import */ var _Path_MovePath__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Path/MovePath */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Path/MovePath.js");
+/* harmony import */ var _MoveTrail__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./MoveTrail */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrail.js");
+/* harmony import */ var _OutModes__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./OutModes */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/OutModes.js");
+/* harmony import */ var _Spin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Spin */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Spin.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+
+
+
+
+
+
+
+class Move {
+    constructor() {
+        this.angle = new _MoveAngle__WEBPACK_IMPORTED_MODULE_0__.MoveAngle();
+        this.attract = new _MoveAttract__WEBPACK_IMPORTED_MODULE_1__.MoveAttract();
+        this.center = new _MoveCenter__WEBPACK_IMPORTED_MODULE_2__.MoveCenter();
+        this.decay = 0;
+        this.distance = {};
+        this.direction = "none";
+        this.drift = 0;
+        this.enable = false;
+        this.gravity = new _MoveGravity__WEBPACK_IMPORTED_MODULE_3__.MoveGravity();
+        this.path = new _Path_MovePath__WEBPACK_IMPORTED_MODULE_4__.MovePath();
+        this.outModes = new _OutModes__WEBPACK_IMPORTED_MODULE_5__.OutModes();
+        this.random = false;
+        this.size = false;
+        this.speed = 2;
+        this.spin = new _Spin__WEBPACK_IMPORTED_MODULE_6__.Spin();
+        this.straight = false;
+        this.trail = new _MoveTrail__WEBPACK_IMPORTED_MODULE_7__.MoveTrail();
+        this.vibrate = false;
+        this.warp = false;
+    }
+    get bounce() {
+        return this.collisions;
+    }
+    set bounce(value) {
+        this.collisions = value;
+    }
+    get collisions() {
+        return false;
+    }
+    set collisions(_) {
+    }
+    get noise() {
+        return this.path;
+    }
+    set noise(value) {
+        this.path = value;
+    }
+    get outMode() {
+        return this.outModes.default;
+    }
+    set outMode(value) {
+        this.outModes.default = value;
+    }
+    get out_mode() {
+        return this.outMode;
+    }
+    set out_mode(value) {
+        this.outMode = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.angle.load((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_8__.isNumber)(data.angle) ? { value: data.angle } : data.angle);
+        this.attract.load(data.attract);
+        this.center.load(data.center);
+        if (data.decay !== undefined) {
+            this.decay = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_9__.setRangeValue)(data.decay);
+        }
+        if (data.direction !== undefined) {
+            this.direction = data.direction;
+        }
+        if (data.distance !== undefined) {
+            this.distance = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_8__.isNumber)(data.distance)
+                ? {
+                    horizontal: data.distance,
+                    vertical: data.distance,
+                }
+                : { ...data.distance };
+        }
+        if (data.drift !== undefined) {
+            this.drift = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_9__.setRangeValue)(data.drift);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        this.gravity.load(data.gravity);
+        const outModes = data.outModes ?? data.outMode ?? data.out_mode;
+        if (outModes !== undefined) {
+            if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_8__.isObject)(outModes)) {
+                this.outModes.load(outModes);
+            }
+            else {
+                this.outModes.load({
+                    default: outModes,
+                });
+            }
+        }
+        this.path.load(data.path ?? data.noise);
+        if (data.random !== undefined) {
+            this.random = data.random;
+        }
+        if (data.size !== undefined) {
+            this.size = data.size;
+        }
+        if (data.speed !== undefined) {
+            this.speed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_9__.setRangeValue)(data.speed);
+        }
+        this.spin.load(data.spin);
+        if (data.straight !== undefined) {
+            this.straight = data.straight;
+        }
+        this.trail.load(data.trail);
+        if (data.vibrate !== undefined) {
+            this.vibrate = data.vibrate;
+        }
+        if (data.warp !== undefined) {
+            this.warp = data.warp;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAngle.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAngle.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveAngle": () => (/* binding */ MoveAngle)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class MoveAngle {
+    constructor() {
+        this.offset = 0;
+        this.value = 90;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.offset !== undefined) {
+            this.offset = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.offset);
+        }
+        if (data.value !== undefined) {
+            this.value = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.value);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAttract.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAttract.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveAttract": () => (/* binding */ MoveAttract)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class MoveAttract {
+    constructor() {
+        this.distance = 200;
+        this.enable = false;
+        this.rotate = {
+            x: 3000,
+            y: 3000,
+        };
+    }
+    get rotateX() {
+        return this.rotate.x;
+    }
+    set rotateX(value) {
+        this.rotate.x = value;
+    }
+    get rotateY() {
+        return this.rotate.y;
+    }
+    set rotateY(value) {
+        this.rotate.y = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.distance !== undefined) {
+            this.distance = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.distance);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        const rotateX = data.rotate?.x ?? data.rotateX;
+        if (rotateX !== undefined) {
+            this.rotate.x = rotateX;
+        }
+        const rotateY = data.rotate?.y ?? data.rotateY;
+        if (rotateY !== undefined) {
+            this.rotate.y = rotateY;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveCenter.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveCenter.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveCenter": () => (/* binding */ MoveCenter)
+/* harmony export */ });
+class MoveCenter {
+    constructor() {
+        this.x = 50;
+        this.y = 50;
+        this.mode = "percent";
+        this.radius = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.x !== undefined) {
+            this.x = data.x;
+        }
+        if (data.y !== undefined) {
+            this.y = data.y;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        if (data.radius !== undefined) {
+            this.radius = data.radius;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveGravity.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveGravity.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveGravity": () => (/* binding */ MoveGravity)
+/* harmony export */ });
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class MoveGravity {
+    constructor() {
+        this.acceleration = 9.81;
+        this.enable = false;
+        this.inverse = false;
+        this.maxSpeed = 50;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.acceleration !== undefined) {
+            this.acceleration = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.acceleration);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.inverse !== undefined) {
+            this.inverse = data.inverse;
+        }
+        if (data.maxSpeed !== undefined) {
+            this.maxSpeed = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.maxSpeed);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrail.js":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrail.js ***!
+  \*****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveTrail": () => (/* binding */ MoveTrail)
+/* harmony export */ });
+/* harmony import */ var _MoveTrailFill__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MoveTrailFill */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrailFill.js");
+
+class MoveTrail {
+    constructor() {
+        this.enable = false;
+        this.length = 10;
+        this.fill = new _MoveTrailFill__WEBPACK_IMPORTED_MODULE_0__.MoveTrailFill();
+    }
+    get fillColor() {
+        return this.fill.color;
+    }
+    set fillColor(value) {
+        this.fill.load({ color: value });
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.fill !== undefined || data.fillColor !== undefined) {
+            this.fill.load(data.fill || { color: data.fillColor });
+        }
+        if (data.length !== undefined) {
+            this.length = data.length;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrailFill.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrailFill.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MoveTrailFill": () => (/* binding */ MoveTrailFill)
+/* harmony export */ });
+/* harmony import */ var _OptionsColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+
+class MoveTrailFill {
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.color !== undefined) {
+            this.color = _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor.create(this.color, data.color);
+        }
+        if (data.image !== undefined) {
+            this.image = data.image;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/OutModes.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/OutModes.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "OutModes": () => (/* binding */ OutModes)
+/* harmony export */ });
+class OutModes {
+    constructor() {
+        this.default = "out";
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.default !== undefined) {
+            this.default = data.default;
+        }
+        this.bottom = data.bottom ?? data.default;
+        this.left = data.left ?? data.default;
+        this.right = data.right ?? data.default;
+        this.top = data.top ?? data.default;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Path/MovePath.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Path/MovePath.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MovePath": () => (/* binding */ MovePath)
+/* harmony export */ });
+/* harmony import */ var _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+class MovePath {
+    constructor() {
+        this.clamp = true;
+        this.delay = new _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__.ValueWithRandom();
+        this.enable = false;
+        this.options = {};
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.clamp !== undefined) {
+            this.clamp = data.clamp;
+        }
+        this.delay.load(data.delay);
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        this.generator = data.generator;
+        if (data.options) {
+            this.options = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.deepExtend)(this.options, data.options);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Spin.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Spin.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Spin": () => (/* binding */ Spin)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+class Spin {
+    constructor() {
+        this.acceleration = 0;
+        this.enable = false;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.acceleration !== undefined) {
+            this.acceleration = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.setRangeValue)(data.acceleration);
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.position) {
+            this.position = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.deepExtend)({}, data.position);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesDensity.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesDensity.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesDensity": () => (/* binding */ ParticlesDensity)
+/* harmony export */ });
+class ParticlesDensity {
+    constructor() {
+        this.enable = false;
+        this.width = 1920;
+        this.height = 1080;
+    }
+    get area() {
+        return this.width;
+    }
+    set area(value) {
+        this.width = value;
+    }
+    get factor() {
+        return this.height;
+    }
+    set factor(value) {
+        this.height = value;
+    }
+    get value_area() {
+        return this.area;
+    }
+    set value_area(value) {
+        this.area = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        const width = data.width ?? data.area ?? data.value_area;
+        if (width !== undefined) {
+            this.width = width;
+        }
+        const height = data.height ?? data.factor;
+        if (height !== undefined) {
+            this.height = height;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesNumber.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesNumber.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesNumber": () => (/* binding */ ParticlesNumber)
+/* harmony export */ });
+/* harmony import */ var _ParticlesDensity__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ParticlesDensity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesDensity.js");
+
+class ParticlesNumber {
+    constructor() {
+        this.density = new _ParticlesDensity__WEBPACK_IMPORTED_MODULE_0__.ParticlesDensity();
+        this.limit = 0;
+        this.value = 0;
+    }
+    get max() {
+        return this.limit;
+    }
+    set max(value) {
+        this.limit = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.density.load(data.density);
+        const limit = data.limit ?? data.max;
+        if (limit !== undefined) {
+            this.limit = limit;
+        }
+        if (data.value !== undefined) {
+            this.value = data.value;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/Opacity.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/Opacity.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Opacity": () => (/* binding */ Opacity)
+/* harmony export */ });
+/* harmony import */ var _OpacityAnimation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OpacityAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/OpacityAnimation.js");
+/* harmony import */ var _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+class Opacity extends _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__.ValueWithRandom {
+    constructor() {
+        super();
+        this.animation = new _OpacityAnimation__WEBPACK_IMPORTED_MODULE_1__.OpacityAnimation();
+        this.random.minimumValue = 0.1;
+        this.value = 1;
+    }
+    get anim() {
+        return this.animation;
+    }
+    set anim(value) {
+        this.animation = value;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        super.load(data);
+        const animation = data.animation ?? data.anim;
+        if (animation !== undefined) {
+            this.animation.load(animation);
+            this.value = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.setRangeValue)(this.value, this.animation.enable ? this.animation.minimumValue : undefined);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/OpacityAnimation.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/OpacityAnimation.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "OpacityAnimation": () => (/* binding */ OpacityAnimation)
+/* harmony export */ });
+/* harmony import */ var _AnimationOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../AnimationOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js");
+
+class OpacityAnimation extends _AnimationOptions__WEBPACK_IMPORTED_MODULE_0__.RangedAnimationOptions {
+    constructor() {
+        super();
+        this.destroy = "none";
+        this.speed = 2;
+    }
+    get opacity_min() {
+        return this.minimumValue;
+    }
+    set opacity_min(value) {
+        this.minimumValue = value;
+    }
+    load(data) {
+        if (data?.opacity_min !== undefined && data.minimumValue === undefined) {
+            data.minimumValue = data.opacity_min;
+        }
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        if (data.destroy !== undefined) {
+            this.destroy = data.destroy;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ParticlesOptions.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ParticlesOptions.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ParticlesOptions": () => (/* binding */ ParticlesOptions)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _AnimatableColor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../AnimatableColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimatableColor.js");
+/* harmony import */ var _Collisions_Collisions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Collisions/Collisions */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/Collisions.js");
+/* harmony import */ var _Move_Move__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Move/Move */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Move.js");
+/* harmony import */ var _Opacity_Opacity__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Opacity/Opacity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/Opacity.js");
+/* harmony import */ var _Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Bounce/ParticlesBounce */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounce.js");
+/* harmony import */ var _Number_ParticlesNumber__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Number/ParticlesNumber */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesNumber.js");
+/* harmony import */ var _Shadow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Shadow */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shadow.js");
+/* harmony import */ var _Shape_Shape__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Shape/Shape */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shape/Shape.js");
+/* harmony import */ var _Size_Size__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Size/Size */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/Size.js");
+/* harmony import */ var _Stroke__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Stroke */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Stroke.js");
+/* harmony import */ var _ZIndex_ZIndex__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ZIndex/ZIndex */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ZIndex/ZIndex.js");
+
+
+
+
+
+
+
+
+
+
+
+
+class ParticlesOptions {
+    constructor(engine, container) {
+        this._engine = engine;
+        this._container = container;
+        this.bounce = new _Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_0__.ParticlesBounce();
+        this.collisions = new _Collisions_Collisions__WEBPACK_IMPORTED_MODULE_1__.Collisions();
+        this.color = new _AnimatableColor__WEBPACK_IMPORTED_MODULE_2__.AnimatableColor();
+        this.color.value = "#fff";
+        this.groups = {};
+        this.move = new _Move_Move__WEBPACK_IMPORTED_MODULE_3__.Move();
+        this.number = new _Number_ParticlesNumber__WEBPACK_IMPORTED_MODULE_4__.ParticlesNumber();
+        this.opacity = new _Opacity_Opacity__WEBPACK_IMPORTED_MODULE_5__.Opacity();
+        this.reduceDuplicates = false;
+        this.shadow = new _Shadow__WEBPACK_IMPORTED_MODULE_6__.Shadow();
+        this.shape = new _Shape_Shape__WEBPACK_IMPORTED_MODULE_7__.Shape();
+        this.size = new _Size_Size__WEBPACK_IMPORTED_MODULE_8__.Size();
+        this.stroke = new _Stroke__WEBPACK_IMPORTED_MODULE_9__.Stroke();
+        this.zIndex = new _ZIndex_ZIndex__WEBPACK_IMPORTED_MODULE_10__.ZIndex();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        this.bounce.load(data.bounce);
+        this.color.load(_AnimatableColor__WEBPACK_IMPORTED_MODULE_2__.AnimatableColor.create(this.color, data.color));
+        if (data.groups !== undefined) {
+            for (const group in data.groups) {
+                const item = data.groups[group];
+                if (item !== undefined) {
+                    this.groups[group] = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_11__.deepExtend)(this.groups[group] ?? {}, item);
+                }
+            }
+        }
+        this.move.load(data.move);
+        this.number.load(data.number);
+        this.opacity.load(data.opacity);
+        if (data.reduceDuplicates !== undefined) {
+            this.reduceDuplicates = data.reduceDuplicates;
+        }
+        this.shape.load(data.shape);
+        this.size.load(data.size);
+        this.shadow.load(data.shadow);
+        this.zIndex.load(data.zIndex);
+        const collisions = data.move?.collisions ?? data.move?.bounce;
+        if (collisions !== undefined) {
+            this.collisions.enable = collisions;
+        }
+        this.collisions.load(data.collisions);
+        if (data.interactivity !== undefined) {
+            this.interactivity = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_11__.deepExtend)({}, data.interactivity);
+        }
+        const strokeToLoad = data.stroke ?? data.shape?.stroke;
+        if (strokeToLoad) {
+            this.stroke = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_11__.executeOnSingleOrMultiple)(strokeToLoad, (t) => {
+                const tmp = new _Stroke__WEBPACK_IMPORTED_MODULE_9__.Stroke();
+                tmp.load(t);
+                return tmp;
+            });
+        }
+        if (this._container) {
+            const updaters = this._engine.plugins.updaters.get(this._container);
+            if (updaters) {
+                for (const updater of updaters) {
+                    if (updater.loadOptions) {
+                        updater.loadOptions(this, data);
+                    }
+                }
+            }
+            const interactors = this._engine.plugins.interactors.get(this._container);
+            if (interactors) {
+                for (const interactor of interactors) {
+                    if (interactor.loadParticlesOptions) {
+                        interactor.loadParticlesOptions(this, data);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shadow.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shadow.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Shadow": () => (/* binding */ Shadow)
+/* harmony export */ });
+/* harmony import */ var _OptionsColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+
+class Shadow {
+    constructor() {
+        this.blur = 0;
+        this.color = new _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor();
+        this.enable = false;
+        this.offset = {
+            x: 0,
+            y: 0,
+        };
+        this.color.value = "#000";
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.blur !== undefined) {
+            this.blur = data.blur;
+        }
+        this.color = _OptionsColor__WEBPACK_IMPORTED_MODULE_0__.OptionsColor.create(this.color, data.color);
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.offset === undefined) {
+            return;
+        }
+        if (data.offset.x !== undefined) {
+            this.offset.x = data.offset.x;
+        }
+        if (data.offset.y !== undefined) {
+            this.offset.y = data.offset.y;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shape/Shape.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shape/Shape.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Shape": () => (/* binding */ Shape)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+const charKey = "character", charAltKey = "char", imageKey = "image", imageAltKey = "images", polygonKey = "polygon", polygonAltKey = "star";
+class Shape {
+    constructor() {
+        this.loadShape = (item, mainKey, altKey, altOverride) => {
+            if (!item) {
+                return;
+            }
+            const itemIsArray = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(item), emptyValue = itemIsArray ? [] : {}, mainDifferentValues = itemIsArray !== (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(this.options[mainKey]), altDifferentValues = itemIsArray !== (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(this.options[altKey]);
+            if (mainDifferentValues) {
+                this.options[mainKey] = emptyValue;
+            }
+            if (altDifferentValues && altOverride) {
+                this.options[altKey] = emptyValue;
+            }
+            this.options[mainKey] = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)(this.options[mainKey] ?? emptyValue, item);
+            if (!this.options[altKey] || altOverride) {
+                this.options[altKey] = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)(this.options[altKey] ?? emptyValue, item);
+            }
+        };
+        this.close = true;
+        this.fill = true;
+        this.options = {};
+        this.type = "circle";
+    }
+    get character() {
+        return (this.options[charKey] ?? this.options[charAltKey]);
+    }
+    set character(value) {
+        this.options[charAltKey] = this.options[charKey] = value;
+    }
+    get custom() {
+        return this.options;
+    }
+    set custom(value) {
+        this.options = value;
+    }
+    get image() {
+        return (this.options[imageKey] ?? this.options[imageAltKey]);
+    }
+    set image(value) {
+        this.options[imageAltKey] = this.options[imageKey] = value;
+    }
+    get images() {
+        return this.image;
+    }
+    set images(value) {
+        this.image = value;
+    }
+    get polygon() {
+        return (this.options[polygonKey] ?? this.options[polygonAltKey]);
+    }
+    set polygon(value) {
+        this.options[polygonAltKey] = this.options[polygonKey] = value;
+    }
+    get stroke() {
+        return [];
+    }
+    set stroke(_value) {
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        const options = data.options ?? data.custom;
+        if (options !== undefined) {
+            for (const shape in options) {
+                const item = options[shape];
+                if (item) {
+                    this.options[shape] = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)(this.options[shape] ?? {}, item);
+                }
+            }
+        }
+        this.loadShape(data.character, charKey, charAltKey, true);
+        this.loadShape(data.polygon, polygonKey, polygonAltKey, false);
+        this.loadShape(data.image ?? data.images, imageKey, imageAltKey, true);
+        if (data.close !== undefined) {
+            this.close = data.close;
+        }
+        if (data.fill !== undefined) {
+            this.fill = data.fill;
+        }
+        if (data.type !== undefined) {
+            this.type = data.type;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/Size.js":
+/*!************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/Size.js ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Size": () => (/* binding */ Size)
+/* harmony export */ });
+/* harmony import */ var _SizeAnimation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SizeAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/SizeAnimation.js");
+/* harmony import */ var _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+class Size extends _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__.ValueWithRandom {
+    constructor() {
+        super();
+        this.animation = new _SizeAnimation__WEBPACK_IMPORTED_MODULE_1__.SizeAnimation();
+        this.random.minimumValue = 1;
+        this.value = 3;
+    }
+    get anim() {
+        return this.animation;
+    }
+    set anim(value) {
+        this.animation = value;
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        const animation = data.animation ?? data.anim;
+        if (animation !== undefined) {
+            this.animation.load(animation);
+            this.value = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.setRangeValue)(this.value, this.animation.enable ? this.animation.minimumValue : undefined);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/SizeAnimation.js":
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/SizeAnimation.js ***!
+  \*********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SizeAnimation": () => (/* binding */ SizeAnimation)
+/* harmony export */ });
+/* harmony import */ var _AnimationOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../AnimationOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js");
+
+class SizeAnimation extends _AnimationOptions__WEBPACK_IMPORTED_MODULE_0__.RangedAnimationOptions {
+    constructor() {
+        super();
+        this.destroy = "none";
+        this.speed = 5;
+    }
+    get size_min() {
+        return this.minimumValue;
+    }
+    set size_min(value) {
+        this.minimumValue = value;
+    }
+    load(data) {
+        if (data?.size_min !== undefined && data.minimumValue === undefined) {
+            data.minimumValue = data.size_min;
+        }
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        if (data.destroy !== undefined) {
+            this.destroy = data.destroy;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Stroke.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Stroke.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Stroke": () => (/* binding */ Stroke)
+/* harmony export */ });
+/* harmony import */ var _AnimatableColor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../AnimatableColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimatableColor.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+class Stroke {
+    constructor() {
+        this.width = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.color !== undefined) {
+            this.color = _AnimatableColor__WEBPACK_IMPORTED_MODULE_0__.AnimatableColor.create(this.color, data.color);
+        }
+        if (data.width !== undefined) {
+            this.width = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.setRangeValue)(data.width);
+        }
+        if (data.opacity !== undefined) {
+            this.opacity = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.setRangeValue)(data.opacity);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ZIndex/ZIndex.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ZIndex/ZIndex.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ZIndex": () => (/* binding */ ZIndex)
+/* harmony export */ });
+/* harmony import */ var _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+
+class ZIndex extends _ValueWithRandom__WEBPACK_IMPORTED_MODULE_0__.ValueWithRandom {
+    constructor() {
+        super();
+        this.opacityRate = 1;
+        this.sizeRate = 1;
+        this.velocityRate = 1;
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        if (data.opacityRate !== undefined) {
+            this.opacityRate = data.opacityRate;
+        }
+        if (data.sizeRate !== undefined) {
+            this.sizeRate = data.sizeRate;
+        }
+        if (data.velocityRate !== undefined) {
+            this.velocityRate = data.velocityRate;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Random.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Random.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Random": () => (/* binding */ Random)
+/* harmony export */ });
+class Random {
+    constructor() {
+        this.enable = false;
+        this.minimumValue = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.enable !== undefined) {
+            this.enable = data.enable;
+        }
+        if (data.minimumValue !== undefined) {
+            this.minimumValue = data.minimumValue;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Responsive.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Responsive.js ***!
+  \***************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Responsive": () => (/* binding */ Responsive)
+/* harmony export */ });
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+class Responsive {
+    constructor() {
+        this.maxWidth = Infinity;
+        this.options = {};
+        this.mode = "canvas";
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.maxWidth !== undefined) {
+            this.maxWidth = data.maxWidth;
+        }
+        if (data.mode !== undefined) {
+            if (data.mode === "screen") {
+                this.mode = "screen";
+            }
+            else {
+                this.mode = "canvas";
+            }
+        }
+        if (data.options !== undefined) {
+            this.options = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_0__.deepExtend)({}, data.options);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/Theme.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Theme/Theme.js ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Theme": () => (/* binding */ Theme)
+/* harmony export */ });
+/* harmony import */ var _ThemeDefault__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ThemeDefault */ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/ThemeDefault.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+class Theme {
+    constructor() {
+        this.name = "";
+        this.default = new _ThemeDefault__WEBPACK_IMPORTED_MODULE_0__.ThemeDefault();
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.name !== undefined) {
+            this.name = data.name;
+        }
+        this.default.load(data.default);
+        if (data.options !== undefined) {
+            this.options = (0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.deepExtend)({}, data.options);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/ThemeDefault.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/Theme/ThemeDefault.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ThemeDefault": () => (/* binding */ ThemeDefault)
+/* harmony export */ });
+class ThemeDefault {
+    constructor() {
+        this.auto = false;
+        this.mode = "any";
+        this.value = false;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if (data.auto !== undefined) {
+            this.auto = data.auto;
+        }
+        if (data.mode !== undefined) {
+            this.mode = data.mode;
+        }
+        if (data.value !== undefined) {
+            this.value = data.value;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js":
+/*!********************************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js ***!
+  \********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ValueWithRandom": () => (/* binding */ ValueWithRandom),
+/* harmony export */   "AnimationValueWithRandom": () => (/* binding */ AnimationValueWithRandom),
+/* harmony export */   "RangedAnimationValueWithRandom": () => (/* binding */ RangedAnimationValueWithRandom)
+/* harmony export */ });
+/* harmony import */ var _AnimationOptions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AnimationOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js");
+/* harmony import */ var _Random__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Random */ "./node_modules/tsparticles-engine/esm/Options/Classes/Random.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+
+
+
+class ValueWithRandom {
+    constructor() {
+        this.random = new _Random__WEBPACK_IMPORTED_MODULE_0__.Random();
+        this.value = 0;
+    }
+    load(data) {
+        if (!data) {
+            return;
+        }
+        if ((0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isBoolean)(data.random)) {
+            this.random.enable = data.random;
+        }
+        else {
+            this.random.load(data.random);
+        }
+        if (data.value !== undefined) {
+            this.value = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.setRangeValue)(data.value, this.random.enable ? this.random.minimumValue : undefined);
+        }
+    }
+}
+class AnimationValueWithRandom extends ValueWithRandom {
+    constructor() {
+        super();
+        this.animation = new _AnimationOptions__WEBPACK_IMPORTED_MODULE_3__.AnimationOptions();
+    }
+    get anim() {
+        return this.animation;
+    }
+    set anim(value) {
+        this.animation = value;
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        const animation = data.animation ?? data.anim;
+        if (animation !== undefined) {
+            this.animation.load(animation);
+        }
+    }
+}
+class RangedAnimationValueWithRandom extends AnimationValueWithRandom {
+    constructor() {
+        super();
+        this.animation = new _AnimationOptions__WEBPACK_IMPORTED_MODULE_3__.RangedAnimationOptions();
+    }
+    load(data) {
+        super.load(data);
+        if (!data) {
+            return;
+        }
+        const animation = data.animation ?? data.anim;
+        if (animation !== undefined) {
+            this.value = (0,_Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_2__.setRangeValue)(this.value, this.animation.enable ? this.animation.minimumValue : undefined);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/CanvasUtils.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/CanvasUtils.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "drawLine": () => (/* binding */ drawLine),
+/* harmony export */   "drawTriangle": () => (/* binding */ drawTriangle),
+/* harmony export */   "paintBase": () => (/* binding */ paintBase),
+/* harmony export */   "paintImage": () => (/* binding */ paintImage),
+/* harmony export */   "clear": () => (/* binding */ clear),
+/* harmony export */   "drawParticle": () => (/* binding */ drawParticle),
+/* harmony export */   "drawShape": () => (/* binding */ drawShape),
+/* harmony export */   "drawShapeAfterEffect": () => (/* binding */ drawShapeAfterEffect),
+/* harmony export */   "drawPlugin": () => (/* binding */ drawPlugin),
+/* harmony export */   "drawParticlePlugin": () => (/* binding */ drawParticlePlugin),
+/* harmony export */   "alterHsl": () => (/* binding */ alterHsl)
+/* harmony export */ });
+/* harmony import */ var _ColorUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+
+function drawLine(context, begin, end) {
+    context.beginPath();
+    context.moveTo(begin.x, begin.y);
+    context.lineTo(end.x, end.y);
+    context.closePath();
+}
+function drawTriangle(context, p1, p2, p3) {
+    context.beginPath();
+    context.moveTo(p1.x, p1.y);
+    context.lineTo(p2.x, p2.y);
+    context.lineTo(p3.x, p3.y);
+    context.closePath();
+}
+function paintBase(context, dimension, baseColor) {
+    context.fillStyle = baseColor ?? "rgba(0,0,0,0)";
+    context.fillRect(0, 0, dimension.width, dimension.height);
+}
+function paintImage(context, dimension, image, opacity) {
+    if (!image) {
+        return;
+    }
+    context.globalAlpha = opacity;
+    context.drawImage(image, 0, 0, dimension.width, dimension.height);
+    context.globalAlpha = 1;
+}
+function clear(context, dimension) {
+    context.clearRect(0, 0, dimension.width, dimension.height);
+}
+function drawParticle(data) {
+    const { container, context, particle, delta, colorStyles, backgroundMask, composite, radius, opacity, shadow, transform, } = data;
+    const pos = particle.getPosition(), angle = particle.rotation + (particle.pathRotation ? particle.velocity.angle : 0), rotateData = {
+        sin: Math.sin(angle),
+        cos: Math.cos(angle),
+    }, transformData = {
+        a: rotateData.cos * (transform.a ?? 1),
+        b: rotateData.sin * (transform.b ?? 1),
+        c: -rotateData.sin * (transform.c ?? 1),
+        d: rotateData.cos * (transform.d ?? 1),
+    };
+    context.setTransform(transformData.a, transformData.b, transformData.c, transformData.d, pos.x, pos.y);
+    context.beginPath();
+    if (backgroundMask) {
+        context.globalCompositeOperation = composite;
+    }
+    const shadowColor = particle.shadowColor;
+    if (shadow.enable && shadowColor) {
+        context.shadowBlur = shadow.blur;
+        context.shadowColor = (0,_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.getStyleFromRgb)(shadowColor);
+        context.shadowOffsetX = shadow.offset.x;
+        context.shadowOffsetY = shadow.offset.y;
+    }
+    if (colorStyles.fill) {
+        context.fillStyle = colorStyles.fill;
+    }
+    const strokeWidth = particle.strokeWidth ?? 0;
+    context.lineWidth = strokeWidth;
+    if (colorStyles.stroke) {
+        context.strokeStyle = colorStyles.stroke;
+    }
+    drawShape(container, context, particle, radius, opacity, delta);
+    if (strokeWidth > 0) {
+        context.stroke();
+    }
+    if (particle.close) {
+        context.closePath();
+    }
+    if (particle.fill) {
+        context.fill();
+    }
+    drawShapeAfterEffect(container, context, particle, radius, opacity, delta);
+    context.globalCompositeOperation = "source-over";
+    context.setTransform(1, 0, 0, 1, 0, 0);
+}
+function drawShape(container, context, particle, radius, opacity, delta) {
+    if (!particle.shape) {
+        return;
+    }
+    const drawer = container.drawers.get(particle.shape);
+    if (!drawer) {
+        return;
+    }
+    drawer.draw(context, particle, radius, opacity, delta, container.retina.pixelRatio);
+}
+function drawShapeAfterEffect(container, context, particle, radius, opacity, delta) {
+    if (!particle.shape) {
+        return;
+    }
+    const drawer = container.drawers.get(particle.shape);
+    if (!drawer || !drawer.afterEffect) {
+        return;
+    }
+    drawer.afterEffect(context, particle, radius, opacity, delta, container.retina.pixelRatio);
+}
+function drawPlugin(context, plugin, delta) {
+    if (!plugin.draw) {
+        return;
+    }
+    plugin.draw(context, delta);
+}
+function drawParticlePlugin(context, plugin, particle, delta) {
+    if (!plugin.drawParticle) {
+        return;
+    }
+    plugin.drawParticle(context, particle, delta);
+}
+function alterHsl(color, type, value) {
+    return {
+        h: color.h,
+        s: color.s,
+        l: color.l + (type === "darken" ? -1 : 1) * value,
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addColorManager": () => (/* binding */ addColorManager),
+/* harmony export */   "rangeColorToRgb": () => (/* binding */ rangeColorToRgb),
+/* harmony export */   "colorToRgb": () => (/* binding */ colorToRgb),
+/* harmony export */   "colorToHsl": () => (/* binding */ colorToHsl),
+/* harmony export */   "rangeColorToHsl": () => (/* binding */ rangeColorToHsl),
+/* harmony export */   "rgbToHsl": () => (/* binding */ rgbToHsl),
+/* harmony export */   "stringToAlpha": () => (/* binding */ stringToAlpha),
+/* harmony export */   "stringToRgb": () => (/* binding */ stringToRgb),
+/* harmony export */   "hslToRgb": () => (/* binding */ hslToRgb),
+/* harmony export */   "hslaToRgba": () => (/* binding */ hslaToRgba),
+/* harmony export */   "getRandomRgbColor": () => (/* binding */ getRandomRgbColor),
+/* harmony export */   "getStyleFromRgb": () => (/* binding */ getStyleFromRgb),
+/* harmony export */   "getStyleFromHsl": () => (/* binding */ getStyleFromHsl),
+/* harmony export */   "colorMix": () => (/* binding */ colorMix),
+/* harmony export */   "getLinkColor": () => (/* binding */ getLinkColor),
+/* harmony export */   "getLinkRandomColor": () => (/* binding */ getLinkRandomColor),
+/* harmony export */   "getHslFromAnimation": () => (/* binding */ getHslFromAnimation),
+/* harmony export */   "getHslAnimationFromHsl": () => (/* binding */ getHslAnimationFromHsl)
+/* harmony export */ });
+/* harmony import */ var _NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+const randomColorValue = "random", midColorValue = "mid", colorManagers = new Map();
+function addColorManager(manager) {
+    colorManagers.set(manager.key, manager);
+}
+function hue2rgb(p, q, t) {
+    if (t < 0) {
+        t += 1;
+    }
+    if (t > 1) {
+        t -= 1;
+    }
+    if (t < 1 / 6) {
+        return p + (q - p) * 6 * t;
+    }
+    if (t < 1 / 2) {
+        return q;
+    }
+    if (t < 2 / 3) {
+        return p + (q - p) * (2 / 3 - t) * 6;
+    }
+    return p;
+}
+function stringToRgba(input) {
+    for (const [, manager] of colorManagers) {
+        if (input.startsWith(manager.stringPrefix)) {
+            return manager.parseString(input);
+        }
+    }
+    const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])([a-f\d])?$/i, hexFixed = input.replace(shorthandRegex, (_, r, g, b, a) => {
+        return r + r + g + g + b + b + (a !== undefined ? a + a : "");
+    }), regex = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})?$/i, result = regex.exec(hexFixed);
+    return result
+        ? {
+            a: result[4] !== undefined ? parseInt(result[4], 16) / 0xff : 1,
+            b: parseInt(result[3], 16),
+            g: parseInt(result[2], 16),
+            r: parseInt(result[1], 16),
+        }
+        : undefined;
+}
+function rangeColorToRgb(input, index, useIndex = true) {
+    if (!input) {
+        return;
+    }
+    const color = (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(input) ? { value: input } : input;
+    if ((0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(color.value)) {
+        return colorToRgb(color.value, index, useIndex);
+    }
+    if ((0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(color.value)) {
+        return rangeColorToRgb({
+            value: (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromArray)(color.value, index, useIndex),
+        });
+    }
+    for (const [, manager] of colorManagers) {
+        const res = manager.handleRangeColor(color);
+        if (res) {
+            return res;
+        }
+    }
+}
+function colorToRgb(input, index, useIndex = true) {
+    if (!input) {
+        return;
+    }
+    const color = (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(input) ? { value: input } : input;
+    if ((0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(color.value)) {
+        return color.value === randomColorValue ? getRandomRgbColor() : stringToRgb(color.value);
+    }
+    if ((0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isArray)(color.value)) {
+        return colorToRgb({
+            value: (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.itemFromArray)(color.value, index, useIndex),
+        });
+    }
+    for (const [, manager] of colorManagers) {
+        const res = manager.handleColor(color);
+        if (res) {
+            return res;
+        }
+    }
+}
+function colorToHsl(color, index, useIndex = true) {
+    const rgb = colorToRgb(color, index, useIndex);
+    return rgb ? rgbToHsl(rgb) : undefined;
+}
+function rangeColorToHsl(color, index, useIndex = true) {
+    const rgb = rangeColorToRgb(color, index, useIndex);
+    return rgb ? rgbToHsl(rgb) : undefined;
+}
+function rgbToHsl(color) {
+    const r1 = color.r / 255, g1 = color.g / 255, b1 = color.b / 255, max = Math.max(r1, g1, b1), min = Math.min(r1, g1, b1), res = {
+        h: 0,
+        l: (max + min) / 2,
+        s: 0,
+    };
+    if (max !== min) {
+        res.s = res.l < 0.5 ? (max - min) / (max + min) : (max - min) / (2.0 - max - min);
+        res.h =
+            r1 === max
+                ? (g1 - b1) / (max - min)
+                : (res.h = g1 === max ? 2.0 + (b1 - r1) / (max - min) : 4.0 + (r1 - g1) / (max - min));
+    }
+    res.l *= 100;
+    res.s *= 100;
+    res.h *= 60;
+    if (res.h < 0) {
+        res.h += 360;
+    }
+    if (res.h >= 360) {
+        res.h -= 360;
+    }
+    return res;
+}
+function stringToAlpha(input) {
+    return stringToRgba(input)?.a;
+}
+function stringToRgb(input) {
+    return stringToRgba(input);
+}
+function hslToRgb(hsl) {
+    const result = { b: 0, g: 0, r: 0 }, hslPercent = {
+        h: hsl.h / 360,
+        l: hsl.l / 100,
+        s: hsl.s / 100,
+    };
+    if (!hslPercent.s) {
+        result.r = result.g = result.b = hslPercent.l;
+    }
+    else {
+        const q = hslPercent.l < 0.5
+            ? hslPercent.l * (1 + hslPercent.s)
+            : hslPercent.l + hslPercent.s - hslPercent.l * hslPercent.s, p = 2 * hslPercent.l - q;
+        result.r = hue2rgb(p, q, hslPercent.h + 1 / 3);
+        result.g = hue2rgb(p, q, hslPercent.h);
+        result.b = hue2rgb(p, q, hslPercent.h - 1 / 3);
+    }
+    result.r = Math.floor(result.r * 255);
+    result.g = Math.floor(result.g * 255);
+    result.b = Math.floor(result.b * 255);
+    return result;
+}
+function hslaToRgba(hsla) {
+    const rgbResult = hslToRgb(hsla);
+    return {
+        a: hsla.a,
+        b: rgbResult.b,
+        g: rgbResult.g,
+        r: rgbResult.r,
+    };
+}
+function getRandomRgbColor(min) {
+    const fixedMin = min ?? 0;
+    return {
+        b: Math.floor((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.randomInRange)((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.setRangeValue)(fixedMin, 256))),
+        g: Math.floor((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.randomInRange)((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.setRangeValue)(fixedMin, 256))),
+        r: Math.floor((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.randomInRange)((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.setRangeValue)(fixedMin, 256))),
+    };
+}
+function getStyleFromRgb(color, opacity) {
+    return `rgba(${color.r}, ${color.g}, ${color.b}, ${opacity ?? 1})`;
+}
+function getStyleFromHsl(color, opacity) {
+    return `hsla(${color.h}, ${color.s}%, ${color.l}%, ${opacity ?? 1})`;
+}
+function colorMix(color1, color2, size1, size2) {
+    let rgb1 = color1, rgb2 = color2;
+    if (rgb1.r === undefined) {
+        rgb1 = hslToRgb(color1);
+    }
+    if (rgb2.r === undefined) {
+        rgb2 = hslToRgb(color2);
+    }
+    return {
+        b: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.mix)(rgb1.b, rgb2.b, size1, size2),
+        g: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.mix)(rgb1.g, rgb2.g, size1, size2),
+        r: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.mix)(rgb1.r, rgb2.r, size1, size2),
+    };
+}
+function getLinkColor(p1, p2, linkColor) {
+    if (linkColor === randomColorValue) {
+        return getRandomRgbColor();
+    }
+    else if (linkColor === midColorValue) {
+        const sourceColor = p1.getFillColor() ?? p1.getStrokeColor(), destColor = p2?.getFillColor() ?? p2?.getStrokeColor();
+        if (sourceColor && destColor && p2) {
+            return colorMix(sourceColor, destColor, p1.getRadius(), p2.getRadius());
+        }
+        else {
+            const hslColor = sourceColor ?? destColor;
+            if (hslColor) {
+                return hslToRgb(hslColor);
+            }
+        }
+    }
+    else {
+        return linkColor;
+    }
+}
+function getLinkRandomColor(optColor, blink, consent) {
+    const color = (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isString)(optColor) ? optColor : optColor.value;
+    if (color === randomColorValue) {
+        if (consent) {
+            return rangeColorToRgb({
+                value: color,
+            });
+        }
+        if (blink) {
+            return randomColorValue;
+        }
+        return midColorValue;
+    }
+    else if (color === midColorValue) {
+        return midColorValue;
+    }
+    else {
+        return rangeColorToRgb({
+            value: color,
+        });
+    }
+}
+function getHslFromAnimation(animation) {
+    return animation !== undefined
+        ? {
+            h: animation.h.value,
+            s: animation.s.value,
+            l: animation.l.value,
+        }
+        : undefined;
+}
+function getHslAnimationFromHsl(hsl, animationOptions, reduceFactor) {
+    const resColor = {
+        h: {
+            enable: false,
+            value: hsl.h,
+        },
+        s: {
+            enable: false,
+            value: hsl.s,
+        },
+        l: {
+            enable: false,
+            value: hsl.l,
+        },
+    };
+    if (animationOptions) {
+        setColorAnimation(resColor.h, animationOptions.h, reduceFactor);
+        setColorAnimation(resColor.s, animationOptions.s, reduceFactor);
+        setColorAnimation(resColor.l, animationOptions.l, reduceFactor);
+    }
+    return resColor;
+}
+function setColorAnimation(colorValue, colorAnimation, reduceFactor) {
+    colorValue.enable = colorAnimation.enable;
+    if (colorValue.enable) {
+        colorValue.velocity = ((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(colorAnimation.speed) / 100) * reduceFactor;
+        colorValue.decay = 1 - (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(colorAnimation.decay);
+        colorValue.status = "increasing";
+        colorValue.loops = 0;
+        colorValue.maxLoops = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(colorAnimation.count);
+        colorValue.time = 0;
+        colorValue.delayTime = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(colorAnimation.delay) * 1000;
+        if (!colorAnimation.sync) {
+            colorValue.velocity *= (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRandom)();
+            colorValue.value *= (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRandom)();
+        }
+        colorValue.initialValue = colorValue.value;
+    }
+    else {
+        colorValue.velocity = 0;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/EventDispatcher.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/EventDispatcher.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EventDispatcher": () => (/* binding */ EventDispatcher)
+/* harmony export */ });
+class EventDispatcher {
+    constructor() {
+        this._listeners = new Map();
+    }
+    addEventListener(type, listener) {
+        this.removeEventListener(type, listener);
+        let arr = this._listeners.get(type);
+        if (!arr) {
+            arr = [];
+            this._listeners.set(type, arr);
+        }
+        arr.push(listener);
+    }
+    dispatchEvent(type, args) {
+        const listeners = this._listeners.get(type);
+        listeners && listeners.forEach((handler) => handler(args));
+    }
+    hasEventListener(type) {
+        return !!this._listeners.get(type);
+    }
+    removeAllEventListeners(type) {
+        if (!type) {
+            this._listeners = new Map();
+        }
+        else {
+            this._listeners.delete(type);
+        }
+    }
+    removeEventListener(type, listener) {
+        const arr = this._listeners.get(type);
+        if (!arr) {
+            return;
+        }
+        const length = arr.length, idx = arr.indexOf(listener);
+        if (idx < 0) {
+            return;
+        }
+        if (length === 1) {
+            this._listeners.delete(type);
+        }
+        else {
+            arr.splice(idx, 1);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/HslColorManager.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/HslColorManager.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HslColorManager": () => (/* binding */ HslColorManager)
+/* harmony export */ });
+/* harmony import */ var _NumberUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _ColorUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+
+
+class HslColorManager {
+    constructor() {
+        this.key = "hsl";
+        this.stringPrefix = "hsl";
+    }
+    handleColor(color) {
+        const colorValue = color.value, hslColor = colorValue.hsl ?? color.value;
+        if (hslColor.h !== undefined && hslColor.s !== undefined && hslColor.l !== undefined) {
+            return (0,_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.hslToRgb)(hslColor);
+        }
+    }
+    handleRangeColor(color) {
+        const colorValue = color.value, hslColor = colorValue.hsl ?? color.value;
+        if (hslColor.h !== undefined && hslColor.l !== undefined) {
+            return (0,_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.hslToRgb)({
+                h: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(hslColor.h),
+                l: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(hslColor.l),
+                s: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.getRangeValue)(hslColor.s),
+            });
+        }
+    }
+    parseString(input) {
+        if (!input.startsWith("hsl")) {
+            return;
+        }
+        const regex = /hsla?\(\s*(\d+)\s*,\s*(\d+)%\s*,\s*(\d+)%\s*(,\s*([\d.%]+)\s*)?\)/i, result = regex.exec(input);
+        return result
+            ? (0,_ColorUtils__WEBPACK_IMPORTED_MODULE_0__.hslaToRgba)({
+                a: result.length > 4 ? (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_1__.parseAlpha)(result[5]) : 1,
+                h: parseInt(result[1], 10),
+                l: parseInt(result[3], 10),
+                s: parseInt(result[2], 10),
+            })
+            : undefined;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "addEasing": () => (/* binding */ addEasing),
+/* harmony export */   "getEasing": () => (/* binding */ getEasing),
+/* harmony export */   "setRandom": () => (/* binding */ setRandom),
+/* harmony export */   "getRandom": () => (/* binding */ getRandom),
+/* harmony export */   "clamp": () => (/* binding */ clamp),
+/* harmony export */   "mix": () => (/* binding */ mix),
+/* harmony export */   "randomInRange": () => (/* binding */ randomInRange),
+/* harmony export */   "getRangeValue": () => (/* binding */ getRangeValue),
+/* harmony export */   "getRangeMin": () => (/* binding */ getRangeMin),
+/* harmony export */   "getRangeMax": () => (/* binding */ getRangeMax),
+/* harmony export */   "setRangeValue": () => (/* binding */ setRangeValue),
+/* harmony export */   "getValue": () => (/* binding */ getValue),
+/* harmony export */   "getDistances": () => (/* binding */ getDistances),
+/* harmony export */   "getDistance": () => (/* binding */ getDistance),
+/* harmony export */   "getParticleDirectionAngle": () => (/* binding */ getParticleDirectionAngle),
+/* harmony export */   "getParticleBaseVelocity": () => (/* binding */ getParticleBaseVelocity),
+/* harmony export */   "collisionVelocity": () => (/* binding */ collisionVelocity),
+/* harmony export */   "calcPositionFromSize": () => (/* binding */ calcPositionFromSize),
+/* harmony export */   "calcPositionOrRandomFromSize": () => (/* binding */ calcPositionOrRandomFromSize),
+/* harmony export */   "calcPositionOrRandomFromSizeRanged": () => (/* binding */ calcPositionOrRandomFromSizeRanged),
+/* harmony export */   "calcExactPositionOrRandomFromSize": () => (/* binding */ calcExactPositionOrRandomFromSize),
+/* harmony export */   "calcExactPositionOrRandomFromSizeRanged": () => (/* binding */ calcExactPositionOrRandomFromSizeRanged),
+/* harmony export */   "parseAlpha": () => (/* binding */ parseAlpha)
+/* harmony export */ });
+/* harmony import */ var _Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Core/Utils/Vector */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js");
+
+
+let _random = Math.random;
+const easings = new Map();
+function addEasing(name, easing) {
+    if (easings.get(name)) {
+        return;
+    }
+    easings.set(name, easing);
+}
+function getEasing(name) {
+    return easings.get(name) || ((value) => value);
+}
+function setRandom(rnd = Math.random) {
+    _random = rnd;
+}
+function getRandom() {
+    return clamp(_random(), 0, 1 - 1e-16);
+}
+function clamp(num, min, max) {
+    return Math.min(Math.max(num, min), max);
+}
+function mix(comp1, comp2, weight1, weight2) {
+    return Math.floor((comp1 * weight1 + comp2 * weight2) / (weight1 + weight2));
+}
+function randomInRange(r) {
+    const max = getRangeMax(r);
+    let min = getRangeMin(r);
+    if (max === min) {
+        min = 0;
+    }
+    return getRandom() * (max - min) + min;
+}
+function getRangeValue(value) {
+    return (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(value) ? value : randomInRange(value);
+}
+function getRangeMin(value) {
+    return (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(value) ? value : value.min;
+}
+function getRangeMax(value) {
+    return (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(value) ? value : value.max;
+}
+function setRangeValue(source, value) {
+    if (source === value || (value === undefined && (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(source))) {
+        return source;
+    }
+    const min = getRangeMin(source), max = getRangeMax(source);
+    return value !== undefined
+        ? {
+            min: Math.min(min, value),
+            max: Math.max(max, value),
+        }
+        : setRangeValue(min, max);
+}
+function getValue(options) {
+    const random = options.random, { enable, minimumValue } = (0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isBoolean)(random)
+        ? {
+            enable: random,
+            minimumValue: 0,
+        }
+        : random;
+    return enable ? getRangeValue(setRangeValue(options.value, minimumValue)) : getRangeValue(options.value);
+}
+function getDistances(pointA, pointB) {
+    const dx = pointA.x - pointB.x, dy = pointA.y - pointB.y;
+    return { dx: dx, dy: dy, distance: Math.sqrt(dx ** 2 + dy ** 2) };
+}
+function getDistance(pointA, pointB) {
+    return getDistances(pointA, pointB).distance;
+}
+function getParticleDirectionAngle(direction, position, center) {
+    if ((0,_Utils__WEBPACK_IMPORTED_MODULE_0__.isNumber)(direction)) {
+        return (direction * Math.PI) / 180;
+    }
+    switch (direction) {
+        case "top":
+            return -Math.PI / 2;
+        case "top-right":
+            return -Math.PI / 4;
+        case "right":
+            return 0;
+        case "bottom-right":
+            return Math.PI / 4;
+        case "bottom":
+            return Math.PI / 2;
+        case "bottom-left":
+            return (3 * Math.PI) / 4;
+        case "left":
+            return Math.PI;
+        case "top-left":
+            return (-3 * Math.PI) / 4;
+        case "inside":
+            return Math.atan2(center.y - position.y, center.x - position.x);
+        case "outside":
+            return Math.atan2(position.y - center.y, position.x - center.x);
+        default:
+            return getRandom() * Math.PI * 2;
+    }
+}
+function getParticleBaseVelocity(direction) {
+    const baseVelocity = _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_1__.Vector.origin;
+    baseVelocity.length = 1;
+    baseVelocity.angle = direction;
+    return baseVelocity;
+}
+function collisionVelocity(v1, v2, m1, m2) {
+    return _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_1__.Vector.create((v1.x * (m1 - m2)) / (m1 + m2) + (v2.x * 2 * m2) / (m1 + m2), v1.y);
+}
+function calcPositionFromSize(data) {
+    return data.position && data.position.x !== undefined && data.position.y !== undefined
+        ? {
+            x: (data.position.x * data.size.width) / 100,
+            y: (data.position.y * data.size.height) / 100,
+        }
+        : undefined;
+}
+function calcPositionOrRandomFromSize(data) {
+    return {
+        x: ((data.position?.x ?? getRandom() * 100) * data.size.width) / 100,
+        y: ((data.position?.y ?? getRandom() * 100) * data.size.height) / 100,
+    };
+}
+function calcPositionOrRandomFromSizeRanged(data) {
+    const position = {
+        x: data.position?.x !== undefined ? getRangeValue(data.position.x) : undefined,
+        y: data.position?.y !== undefined ? getRangeValue(data.position.y) : undefined,
+    };
+    return calcPositionOrRandomFromSize({ size: data.size, position });
+}
+function calcExactPositionOrRandomFromSize(data) {
+    return {
+        x: data.position?.x ?? getRandom() * data.size.width,
+        y: data.position?.y ?? getRandom() * data.size.height,
+    };
+}
+function calcExactPositionOrRandomFromSizeRanged(data) {
+    const position = {
+        x: data.position?.x !== undefined ? getRangeValue(data.position.x) : undefined,
+        y: data.position?.y !== undefined ? getRangeValue(data.position.y) : undefined,
+    };
+    return calcExactPositionOrRandomFromSize({ size: data.size, position });
+}
+function parseAlpha(input) {
+    return input ? (input.endsWith("%") ? parseFloat(input) / 100 : parseFloat(input)) : 1;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "loadOptions": () => (/* binding */ loadOptions),
+/* harmony export */   "loadParticlesOptions": () => (/* binding */ loadParticlesOptions)
+/* harmony export */ });
+/* harmony import */ var _Options_Classes_Particles_ParticlesOptions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Options/Classes/Particles/ParticlesOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ParticlesOptions.js");
+
+function loadOptions(options, ...sourceOptionsArr) {
+    for (const sourceOptions of sourceOptionsArr) {
+        options.load(sourceOptions);
+    }
+}
+function loadParticlesOptions(engine, container, ...sourceOptionsArr) {
+    const options = new _Options_Classes_Particles_ParticlesOptions__WEBPACK_IMPORTED_MODULE_0__.ParticlesOptions(engine, container);
+    loadOptions(options, ...sourceOptionsArr);
+    return options;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/RgbColorManager.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/RgbColorManager.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "RgbColorManager": () => (/* binding */ RgbColorManager)
+/* harmony export */ });
+/* harmony import */ var _NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+
+class RgbColorManager {
+    constructor() {
+        this.key = "rgb";
+        this.stringPrefix = "rgb";
+    }
+    handleColor(color) {
+        const colorValue = color.value, rgbColor = colorValue.rgb ?? color.value;
+        if (rgbColor.r !== undefined) {
+            return rgbColor;
+        }
+    }
+    handleRangeColor(color) {
+        const colorValue = color.value, rgbColor = colorValue.rgb ?? color.value;
+        if (rgbColor.r !== undefined) {
+            return {
+                r: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(rgbColor.r),
+                g: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(rgbColor.g),
+                b: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(rgbColor.b),
+            };
+        }
+    }
+    parseString(input) {
+        if (!input.startsWith(this.stringPrefix)) {
+            return;
+        }
+        const regex = /rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*([\d.%]+)\s*)?\)/i, result = regex.exec(input);
+        return result
+            ? {
+                a: result.length > 4 ? (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.parseAlpha)(result[5]) : 1,
+                b: parseInt(result[3], 10),
+                g: parseInt(result[2], 10),
+                r: parseInt(result[1], 10),
+            }
+            : undefined;
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/Utils/Utils.js":
+/*!************************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/Utils/Utils.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "setLogger": () => (/* binding */ setLogger),
+/* harmony export */   "getLogger": () => (/* binding */ getLogger),
+/* harmony export */   "isSsr": () => (/* binding */ isSsr),
+/* harmony export */   "hasMatchMedia": () => (/* binding */ hasMatchMedia),
+/* harmony export */   "safeMatchMedia": () => (/* binding */ safeMatchMedia),
+/* harmony export */   "safeMutationObserver": () => (/* binding */ safeMutationObserver),
+/* harmony export */   "isInArray": () => (/* binding */ isInArray),
+/* harmony export */   "loadFont": () => (/* binding */ loadFont),
+/* harmony export */   "arrayRandomIndex": () => (/* binding */ arrayRandomIndex),
+/* harmony export */   "itemFromArray": () => (/* binding */ itemFromArray),
+/* harmony export */   "isPointInside": () => (/* binding */ isPointInside),
+/* harmony export */   "areBoundsInside": () => (/* binding */ areBoundsInside),
+/* harmony export */   "calculateBounds": () => (/* binding */ calculateBounds),
+/* harmony export */   "deepExtend": () => (/* binding */ deepExtend),
+/* harmony export */   "isDivModeEnabled": () => (/* binding */ isDivModeEnabled),
+/* harmony export */   "divModeExecute": () => (/* binding */ divModeExecute),
+/* harmony export */   "singleDivModeExecute": () => (/* binding */ singleDivModeExecute),
+/* harmony export */   "divMode": () => (/* binding */ divMode),
+/* harmony export */   "circleBounceDataFromParticle": () => (/* binding */ circleBounceDataFromParticle),
+/* harmony export */   "circleBounce": () => (/* binding */ circleBounce),
+/* harmony export */   "rectBounce": () => (/* binding */ rectBounce),
+/* harmony export */   "executeOnSingleOrMultiple": () => (/* binding */ executeOnSingleOrMultiple),
+/* harmony export */   "itemFromSingleOrMultiple": () => (/* binding */ itemFromSingleOrMultiple),
+/* harmony export */   "findItemFromSingleOrMultiple": () => (/* binding */ findItemFromSingleOrMultiple),
+/* harmony export */   "initParticleNumericAnimationValue": () => (/* binding */ initParticleNumericAnimationValue),
+/* harmony export */   "getPosition": () => (/* binding */ getPosition),
+/* harmony export */   "getSize": () => (/* binding */ getSize),
+/* harmony export */   "isBoolean": () => (/* binding */ isBoolean),
+/* harmony export */   "isString": () => (/* binding */ isString),
+/* harmony export */   "isNumber": () => (/* binding */ isNumber),
+/* harmony export */   "isFunction": () => (/* binding */ isFunction),
+/* harmony export */   "isObject": () => (/* binding */ isObject),
+/* harmony export */   "isArray": () => (/* binding */ isArray)
+/* harmony export */ });
+/* harmony import */ var _NumberUtils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Core/Utils/Vector */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js");
+
+
+const _logger = {
+    debug: console.debug,
+    error: console.error,
+    info: console.info,
+    log: console.log,
+    verbose: console.log,
+    warning: console.warn,
+};
+function setLogger(logger) {
+    _logger.debug = logger.debug || _logger.debug;
+    _logger.error = logger.error || _logger.error;
+    _logger.info = logger.info || _logger.info;
+    _logger.log = logger.log || _logger.log;
+    _logger.verbose = logger.verbose || _logger.verbose;
+    _logger.warning = logger.warning || _logger.warning;
+}
+function getLogger() {
+    return _logger;
+}
+function rectSideBounce(data) {
+    const res = { bounced: false }, { pSide, pOtherSide, rectSide, rectOtherSide, velocity, factor } = data;
+    if (pOtherSide.min < rectOtherSide.min ||
+        pOtherSide.min > rectOtherSide.max ||
+        pOtherSide.max < rectOtherSide.min ||
+        pOtherSide.max > rectOtherSide.max) {
+        return res;
+    }
+    if ((pSide.max >= rectSide.min && pSide.max <= (rectSide.max + rectSide.min) / 2 && velocity > 0) ||
+        (pSide.min <= rectSide.max && pSide.min > (rectSide.max + rectSide.min) / 2 && velocity < 0)) {
+        res.velocity = velocity * -factor;
+        res.bounced = true;
+    }
+    return res;
+}
+function checkSelector(element, selectors) {
+    const res = executeOnSingleOrMultiple(selectors, (selector) => {
+        return element.matches(selector);
+    });
+    return isArray(res) ? res.some((t) => t) : res;
+}
+function isSsr() {
+    return typeof window === "undefined" || !window || typeof window.document === "undefined" || !window.document;
+}
+function hasMatchMedia() {
+    return !isSsr() && typeof matchMedia !== "undefined";
+}
+function safeMatchMedia(query) {
+    if (!hasMatchMedia()) {
+        return;
+    }
+    return matchMedia(query);
+}
+function safeMutationObserver(callback) {
+    if (isSsr() || typeof MutationObserver === "undefined") {
+        return;
+    }
+    return new MutationObserver(callback);
+}
+function isInArray(value, array) {
+    return value === array || (isArray(array) && array.indexOf(value) > -1);
+}
+async function loadFont(font, weight) {
+    try {
+        await document.fonts.load(`${weight ?? "400"} 36px '${font ?? "Verdana"}'`);
+    }
+    catch {
+    }
+}
+function arrayRandomIndex(array) {
+    return Math.floor((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRandom)() * array.length);
+}
+function itemFromArray(array, index, useIndex = true) {
+    return array[index !== undefined && useIndex ? index % array.length : arrayRandomIndex(array)];
+}
+function isPointInside(point, size, offset, radius, direction) {
+    return areBoundsInside(calculateBounds(point, radius ?? 0), size, offset, direction);
+}
+function areBoundsInside(bounds, size, offset, direction) {
+    let inside = true;
+    if (!direction || direction === "bottom") {
+        inside = bounds.top < size.height + offset.x;
+    }
+    if (inside && (!direction || direction === "left")) {
+        inside = bounds.right > offset.x;
+    }
+    if (inside && (!direction || direction === "right")) {
+        inside = bounds.left < size.width + offset.y;
+    }
+    if (inside && (!direction || direction === "top")) {
+        inside = bounds.bottom > offset.y;
+    }
+    return inside;
+}
+function calculateBounds(point, radius) {
+    return {
+        bottom: point.y + radius,
+        left: point.x - radius,
+        right: point.x + radius,
+        top: point.y - radius,
+    };
+}
+function deepExtend(destination, ...sources) {
+    for (const source of sources) {
+        if (source === undefined || source === null) {
+            continue;
+        }
+        if (!isObject(source)) {
+            destination = source;
+            continue;
+        }
+        const sourceIsArray = Array.isArray(source);
+        if (sourceIsArray && (isObject(destination) || !destination || !Array.isArray(destination))) {
+            destination = [];
+        }
+        else if (!sourceIsArray && (isObject(destination) || !destination || Array.isArray(destination))) {
+            destination = {};
+        }
+        for (const key in source) {
+            if (key === "__proto__") {
+                continue;
+            }
+            const sourceDict = source, value = sourceDict[key], destDict = destination;
+            destDict[key] =
+                isObject(value) && Array.isArray(value)
+                    ? value.map((v) => deepExtend(destDict[key], v))
+                    : deepExtend(destDict[key], value);
+        }
+    }
+    return destination;
+}
+function isDivModeEnabled(mode, divs) {
+    return !!findItemFromSingleOrMultiple(divs, (t) => t.enable && isInArray(mode, t.mode));
+}
+function divModeExecute(mode, divs, callback) {
+    executeOnSingleOrMultiple(divs, (div) => {
+        const divMode = div.mode, divEnabled = div.enable;
+        if (divEnabled && isInArray(mode, divMode)) {
+            singleDivModeExecute(div, callback);
+        }
+    });
+}
+function singleDivModeExecute(div, callback) {
+    const selectors = div.selectors;
+    executeOnSingleOrMultiple(selectors, (selector) => {
+        callback(selector, div);
+    });
+}
+function divMode(divs, element) {
+    if (!element || !divs) {
+        return;
+    }
+    return findItemFromSingleOrMultiple(divs, (div) => {
+        return checkSelector(element, div.selectors);
+    });
+}
+function circleBounceDataFromParticle(p) {
+    return {
+        position: p.getPosition(),
+        radius: p.getRadius(),
+        mass: p.getMass(),
+        velocity: p.velocity,
+        factor: _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_1__.Vector.create((0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getValue)(p.options.bounce.horizontal), (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getValue)(p.options.bounce.vertical)),
+    };
+}
+function circleBounce(p1, p2) {
+    const { x: xVelocityDiff, y: yVelocityDiff } = p1.velocity.sub(p2.velocity), [pos1, pos2] = [p1.position, p2.position], { dx: xDist, dy: yDist } = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getDistances)(pos2, pos1);
+    if (xVelocityDiff * xDist + yVelocityDiff * yDist < 0) {
+        return;
+    }
+    const angle = -Math.atan2(yDist, xDist), m1 = p1.mass, m2 = p2.mass, u1 = p1.velocity.rotate(angle), u2 = p2.velocity.rotate(angle), v1 = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.collisionVelocity)(u1, u2, m1, m2), v2 = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.collisionVelocity)(u2, u1, m1, m2), vFinal1 = v1.rotate(-angle), vFinal2 = v2.rotate(-angle);
+    p1.velocity.x = vFinal1.x * p1.factor.x;
+    p1.velocity.y = vFinal1.y * p1.factor.y;
+    p2.velocity.x = vFinal2.x * p2.factor.x;
+    p2.velocity.y = vFinal2.y * p2.factor.y;
+}
+function rectBounce(particle, divBounds) {
+    const pPos = particle.getPosition(), size = particle.getRadius(), bounds = calculateBounds(pPos, size), resH = rectSideBounce({
+        pSide: {
+            min: bounds.left,
+            max: bounds.right,
+        },
+        pOtherSide: {
+            min: bounds.top,
+            max: bounds.bottom,
+        },
+        rectSide: {
+            min: divBounds.left,
+            max: divBounds.right,
+        },
+        rectOtherSide: {
+            min: divBounds.top,
+            max: divBounds.bottom,
+        },
+        velocity: particle.velocity.x,
+        factor: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getValue)(particle.options.bounce.horizontal),
+    });
+    if (resH.bounced) {
+        if (resH.velocity !== undefined) {
+            particle.velocity.x = resH.velocity;
+        }
+        if (resH.position !== undefined) {
+            particle.position.x = resH.position;
+        }
+    }
+    const resV = rectSideBounce({
+        pSide: {
+            min: bounds.top,
+            max: bounds.bottom,
+        },
+        pOtherSide: {
+            min: bounds.left,
+            max: bounds.right,
+        },
+        rectSide: {
+            min: divBounds.top,
+            max: divBounds.bottom,
+        },
+        rectOtherSide: {
+            min: divBounds.left,
+            max: divBounds.right,
+        },
+        velocity: particle.velocity.y,
+        factor: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getValue)(particle.options.bounce.vertical),
+    });
+    if (resV.bounced) {
+        if (resV.velocity !== undefined) {
+            particle.velocity.y = resV.velocity;
+        }
+        if (resV.position !== undefined) {
+            particle.position.y = resV.position;
+        }
+    }
+}
+function executeOnSingleOrMultiple(obj, callback) {
+    return isArray(obj) ? obj.map((item, index) => callback(item, index)) : callback(obj, 0);
+}
+function itemFromSingleOrMultiple(obj, index, useIndex) {
+    return isArray(obj) ? itemFromArray(obj, index, useIndex) : obj;
+}
+function findItemFromSingleOrMultiple(obj, callback) {
+    return isArray(obj) ? obj.find((t, index) => callback(t, index)) : callback(obj, 0) ? obj : undefined;
+}
+function initParticleNumericAnimationValue(options, pxRatio) {
+    const valueRange = options.value, animationOptions = options.animation, res = {
+        delayTime: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(animationOptions.delay) * 1000,
+        enable: animationOptions.enable,
+        value: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(options.value) * pxRatio,
+        max: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeMax)(valueRange) * pxRatio,
+        min: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeMin)(valueRange) * pxRatio,
+        loops: 0,
+        maxLoops: (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(animationOptions.count),
+        time: 0,
+    };
+    if (animationOptions.enable) {
+        res.decay = 1 - (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRangeValue)(animationOptions.decay);
+        switch (animationOptions.mode) {
+            case "increase":
+                res.status = "increasing";
+                break;
+            case "decrease":
+                res.status = "decreasing";
+                break;
+            case "random":
+                res.status = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRandom)() >= 0.5 ? "increasing" : "decreasing";
+                break;
+        }
+        const autoStatus = animationOptions.mode === "auto";
+        switch (animationOptions.startValue) {
+            case "min":
+                res.value = res.min;
+                if (autoStatus) {
+                    res.status = "increasing";
+                }
+                break;
+            case "max":
+                res.value = res.max;
+                if (autoStatus) {
+                    res.status = "decreasing";
+                }
+                break;
+            case "random":
+            default:
+                res.value = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.randomInRange)(res);
+                if (autoStatus) {
+                    res.status = (0,_NumberUtils__WEBPACK_IMPORTED_MODULE_0__.getRandom)() >= 0.5 ? "increasing" : "decreasing";
+                }
+                break;
+        }
+    }
+    res.initialValue = res.value;
+    return res;
+}
+function getPositionOrSize(positionOrSize, canvasSize) {
+    const isPercent = positionOrSize.mode === "percent";
+    if (!isPercent) {
+        const { mode: _, ...rest } = positionOrSize;
+        return rest;
+    }
+    const isPosition = "x" in positionOrSize;
+    if (isPosition) {
+        return {
+            x: (positionOrSize.x / 100) * canvasSize.width,
+            y: (positionOrSize.y / 100) * canvasSize.height,
+        };
+    }
+    else {
+        return {
+            width: (positionOrSize.width / 100) * canvasSize.width,
+            height: (positionOrSize.height / 100) * canvasSize.height,
+        };
+    }
+}
+function getPosition(position, canvasSize) {
+    return getPositionOrSize(position, canvasSize);
+}
+function getSize(size, canvasSize) {
+    return getPositionOrSize(size, canvasSize);
+}
+function isBoolean(arg) {
+    return typeof arg === "boolean";
+}
+function isString(arg) {
+    return typeof arg === "string";
+}
+function isNumber(arg) {
+    return typeof arg === "number";
+}
+function isFunction(arg) {
+    return typeof arg === "function";
+}
+function isObject(arg) {
+    return typeof arg === "object" && arg !== null;
+}
+function isArray(arg) {
+    return Array.isArray(arg);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/exports.js":
+/*!********************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/exports.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Circle": () => (/* reexport safe */ _Core_Utils_Circle__WEBPACK_IMPORTED_MODULE_0__.Circle),
+/* harmony export */   "errorPrefix": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.errorPrefix),
+/* harmony export */   "generatedAttribute": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.generatedAttribute),
+/* harmony export */   "mouseDownEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.mouseDownEvent),
+/* harmony export */   "mouseLeaveEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.mouseLeaveEvent),
+/* harmony export */   "mouseMoveEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.mouseMoveEvent),
+/* harmony export */   "mouseOutEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.mouseOutEvent),
+/* harmony export */   "mouseUpEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.mouseUpEvent),
+/* harmony export */   "resizeEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.resizeEvent),
+/* harmony export */   "touchCancelEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.touchCancelEvent),
+/* harmony export */   "touchEndEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.touchEndEvent),
+/* harmony export */   "touchMoveEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.touchMoveEvent),
+/* harmony export */   "touchStartEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.touchStartEvent),
+/* harmony export */   "visibilityChangeEvent": () => (/* reexport safe */ _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__.visibilityChangeEvent),
+/* harmony export */   "ExternalInteractorBase": () => (/* reexport safe */ _Core_Utils_ExternalInteractorBase__WEBPACK_IMPORTED_MODULE_2__.ExternalInteractorBase),
+/* harmony export */   "ParticlesInteractorBase": () => (/* reexport safe */ _Core_Utils_ParticlesInteractorBase__WEBPACK_IMPORTED_MODULE_3__.ParticlesInteractorBase),
+/* harmony export */   "Point": () => (/* reexport safe */ _Core_Utils_Point__WEBPACK_IMPORTED_MODULE_4__.Point),
+/* harmony export */   "Range": () => (/* reexport safe */ _Core_Utils_Range__WEBPACK_IMPORTED_MODULE_5__.Range),
+/* harmony export */   "Rectangle": () => (/* reexport safe */ _Core_Utils_Rectangle__WEBPACK_IMPORTED_MODULE_6__.Rectangle),
+/* harmony export */   "Vector": () => (/* reexport safe */ _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_7__.Vector),
+/* harmony export */   "Vector3d": () => (/* reexport safe */ _Core_Utils_Vector3d__WEBPACK_IMPORTED_MODULE_8__.Vector3d),
+/* harmony export */   "AnimatableColor": () => (/* reexport safe */ _Options_Classes_AnimatableColor__WEBPACK_IMPORTED_MODULE_9__.AnimatableColor),
+/* harmony export */   "AnimationOptions": () => (/* reexport safe */ _Options_Classes_AnimationOptions__WEBPACK_IMPORTED_MODULE_10__.AnimationOptions),
+/* harmony export */   "RangedAnimationOptions": () => (/* reexport safe */ _Options_Classes_AnimationOptions__WEBPACK_IMPORTED_MODULE_10__.RangedAnimationOptions),
+/* harmony export */   "Background": () => (/* reexport safe */ _Options_Classes_Background_Background__WEBPACK_IMPORTED_MODULE_11__.Background),
+/* harmony export */   "BackgroundMask": () => (/* reexport safe */ _Options_Classes_BackgroundMask_BackgroundMask__WEBPACK_IMPORTED_MODULE_12__.BackgroundMask),
+/* harmony export */   "BackgroundMaskCover": () => (/* reexport safe */ _Options_Classes_BackgroundMask_BackgroundMaskCover__WEBPACK_IMPORTED_MODULE_13__.BackgroundMaskCover),
+/* harmony export */   "ColorAnimation": () => (/* reexport safe */ _Options_Classes_ColorAnimation__WEBPACK_IMPORTED_MODULE_14__.ColorAnimation),
+/* harmony export */   "FullScreen": () => (/* reexport safe */ _Options_Classes_FullScreen_FullScreen__WEBPACK_IMPORTED_MODULE_15__.FullScreen),
+/* harmony export */   "HslAnimation": () => (/* reexport safe */ _Options_Classes_HslAnimation__WEBPACK_IMPORTED_MODULE_16__.HslAnimation),
+/* harmony export */   "ClickEvent": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_ClickEvent__WEBPACK_IMPORTED_MODULE_17__.ClickEvent),
+/* harmony export */   "DivEvent": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_DivEvent__WEBPACK_IMPORTED_MODULE_18__.DivEvent),
+/* harmony export */   "Events": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_Events__WEBPACK_IMPORTED_MODULE_19__.Events),
+/* harmony export */   "HoverEvent": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_HoverEvent__WEBPACK_IMPORTED_MODULE_20__.HoverEvent),
+/* harmony export */   "Parallax": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_Parallax__WEBPACK_IMPORTED_MODULE_21__.Parallax),
+/* harmony export */   "ResizeEvent": () => (/* reexport safe */ _Options_Classes_Interactivity_Events_ResizeEvent__WEBPACK_IMPORTED_MODULE_22__.ResizeEvent),
+/* harmony export */   "Interactivity": () => (/* reexport safe */ _Options_Classes_Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_23__.Interactivity),
+/* harmony export */   "Modes": () => (/* reexport safe */ _Options_Classes_Interactivity_Modes_Modes__WEBPACK_IMPORTED_MODULE_24__.Modes),
+/* harmony export */   "ManualParticle": () => (/* reexport safe */ _Options_Classes_ManualParticle__WEBPACK_IMPORTED_MODULE_25__.ManualParticle),
+/* harmony export */   "Options": () => (/* reexport safe */ _Options_Classes_Options__WEBPACK_IMPORTED_MODULE_26__.Options),
+/* harmony export */   "OptionsColor": () => (/* reexport safe */ _Options_Classes_OptionsColor__WEBPACK_IMPORTED_MODULE_27__.OptionsColor),
+/* harmony export */   "ParticlesBounce": () => (/* reexport safe */ _Options_Classes_Particles_Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_28__.ParticlesBounce),
+/* harmony export */   "ParticlesBounceFactor": () => (/* reexport safe */ _Options_Classes_Particles_Bounce_ParticlesBounceFactor__WEBPACK_IMPORTED_MODULE_29__.ParticlesBounceFactor),
+/* harmony export */   "Collisions": () => (/* reexport safe */ _Options_Classes_Particles_Collisions_Collisions__WEBPACK_IMPORTED_MODULE_30__.Collisions),
+/* harmony export */   "CollisionsAbsorb": () => (/* reexport safe */ _Options_Classes_Particles_Collisions_CollisionsAbsorb__WEBPACK_IMPORTED_MODULE_31__.CollisionsAbsorb),
+/* harmony export */   "CollisionsOverlap": () => (/* reexport safe */ _Options_Classes_Particles_Collisions_CollisionsOverlap__WEBPACK_IMPORTED_MODULE_32__.CollisionsOverlap),
+/* harmony export */   "ParticlesOptions": () => (/* reexport safe */ _Options_Classes_Particles_ParticlesOptions__WEBPACK_IMPORTED_MODULE_33__.ParticlesOptions),
+/* harmony export */   "Shadow": () => (/* reexport safe */ _Options_Classes_Particles_Shadow__WEBPACK_IMPORTED_MODULE_34__.Shadow),
+/* harmony export */   "Stroke": () => (/* reexport safe */ _Options_Classes_Particles_Stroke__WEBPACK_IMPORTED_MODULE_35__.Stroke),
+/* harmony export */   "MoveAttract": () => (/* reexport safe */ _Options_Classes_Particles_Move_MoveAttract__WEBPACK_IMPORTED_MODULE_36__.MoveAttract),
+/* harmony export */   "Move": () => (/* reexport safe */ _Options_Classes_Particles_Move_Move__WEBPACK_IMPORTED_MODULE_37__.Move),
+/* harmony export */   "MoveAngle": () => (/* reexport safe */ _Options_Classes_Particles_Move_MoveAngle__WEBPACK_IMPORTED_MODULE_38__.MoveAngle),
+/* harmony export */   "MoveCenter": () => (/* reexport safe */ _Options_Classes_Particles_Move_MoveCenter__WEBPACK_IMPORTED_MODULE_39__.MoveCenter),
+/* harmony export */   "MoveGravity": () => (/* reexport safe */ _Options_Classes_Particles_Move_MoveGravity__WEBPACK_IMPORTED_MODULE_40__.MoveGravity),
+/* harmony export */   "OutModes": () => (/* reexport safe */ _Options_Classes_Particles_Move_OutModes__WEBPACK_IMPORTED_MODULE_41__.OutModes),
+/* harmony export */   "MovePath": () => (/* reexport safe */ _Options_Classes_Particles_Move_Path_MovePath__WEBPACK_IMPORTED_MODULE_42__.MovePath),
+/* harmony export */   "Spin": () => (/* reexport safe */ _Options_Classes_Particles_Move_Spin__WEBPACK_IMPORTED_MODULE_43__.Spin),
+/* harmony export */   "MoveTrail": () => (/* reexport safe */ _Options_Classes_Particles_Move_MoveTrail__WEBPACK_IMPORTED_MODULE_44__.MoveTrail),
+/* harmony export */   "ParticlesNumber": () => (/* reexport safe */ _Options_Classes_Particles_Number_ParticlesNumber__WEBPACK_IMPORTED_MODULE_45__.ParticlesNumber),
+/* harmony export */   "ParticlesDensity": () => (/* reexport safe */ _Options_Classes_Particles_Number_ParticlesDensity__WEBPACK_IMPORTED_MODULE_46__.ParticlesDensity),
+/* harmony export */   "Opacity": () => (/* reexport safe */ _Options_Classes_Particles_Opacity_Opacity__WEBPACK_IMPORTED_MODULE_47__.Opacity),
+/* harmony export */   "OpacityAnimation": () => (/* reexport safe */ _Options_Classes_Particles_Opacity_OpacityAnimation__WEBPACK_IMPORTED_MODULE_48__.OpacityAnimation),
+/* harmony export */   "Shape": () => (/* reexport safe */ _Options_Classes_Particles_Shape_Shape__WEBPACK_IMPORTED_MODULE_49__.Shape),
+/* harmony export */   "Size": () => (/* reexport safe */ _Options_Classes_Particles_Size_Size__WEBPACK_IMPORTED_MODULE_50__.Size),
+/* harmony export */   "SizeAnimation": () => (/* reexport safe */ _Options_Classes_Particles_Size_SizeAnimation__WEBPACK_IMPORTED_MODULE_51__.SizeAnimation),
+/* harmony export */   "ZIndex": () => (/* reexport safe */ _Options_Classes_Particles_ZIndex_ZIndex__WEBPACK_IMPORTED_MODULE_52__.ZIndex),
+/* harmony export */   "Responsive": () => (/* reexport safe */ _Options_Classes_Responsive__WEBPACK_IMPORTED_MODULE_53__.Responsive),
+/* harmony export */   "Theme": () => (/* reexport safe */ _Options_Classes_Theme_Theme__WEBPACK_IMPORTED_MODULE_54__.Theme),
+/* harmony export */   "ThemeDefault": () => (/* reexport safe */ _Options_Classes_Theme_ThemeDefault__WEBPACK_IMPORTED_MODULE_55__.ThemeDefault),
+/* harmony export */   "AnimationValueWithRandom": () => (/* reexport safe */ _Options_Classes_ValueWithRandom__WEBPACK_IMPORTED_MODULE_56__.AnimationValueWithRandom),
+/* harmony export */   "RangedAnimationValueWithRandom": () => (/* reexport safe */ _Options_Classes_ValueWithRandom__WEBPACK_IMPORTED_MODULE_56__.RangedAnimationValueWithRandom),
+/* harmony export */   "ValueWithRandom": () => (/* reexport safe */ _Options_Classes_ValueWithRandom__WEBPACK_IMPORTED_MODULE_56__.ValueWithRandom),
+/* harmony export */   "alterHsl": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.alterHsl),
+/* harmony export */   "clear": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.clear),
+/* harmony export */   "drawLine": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawLine),
+/* harmony export */   "drawParticle": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawParticle),
+/* harmony export */   "drawParticlePlugin": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawParticlePlugin),
+/* harmony export */   "drawPlugin": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawPlugin),
+/* harmony export */   "drawShape": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawShape),
+/* harmony export */   "drawShapeAfterEffect": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawShapeAfterEffect),
+/* harmony export */   "drawTriangle": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.drawTriangle),
+/* harmony export */   "paintBase": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.paintBase),
+/* harmony export */   "paintImage": () => (/* reexport safe */ _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__.paintImage),
+/* harmony export */   "addColorManager": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.addColorManager),
+/* harmony export */   "colorMix": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.colorMix),
+/* harmony export */   "colorToHsl": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.colorToHsl),
+/* harmony export */   "colorToRgb": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.colorToRgb),
+/* harmony export */   "getHslAnimationFromHsl": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getHslAnimationFromHsl),
+/* harmony export */   "getHslFromAnimation": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getHslFromAnimation),
+/* harmony export */   "getLinkColor": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getLinkColor),
+/* harmony export */   "getLinkRandomColor": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getLinkRandomColor),
+/* harmony export */   "getRandomRgbColor": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getRandomRgbColor),
+/* harmony export */   "getStyleFromHsl": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getStyleFromHsl),
+/* harmony export */   "getStyleFromRgb": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.getStyleFromRgb),
+/* harmony export */   "hslToRgb": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.hslToRgb),
+/* harmony export */   "hslaToRgba": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.hslaToRgba),
+/* harmony export */   "rangeColorToHsl": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.rangeColorToHsl),
+/* harmony export */   "rangeColorToRgb": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.rangeColorToRgb),
+/* harmony export */   "rgbToHsl": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.rgbToHsl),
+/* harmony export */   "stringToAlpha": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.stringToAlpha),
+/* harmony export */   "stringToRgb": () => (/* reexport safe */ _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__.stringToRgb),
+/* harmony export */   "HslColorManager": () => (/* reexport safe */ _Utils_HslColorManager__WEBPACK_IMPORTED_MODULE_59__.HslColorManager),
+/* harmony export */   "addEasing": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.addEasing),
+/* harmony export */   "calcExactPositionOrRandomFromSize": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.calcExactPositionOrRandomFromSize),
+/* harmony export */   "calcExactPositionOrRandomFromSizeRanged": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.calcExactPositionOrRandomFromSizeRanged),
+/* harmony export */   "calcPositionFromSize": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.calcPositionFromSize),
+/* harmony export */   "calcPositionOrRandomFromSize": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.calcPositionOrRandomFromSize),
+/* harmony export */   "calcPositionOrRandomFromSizeRanged": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.calcPositionOrRandomFromSizeRanged),
+/* harmony export */   "clamp": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.clamp),
+/* harmony export */   "collisionVelocity": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.collisionVelocity),
+/* harmony export */   "getDistance": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getDistance),
+/* harmony export */   "getDistances": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getDistances),
+/* harmony export */   "getEasing": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getEasing),
+/* harmony export */   "getParticleBaseVelocity": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getParticleBaseVelocity),
+/* harmony export */   "getParticleDirectionAngle": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getParticleDirectionAngle),
+/* harmony export */   "getRandom": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getRandom),
+/* harmony export */   "getRangeMax": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getRangeMax),
+/* harmony export */   "getRangeMin": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getRangeMin),
+/* harmony export */   "getRangeValue": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getRangeValue),
+/* harmony export */   "getValue": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.getValue),
+/* harmony export */   "mix": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.mix),
+/* harmony export */   "parseAlpha": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.parseAlpha),
+/* harmony export */   "randomInRange": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.randomInRange),
+/* harmony export */   "setRandom": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.setRandom),
+/* harmony export */   "setRangeValue": () => (/* reexport safe */ _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__.setRangeValue),
+/* harmony export */   "loadOptions": () => (/* reexport safe */ _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_61__.loadOptions),
+/* harmony export */   "loadParticlesOptions": () => (/* reexport safe */ _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_61__.loadParticlesOptions),
+/* harmony export */   "RgbColorManager": () => (/* reexport safe */ _Utils_RgbColorManager__WEBPACK_IMPORTED_MODULE_62__.RgbColorManager),
+/* harmony export */   "areBoundsInside": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.areBoundsInside),
+/* harmony export */   "arrayRandomIndex": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.arrayRandomIndex),
+/* harmony export */   "calculateBounds": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.calculateBounds),
+/* harmony export */   "circleBounce": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.circleBounce),
+/* harmony export */   "circleBounceDataFromParticle": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.circleBounceDataFromParticle),
+/* harmony export */   "deepExtend": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.deepExtend),
+/* harmony export */   "divMode": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.divMode),
+/* harmony export */   "divModeExecute": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.divModeExecute),
+/* harmony export */   "executeOnSingleOrMultiple": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.executeOnSingleOrMultiple),
+/* harmony export */   "findItemFromSingleOrMultiple": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.findItemFromSingleOrMultiple),
+/* harmony export */   "getLogger": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.getLogger),
+/* harmony export */   "getPosition": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.getPosition),
+/* harmony export */   "getSize": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.getSize),
+/* harmony export */   "hasMatchMedia": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.hasMatchMedia),
+/* harmony export */   "initParticleNumericAnimationValue": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.initParticleNumericAnimationValue),
+/* harmony export */   "isArray": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isArray),
+/* harmony export */   "isBoolean": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isBoolean),
+/* harmony export */   "isDivModeEnabled": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isDivModeEnabled),
+/* harmony export */   "isFunction": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isFunction),
+/* harmony export */   "isInArray": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isInArray),
+/* harmony export */   "isNumber": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isNumber),
+/* harmony export */   "isObject": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isObject),
+/* harmony export */   "isPointInside": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isPointInside),
+/* harmony export */   "isSsr": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isSsr),
+/* harmony export */   "isString": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.isString),
+/* harmony export */   "itemFromArray": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.itemFromArray),
+/* harmony export */   "itemFromSingleOrMultiple": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.itemFromSingleOrMultiple),
+/* harmony export */   "loadFont": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.loadFont),
+/* harmony export */   "rectBounce": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.rectBounce),
+/* harmony export */   "safeMatchMedia": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.safeMatchMedia),
+/* harmony export */   "safeMutationObserver": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.safeMutationObserver),
+/* harmony export */   "setLogger": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.setLogger),
+/* harmony export */   "singleDivModeExecute": () => (/* reexport safe */ _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__.singleDivModeExecute)
+/* harmony export */ });
+/* harmony import */ var _Core_Utils_Circle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Core/Utils/Circle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Circle.js");
+/* harmony import */ var _Core_Utils_Constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Core/Utils/Constants */ "./node_modules/tsparticles-engine/esm/Core/Utils/Constants.js");
+/* harmony import */ var _Core_Utils_ExternalInteractorBase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Core/Utils/ExternalInteractorBase */ "./node_modules/tsparticles-engine/esm/Core/Utils/ExternalInteractorBase.js");
+/* harmony import */ var _Core_Utils_ParticlesInteractorBase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Core/Utils/ParticlesInteractorBase */ "./node_modules/tsparticles-engine/esm/Core/Utils/ParticlesInteractorBase.js");
+/* harmony import */ var _Core_Utils_Point__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Core/Utils/Point */ "./node_modules/tsparticles-engine/esm/Core/Utils/Point.js");
+/* harmony import */ var _Core_Utils_Range__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Core/Utils/Range */ "./node_modules/tsparticles-engine/esm/Core/Utils/Range.js");
+/* harmony import */ var _Core_Utils_Rectangle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Core/Utils/Rectangle */ "./node_modules/tsparticles-engine/esm/Core/Utils/Rectangle.js");
+/* harmony import */ var _Core_Utils_Vector__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Core/Utils/Vector */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector.js");
+/* harmony import */ var _Core_Utils_Vector3d__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Core/Utils/Vector3d */ "./node_modules/tsparticles-engine/esm/Core/Utils/Vector3d.js");
+/* harmony import */ var _Options_Classes_AnimatableColor__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Options/Classes/AnimatableColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimatableColor.js");
+/* harmony import */ var _Options_Classes_AnimationOptions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./Options/Classes/AnimationOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/AnimationOptions.js");
+/* harmony import */ var _Options_Classes_Background_Background__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./Options/Classes/Background/Background */ "./node_modules/tsparticles-engine/esm/Options/Classes/Background/Background.js");
+/* harmony import */ var _Options_Classes_BackgroundMask_BackgroundMask__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Options/Classes/BackgroundMask/BackgroundMask */ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMask.js");
+/* harmony import */ var _Options_Classes_BackgroundMask_BackgroundMaskCover__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./Options/Classes/BackgroundMask/BackgroundMaskCover */ "./node_modules/tsparticles-engine/esm/Options/Classes/BackgroundMask/BackgroundMaskCover.js");
+/* harmony import */ var _Options_Classes_ColorAnimation__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./Options/Classes/ColorAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/ColorAnimation.js");
+/* harmony import */ var _Options_Classes_FullScreen_FullScreen__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./Options/Classes/FullScreen/FullScreen */ "./node_modules/tsparticles-engine/esm/Options/Classes/FullScreen/FullScreen.js");
+/* harmony import */ var _Options_Classes_HslAnimation__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./Options/Classes/HslAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/HslAnimation.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_ClickEvent__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/ClickEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ClickEvent.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_DivEvent__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/DivEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/DivEvent.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_Events__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/Events */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Events.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_HoverEvent__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/HoverEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/HoverEvent.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_Parallax__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/Parallax */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/Parallax.js");
+/* harmony import */ var _Options_Classes_Interactivity_Events_ResizeEvent__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Events/ResizeEvent */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Events/ResizeEvent.js");
+/* harmony import */ var _Options_Classes_Interactivity_Interactivity__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Interactivity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Interactivity.js");
+/* harmony import */ var _Options_Classes_Interactivity_Modes_Modes__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./Options/Classes/Interactivity/Modes/Modes */ "./node_modules/tsparticles-engine/esm/Options/Classes/Interactivity/Modes/Modes.js");
+/* harmony import */ var _Options_Classes_ManualParticle__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./Options/Classes/ManualParticle */ "./node_modules/tsparticles-engine/esm/Options/Classes/ManualParticle.js");
+/* harmony import */ var _Options_Classes_Options__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./Options/Classes/Options */ "./node_modules/tsparticles-engine/esm/Options/Classes/Options.js");
+/* harmony import */ var _Options_Classes_OptionsColor__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./Options/Classes/OptionsColor */ "./node_modules/tsparticles-engine/esm/Options/Classes/OptionsColor.js");
+/* harmony import */ var _Options_Classes_Particles_Bounce_ParticlesBounce__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./Options/Classes/Particles/Bounce/ParticlesBounce */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounce.js");
+/* harmony import */ var _Options_Classes_Particles_Bounce_ParticlesBounceFactor__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./Options/Classes/Particles/Bounce/ParticlesBounceFactor */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Bounce/ParticlesBounceFactor.js");
+/* harmony import */ var _Options_Classes_Particles_Collisions_Collisions__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./Options/Classes/Particles/Collisions/Collisions */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/Collisions.js");
+/* harmony import */ var _Options_Classes_Particles_Collisions_CollisionsAbsorb__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./Options/Classes/Particles/Collisions/CollisionsAbsorb */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsAbsorb.js");
+/* harmony import */ var _Options_Classes_Particles_Collisions_CollisionsOverlap__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./Options/Classes/Particles/Collisions/CollisionsOverlap */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Collisions/CollisionsOverlap.js");
+/* harmony import */ var _Options_Classes_Particles_ParticlesOptions__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./Options/Classes/Particles/ParticlesOptions */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ParticlesOptions.js");
+/* harmony import */ var _Options_Classes_Particles_Shadow__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./Options/Classes/Particles/Shadow */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shadow.js");
+/* harmony import */ var _Options_Classes_Particles_Stroke__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./Options/Classes/Particles/Stroke */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Stroke.js");
+/* harmony import */ var _Options_Classes_Particles_Move_MoveAttract__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/MoveAttract */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAttract.js");
+/* harmony import */ var _Options_Classes_Particles_Move_Move__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/Move */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Move.js");
+/* harmony import */ var _Options_Classes_Particles_Move_MoveAngle__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/MoveAngle */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveAngle.js");
+/* harmony import */ var _Options_Classes_Particles_Move_MoveCenter__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/MoveCenter */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveCenter.js");
+/* harmony import */ var _Options_Classes_Particles_Move_MoveGravity__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/MoveGravity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveGravity.js");
+/* harmony import */ var _Options_Classes_Particles_Move_OutModes__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/OutModes */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/OutModes.js");
+/* harmony import */ var _Options_Classes_Particles_Move_Path_MovePath__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/Path/MovePath */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Path/MovePath.js");
+/* harmony import */ var _Options_Classes_Particles_Move_Spin__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/Spin */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/Spin.js");
+/* harmony import */ var _Options_Classes_Particles_Move_MoveTrail__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./Options/Classes/Particles/Move/MoveTrail */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Move/MoveTrail.js");
+/* harmony import */ var _Options_Classes_Particles_Number_ParticlesNumber__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./Options/Classes/Particles/Number/ParticlesNumber */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesNumber.js");
+/* harmony import */ var _Options_Classes_Particles_Number_ParticlesDensity__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./Options/Classes/Particles/Number/ParticlesDensity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Number/ParticlesDensity.js");
+/* harmony import */ var _Options_Classes_Particles_Opacity_Opacity__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./Options/Classes/Particles/Opacity/Opacity */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/Opacity.js");
+/* harmony import */ var _Options_Classes_Particles_Opacity_OpacityAnimation__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./Options/Classes/Particles/Opacity/OpacityAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Opacity/OpacityAnimation.js");
+/* harmony import */ var _Options_Classes_Particles_Shape_Shape__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./Options/Classes/Particles/Shape/Shape */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Shape/Shape.js");
+/* harmony import */ var _Options_Classes_Particles_Size_Size__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./Options/Classes/Particles/Size/Size */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/Size.js");
+/* harmony import */ var _Options_Classes_Particles_Size_SizeAnimation__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./Options/Classes/Particles/Size/SizeAnimation */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/Size/SizeAnimation.js");
+/* harmony import */ var _Options_Classes_Particles_ZIndex_ZIndex__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./Options/Classes/Particles/ZIndex/ZIndex */ "./node_modules/tsparticles-engine/esm/Options/Classes/Particles/ZIndex/ZIndex.js");
+/* harmony import */ var _Options_Classes_Responsive__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./Options/Classes/Responsive */ "./node_modules/tsparticles-engine/esm/Options/Classes/Responsive.js");
+/* harmony import */ var _Options_Classes_Theme_Theme__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./Options/Classes/Theme/Theme */ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/Theme.js");
+/* harmony import */ var _Options_Classes_Theme_ThemeDefault__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./Options/Classes/Theme/ThemeDefault */ "./node_modules/tsparticles-engine/esm/Options/Classes/Theme/ThemeDefault.js");
+/* harmony import */ var _Options_Classes_ValueWithRandom__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./Options/Classes/ValueWithRandom */ "./node_modules/tsparticles-engine/esm/Options/Classes/ValueWithRandom.js");
+/* harmony import */ var _Utils_CanvasUtils__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./Utils/CanvasUtils */ "./node_modules/tsparticles-engine/esm/Utils/CanvasUtils.js");
+/* harmony import */ var _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./Utils/ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+/* harmony import */ var _Utils_HslColorManager__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./Utils/HslColorManager */ "./node_modules/tsparticles-engine/esm/Utils/HslColorManager.js");
+/* harmony import */ var _Utils_NumberUtils__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./Utils/NumberUtils */ "./node_modules/tsparticles-engine/esm/Utils/NumberUtils.js");
+/* harmony import */ var _Utils_OptionsUtils__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./Utils/OptionsUtils */ "./node_modules/tsparticles-engine/esm/Utils/OptionsUtils.js");
+/* harmony import */ var _Utils_RgbColorManager__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./Utils/RgbColorManager */ "./node_modules/tsparticles-engine/esm/Utils/RgbColorManager.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/index.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AnimatableColor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.AnimatableColor),
+/* harmony export */   "AnimationOptions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.AnimationOptions),
+/* harmony export */   "AnimationValueWithRandom": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.AnimationValueWithRandom),
+/* harmony export */   "Background": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Background),
+/* harmony export */   "BackgroundMask": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.BackgroundMask),
+/* harmony export */   "BackgroundMaskCover": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.BackgroundMaskCover),
+/* harmony export */   "Circle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Circle),
+/* harmony export */   "ClickEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ClickEvent),
+/* harmony export */   "Collisions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Collisions),
+/* harmony export */   "CollisionsAbsorb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.CollisionsAbsorb),
+/* harmony export */   "CollisionsOverlap": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.CollisionsOverlap),
+/* harmony export */   "ColorAnimation": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ColorAnimation),
+/* harmony export */   "DivEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.DivEvent),
+/* harmony export */   "Events": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Events),
+/* harmony export */   "ExternalInteractorBase": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ExternalInteractorBase),
+/* harmony export */   "FullScreen": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.FullScreen),
+/* harmony export */   "HoverEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.HoverEvent),
+/* harmony export */   "HslAnimation": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.HslAnimation),
+/* harmony export */   "HslColorManager": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.HslColorManager),
+/* harmony export */   "Interactivity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Interactivity),
+/* harmony export */   "ManualParticle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ManualParticle),
+/* harmony export */   "Modes": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Modes),
+/* harmony export */   "Move": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Move),
+/* harmony export */   "MoveAngle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MoveAngle),
+/* harmony export */   "MoveAttract": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MoveAttract),
+/* harmony export */   "MoveCenter": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MoveCenter),
+/* harmony export */   "MoveGravity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MoveGravity),
+/* harmony export */   "MovePath": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MovePath),
+/* harmony export */   "MoveTrail": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.MoveTrail),
+/* harmony export */   "Opacity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Opacity),
+/* harmony export */   "OpacityAnimation": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.OpacityAnimation),
+/* harmony export */   "Options": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Options),
+/* harmony export */   "OptionsColor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.OptionsColor),
+/* harmony export */   "OutModes": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.OutModes),
+/* harmony export */   "Parallax": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Parallax),
+/* harmony export */   "ParticlesBounce": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesBounce),
+/* harmony export */   "ParticlesBounceFactor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesBounceFactor),
+/* harmony export */   "ParticlesDensity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesDensity),
+/* harmony export */   "ParticlesInteractorBase": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesInteractorBase),
+/* harmony export */   "ParticlesNumber": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesNumber),
+/* harmony export */   "ParticlesOptions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ParticlesOptions),
+/* harmony export */   "Point": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Point),
+/* harmony export */   "Range": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Range),
+/* harmony export */   "RangedAnimationOptions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.RangedAnimationOptions),
+/* harmony export */   "RangedAnimationValueWithRandom": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.RangedAnimationValueWithRandom),
+/* harmony export */   "Rectangle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Rectangle),
+/* harmony export */   "ResizeEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ResizeEvent),
+/* harmony export */   "Responsive": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Responsive),
+/* harmony export */   "RgbColorManager": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.RgbColorManager),
+/* harmony export */   "Shadow": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Shadow),
+/* harmony export */   "Shape": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Shape),
+/* harmony export */   "Size": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Size),
+/* harmony export */   "SizeAnimation": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.SizeAnimation),
+/* harmony export */   "Spin": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Spin),
+/* harmony export */   "Stroke": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Stroke),
+/* harmony export */   "Theme": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Theme),
+/* harmony export */   "ThemeDefault": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ThemeDefault),
+/* harmony export */   "ValueWithRandom": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ValueWithRandom),
+/* harmony export */   "Vector": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Vector),
+/* harmony export */   "Vector3d": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.Vector3d),
+/* harmony export */   "ZIndex": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.ZIndex),
+/* harmony export */   "addColorManager": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.addColorManager),
+/* harmony export */   "addEasing": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.addEasing),
+/* harmony export */   "alterHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.alterHsl),
+/* harmony export */   "areBoundsInside": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.areBoundsInside),
+/* harmony export */   "arrayRandomIndex": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.arrayRandomIndex),
+/* harmony export */   "calcExactPositionOrRandomFromSize": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calcExactPositionOrRandomFromSize),
+/* harmony export */   "calcExactPositionOrRandomFromSizeRanged": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calcExactPositionOrRandomFromSizeRanged),
+/* harmony export */   "calcPositionFromSize": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calcPositionFromSize),
+/* harmony export */   "calcPositionOrRandomFromSize": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calcPositionOrRandomFromSize),
+/* harmony export */   "calcPositionOrRandomFromSizeRanged": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calcPositionOrRandomFromSizeRanged),
+/* harmony export */   "calculateBounds": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.calculateBounds),
+/* harmony export */   "circleBounce": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.circleBounce),
+/* harmony export */   "circleBounceDataFromParticle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.circleBounceDataFromParticle),
+/* harmony export */   "clamp": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.clamp),
+/* harmony export */   "clear": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.clear),
+/* harmony export */   "collisionVelocity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.collisionVelocity),
+/* harmony export */   "colorMix": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.colorMix),
+/* harmony export */   "colorToHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.colorToHsl),
+/* harmony export */   "colorToRgb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.colorToRgb),
+/* harmony export */   "deepExtend": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.deepExtend),
+/* harmony export */   "divMode": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.divMode),
+/* harmony export */   "divModeExecute": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.divModeExecute),
+/* harmony export */   "drawLine": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawLine),
+/* harmony export */   "drawParticle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawParticle),
+/* harmony export */   "drawParticlePlugin": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawParticlePlugin),
+/* harmony export */   "drawPlugin": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawPlugin),
+/* harmony export */   "drawShape": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawShape),
+/* harmony export */   "drawShapeAfterEffect": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawShapeAfterEffect),
+/* harmony export */   "drawTriangle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.drawTriangle),
+/* harmony export */   "errorPrefix": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.errorPrefix),
+/* harmony export */   "executeOnSingleOrMultiple": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.executeOnSingleOrMultiple),
+/* harmony export */   "findItemFromSingleOrMultiple": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.findItemFromSingleOrMultiple),
+/* harmony export */   "generatedAttribute": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.generatedAttribute),
+/* harmony export */   "getDistance": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getDistance),
+/* harmony export */   "getDistances": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getDistances),
+/* harmony export */   "getEasing": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getEasing),
+/* harmony export */   "getHslAnimationFromHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getHslAnimationFromHsl),
+/* harmony export */   "getHslFromAnimation": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getHslFromAnimation),
+/* harmony export */   "getLinkColor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getLinkColor),
+/* harmony export */   "getLinkRandomColor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getLinkRandomColor),
+/* harmony export */   "getLogger": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getLogger),
+/* harmony export */   "getParticleBaseVelocity": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getParticleBaseVelocity),
+/* harmony export */   "getParticleDirectionAngle": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getParticleDirectionAngle),
+/* harmony export */   "getPosition": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getPosition),
+/* harmony export */   "getRandom": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getRandom),
+/* harmony export */   "getRandomRgbColor": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getRandomRgbColor),
+/* harmony export */   "getRangeMax": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getRangeMax),
+/* harmony export */   "getRangeMin": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getRangeMin),
+/* harmony export */   "getRangeValue": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getRangeValue),
+/* harmony export */   "getSize": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getSize),
+/* harmony export */   "getStyleFromHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getStyleFromHsl),
+/* harmony export */   "getStyleFromRgb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getStyleFromRgb),
+/* harmony export */   "getValue": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.getValue),
+/* harmony export */   "hasMatchMedia": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.hasMatchMedia),
+/* harmony export */   "hslToRgb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.hslToRgb),
+/* harmony export */   "hslaToRgba": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.hslaToRgba),
+/* harmony export */   "initParticleNumericAnimationValue": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.initParticleNumericAnimationValue),
+/* harmony export */   "isArray": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isArray),
+/* harmony export */   "isBoolean": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isBoolean),
+/* harmony export */   "isDivModeEnabled": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isDivModeEnabled),
+/* harmony export */   "isFunction": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isFunction),
+/* harmony export */   "isInArray": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isInArray),
+/* harmony export */   "isNumber": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isNumber),
+/* harmony export */   "isObject": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isObject),
+/* harmony export */   "isPointInside": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isPointInside),
+/* harmony export */   "isSsr": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isSsr),
+/* harmony export */   "isString": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.isString),
+/* harmony export */   "itemFromArray": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.itemFromArray),
+/* harmony export */   "itemFromSingleOrMultiple": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.itemFromSingleOrMultiple),
+/* harmony export */   "loadFont": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.loadFont),
+/* harmony export */   "loadOptions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.loadOptions),
+/* harmony export */   "loadParticlesOptions": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.loadParticlesOptions),
+/* harmony export */   "mix": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mix),
+/* harmony export */   "mouseDownEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mouseDownEvent),
+/* harmony export */   "mouseLeaveEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mouseLeaveEvent),
+/* harmony export */   "mouseMoveEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mouseMoveEvent),
+/* harmony export */   "mouseOutEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mouseOutEvent),
+/* harmony export */   "mouseUpEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.mouseUpEvent),
+/* harmony export */   "paintBase": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.paintBase),
+/* harmony export */   "paintImage": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.paintImage),
+/* harmony export */   "parseAlpha": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.parseAlpha),
+/* harmony export */   "randomInRange": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.randomInRange),
+/* harmony export */   "rangeColorToHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.rangeColorToHsl),
+/* harmony export */   "rangeColorToRgb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.rangeColorToRgb),
+/* harmony export */   "rectBounce": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.rectBounce),
+/* harmony export */   "resizeEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.resizeEvent),
+/* harmony export */   "rgbToHsl": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.rgbToHsl),
+/* harmony export */   "safeMatchMedia": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.safeMatchMedia),
+/* harmony export */   "safeMutationObserver": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.safeMutationObserver),
+/* harmony export */   "setLogger": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.setLogger),
+/* harmony export */   "setRandom": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.setRandom),
+/* harmony export */   "setRangeValue": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.setRangeValue),
+/* harmony export */   "singleDivModeExecute": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.singleDivModeExecute),
+/* harmony export */   "stringToAlpha": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.stringToAlpha),
+/* harmony export */   "stringToRgb": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.stringToRgb),
+/* harmony export */   "touchCancelEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.touchCancelEvent),
+/* harmony export */   "touchEndEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.touchEndEvent),
+/* harmony export */   "touchMoveEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.touchMoveEvent),
+/* harmony export */   "touchStartEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.touchStartEvent),
+/* harmony export */   "visibilityChangeEvent": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_2__.visibilityChangeEvent),
+/* harmony export */   "tsParticles": () => (/* binding */ tsParticles)
+/* harmony export */ });
+/* harmony import */ var _init__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./init */ "./node_modules/tsparticles-engine/esm/init.js");
+/* harmony import */ var _Utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Utils/Utils */ "./node_modules/tsparticles-engine/esm/Utils/Utils.js");
+/* harmony import */ var _exports__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./exports */ "./node_modules/tsparticles-engine/esm/exports.js");
+
+
+const tsParticles = (0,_init__WEBPACK_IMPORTED_MODULE_0__.init)();
+if (!(0,_Utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isSsr)()) {
+    window.tsParticles = tsParticles;
+}
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/tsparticles-engine/esm/init.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/tsparticles-engine/esm/init.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "init": () => (/* binding */ init)
+/* harmony export */ });
+/* harmony import */ var _Core_Engine__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Core/Engine */ "./node_modules/tsparticles-engine/esm/Core/Engine.js");
+/* harmony import */ var _Utils_HslColorManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Utils/HslColorManager */ "./node_modules/tsparticles-engine/esm/Utils/HslColorManager.js");
+/* harmony import */ var _Utils_RgbColorManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Utils/RgbColorManager */ "./node_modules/tsparticles-engine/esm/Utils/RgbColorManager.js");
+/* harmony import */ var _Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Utils/ColorUtils */ "./node_modules/tsparticles-engine/esm/Utils/ColorUtils.js");
+
+
+
+
+function init() {
+    const rgbColorManager = new _Utils_RgbColorManager__WEBPACK_IMPORTED_MODULE_0__.RgbColorManager(), hslColorManager = new _Utils_HslColorManager__WEBPACK_IMPORTED_MODULE_1__.HslColorManager();
+    (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_2__.addColorManager)(rgbColorManager);
+    (0,_Utils_ColorUtils__WEBPACK_IMPORTED_MODULE_2__.addColorManager)(hslColorManager);
+    const engine = new _Core_Engine__WEBPACK_IMPORTED_MODULE_3__.Engine();
+    engine.init();
+    return engine;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-class-component/dist/vue-class-component.esm.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/vue-class-component/dist/vue-class-component.esm.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "createDecorator": () => (/* binding */ createDecorator),
+/* harmony export */   "mixins": () => (/* binding */ mixins)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/**
+  * vue-class-component v7.2.6
+  * (c) 2015-present Evan You
+  * @license MIT
+  */
+
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+
+    return arr2;
+  }
+}
+
+function _iterableToArray(iter) {
+  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+// The rational behind the verbose Reflect-feature check below is the fact that there are polyfills
+// which add an implementation for Reflect.defineMetadata but not for Reflect.getOwnMetadataKeys.
+// Without this check consumers will encounter hard to track down runtime errors.
+function reflectionIsSupported() {
+  return typeof Reflect !== 'undefined' && Reflect.defineMetadata && Reflect.getOwnMetadataKeys;
+}
+function copyReflectionMetadata(to, from) {
+  forwardMetadata(to, from);
+  Object.getOwnPropertyNames(from.prototype).forEach(function (key) {
+    forwardMetadata(to.prototype, from.prototype, key);
+  });
+  Object.getOwnPropertyNames(from).forEach(function (key) {
+    forwardMetadata(to, from, key);
+  });
+}
+
+function forwardMetadata(to, from, propertyKey) {
+  var metaKeys = propertyKey ? Reflect.getOwnMetadataKeys(from, propertyKey) : Reflect.getOwnMetadataKeys(from);
+  metaKeys.forEach(function (metaKey) {
+    var metadata = propertyKey ? Reflect.getOwnMetadata(metaKey, from, propertyKey) : Reflect.getOwnMetadata(metaKey, from);
+
+    if (propertyKey) {
+      Reflect.defineMetadata(metaKey, metadata, to, propertyKey);
+    } else {
+      Reflect.defineMetadata(metaKey, metadata, to);
+    }
+  });
+}
+
+var fakeArray = {
+  __proto__: []
+};
+var hasProto = fakeArray instanceof Array;
+function createDecorator(factory) {
+  return function (target, key, index) {
+    var Ctor = typeof target === 'function' ? target : target.constructor;
+
+    if (!Ctor.__decorators__) {
+      Ctor.__decorators__ = [];
+    }
+
+    if (typeof index !== 'number') {
+      index = undefined;
+    }
+
+    Ctor.__decorators__.push(function (options) {
+      return factory(options, key, index);
+    });
+  };
+}
+function mixins() {
+  for (var _len = arguments.length, Ctors = new Array(_len), _key = 0; _key < _len; _key++) {
+    Ctors[_key] = arguments[_key];
+  }
+
+  return vue__WEBPACK_IMPORTED_MODULE_0__["default"].extend({
+    mixins: Ctors
+  });
+}
+function isPrimitive(value) {
+  var type = _typeof(value);
+
+  return value == null || type !== 'object' && type !== 'function';
+}
+function warn(message) {
+  if (typeof console !== 'undefined') {
+    console.warn('[vue-class-component] ' + message);
+  }
+}
+
+function collectDataFromConstructor(vm, Component) {
+  // override _init to prevent to init as Vue instance
+  var originalInit = Component.prototype._init;
+
+  Component.prototype._init = function () {
+    var _this = this;
+
+    // proxy to actual vm
+    var keys = Object.getOwnPropertyNames(vm); // 2.2.0 compat (props are no longer exposed as self properties)
+
+    if (vm.$options.props) {
+      for (var key in vm.$options.props) {
+        if (!vm.hasOwnProperty(key)) {
+          keys.push(key);
+        }
+      }
+    }
+
+    keys.forEach(function (key) {
+      Object.defineProperty(_this, key, {
+        get: function get() {
+          return vm[key];
+        },
+        set: function set(value) {
+          vm[key] = value;
+        },
+        configurable: true
+      });
+    });
+  }; // should be acquired class property values
+
+
+  var data = new Component(); // restore original _init to avoid memory leak (#209)
+
+  Component.prototype._init = originalInit; // create plain data object
+
+  var plainData = {};
+  Object.keys(data).forEach(function (key) {
+    if (data[key] !== undefined) {
+      plainData[key] = data[key];
+    }
+  });
+
+  if (true) {
+    if (!(Component.prototype instanceof vue__WEBPACK_IMPORTED_MODULE_0__["default"]) && Object.keys(plainData).length > 0) {
+      warn('Component class must inherit Vue or its descendant class ' + 'when class property is used.');
+    }
+  }
+
+  return plainData;
+}
+
+var $internalHooks = ['data', 'beforeCreate', 'created', 'beforeMount', 'mounted', 'beforeDestroy', 'destroyed', 'beforeUpdate', 'updated', 'activated', 'deactivated', 'render', 'errorCaptured', 'serverPrefetch' // 2.6
+];
+function componentFactory(Component) {
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  options.name = options.name || Component._componentTag || Component.name; // prototype props.
+
+  var proto = Component.prototype;
+  Object.getOwnPropertyNames(proto).forEach(function (key) {
+    if (key === 'constructor') {
+      return;
+    } // hooks
+
+
+    if ($internalHooks.indexOf(key) > -1) {
+      options[key] = proto[key];
+      return;
+    }
+
+    var descriptor = Object.getOwnPropertyDescriptor(proto, key);
+
+    if (descriptor.value !== void 0) {
+      // methods
+      if (typeof descriptor.value === 'function') {
+        (options.methods || (options.methods = {}))[key] = descriptor.value;
+      } else {
+        // typescript decorated data
+        (options.mixins || (options.mixins = [])).push({
+          data: function data() {
+            return _defineProperty({}, key, descriptor.value);
+          }
+        });
+      }
+    } else if (descriptor.get || descriptor.set) {
+      // computed properties
+      (options.computed || (options.computed = {}))[key] = {
+        get: descriptor.get,
+        set: descriptor.set
+      };
+    }
+  });
+  (options.mixins || (options.mixins = [])).push({
+    data: function data() {
+      return collectDataFromConstructor(this, Component);
+    }
+  }); // decorate options
+
+  var decorators = Component.__decorators__;
+
+  if (decorators) {
+    decorators.forEach(function (fn) {
+      return fn(options);
+    });
+    delete Component.__decorators__;
+  } // find super
+
+
+  var superProto = Object.getPrototypeOf(Component.prototype);
+  var Super = superProto instanceof vue__WEBPACK_IMPORTED_MODULE_0__["default"] ? superProto.constructor : vue__WEBPACK_IMPORTED_MODULE_0__["default"];
+  var Extended = Super.extend(options);
+  forwardStaticMembers(Extended, Component, Super);
+
+  if (reflectionIsSupported()) {
+    copyReflectionMetadata(Extended, Component);
+  }
+
+  return Extended;
+}
+var reservedPropertyNames = [// Unique id
+'cid', // Super Vue constructor
+'super', // Component options that will be used by the component
+'options', 'superOptions', 'extendOptions', 'sealedOptions', // Private assets
+'component', 'directive', 'filter'];
+var shouldIgnore = {
+  prototype: true,
+  arguments: true,
+  callee: true,
+  caller: true
+};
+
+function forwardStaticMembers(Extended, Original, Super) {
+  // We have to use getOwnPropertyNames since Babel registers methods as non-enumerable
+  Object.getOwnPropertyNames(Original).forEach(function (key) {
+    // Skip the properties that should not be overwritten
+    if (shouldIgnore[key]) {
+      return;
+    } // Some browsers does not allow reconfigure built-in properties
+
+
+    var extendedDescriptor = Object.getOwnPropertyDescriptor(Extended, key);
+
+    if (extendedDescriptor && !extendedDescriptor.configurable) {
+      return;
+    }
+
+    var descriptor = Object.getOwnPropertyDescriptor(Original, key); // If the user agent does not support `__proto__` or its family (IE <= 10),
+    // the sub class properties may be inherited properties from the super class in TypeScript.
+    // We need to exclude such properties to prevent to overwrite
+    // the component options object which stored on the extended constructor (See #192).
+    // If the value is a referenced value (object or function),
+    // we can check equality of them and exclude it if they have the same reference.
+    // If it is a primitive value, it will be forwarded for safety.
+
+    if (!hasProto) {
+      // Only `cid` is explicitly exluded from property forwarding
+      // because we cannot detect whether it is a inherited property or not
+      // on the no `__proto__` environment even though the property is reserved.
+      if (key === 'cid') {
+        return;
+      }
+
+      var superDescriptor = Object.getOwnPropertyDescriptor(Super, key);
+
+      if (!isPrimitive(descriptor.value) && superDescriptor && superDescriptor.value === descriptor.value) {
+        return;
+      }
+    } // Warn if the users manually declare reserved properties
+
+
+    if ( true && reservedPropertyNames.indexOf(key) >= 0) {
+      warn("Static property name '".concat(key, "' declared on class '").concat(Original.name, "' ") + 'conflicts with reserved property name of Vue internal. ' + 'It may cause unexpected behavior of the component. Consider renaming the property.');
+    }
+
+    Object.defineProperty(Extended, key, descriptor);
+  });
+}
+
+function Component(options) {
+  if (typeof options === 'function') {
+    return componentFactory(options);
+  }
+
+  return function (Component) {
+    return componentFactory(Component, options);
+  };
+}
+
+Component.registerHooks = function registerHooks(keys) {
+  $internalHooks.push.apply($internalHooks, _toConsumableArray(keys));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Component);
+
+
 
 /***/ }),
 
@@ -5340,6 +13121,4359 @@ function vueClipboards (Vue) {
 
 /***/ }),
 
+/***/ "./node_modules/vue-glide-js/dist/vue-glide.common.js":
+/*!************************************************************!*\
+  !*** ./node_modules/vue-glide-js/dist/vue-glide.common.js ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __nested_webpack_require_187__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_187__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__nested_webpack_require_187__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__nested_webpack_require_187__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__nested_webpack_require_187__.d = function(exports, name, getter) {
+/******/ 		if(!__nested_webpack_require_187__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__nested_webpack_require_187__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__nested_webpack_require_187__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __nested_webpack_require_187__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__nested_webpack_require_187__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __nested_webpack_require_187__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__nested_webpack_require_187__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__nested_webpack_require_187__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__nested_webpack_require_187__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__nested_webpack_require_187__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __nested_webpack_require_187__(__nested_webpack_require_187__.s = "fb15");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "4d21":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "f6fd":
+/***/ (function(module, exports) {
+
+// document.currentScript polyfill by Adam Miller
+
+// MIT license
+
+(function(document){
+  var currentScript = "currentScript",
+      scripts = document.getElementsByTagName('script'); // Live NodeList collection
+
+  // If browser needs currentScript polyfill, add get currentScript() to the document object
+  if (!(currentScript in document)) {
+    Object.defineProperty(document, currentScript, {
+      get: function(){
+
+        // IE 6-10 supports script readyState
+        // IE 10+ support stack trace
+        try { throw new Error(); }
+        catch (err) {
+
+          // Find the second match for the "at" string to get file src url from stack.
+          // Specifically works with the format of stack traces in IE.
+          var i, res = ((/.*at [^\(]*\((.*):.+:.+\)$/ig).exec(err.stack) || [false])[1];
+
+          // For all scripts on the page, if src matches or if ready state is interactive, return the script tag
+          for(i in scripts){
+            if(scripts[i].src == res || scripts[i].readyState == "interactive"){
+              return scripts[i];
+            }
+          }
+
+          // If no match, return null
+          return null;
+        }
+      }
+    });
+  }
+})(document);
+
+
+/***/ }),
+
+/***/ "fb15":
+/***/ (function(module, __webpack_exports__, __nested_webpack_require_5060__) {
+
+"use strict";
+__nested_webpack_require_5060__.r(__webpack_exports__);
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
+// This file is imported into lib/wc client bundles.
+
+if (typeof window !== 'undefined') {
+  if (true) {
+    __nested_webpack_require_5060__("f6fd")
+  }
+
+  var i
+  if ((i = window.document.currentScript) && (i = i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
+    __nested_webpack_require_5060__.p = i[1] // eslint-disable-line
+  }
+}
+
+// Indicate to webpack that this file can be concatenated
+/* harmony default export */ var setPublicPath = (null);
+
+// CONCATENATED MODULE: ./node_modules/@glidejs/glide/dist/glide.esm.js
+/*!
+ * Glide.js v3.4.1
+ * (c) 2013-2019 Jędrzej Chałubek <jedrzej.chalubek@gmail.com> (http://jedrzejchalubek.com/)
+ * Released under the MIT License.
+ */
+
+var defaults = {
+  /**
+   * Type of the movement.
+   *
+   * Available types:
+   * `slider` - Rewinds slider to the start/end when it reaches the first or last slide.
+   * `carousel` - Changes slides without starting over when it reaches the first or last slide.
+   *
+   * @type {String}
+   */
+  type: 'slider',
+
+  /**
+   * Start at specific slide number defined with zero-based index.
+   *
+   * @type {Number}
+   */
+  startAt: 0,
+
+  /**
+   * A number of slides visible on the single viewport.
+   *
+   * @type {Number}
+   */
+  perView: 1,
+
+  /**
+   * Focus currently active slide at a specified position in the track.
+   *
+   * Available inputs:
+   * `center` - Current slide will be always focused at the center of a track.
+   * `0,1,2,3...` - Current slide will be focused on the specified zero-based index.
+   *
+   * @type {String|Number}
+   */
+  focusAt: 0,
+
+  /**
+   * A size of the gap added between slides.
+   *
+   * @type {Number}
+   */
+  gap: 10,
+
+  /**
+   * Change slides after a specified interval. Use `false` for turning off autoplay.
+   *
+   * @type {Number|Boolean}
+   */
+  autoplay: false,
+
+  /**
+   * Stop autoplay on mouseover event.
+   *
+   * @type {Boolean}
+   */
+  hoverpause: true,
+
+  /**
+   * Allow for changing slides with left and right keyboard arrows.
+   *
+   * @type {Boolean}
+   */
+  keyboard: true,
+
+  /**
+   * Stop running `perView` number of slides from the end. Use this
+   * option if you don't want to have an empty space after
+   * a slider. Works only with `slider` type and a
+   * non-centered `focusAt` setting.
+   *
+   * @type {Boolean}
+   */
+  bound: false,
+
+  /**
+   * Minimal swipe distance needed to change the slide. Use `false` for turning off a swiping.
+   *
+   * @type {Number|Boolean}
+   */
+  swipeThreshold: 80,
+
+  /**
+   * Minimal mouse drag distance needed to change the slide. Use `false` for turning off a dragging.
+   *
+   * @type {Number|Boolean}
+   */
+  dragThreshold: 120,
+
+  /**
+   * A maximum number of slides to which movement will be made on swiping or dragging. Use `false` for unlimited.
+   *
+   * @type {Number|Boolean}
+   */
+  perTouch: false,
+
+  /**
+   * Moving distance ratio of the slides on a swiping and dragging.
+   *
+   * @type {Number}
+   */
+  touchRatio: 0.5,
+
+  /**
+   * Angle required to activate slides moving on swiping or dragging.
+   *
+   * @type {Number}
+   */
+  touchAngle: 45,
+
+  /**
+   * Duration of the animation in milliseconds.
+   *
+   * @type {Number}
+   */
+  animationDuration: 400,
+
+  /**
+   * Allows looping the `slider` type. Slider will rewind to the first/last slide when it's at the start/end.
+   *
+   * @type {Boolean}
+   */
+  rewind: true,
+
+  /**
+   * Duration of the rewinding animation of the `slider` type in milliseconds.
+   *
+   * @type {Number}
+   */
+  rewindDuration: 800,
+
+  /**
+   * Easing function for the animation.
+   *
+   * @type {String}
+   */
+  animationTimingFunc: 'cubic-bezier(.165, .840, .440, 1)',
+
+  /**
+   * Throttle costly events at most once per every wait milliseconds.
+   *
+   * @type {Number}
+   */
+  throttle: 10,
+
+  /**
+   * Moving direction mode.
+   *
+   * Available inputs:
+   * - 'ltr' - left to right movement,
+   * - 'rtl' - right to left movement.
+   *
+   * @type {String}
+   */
+  direction: 'ltr',
+
+  /**
+   * The distance value of the next and previous viewports which
+   * have to peek in the current view. Accepts number and
+   * pixels as a string. Left and right peeking can be
+   * set up separately with a directions object.
+   *
+   * For example:
+   * `100` - Peek 100px on the both sides.
+   * { before: 100, after: 50 }` - Peek 100px on the left side and 50px on the right side.
+   *
+   * @type {Number|String|Object}
+   */
+  peek: 0,
+
+  /**
+   * Collection of options applied at specified media breakpoints.
+   * For example: display two slides per view under 800px.
+   * `{
+   *   '800px': {
+   *     perView: 2
+   *   }
+   * }`
+   */
+  breakpoints: {},
+
+  /**
+   * Collection of internally used HTML classes.
+   *
+   * @todo Refactor `slider` and `carousel` properties to single `type: { slider: '', carousel: '' }` object
+   * @type {Object}
+   */
+  classes: {
+    direction: {
+      ltr: 'glide--ltr',
+      rtl: 'glide--rtl'
+    },
+    slider: 'glide--slider',
+    carousel: 'glide--carousel',
+    swipeable: 'glide--swipeable',
+    dragging: 'glide--dragging',
+    cloneSlide: 'glide__slide--clone',
+    activeNav: 'glide__bullet--active',
+    activeSlide: 'glide__slide--active',
+    disabledArrow: 'glide__arrow--disabled'
+  }
+};
+
+/**
+ * Outputs warning message to the bowser console.
+ *
+ * @param  {String} msg
+ * @return {Void}
+ */
+function warn(msg) {
+  console.error("[Glide warn]: " + msg);
+}
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
+  return typeof obj;
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+var get = function get(object, property, receiver) {
+  if (object === null) object = Function.prototype;
+  var desc = Object.getOwnPropertyDescriptor(object, property);
+
+  if (desc === undefined) {
+    var parent = Object.getPrototypeOf(object);
+
+    if (parent === null) {
+      return undefined;
+    } else {
+      return get(parent, property, receiver);
+    }
+  } else if ("value" in desc) {
+    return desc.value;
+  } else {
+    var getter = desc.get;
+
+    if (getter === undefined) {
+      return undefined;
+    }
+
+    return getter.call(receiver);
+  }
+};
+
+var inherits = function (subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      enumerable: false,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+};
+
+var possibleConstructorReturn = function (self, call) {
+  if (!self) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return call && (typeof call === "object" || typeof call === "function") ? call : self;
+};
+
+/**
+ * Converts value entered as number
+ * or string to integer value.
+ *
+ * @param {String} value
+ * @returns {Number}
+ */
+function toInt(value) {
+  return parseInt(value);
+}
+
+/**
+ * Converts value entered as number
+ * or string to flat value.
+ *
+ * @param {String} value
+ * @returns {Number}
+ */
+function toFloat(value) {
+  return parseFloat(value);
+}
+
+/**
+ * Indicates whether the specified value is a string.
+ *
+ * @param  {*}   value
+ * @return {Boolean}
+ */
+function isString(value) {
+  return typeof value === 'string';
+}
+
+/**
+ * Indicates whether the specified value is an object.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ *
+ * @see https://github.com/jashkenas/underscore
+ */
+function isObject(value) {
+  var type = typeof value === 'undefined' ? 'undefined' : _typeof(value);
+
+  return type === 'function' || type === 'object' && !!value; // eslint-disable-line no-mixed-operators
+}
+
+/**
+ * Indicates whether the specified value is a number.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isNumber(value) {
+  return typeof value === 'number';
+}
+
+/**
+ * Indicates whether the specified value is a function.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isFunction(value) {
+  return typeof value === 'function';
+}
+
+/**
+ * Indicates whether the specified value is undefined.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isUndefined(value) {
+  return typeof value === 'undefined';
+}
+
+/**
+ * Indicates whether the specified value is an array.
+ *
+ * @param  {*} value
+ * @return {Boolean}
+ */
+function isArray(value) {
+  return value.constructor === Array;
+}
+
+/**
+ * Creates and initializes specified collection of extensions.
+ * Each extension receives access to instance of glide and rest of components.
+ *
+ * @param {Object} glide
+ * @param {Object} extensions
+ *
+ * @returns {Object}
+ */
+function mount(glide, extensions, events) {
+  var components = {};
+
+  for (var name in extensions) {
+    if (isFunction(extensions[name])) {
+      components[name] = extensions[name](glide, components, events);
+    } else {
+      warn('Extension must be a function');
+    }
+  }
+
+  for (var _name in components) {
+    if (isFunction(components[_name].mount)) {
+      components[_name].mount();
+    }
+  }
+
+  return components;
+}
+
+/**
+ * Defines getter and setter property on the specified object.
+ *
+ * @param  {Object} obj         Object where property has to be defined.
+ * @param  {String} prop        Name of the defined property.
+ * @param  {Object} definition  Get and set definitions for the property.
+ * @return {Void}
+ */
+function define(obj, prop, definition) {
+  Object.defineProperty(obj, prop, definition);
+}
+
+/**
+ * Sorts aphabetically object keys.
+ *
+ * @param  {Object} obj
+ * @return {Object}
+ */
+function sortKeys(obj) {
+  return Object.keys(obj).sort().reduce(function (r, k) {
+    r[k] = obj[k];
+
+    return r[k], r;
+  }, {});
+}
+
+/**
+ * Merges passed settings object with default options.
+ *
+ * @param  {Object} defaults
+ * @param  {Object} settings
+ * @return {Object}
+ */
+function mergeOptions(defaults, settings) {
+  var options = _extends({}, defaults, settings);
+
+  // `Object.assign` do not deeply merge objects, so we
+  // have to do it manually for every nested object
+  // in options. Although it does not look smart,
+  // it's smaller and faster than some fancy
+  // merging deep-merge algorithm script.
+  if (settings.hasOwnProperty('classes')) {
+    options.classes = _extends({}, defaults.classes, settings.classes);
+
+    if (settings.classes.hasOwnProperty('direction')) {
+      options.classes.direction = _extends({}, defaults.classes.direction, settings.classes.direction);
+    }
+  }
+
+  if (settings.hasOwnProperty('breakpoints')) {
+    options.breakpoints = _extends({}, defaults.breakpoints, settings.breakpoints);
+  }
+
+  return options;
+}
+
+var EventsBus = function () {
+  /**
+   * Construct a EventBus instance.
+   *
+   * @param {Object} events
+   */
+  function EventsBus() {
+    var events = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    classCallCheck(this, EventsBus);
+
+    this.events = events;
+    this.hop = events.hasOwnProperty;
+  }
+
+  /**
+   * Adds listener to the specifed event.
+   *
+   * @param {String|Array} event
+   * @param {Function} handler
+   */
+
+
+  createClass(EventsBus, [{
+    key: 'on',
+    value: function on(event, handler) {
+      if (isArray(event)) {
+        for (var i = 0; i < event.length; i++) {
+          this.on(event[i], handler);
+        }
+      }
+
+      // Create the event's object if not yet created
+      if (!this.hop.call(this.events, event)) {
+        this.events[event] = [];
+      }
+
+      // Add the handler to queue
+      var index = this.events[event].push(handler) - 1;
+
+      // Provide handle back for removal of event
+      return {
+        remove: function remove() {
+          delete this.events[event][index];
+        }
+      };
+    }
+
+    /**
+     * Runs registered handlers for specified event.
+     *
+     * @param {String|Array} event
+     * @param {Object=} context
+     */
+
+  }, {
+    key: 'emit',
+    value: function emit(event, context) {
+      if (isArray(event)) {
+        for (var i = 0; i < event.length; i++) {
+          this.emit(event[i], context);
+        }
+      }
+
+      // If the event doesn't exist, or there's no handlers in queue, just leave
+      if (!this.hop.call(this.events, event)) {
+        return;
+      }
+
+      // Cycle through events queue, fire!
+      this.events[event].forEach(function (item) {
+        item(context || {});
+      });
+    }
+  }]);
+  return EventsBus;
+}();
+
+var Glide = function () {
+  /**
+   * Construct glide.
+   *
+   * @param  {String} selector
+   * @param  {Object} options
+   */
+  function Glide(selector) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    classCallCheck(this, Glide);
+
+    this._c = {};
+    this._t = [];
+    this._e = new EventsBus();
+
+    this.disabled = false;
+    this.selector = selector;
+    this.settings = mergeOptions(defaults, options);
+    this.index = this.settings.startAt;
+  }
+
+  /**
+   * Initializes glide.
+   *
+   * @param {Object} extensions Collection of extensions to initialize.
+   * @return {Glide}
+   */
+
+
+  createClass(Glide, [{
+    key: 'mount',
+    value: function mount$$1() {
+      var extensions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this._e.emit('mount.before');
+
+      if (isObject(extensions)) {
+        this._c = mount(this, extensions, this._e);
+      } else {
+        warn('You need to provide a object on `mount()`');
+      }
+
+      this._e.emit('mount.after');
+
+      return this;
+    }
+
+    /**
+     * Collects an instance `translate` transformers.
+     *
+     * @param  {Array} transformers Collection of transformers.
+     * @return {Void}
+     */
+
+  }, {
+    key: 'mutate',
+    value: function mutate() {
+      var transformers = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+
+      if (isArray(transformers)) {
+        this._t = transformers;
+      } else {
+        warn('You need to provide a array on `mutate()`');
+      }
+
+      return this;
+    }
+
+    /**
+     * Updates glide with specified settings.
+     *
+     * @param {Object} settings
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'update',
+    value: function update() {
+      var settings = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this.settings = mergeOptions(this.settings, settings);
+
+      if (settings.hasOwnProperty('startAt')) {
+        this.index = settings.startAt;
+      }
+
+      this._e.emit('update');
+
+      return this;
+    }
+
+    /**
+     * Change slide with specified pattern. A pattern must be in the special format:
+     * `>` - Move one forward
+     * `<` - Move one backward
+     * `={i}` - Go to {i} zero-based slide (eq. '=1', will go to second slide)
+     * `>>` - Rewinds to end (last slide)
+     * `<<` - Rewinds to start (first slide)
+     *
+     * @param {String} pattern
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'go',
+    value: function go(pattern) {
+      this._c.Run.make(pattern);
+
+      return this;
+    }
+
+    /**
+     * Move track by specified distance.
+     *
+     * @param {String} distance
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'move',
+    value: function move(distance) {
+      this._c.Transition.disable();
+      this._c.Move.make(distance);
+
+      return this;
+    }
+
+    /**
+     * Destroy instance and revert all changes done by this._c.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'destroy',
+    value: function destroy() {
+      this._e.emit('destroy');
+
+      return this;
+    }
+
+    /**
+     * Start instance autoplaying.
+     *
+     * @param {Boolean|Number} interval Run autoplaying with passed interval regardless of `autoplay` settings
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'play',
+    value: function play() {
+      var interval = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+
+      if (interval) {
+        this.settings.autoplay = interval;
+      }
+
+      this._e.emit('play');
+
+      return this;
+    }
+
+    /**
+     * Stop instance autoplaying.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'pause',
+    value: function pause() {
+      this._e.emit('pause');
+
+      return this;
+    }
+
+    /**
+     * Sets glide into a idle status.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'disable',
+    value: function disable() {
+      this.disabled = true;
+
+      return this;
+    }
+
+    /**
+     * Sets glide into a active status.
+     *
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'enable',
+    value: function enable() {
+      this.disabled = false;
+
+      return this;
+    }
+
+    /**
+     * Adds cuutom event listener with handler.
+     *
+     * @param  {String|Array} event
+     * @param  {Function} handler
+     * @return {Glide}
+     */
+
+  }, {
+    key: 'on',
+    value: function on(event, handler) {
+      this._e.on(event, handler);
+
+      return this;
+    }
+
+    /**
+     * Checks if glide is a precised type.
+     *
+     * @param  {String} name
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'isType',
+    value: function isType(name) {
+      return this.settings.type === name;
+    }
+
+    /**
+     * Gets value of the core options.
+     *
+     * @return {Object}
+     */
+
+  }, {
+    key: 'settings',
+    get: function get$$1() {
+      return this._o;
+    }
+
+    /**
+     * Sets value of the core options.
+     *
+     * @param  {Object} o
+     * @return {Void}
+     */
+    ,
+    set: function set$$1(o) {
+      if (isObject(o)) {
+        this._o = o;
+      } else {
+        warn('Options must be an `object` instance.');
+      }
+    }
+
+    /**
+     * Gets current index of the slider.
+     *
+     * @return {Object}
+     */
+
+  }, {
+    key: 'index',
+    get: function get$$1() {
+      return this._i;
+    }
+
+    /**
+     * Sets current index a slider.
+     *
+     * @return {Object}
+     */
+    ,
+    set: function set$$1(i) {
+      this._i = toInt(i);
+    }
+
+    /**
+     * Gets type name of the slider.
+     *
+     * @return {String}
+     */
+
+  }, {
+    key: 'type',
+    get: function get$$1() {
+      return this.settings.type;
+    }
+
+    /**
+     * Gets value of the idle status.
+     *
+     * @return {Boolean}
+     */
+
+  }, {
+    key: 'disabled',
+    get: function get$$1() {
+      return this._d;
+    }
+
+    /**
+     * Sets value of the idle status.
+     *
+     * @return {Boolean}
+     */
+    ,
+    set: function set$$1(status) {
+      this._d = !!status;
+    }
+  }]);
+  return Glide;
+}();
+
+function Run (Glide, Components, Events) {
+  var Run = {
+    /**
+     * Initializes autorunning of the glide.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this._o = false;
+    },
+
+
+    /**
+     * Makes glides running based on the passed moving schema.
+     *
+     * @param {String} move
+     */
+    make: function make(move) {
+      var _this = this;
+
+      if (!Glide.disabled) {
+        Glide.disable();
+
+        this.move = move;
+
+        Events.emit('run.before', this.move);
+
+        this.calculate();
+
+        Events.emit('run', this.move);
+
+        Components.Transition.after(function () {
+          if (_this.isStart()) {
+            Events.emit('run.start', _this.move);
+          }
+
+          if (_this.isEnd()) {
+            Events.emit('run.end', _this.move);
+          }
+
+          if (_this.isOffset('<') || _this.isOffset('>')) {
+            _this._o = false;
+
+            Events.emit('run.offset', _this.move);
+          }
+
+          Events.emit('run.after', _this.move);
+
+          Glide.enable();
+        });
+      }
+    },
+
+
+    /**
+     * Calculates current index based on defined move.
+     *
+     * @return {Void}
+     */
+    calculate: function calculate() {
+      var move = this.move,
+          length = this.length;
+      var steps = move.steps,
+          direction = move.direction;
+
+
+      var countableSteps = isNumber(toInt(steps)) && toInt(steps) !== 0;
+
+      switch (direction) {
+        case '>':
+          if (steps === '>') {
+            Glide.index = length;
+          } else if (this.isEnd()) {
+            if (!(Glide.isType('slider') && !Glide.settings.rewind)) {
+              this._o = true;
+
+              Glide.index = 0;
+            }
+          } else if (countableSteps) {
+            Glide.index += Math.min(length - Glide.index, -toInt(steps));
+          } else {
+            Glide.index++;
+          }
+          break;
+
+        case '<':
+          if (steps === '<') {
+            Glide.index = 0;
+          } else if (this.isStart()) {
+            if (!(Glide.isType('slider') && !Glide.settings.rewind)) {
+              this._o = true;
+
+              Glide.index = length;
+            }
+          } else if (countableSteps) {
+            Glide.index -= Math.min(Glide.index, toInt(steps));
+          } else {
+            Glide.index--;
+          }
+          break;
+
+        case '=':
+          Glide.index = steps;
+          break;
+
+        default:
+          warn('Invalid direction pattern [' + direction + steps + '] has been used');
+          break;
+      }
+    },
+
+
+    /**
+     * Checks if we are on the first slide.
+     *
+     * @return {Boolean}
+     */
+    isStart: function isStart() {
+      return Glide.index === 0;
+    },
+
+
+    /**
+     * Checks if we are on the last slide.
+     *
+     * @return {Boolean}
+     */
+    isEnd: function isEnd() {
+      return Glide.index === this.length;
+    },
+
+
+    /**
+     * Checks if we are making a offset run.
+     *
+     * @param {String} direction
+     * @return {Boolean}
+     */
+    isOffset: function isOffset(direction) {
+      return this._o && this.move.direction === direction;
+    }
+  };
+
+  define(Run, 'move', {
+    /**
+     * Gets value of the move schema.
+     *
+     * @returns {Object}
+     */
+    get: function get() {
+      return this._m;
+    },
+
+
+    /**
+     * Sets value of the move schema.
+     *
+     * @returns {Object}
+     */
+    set: function set(value) {
+      var step = value.substr(1);
+
+      this._m = {
+        direction: value.substr(0, 1),
+        steps: step ? toInt(step) ? toInt(step) : step : 0
+      };
+    }
+  });
+
+  define(Run, 'length', {
+    /**
+     * Gets value of the running distance based
+     * on zero-indexing number of slides.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var settings = Glide.settings;
+      var length = Components.Html.slides.length;
+
+      // If the `bound` option is acitve, a maximum running distance should be
+      // reduced by `perView` and `focusAt` settings. Running distance
+      // should end before creating an empty space after instance.
+
+      if (Glide.isType('slider') && settings.focusAt !== 'center' && settings.bound) {
+        return length - 1 - (toInt(settings.perView) - 1) + toInt(settings.focusAt);
+      }
+
+      return length - 1;
+    }
+  });
+
+  define(Run, 'offset', {
+    /**
+     * Gets status of the offsetting flag.
+     *
+     * @return {Boolean}
+     */
+    get: function get() {
+      return this._o;
+    }
+  });
+
+  return Run;
+}
+
+/**
+ * Returns a current time.
+ *
+ * @return {Number}
+ */
+function now() {
+  return new Date().getTime();
+}
+
+/**
+ * Returns a function, that, when invoked, will only be triggered
+ * at most once during a given window of time.
+ *
+ * @param {Function} func
+ * @param {Number} wait
+ * @param {Object=} options
+ * @return {Function}
+ *
+ * @see https://github.com/jashkenas/underscore
+ */
+function throttle(func, wait, options) {
+  var timeout = void 0,
+      context = void 0,
+      args = void 0,
+      result = void 0;
+  var previous = 0;
+  if (!options) options = {};
+
+  var later = function later() {
+    previous = options.leading === false ? 0 : now();
+    timeout = null;
+    result = func.apply(context, args);
+    if (!timeout) context = args = null;
+  };
+
+  var throttled = function throttled() {
+    var at = now();
+    if (!previous && options.leading === false) previous = at;
+    var remaining = wait - (at - previous);
+    context = this;
+    args = arguments;
+    if (remaining <= 0 || remaining > wait) {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = null;
+      }
+      previous = at;
+      result = func.apply(context, args);
+      if (!timeout) context = args = null;
+    } else if (!timeout && options.trailing !== false) {
+      timeout = setTimeout(later, remaining);
+    }
+    return result;
+  };
+
+  throttled.cancel = function () {
+    clearTimeout(timeout);
+    previous = 0;
+    timeout = context = args = null;
+  };
+
+  return throttled;
+}
+
+var MARGIN_TYPE = {
+  ltr: ['marginLeft', 'marginRight'],
+  rtl: ['marginRight', 'marginLeft']
+};
+
+function Gaps (Glide, Components, Events) {
+  var Gaps = {
+    /**
+     * Applies gaps between slides. First and last
+     * slides do not receive it's edge margins.
+     *
+     * @param {HTMLCollection} slides
+     * @return {Void}
+     */
+    apply: function apply(slides) {
+      for (var i = 0, len = slides.length; i < len; i++) {
+        var style = slides[i].style;
+        var direction = Components.Direction.value;
+
+        if (i !== 0) {
+          style[MARGIN_TYPE[direction][0]] = this.value / 2 + 'px';
+        } else {
+          style[MARGIN_TYPE[direction][0]] = '';
+        }
+
+        if (i !== slides.length - 1) {
+          style[MARGIN_TYPE[direction][1]] = this.value / 2 + 'px';
+        } else {
+          style[MARGIN_TYPE[direction][1]] = '';
+        }
+      }
+    },
+
+
+    /**
+     * Removes gaps from the slides.
+     *
+     * @param {HTMLCollection} slides
+     * @returns {Void}
+    */
+    remove: function remove(slides) {
+      for (var i = 0, len = slides.length; i < len; i++) {
+        var style = slides[i].style;
+
+        style.marginLeft = '';
+        style.marginRight = '';
+      }
+    }
+  };
+
+  define(Gaps, 'value', {
+    /**
+     * Gets value of the gap.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return toInt(Glide.settings.gap);
+    }
+  });
+
+  define(Gaps, 'grow', {
+    /**
+     * Gets additional dimentions value caused by gaps.
+     * Used to increase width of the slides wrapper.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return Gaps.value * (Components.Sizes.length - 1);
+    }
+  });
+
+  define(Gaps, 'reductor', {
+    /**
+     * Gets reduction value caused by gaps.
+     * Used to subtract width of the slides.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      var perView = Glide.settings.perView;
+
+      return Gaps.value * (perView - 1) / perView;
+    }
+  });
+
+  /**
+   * Apply calculated gaps:
+   * - after building, so slides (including clones) will receive proper margins
+   * - on updating via API, to recalculate gaps with new options
+   */
+  Events.on(['build.after', 'update'], throttle(function () {
+    Gaps.apply(Components.Html.wrapper.children);
+  }, 30));
+
+  /**
+   * Remove gaps:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Gaps.remove(Components.Html.wrapper.children);
+  });
+
+  return Gaps;
+}
+
+/**
+ * Finds siblings nodes of the passed node.
+ *
+ * @param  {Element} node
+ * @return {Array}
+ */
+function siblings(node) {
+  if (node && node.parentNode) {
+    var n = node.parentNode.firstChild;
+    var matched = [];
+
+    for (; n; n = n.nextSibling) {
+      if (n.nodeType === 1 && n !== node) {
+        matched.push(n);
+      }
+    }
+
+    return matched;
+  }
+
+  return [];
+}
+
+/**
+ * Checks if passed node exist and is a valid element.
+ *
+ * @param  {Element} node
+ * @return {Boolean}
+ */
+function exist(node) {
+  if (node && node instanceof window.HTMLElement) {
+    return true;
+  }
+
+  return false;
+}
+
+var TRACK_SELECTOR = '[data-glide-el="track"]';
+
+function Html (Glide, Components) {
+  var Html = {
+    /**
+     * Setup slider HTML nodes.
+     *
+     * @param {Glide} glide
+     */
+    mount: function mount() {
+      this.root = Glide.selector;
+      this.track = this.root.querySelector(TRACK_SELECTOR);
+      this.slides = Array.prototype.slice.call(this.wrapper.children).filter(function (slide) {
+        return !slide.classList.contains(Glide.settings.classes.cloneSlide);
+      });
+    }
+  };
+
+  define(Html, 'root', {
+    /**
+     * Gets node of the glide main element.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html._r;
+    },
+
+
+    /**
+     * Sets node of the glide main element.
+     *
+     * @return {Object}
+     */
+    set: function set(r) {
+      if (isString(r)) {
+        r = document.querySelector(r);
+      }
+
+      if (exist(r)) {
+        Html._r = r;
+      } else {
+        warn('Root element must be a existing Html node');
+      }
+    }
+  });
+
+  define(Html, 'track', {
+    /**
+     * Gets node of the glide track with slides.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html._t;
+    },
+
+
+    /**
+     * Sets node of the glide track with slides.
+     *
+     * @return {Object}
+     */
+    set: function set(t) {
+      if (exist(t)) {
+        Html._t = t;
+      } else {
+        warn('Could not find track element. Please use ' + TRACK_SELECTOR + ' attribute.');
+      }
+    }
+  });
+
+  define(Html, 'wrapper', {
+    /**
+     * Gets node of the slides wrapper.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Html.track.children[0];
+    }
+  });
+
+  return Html;
+}
+
+function Peek (Glide, Components, Events) {
+  var Peek = {
+    /**
+     * Setups how much to peek based on settings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.value = Glide.settings.peek;
+    }
+  };
+
+  define(Peek, 'value', {
+    /**
+     * Gets value of the peek.
+     *
+     * @returns {Number|Object}
+     */
+    get: function get() {
+      return Peek._v;
+    },
+
+
+    /**
+     * Sets value of the peek.
+     *
+     * @param {Number|Object} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      if (isObject(value)) {
+        value.before = toInt(value.before);
+        value.after = toInt(value.after);
+      } else {
+        value = toInt(value);
+      }
+
+      Peek._v = value;
+    }
+  });
+
+  define(Peek, 'reductor', {
+    /**
+     * Gets reduction value caused by peek.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      var value = Peek.value;
+      var perView = Glide.settings.perView;
+
+      if (isObject(value)) {
+        return value.before / perView + value.after / perView;
+      }
+
+      return value * 2 / perView;
+    }
+  });
+
+  /**
+   * Recalculate peeking sizes on:
+   * - when resizing window to update to proper percents
+   */
+  Events.on(['resize', 'update'], function () {
+    Peek.mount();
+  });
+
+  return Peek;
+}
+
+function Move (Glide, Components, Events) {
+  var Move = {
+    /**
+     * Constructs move component.
+     *
+     * @returns {Void}
+     */
+    mount: function mount() {
+      this._o = 0;
+    },
+
+
+    /**
+     * Calculates a movement value based on passed offset and currently active index.
+     *
+     * @param  {Number} offset
+     * @return {Void}
+     */
+    make: function make() {
+      var _this = this;
+
+      var offset = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+      this.offset = offset;
+
+      Events.emit('move', {
+        movement: this.value
+      });
+
+      Components.Transition.after(function () {
+        Events.emit('move.after', {
+          movement: _this.value
+        });
+      });
+    }
+  };
+
+  define(Move, 'offset', {
+    /**
+     * Gets an offset value used to modify current translate.
+     *
+     * @return {Object}
+     */
+    get: function get() {
+      return Move._o;
+    },
+
+
+    /**
+     * Sets an offset value used to modify current translate.
+     *
+     * @return {Object}
+     */
+    set: function set(value) {
+      Move._o = !isUndefined(value) ? toInt(value) : 0;
+    }
+  });
+
+  define(Move, 'translate', {
+    /**
+     * Gets a raw movement value.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Sizes.slideWidth * Glide.index;
+    }
+  });
+
+  define(Move, 'value', {
+    /**
+     * Gets an actual movement value corrected by offset.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var offset = this.offset;
+      var translate = this.translate;
+
+      if (Components.Direction.is('rtl')) {
+        return translate + offset;
+      }
+
+      return translate - offset;
+    }
+  });
+
+  /**
+   * Make movement to proper slide on:
+   * - before build, so glide will start at `startAt` index
+   * - on each standard run to move to newly calculated index
+   */
+  Events.on(['build.before', 'run'], function () {
+    Move.make();
+  });
+
+  return Move;
+}
+
+function Sizes (Glide, Components, Events) {
+  var Sizes = {
+    /**
+     * Setups dimentions of slides.
+     *
+     * @return {Void}
+     */
+    setupSlides: function setupSlides() {
+      var width = this.slideWidth + 'px';
+      var slides = Components.Html.slides;
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = width;
+      }
+    },
+
+
+    /**
+     * Setups dimentions of slides wrapper.
+     *
+     * @return {Void}
+     */
+    setupWrapper: function setupWrapper(dimention) {
+      Components.Html.wrapper.style.width = this.wrapperSize + 'px';
+    },
+
+
+    /**
+     * Removes applied styles from HTML elements.
+     *
+     * @returns {Void}
+     */
+    remove: function remove() {
+      var slides = Components.Html.slides;
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.width = '';
+      }
+
+      Components.Html.wrapper.style.width = '';
+    }
+  };
+
+  define(Sizes, 'length', {
+    /**
+     * Gets count number of the slides.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Html.slides.length;
+    }
+  });
+
+  define(Sizes, 'width', {
+    /**
+     * Gets width value of the glide.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Components.Html.root.offsetWidth;
+    }
+  });
+
+  define(Sizes, 'wrapperSize', {
+    /**
+     * Gets size of the slides wrapper.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Sizes.slideWidth * Sizes.length + Components.Gaps.grow + Components.Clones.grow;
+    }
+  });
+
+  define(Sizes, 'slideWidth', {
+    /**
+     * Gets width value of the single slide.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return Sizes.width / Glide.settings.perView - Components.Peek.reductor - Components.Gaps.reductor;
+    }
+  });
+
+  /**
+   * Apply calculated glide's dimensions:
+   * - before building, so other dimentions (e.g. translate) will be calculated propertly
+   * - when resizing window to recalculate sildes dimensions
+   * - on updating via API, to calculate dimensions based on new options
+   */
+  Events.on(['build.before', 'resize', 'update'], function () {
+    Sizes.setupSlides();
+    Sizes.setupWrapper();
+  });
+
+  /**
+   * Remove calculated glide's dimensions:
+   * - on destoting to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Sizes.remove();
+  });
+
+  return Sizes;
+}
+
+function Build (Glide, Components, Events) {
+  var Build = {
+    /**
+     * Init glide building. Adds classes, sets
+     * dimensions and setups initial state.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      Events.emit('build.before');
+
+      this.typeClass();
+      this.activeClass();
+
+      Events.emit('build.after');
+    },
+
+
+    /**
+     * Adds `type` class to the glide element.
+     *
+     * @return {Void}
+     */
+    typeClass: function typeClass() {
+      Components.Html.root.classList.add(Glide.settings.classes[Glide.settings.type]);
+    },
+
+
+    /**
+     * Sets active class to current slide.
+     *
+     * @return {Void}
+     */
+    activeClass: function activeClass() {
+      var classes = Glide.settings.classes;
+      var slide = Components.Html.slides[Glide.index];
+
+      if (slide) {
+        slide.classList.add(classes.activeSlide);
+
+        siblings(slide).forEach(function (sibling) {
+          sibling.classList.remove(classes.activeSlide);
+        });
+      }
+    },
+
+
+    /**
+     * Removes HTML classes applied at building.
+     *
+     * @return {Void}
+     */
+    removeClasses: function removeClasses() {
+      var classes = Glide.settings.classes;
+
+      Components.Html.root.classList.remove(classes[Glide.settings.type]);
+
+      Components.Html.slides.forEach(function (sibling) {
+        sibling.classList.remove(classes.activeSlide);
+      });
+    }
+  };
+
+  /**
+   * Clear building classes:
+   * - on destroying to bring HTML to its initial state
+   * - on updating to remove classes before remounting component
+   */
+  Events.on(['destroy', 'update'], function () {
+    Build.removeClasses();
+  });
+
+  /**
+   * Remount component:
+   * - on resizing of the window to calculate new dimentions
+   * - on updating settings via API
+   */
+  Events.on(['resize', 'update'], function () {
+    Build.mount();
+  });
+
+  /**
+   * Swap active class of current slide:
+   * - after each move to the new index
+   */
+  Events.on('move.after', function () {
+    Build.activeClass();
+  });
+
+  return Build;
+}
+
+function Clones (Glide, Components, Events) {
+  var Clones = {
+    /**
+     * Create pattern map and collect slides to be cloned.
+     */
+    mount: function mount() {
+      this.items = [];
+
+      if (Glide.isType('carousel')) {
+        this.items = this.collect();
+      }
+    },
+
+
+    /**
+     * Collect clones with pattern.
+     *
+     * @return {Void}
+     */
+    collect: function collect() {
+      var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+      var slides = Components.Html.slides;
+      var _Glide$settings = Glide.settings,
+          perView = _Glide$settings.perView,
+          classes = _Glide$settings.classes;
+
+
+      var peekIncrementer = +!!Glide.settings.peek;
+      var part = perView + peekIncrementer;
+      var start = slides.slice(0, part);
+      var end = slides.slice(-part);
+
+      for (var r = 0; r < Math.max(1, Math.floor(perView / slides.length)); r++) {
+        for (var i = 0; i < start.length; i++) {
+          var clone = start[i].cloneNode(true);
+
+          clone.classList.add(classes.cloneSlide);
+
+          items.push(clone);
+        }
+
+        for (var _i = 0; _i < end.length; _i++) {
+          var _clone = end[_i].cloneNode(true);
+
+          _clone.classList.add(classes.cloneSlide);
+
+          items.unshift(_clone);
+        }
+      }
+
+      return items;
+    },
+
+
+    /**
+     * Append cloned slides with generated pattern.
+     *
+     * @return {Void}
+     */
+    append: function append() {
+      var items = this.items;
+      var _Components$Html = Components.Html,
+          wrapper = _Components$Html.wrapper,
+          slides = _Components$Html.slides;
+
+
+      var half = Math.floor(items.length / 2);
+      var prepend = items.slice(0, half).reverse();
+      var append = items.slice(half, items.length);
+      var width = Components.Sizes.slideWidth + 'px';
+
+      for (var i = 0; i < append.length; i++) {
+        wrapper.appendChild(append[i]);
+      }
+
+      for (var _i2 = 0; _i2 < prepend.length; _i2++) {
+        wrapper.insertBefore(prepend[_i2], slides[0]);
+      }
+
+      for (var _i3 = 0; _i3 < items.length; _i3++) {
+        items[_i3].style.width = width;
+      }
+    },
+
+
+    /**
+     * Remove all cloned slides.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      var items = this.items;
+
+
+      for (var i = 0; i < items.length; i++) {
+        Components.Html.wrapper.removeChild(items[i]);
+      }
+    }
+  };
+
+  define(Clones, 'grow', {
+    /**
+     * Gets additional dimentions value caused by clones.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      return (Components.Sizes.slideWidth + Components.Gaps.value) * Clones.items.length;
+    }
+  });
+
+  /**
+   * Append additional slide's clones:
+   * - while glide's type is `carousel`
+   */
+  Events.on('update', function () {
+    Clones.remove();
+    Clones.mount();
+    Clones.append();
+  });
+
+  /**
+   * Append additional slide's clones:
+   * - while glide's type is `carousel`
+   */
+  Events.on('build.before', function () {
+    if (Glide.isType('carousel')) {
+      Clones.append();
+    }
+  });
+
+  /**
+   * Remove clones HTMLElements:
+   * - on destroying, to bring HTML to its initial state
+   */
+  Events.on('destroy', function () {
+    Clones.remove();
+  });
+
+  return Clones;
+}
+
+var EventsBinder = function () {
+  /**
+   * Construct a EventsBinder instance.
+   */
+  function EventsBinder() {
+    var listeners = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    classCallCheck(this, EventsBinder);
+
+    this.listeners = listeners;
+  }
+
+  /**
+   * Adds events listeners to arrows HTML elements.
+   *
+   * @param  {String|Array} events
+   * @param  {Element|Window|Document} el
+   * @param  {Function} closure
+   * @param  {Boolean|Object} capture
+   * @return {Void}
+   */
+
+
+  createClass(EventsBinder, [{
+    key: 'on',
+    value: function on(events, el, closure) {
+      var capture = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+      if (isString(events)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        this.listeners[events[i]] = closure;
+
+        el.addEventListener(events[i], this.listeners[events[i]], capture);
+      }
+    }
+
+    /**
+     * Removes event listeners from arrows HTML elements.
+     *
+     * @param  {String|Array} events
+     * @param  {Element|Window|Document} el
+     * @param  {Boolean|Object} capture
+     * @return {Void}
+     */
+
+  }, {
+    key: 'off',
+    value: function off(events, el) {
+      var capture = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+      if (isString(events)) {
+        events = [events];
+      }
+
+      for (var i = 0; i < events.length; i++) {
+        el.removeEventListener(events[i], this.listeners[events[i]], capture);
+      }
+    }
+
+    /**
+     * Destroy collected listeners.
+     *
+     * @returns {Void}
+     */
+
+  }, {
+    key: 'destroy',
+    value: function destroy() {
+      delete this.listeners;
+    }
+  }]);
+  return EventsBinder;
+}();
+
+function Resize (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Resize = {
+    /**
+     * Initializes window bindings.
+     */
+    mount: function mount() {
+      this.bind();
+    },
+
+
+    /**
+     * Binds `rezsize` listener to the window.
+     * It's a costly event, so we are debouncing it.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('resize', window, throttle(function () {
+        Events.emit('resize');
+      }, Glide.settings.throttle));
+    },
+
+
+    /**
+     * Unbinds listeners from the window.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('resize', window);
+    }
+  };
+
+  /**
+   * Remove bindings from window:
+   * - on destroying, to remove added EventListener
+   */
+  Events.on('destroy', function () {
+    Resize.unbind();
+    Binder.destroy();
+  });
+
+  return Resize;
+}
+
+var VALID_DIRECTIONS = ['ltr', 'rtl'];
+var FLIPED_MOVEMENTS = {
+  '>': '<',
+  '<': '>',
+  '=': '='
+};
+
+function Direction (Glide, Components, Events) {
+  var Direction = {
+    /**
+     * Setups gap value based on settings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.value = Glide.settings.direction;
+    },
+
+
+    /**
+     * Resolves pattern based on direction value
+     *
+     * @param {String} pattern
+     * @returns {String}
+     */
+    resolve: function resolve(pattern) {
+      var token = pattern.slice(0, 1);
+
+      if (this.is('rtl')) {
+        return pattern.split(token).join(FLIPED_MOVEMENTS[token]);
+      }
+
+      return pattern;
+    },
+
+
+    /**
+     * Checks value of direction mode.
+     *
+     * @param {String} direction
+     * @returns {Boolean}
+     */
+    is: function is(direction) {
+      return this.value === direction;
+    },
+
+
+    /**
+     * Applies direction class to the root HTML element.
+     *
+     * @return {Void}
+     */
+    addClass: function addClass() {
+      Components.Html.root.classList.add(Glide.settings.classes.direction[this.value]);
+    },
+
+
+    /**
+     * Removes direction class from the root HTML element.
+     *
+     * @return {Void}
+     */
+    removeClass: function removeClass() {
+      Components.Html.root.classList.remove(Glide.settings.classes.direction[this.value]);
+    }
+  };
+
+  define(Direction, 'value', {
+    /**
+     * Gets value of the direction.
+     *
+     * @returns {Number}
+     */
+    get: function get() {
+      return Direction._v;
+    },
+
+
+    /**
+     * Sets value of the direction.
+     *
+     * @param {String} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      if (VALID_DIRECTIONS.indexOf(value) > -1) {
+        Direction._v = value;
+      } else {
+        warn('Direction value must be `ltr` or `rtl`');
+      }
+    }
+  });
+
+  /**
+   * Clear direction class:
+   * - on destroy to bring HTML to its initial state
+   * - on update to remove class before reappling bellow
+   */
+  Events.on(['destroy', 'update'], function () {
+    Direction.removeClass();
+  });
+
+  /**
+   * Remount component:
+   * - on update to reflect changes in direction value
+   */
+  Events.on('update', function () {
+    Direction.mount();
+  });
+
+  /**
+   * Apply direction class:
+   * - before building to apply class for the first time
+   * - on updating to reapply direction class that may changed
+   */
+  Events.on(['build.before', 'update'], function () {
+    Direction.addClass();
+  });
+
+  return Direction;
+}
+
+/**
+ * Reflects value of glide movement.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Rtl (Glide, Components) {
+  return {
+    /**
+     * Negates the passed translate if glide is in RTL option.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      if (Components.Direction.is('rtl')) {
+        return -translate;
+      }
+
+      return translate;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `gap` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Gap (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with number in the `gap` settings.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      return translate + Components.Gaps.value * Glide.index;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with width of additional clones width.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Grow (Glide, Components) {
+  return {
+    /**
+     * Adds to the passed translate width of the half of clones.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      return translate + Components.Clones.grow / 2;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `peek` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Peeking (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with a `peek` setting.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      if (Glide.settings.focusAt >= 0) {
+        var peek = Components.Peek.value;
+
+        if (isObject(peek)) {
+          return translate - peek.before;
+        }
+
+        return translate - peek;
+      }
+
+      return translate;
+    }
+  };
+}
+
+/**
+ * Updates glide movement with a `focusAt` settings.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function Focusing (Glide, Components) {
+  return {
+    /**
+     * Modifies passed translate value with index in the `focusAt` setting.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    modify: function modify(translate) {
+      var gap = Components.Gaps.value;
+      var width = Components.Sizes.width;
+      var focusAt = Glide.settings.focusAt;
+      var slideWidth = Components.Sizes.slideWidth;
+
+      if (focusAt === 'center') {
+        return translate - (width / 2 - slideWidth / 2);
+      }
+
+      return translate - slideWidth * focusAt - gap * focusAt;
+    }
+  };
+}
+
+/**
+ * Applies diffrent transformers on translate value.
+ *
+ * @param  {Object} Glide
+ * @param  {Object} Components
+ * @return {Object}
+ */
+function mutator (Glide, Components, Events) {
+  /**
+   * Merge instance transformers with collection of default transformers.
+   * It's important that the Rtl component be last on the list,
+   * so it reflects all previous transformations.
+   *
+   * @type {Array}
+   */
+  var TRANSFORMERS = [Gap, Grow, Peeking, Focusing].concat(Glide._t, [Rtl]);
+
+  return {
+    /**
+     * Piplines translate value with registered transformers.
+     *
+     * @param  {Number} translate
+     * @return {Number}
+     */
+    mutate: function mutate(translate) {
+      for (var i = 0; i < TRANSFORMERS.length; i++) {
+        var transformer = TRANSFORMERS[i];
+
+        if (isFunction(transformer) && isFunction(transformer().modify)) {
+          translate = transformer(Glide, Components, Events).modify(translate);
+        } else {
+          warn('Transformer should be a function that returns an object with `modify()` method');
+        }
+      }
+
+      return translate;
+    }
+  };
+}
+
+function Translate (Glide, Components, Events) {
+  var Translate = {
+    /**
+     * Sets value of translate on HTML element.
+     *
+     * @param {Number} value
+     * @return {Void}
+     */
+    set: function set(value) {
+      var transform = mutator(Glide, Components).mutate(value);
+
+      Components.Html.wrapper.style.transform = 'translate3d(' + -1 * transform + 'px, 0px, 0px)';
+    },
+
+
+    /**
+     * Removes value of translate from HTML element.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      Components.Html.wrapper.style.transform = '';
+    }
+  };
+
+  /**
+   * Set new translate value:
+   * - on move to reflect index change
+   * - on updating via API to reflect possible changes in options
+   */
+  Events.on('move', function (context) {
+    var gap = Components.Gaps.value;
+    var length = Components.Sizes.length;
+    var width = Components.Sizes.slideWidth;
+
+    if (Glide.isType('carousel') && Components.Run.isOffset('<')) {
+      Components.Transition.after(function () {
+        Events.emit('translate.jump');
+
+        Translate.set(width * (length - 1));
+      });
+
+      return Translate.set(-width - gap * length);
+    }
+
+    if (Glide.isType('carousel') && Components.Run.isOffset('>')) {
+      Components.Transition.after(function () {
+        Events.emit('translate.jump');
+
+        Translate.set(0);
+      });
+
+      return Translate.set(width * length + gap * length);
+    }
+
+    return Translate.set(context.movement);
+  });
+
+  /**
+   * Remove translate:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Translate.remove();
+  });
+
+  return Translate;
+}
+
+function Transition (Glide, Components, Events) {
+  /**
+   * Holds inactivity status of transition.
+   * When true transition is not applied.
+   *
+   * @type {Boolean}
+   */
+  var disabled = false;
+
+  var Transition = {
+    /**
+     * Composes string of the CSS transition.
+     *
+     * @param {String} property
+     * @return {String}
+     */
+    compose: function compose(property) {
+      var settings = Glide.settings;
+
+      if (!disabled) {
+        return property + ' ' + this.duration + 'ms ' + settings.animationTimingFunc;
+      }
+
+      return property + ' 0ms ' + settings.animationTimingFunc;
+    },
+
+
+    /**
+     * Sets value of transition on HTML element.
+     *
+     * @param {String=} property
+     * @return {Void}
+     */
+    set: function set() {
+      var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'transform';
+
+      Components.Html.wrapper.style.transition = this.compose(property);
+    },
+
+
+    /**
+     * Removes value of transition from HTML element.
+     *
+     * @return {Void}
+     */
+    remove: function remove() {
+      Components.Html.wrapper.style.transition = '';
+    },
+
+
+    /**
+     * Runs callback after animation.
+     *
+     * @param  {Function} callback
+     * @return {Void}
+     */
+    after: function after(callback) {
+      setTimeout(function () {
+        callback();
+      }, this.duration);
+    },
+
+
+    /**
+     * Enable transition.
+     *
+     * @return {Void}
+     */
+    enable: function enable() {
+      disabled = false;
+
+      this.set();
+    },
+
+
+    /**
+     * Disable transition.
+     *
+     * @return {Void}
+     */
+    disable: function disable() {
+      disabled = true;
+
+      this.set();
+    }
+  };
+
+  define(Transition, 'duration', {
+    /**
+     * Gets duration of the transition based
+     * on currently running animation type.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var settings = Glide.settings;
+
+      if (Glide.isType('slider') && Components.Run.offset) {
+        return settings.rewindDuration;
+      }
+
+      return settings.animationDuration;
+    }
+  });
+
+  /**
+   * Set transition `style` value:
+   * - on each moving, because it may be cleared by offset move
+   */
+  Events.on('move', function () {
+    Transition.set();
+  });
+
+  /**
+   * Disable transition:
+   * - before initial build to avoid transitioning from `0` to `startAt` index
+   * - while resizing window and recalculating dimentions
+   * - on jumping from offset transition at start and end edges in `carousel` type
+   */
+  Events.on(['build.before', 'resize', 'translate.jump'], function () {
+    Transition.disable();
+  });
+
+  /**
+   * Enable transition:
+   * - on each running, because it may be disabled by offset move
+   */
+  Events.on('run', function () {
+    Transition.enable();
+  });
+
+  /**
+   * Remove transition:
+   * - on destroying to bring markup to its inital state
+   */
+  Events.on('destroy', function () {
+    Transition.remove();
+  });
+
+  return Transition;
+}
+
+/**
+ * Test via a getter in the options object to see
+ * if the passive property is accessed.
+ *
+ * @see https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
+ */
+
+var supportsPassive = false;
+
+try {
+  var opts = Object.defineProperty({}, 'passive', {
+    get: function get() {
+      supportsPassive = true;
+    }
+  });
+
+  window.addEventListener('testPassive', null, opts);
+  window.removeEventListener('testPassive', null, opts);
+} catch (e) {}
+
+var supportsPassive$1 = supportsPassive;
+
+var START_EVENTS = ['touchstart', 'mousedown'];
+var MOVE_EVENTS = ['touchmove', 'mousemove'];
+var END_EVENTS = ['touchend', 'touchcancel', 'mouseup', 'mouseleave'];
+var MOUSE_EVENTS = ['mousedown', 'mousemove', 'mouseup', 'mouseleave'];
+
+function Swipe (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var swipeSin = 0;
+  var swipeStartX = 0;
+  var swipeStartY = 0;
+  var disabled = false;
+  var capture = supportsPassive$1 ? { passive: true } : false;
+
+  var Swipe = {
+    /**
+     * Initializes swipe bindings.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.bindSwipeStart();
+    },
+
+
+    /**
+     * Handler for `swipestart` event. Calculates entry points of the user's tap.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    start: function start(event) {
+      if (!disabled && !Glide.disabled) {
+        this.disable();
+
+        var swipe = this.touches(event);
+
+        swipeSin = null;
+        swipeStartX = toInt(swipe.pageX);
+        swipeStartY = toInt(swipe.pageY);
+
+        this.bindSwipeMove();
+        this.bindSwipeEnd();
+
+        Events.emit('swipe.start');
+      }
+    },
+
+
+    /**
+     * Handler for `swipemove` event. Calculates user's tap angle and distance.
+     *
+     * @param {Object} event
+     */
+    move: function move(event) {
+      if (!Glide.disabled) {
+        var _Glide$settings = Glide.settings,
+            touchAngle = _Glide$settings.touchAngle,
+            touchRatio = _Glide$settings.touchRatio,
+            classes = _Glide$settings.classes;
+
+
+        var swipe = this.touches(event);
+
+        var subExSx = toInt(swipe.pageX) - swipeStartX;
+        var subEySy = toInt(swipe.pageY) - swipeStartY;
+        var powEX = Math.abs(subExSx << 2);
+        var powEY = Math.abs(subEySy << 2);
+        var swipeHypotenuse = Math.sqrt(powEX + powEY);
+        var swipeCathetus = Math.sqrt(powEY);
+
+        swipeSin = Math.asin(swipeCathetus / swipeHypotenuse);
+
+        if (swipeSin * 180 / Math.PI < touchAngle) {
+          event.stopPropagation();
+
+          Components.Move.make(subExSx * toFloat(touchRatio));
+
+          Components.Html.root.classList.add(classes.dragging);
+
+          Events.emit('swipe.move');
+        } else {
+          return false;
+        }
+      }
+    },
+
+
+    /**
+     * Handler for `swipeend` event. Finitializes user's tap and decides about glide move.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    end: function end(event) {
+      if (!Glide.disabled) {
+        var settings = Glide.settings;
+
+        var swipe = this.touches(event);
+        var threshold = this.threshold(event);
+
+        var swipeDistance = swipe.pageX - swipeStartX;
+        var swipeDeg = swipeSin * 180 / Math.PI;
+        var steps = Math.round(swipeDistance / Components.Sizes.slideWidth);
+
+        this.enable();
+
+        if (swipeDistance > threshold && swipeDeg < settings.touchAngle) {
+          // While swipe is positive and greater than threshold move backward.
+          if (settings.perTouch) {
+            steps = Math.min(steps, toInt(settings.perTouch));
+          }
+
+          if (Components.Direction.is('rtl')) {
+            steps = -steps;
+          }
+
+          Components.Run.make(Components.Direction.resolve('<' + steps));
+        } else if (swipeDistance < -threshold && swipeDeg < settings.touchAngle) {
+          // While swipe is negative and lower than negative threshold move forward.
+          if (settings.perTouch) {
+            steps = Math.max(steps, -toInt(settings.perTouch));
+          }
+
+          if (Components.Direction.is('rtl')) {
+            steps = -steps;
+          }
+
+          Components.Run.make(Components.Direction.resolve('>' + steps));
+        } else {
+          // While swipe don't reach distance apply previous transform.
+          Components.Move.make();
+        }
+
+        Components.Html.root.classList.remove(settings.classes.dragging);
+
+        this.unbindSwipeMove();
+        this.unbindSwipeEnd();
+
+        Events.emit('swipe.end');
+      }
+    },
+
+
+    /**
+     * Binds swipe's starting event.
+     *
+     * @return {Void}
+     */
+    bindSwipeStart: function bindSwipeStart() {
+      var _this = this;
+
+      var settings = Glide.settings;
+
+      if (settings.swipeThreshold) {
+        Binder.on(START_EVENTS[0], Components.Html.wrapper, function (event) {
+          _this.start(event);
+        }, capture);
+      }
+
+      if (settings.dragThreshold) {
+        Binder.on(START_EVENTS[1], Components.Html.wrapper, function (event) {
+          _this.start(event);
+        }, capture);
+      }
+    },
+
+
+    /**
+     * Unbinds swipe's starting event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeStart: function unbindSwipeStart() {
+      Binder.off(START_EVENTS[0], Components.Html.wrapper, capture);
+      Binder.off(START_EVENTS[1], Components.Html.wrapper, capture);
+    },
+
+
+    /**
+     * Binds swipe's moving event.
+     *
+     * @return {Void}
+     */
+    bindSwipeMove: function bindSwipeMove() {
+      var _this2 = this;
+
+      Binder.on(MOVE_EVENTS, Components.Html.wrapper, throttle(function (event) {
+        _this2.move(event);
+      }, Glide.settings.throttle), capture);
+    },
+
+
+    /**
+     * Unbinds swipe's moving event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeMove: function unbindSwipeMove() {
+      Binder.off(MOVE_EVENTS, Components.Html.wrapper, capture);
+    },
+
+
+    /**
+     * Binds swipe's ending event.
+     *
+     * @return {Void}
+     */
+    bindSwipeEnd: function bindSwipeEnd() {
+      var _this3 = this;
+
+      Binder.on(END_EVENTS, Components.Html.wrapper, function (event) {
+        _this3.end(event);
+      });
+    },
+
+
+    /**
+     * Unbinds swipe's ending event.
+     *
+     * @return {Void}
+     */
+    unbindSwipeEnd: function unbindSwipeEnd() {
+      Binder.off(END_EVENTS, Components.Html.wrapper);
+    },
+
+
+    /**
+     * Normalizes event touches points accorting to different types.
+     *
+     * @param {Object} event
+     */
+    touches: function touches(event) {
+      if (MOUSE_EVENTS.indexOf(event.type) > -1) {
+        return event;
+      }
+
+      return event.touches[0] || event.changedTouches[0];
+    },
+
+
+    /**
+     * Gets value of minimum swipe distance settings based on event type.
+     *
+     * @return {Number}
+     */
+    threshold: function threshold(event) {
+      var settings = Glide.settings;
+
+      if (MOUSE_EVENTS.indexOf(event.type) > -1) {
+        return settings.dragThreshold;
+      }
+
+      return settings.swipeThreshold;
+    },
+
+
+    /**
+     * Enables swipe event.
+     *
+     * @return {self}
+     */
+    enable: function enable() {
+      disabled = false;
+
+      Components.Transition.enable();
+
+      return this;
+    },
+
+
+    /**
+     * Disables swipe event.
+     *
+     * @return {self}
+     */
+    disable: function disable() {
+      disabled = true;
+
+      Components.Transition.disable();
+
+      return this;
+    }
+  };
+
+  /**
+   * Add component class:
+   * - after initial building
+   */
+  Events.on('build.after', function () {
+    Components.Html.root.classList.add(Glide.settings.classes.swipeable);
+  });
+
+  /**
+   * Remove swiping bindings:
+   * - on destroying, to remove added EventListeners
+   */
+  Events.on('destroy', function () {
+    Swipe.unbindSwipeStart();
+    Swipe.unbindSwipeMove();
+    Swipe.unbindSwipeEnd();
+    Binder.destroy();
+  });
+
+  return Swipe;
+}
+
+function Images (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Images = {
+    /**
+     * Binds listener to glide wrapper.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.bind();
+    },
+
+
+    /**
+     * Binds `dragstart` event on wrapper to prevent dragging images.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('dragstart', Components.Html.wrapper, this.dragstart);
+    },
+
+
+    /**
+     * Unbinds `dragstart` event on wrapper.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('dragstart', Components.Html.wrapper);
+    },
+
+
+    /**
+     * Event handler. Prevents dragging.
+     *
+     * @return {Void}
+     */
+    dragstart: function dragstart(event) {
+      event.preventDefault();
+    }
+  };
+
+  /**
+   * Remove bindings from images:
+   * - on destroying, to remove added EventListeners
+   */
+  Events.on('destroy', function () {
+    Images.unbind();
+    Binder.destroy();
+  });
+
+  return Images;
+}
+
+function Anchors (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  /**
+   * Holds detaching status of anchors.
+   * Prevents detaching of already detached anchors.
+   *
+   * @private
+   * @type {Boolean}
+   */
+  var detached = false;
+
+  /**
+   * Holds preventing status of anchors.
+   * If `true` redirection after click will be disabled.
+   *
+   * @private
+   * @type {Boolean}
+   */
+  var prevented = false;
+
+  var Anchors = {
+    /**
+     * Setups a initial state of anchors component.
+     *
+     * @returns {Void}
+     */
+    mount: function mount() {
+      /**
+       * Holds collection of anchors elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._a = Components.Html.wrapper.querySelectorAll('a');
+
+      this.bind();
+    },
+
+
+    /**
+     * Binds events to anchors inside a track.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('click', Components.Html.wrapper, this.click);
+    },
+
+
+    /**
+     * Unbinds events attached to anchors inside a track.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('click', Components.Html.wrapper);
+    },
+
+
+    /**
+     * Handler for click event. Prevents clicks when glide is in `prevent` status.
+     *
+     * @param  {Object} event
+     * @return {Void}
+     */
+    click: function click(event) {
+      if (prevented) {
+        event.stopPropagation();
+        event.preventDefault();
+      }
+    },
+
+
+    /**
+     * Detaches anchors click event inside glide.
+     *
+     * @return {self}
+     */
+    detach: function detach() {
+      prevented = true;
+
+      if (!detached) {
+        for (var i = 0; i < this.items.length; i++) {
+          this.items[i].draggable = false;
+
+          this.items[i].setAttribute('data-href', this.items[i].getAttribute('href'));
+
+          this.items[i].removeAttribute('href');
+        }
+
+        detached = true;
+      }
+
+      return this;
+    },
+
+
+    /**
+     * Attaches anchors click events inside glide.
+     *
+     * @return {self}
+     */
+    attach: function attach() {
+      prevented = false;
+
+      if (detached) {
+        for (var i = 0; i < this.items.length; i++) {
+          this.items[i].draggable = true;
+
+          this.items[i].setAttribute('href', this.items[i].getAttribute('data-href'));
+        }
+
+        detached = false;
+      }
+
+      return this;
+    }
+  };
+
+  define(Anchors, 'items', {
+    /**
+     * Gets collection of the arrows HTML elements.
+     *
+     * @return {HTMLElement[]}
+     */
+    get: function get() {
+      return Anchors._a;
+    }
+  });
+
+  /**
+   * Detach anchors inside slides:
+   * - on swiping, so they won't redirect to its `href` attributes
+   */
+  Events.on('swipe.move', function () {
+    Anchors.detach();
+  });
+
+  /**
+   * Attach anchors inside slides:
+   * - after swiping and transitions ends, so they can redirect after click again
+   */
+  Events.on('swipe.end', function () {
+    Components.Transition.after(function () {
+      Anchors.attach();
+    });
+  });
+
+  /**
+   * Unbind anchors inside slides:
+   * - on destroying, to bring anchors to its initial state
+   */
+  Events.on('destroy', function () {
+    Anchors.attach();
+    Anchors.unbind();
+    Binder.destroy();
+  });
+
+  return Anchors;
+}
+
+var NAV_SELECTOR = '[data-glide-el="controls[nav]"]';
+var CONTROLS_SELECTOR = '[data-glide-el^="controls"]';
+
+function Controls (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var capture = supportsPassive$1 ? { passive: true } : false;
+
+  var Controls = {
+    /**
+     * Inits arrows. Binds events listeners
+     * to the arrows HTML elements.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      /**
+       * Collection of navigation HTML elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._n = Components.Html.root.querySelectorAll(NAV_SELECTOR);
+
+      /**
+       * Collection of controls HTML elements.
+       *
+       * @private
+       * @type {HTMLCollection}
+       */
+      this._c = Components.Html.root.querySelectorAll(CONTROLS_SELECTOR);
+
+      this.addBindings();
+    },
+
+
+    /**
+     * Sets active class to current slide.
+     *
+     * @return {Void}
+     */
+    setActive: function setActive() {
+      for (var i = 0; i < this._n.length; i++) {
+        this.addClass(this._n[i].children);
+      }
+    },
+
+
+    /**
+     * Removes active class to current slide.
+     *
+     * @return {Void}
+     */
+    removeActive: function removeActive() {
+      for (var i = 0; i < this._n.length; i++) {
+        this.removeClass(this._n[i].children);
+      }
+    },
+
+
+    /**
+     * Toggles active class on items inside navigation.
+     *
+     * @param  {HTMLElement} controls
+     * @return {Void}
+     */
+    addClass: function addClass(controls) {
+      var settings = Glide.settings;
+      var item = controls[Glide.index];
+
+      if (item) {
+        item.classList.add(settings.classes.activeNav);
+
+        siblings(item).forEach(function (sibling) {
+          sibling.classList.remove(settings.classes.activeNav);
+        });
+      }
+    },
+
+
+    /**
+     * Removes active class from active control.
+     *
+     * @param  {HTMLElement} controls
+     * @return {Void}
+     */
+    removeClass: function removeClass(controls) {
+      var item = controls[Glide.index];
+
+      if (item) {
+        item.classList.remove(Glide.settings.classes.activeNav);
+      }
+    },
+
+
+    /**
+     * Adds handles to the each group of controls.
+     *
+     * @return {Void}
+     */
+    addBindings: function addBindings() {
+      for (var i = 0; i < this._c.length; i++) {
+        this.bind(this._c[i].children);
+      }
+    },
+
+
+    /**
+     * Removes handles from the each group of controls.
+     *
+     * @return {Void}
+     */
+    removeBindings: function removeBindings() {
+      for (var i = 0; i < this._c.length; i++) {
+        this.unbind(this._c[i].children);
+      }
+    },
+
+
+    /**
+     * Binds events to arrows HTML elements.
+     *
+     * @param {HTMLCollection} elements
+     * @return {Void}
+     */
+    bind: function bind(elements) {
+      for (var i = 0; i < elements.length; i++) {
+        Binder.on('click', elements[i], this.click);
+        Binder.on('touchstart', elements[i], this.click, capture);
+      }
+    },
+
+
+    /**
+     * Unbinds events binded to the arrows HTML elements.
+     *
+     * @param {HTMLCollection} elements
+     * @return {Void}
+     */
+    unbind: function unbind(elements) {
+      for (var i = 0; i < elements.length; i++) {
+        Binder.off(['click', 'touchstart'], elements[i]);
+      }
+    },
+
+
+    /**
+     * Handles `click` event on the arrows HTML elements.
+     * Moves slider in driection precised in
+     * `data-glide-dir` attribute.
+     *
+     * @param {Object} event
+     * @return {Void}
+     */
+    click: function click(event) {
+      event.preventDefault();
+
+      Components.Run.make(Components.Direction.resolve(event.currentTarget.getAttribute('data-glide-dir')));
+    }
+  };
+
+  define(Controls, 'items', {
+    /**
+     * Gets collection of the controls HTML elements.
+     *
+     * @return {HTMLElement[]}
+     */
+    get: function get() {
+      return Controls._c;
+    }
+  });
+
+  /**
+   * Swap active class of current navigation item:
+   * - after mounting to set it to initial index
+   * - after each move to the new index
+   */
+  Events.on(['mount.after', 'move.after'], function () {
+    Controls.setActive();
+  });
+
+  /**
+   * Remove bindings and HTML Classes:
+   * - on destroying, to bring markup to its initial state
+   */
+  Events.on('destroy', function () {
+    Controls.removeBindings();
+    Controls.removeActive();
+    Binder.destroy();
+  });
+
+  return Controls;
+}
+
+function Keyboard (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Keyboard = {
+    /**
+     * Binds keyboard events on component mount.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      if (Glide.settings.keyboard) {
+        this.bind();
+      }
+    },
+
+
+    /**
+     * Adds keyboard press events.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      Binder.on('keyup', document, this.press);
+    },
+
+
+    /**
+     * Removes keyboard press events.
+     *
+     * @return {Void}
+     */
+    unbind: function unbind() {
+      Binder.off('keyup', document);
+    },
+
+
+    /**
+     * Handles keyboard's arrows press and moving glide foward and backward.
+     *
+     * @param  {Object} event
+     * @return {Void}
+     */
+    press: function press(event) {
+      if (event.keyCode === 39) {
+        Components.Run.make(Components.Direction.resolve('>'));
+      }
+
+      if (event.keyCode === 37) {
+        Components.Run.make(Components.Direction.resolve('<'));
+      }
+    }
+  };
+
+  /**
+   * Remove bindings from keyboard:
+   * - on destroying to remove added events
+   * - on updating to remove events before remounting
+   */
+  Events.on(['destroy', 'update'], function () {
+    Keyboard.unbind();
+  });
+
+  /**
+   * Remount component
+   * - on updating to reflect potential changes in settings
+   */
+  Events.on('update', function () {
+    Keyboard.mount();
+  });
+
+  /**
+   * Destroy binder:
+   * - on destroying to remove listeners
+   */
+  Events.on('destroy', function () {
+    Binder.destroy();
+  });
+
+  return Keyboard;
+}
+
+function Autoplay (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  var Autoplay = {
+    /**
+     * Initializes autoplaying and events.
+     *
+     * @return {Void}
+     */
+    mount: function mount() {
+      this.start();
+
+      if (Glide.settings.hoverpause) {
+        this.bind();
+      }
+    },
+
+
+    /**
+     * Starts autoplaying in configured interval.
+     *
+     * @param {Boolean|Number} force Run autoplaying with passed interval regardless of `autoplay` settings
+     * @return {Void}
+     */
+    start: function start() {
+      var _this = this;
+
+      if (Glide.settings.autoplay) {
+        if (isUndefined(this._i)) {
+          this._i = setInterval(function () {
+            _this.stop();
+
+            Components.Run.make('>');
+
+            _this.start();
+          }, this.time);
+        }
+      }
+    },
+
+
+    /**
+     * Stops autorunning of the glide.
+     *
+     * @return {Void}
+     */
+    stop: function stop() {
+      this._i = clearInterval(this._i);
+    },
+
+
+    /**
+     * Stops autoplaying while mouse is over glide's area.
+     *
+     * @return {Void}
+     */
+    bind: function bind() {
+      var _this2 = this;
+
+      Binder.on('mouseover', Components.Html.root, function () {
+        _this2.stop();
+      });
+
+      Binder.on('mouseout', Components.Html.root, function () {
+        _this2.start();
+      });
+    },
+
+
+    /**
+     * Unbind mouseover events.
+     *
+     * @returns {Void}
+     */
+    unbind: function unbind() {
+      Binder.off(['mouseover', 'mouseout'], Components.Html.root);
+    }
+  };
+
+  define(Autoplay, 'time', {
+    /**
+     * Gets time period value for the autoplay interval. Prioritizes
+     * times in `data-glide-autoplay` attrubutes over options.
+     *
+     * @return {Number}
+     */
+    get: function get() {
+      var autoplay = Components.Html.slides[Glide.index].getAttribute('data-glide-autoplay');
+
+      if (autoplay) {
+        return toInt(autoplay);
+      }
+
+      return toInt(Glide.settings.autoplay);
+    }
+  });
+
+  /**
+   * Stop autoplaying and unbind events:
+   * - on destroying, to clear defined interval
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on(['destroy', 'update'], function () {
+    Autoplay.unbind();
+  });
+
+  /**
+   * Stop autoplaying:
+   * - before each run, to restart autoplaying
+   * - on pausing via API
+   * - on destroying, to clear defined interval
+   * - while starting a swipe
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on(['run.before', 'pause', 'destroy', 'swipe.start', 'update'], function () {
+    Autoplay.stop();
+  });
+
+  /**
+   * Start autoplaying:
+   * - after each run, to restart autoplaying
+   * - on playing via API
+   * - while ending a swipe
+   */
+  Events.on(['run.after', 'play', 'swipe.end'], function () {
+    Autoplay.start();
+  });
+
+  /**
+   * Remount autoplaying:
+   * - on updating via API to reset interval that may changed
+   */
+  Events.on('update', function () {
+    Autoplay.mount();
+  });
+
+  /**
+   * Destroy a binder:
+   * - on destroying glide instance to clearup listeners
+   */
+  Events.on('destroy', function () {
+    Binder.destroy();
+  });
+
+  return Autoplay;
+}
+
+/**
+ * Sorts keys of breakpoint object so they will be ordered from lower to bigger.
+ *
+ * @param {Object} points
+ * @returns {Object}
+ */
+function sortBreakpoints(points) {
+  if (isObject(points)) {
+    return sortKeys(points);
+  } else {
+    warn('Breakpoints option must be an object');
+  }
+
+  return {};
+}
+
+function Breakpoints (Glide, Components, Events) {
+  /**
+   * Instance of the binder for DOM Events.
+   *
+   * @type {EventsBinder}
+   */
+  var Binder = new EventsBinder();
+
+  /**
+   * Holds reference to settings.
+   *
+   * @type {Object}
+   */
+  var settings = Glide.settings;
+
+  /**
+   * Holds reference to breakpoints object in settings. Sorts breakpoints
+   * from smaller to larger. It is required in order to proper
+   * matching currently active breakpoint settings.
+   *
+   * @type {Object}
+   */
+  var points = sortBreakpoints(settings.breakpoints);
+
+  /**
+   * Cache initial settings before overwritting.
+   *
+   * @type {Object}
+   */
+  var defaults = _extends({}, settings);
+
+  var Breakpoints = {
+    /**
+     * Matches settings for currectly matching media breakpoint.
+     *
+     * @param {Object} points
+     * @returns {Object}
+     */
+    match: function match(points) {
+      if (typeof window.matchMedia !== 'undefined') {
+        for (var point in points) {
+          if (points.hasOwnProperty(point)) {
+            if (window.matchMedia('(max-width: ' + point + 'px)').matches) {
+              return points[point];
+            }
+          }
+        }
+      }
+
+      return defaults;
+    }
+  };
+
+  /**
+   * Overwrite instance settings with currently matching breakpoint settings.
+   * This happens right after component initialization.
+   */
+  _extends(settings, Breakpoints.match(points));
+
+  /**
+   * Update glide with settings of matched brekpoint:
+   * - window resize to update slider
+   */
+  Binder.on('resize', window, throttle(function () {
+    Glide.settings = mergeOptions(settings, Breakpoints.match(points));
+  }, Glide.settings.throttle));
+
+  /**
+   * Resort and update default settings:
+   * - on reinit via API, so breakpoint matching will be performed with options
+   */
+  Events.on('update', function () {
+    points = sortBreakpoints(points);
+
+    defaults = _extends({}, settings);
+  });
+
+  /**
+   * Unbind resize listener:
+   * - on destroying, to bring markup to its initial state
+   */
+  Events.on('destroy', function () {
+    Binder.off('resize', window);
+  });
+
+  return Breakpoints;
+}
+
+var COMPONENTS = {
+  // Required
+  Html: Html,
+  Translate: Translate,
+  Transition: Transition,
+  Direction: Direction,
+  Peek: Peek,
+  Sizes: Sizes,
+  Gaps: Gaps,
+  Move: Move,
+  Clones: Clones,
+  Resize: Resize,
+  Build: Build,
+  Run: Run,
+
+  // Optional
+  Swipe: Swipe,
+  Images: Images,
+  Anchors: Anchors,
+  Controls: Controls,
+  Keyboard: Keyboard,
+  Autoplay: Autoplay,
+  Breakpoints: Breakpoints
+};
+
+var Glide$1 = function (_Core) {
+  inherits(Glide$$1, _Core);
+
+  function Glide$$1() {
+    classCallCheck(this, Glide$$1);
+    return possibleConstructorReturn(this, (Glide$$1.__proto__ || Object.getPrototypeOf(Glide$$1)).apply(this, arguments));
+  }
+
+  createClass(Glide$$1, [{
+    key: 'mount',
+    value: function mount() {
+      var extensions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      return get(Glide$$1.prototype.__proto__ || Object.getPrototypeOf(Glide$$1.prototype), 'mount', this).call(this, _extends({}, COMPONENTS, extensions));
+    }
+  }]);
+  return Glide$$1;
+}(Glide);
+
+/* harmony default export */ var glide_esm = (Glide$1);
+
+// EXTERNAL MODULE: ./node_modules/@glidejs/glide/dist/css/glide.core.min.css
+var glide_core_min = __nested_webpack_require_5060__("4d21");
+
+// CONCATENATED MODULE: ./src/components/events.js
+/* harmony default export */ var events = (['build.after', 'build.before', 'mount.after', 'mount.before', 'move.after', 'move', 'pause', 'play', 'resize', 'run.after', 'run.before', 'run.end', 'run.offset', 'run.start', 'run', 'swipe.end', 'swipe.move', 'swipe.start', 'translate.jump', 'update']);
+// CONCATENATED MODULE: ./src/components/Glide.js
+
+
+
+/* harmony default export */ var components_Glide = ({
+  name: 'VueGlide',
+  model: {
+    prop: 'active',
+    event: 'change'
+  },
+  props: {
+    type: {
+      type: String,
+      default: 'slider'
+    },
+    startAt: {
+      type: Number,
+      default: 0
+    },
+    perView: {
+      type: Number,
+      default: 3
+    },
+    focusAt: {
+      type: [String, Number],
+      default: 0
+    },
+    gap: {
+      type: Number,
+      default: 10
+    },
+    autoplay: {
+      type: [Number, Boolean],
+      default: false
+    },
+    hoverpause: {
+      type: Boolean,
+      default: true
+    },
+    keyboard: {
+      type: Boolean,
+      default: true
+    },
+    bound: {
+      type: Boolean,
+      default: false
+    },
+    swipeThreshold: {
+      type: [Number, Boolean],
+      default: 80
+    },
+    dragThreshold: {
+      type: [Number, Boolean],
+      default: 120
+    },
+    perTouch: {
+      type: [Number, Boolean],
+      default: false
+    },
+    touchRatio: {
+      type: Number,
+      default: 0.5
+    },
+    touchAngle: {
+      type: Number,
+      default: 45
+    },
+    animationDuration: {
+      type: Number,
+      default: 400
+    },
+    rewind: {
+      type: Boolean,
+      default: true
+    },
+    rewindDuration: {
+      type: Number,
+      default: 800
+    },
+    animationTimingFunc: {
+      type: String,
+      default: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)'
+    },
+    direction: {
+      type: String,
+      default: 'ltr'
+    },
+    peek: {
+      type: [Number, Object],
+      default: 0
+    },
+    breakpoints: {
+      type: Object,
+      default: function _default() {}
+    },
+    classes: {
+      type: Object,
+      default: function _default() {}
+    },
+    throttle: {
+      type: Number,
+      default: 25
+    },
+    toSlideByClick: {
+      type: Boolean,
+      default: false
+    },
+    bullet: {
+      type: Boolean,
+      default: false
+    },
+    options: {
+      type: Object,
+      default: function _default() {}
+    },
+    active: {
+      type: Number,
+      default: null
+    }
+  },
+  data: function data() {
+    return {
+      glide: undefined
+    };
+  },
+  render: function render(h) {
+    var control;
+    var bullet;
+    var buttons = []; // Pass only vue-glide-slide
+
+    var slides = this.$slots.default.filter(function (c) {
+      var isVueGlideTag = false;
+
+      if (c.componentOptions) {
+        isVueGlideTag = c.componentOptions.tag === 'VueGlideSlide' || c.componentOptions.tag === 'vue-glide-slide';
+      }
+
+      return isVueGlideTag;
+    });
+
+    if (this.$slots.control && this.$slots.control.length) {
+      control = h("div", {
+        "attrs": {
+          "data-glide-el": "controls"
+        }
+      }, [this.$slots.control]);
+    }
+
+    if (this.bullet) {
+      for (var i = 0; i < this.slidesCount; i++) {
+        buttons.push(h('button', {
+          key: i,
+          attrs: {
+            'data-glide-dir': '=' + i,
+            class: 'glide__bullet'
+          }
+        }));
+      }
+
+      bullet = h("div", {
+        "class": "glide__bullets",
+        "attrs": {
+          "data-glide-el": "controls[nav]"
+        }
+      }, [buttons]);
+    }
+
+    return h("div", {
+      "class": "glide"
+    }, [h("div", {
+      "class": "glide__track",
+      "attrs": {
+        "data-glide-el": "track"
+      }
+    }, [h("ul", {
+      "class": "glide__slides"
+    }, [slides])]), control, bullet]);
+  },
+  watch: {
+    active: function active() {
+      this.changeSlideByModel();
+    }
+  },
+  computed: {
+    currentSlide: function currentSlide() {
+      return this.glide.index;
+    },
+    slidesCount: function slidesCount() {
+      return this.$slots.default.filter(function (c) {
+        return c.componentOptions && c.componentOptions.tag === 'vue-glide-slide';
+      }).length;
+    }
+  },
+  mounted: function mounted() {
+    this.init();
+  },
+  methods: {
+    /**
+     * Initialization glide
+     */
+    init: function init() {
+      var defaultClasses = {
+        direction: {
+          ltr: 'glide--ltr',
+          rtl: 'glide--rtl'
+        },
+        slider: 'glide--slider',
+        carousel: 'glide--carousel',
+        swipeable: 'glide--swipeable',
+        dragging: 'glide--dragging',
+        cloneSlide: 'glide__slide--clone',
+        activeNav: 'glide__bullet--active',
+        activeSlide: 'glide__slide--active',
+        disabledArrow: 'glide__arrow--disabled'
+      };
+      var initOptions = Object.assign({}, this.$props); // Remove additional props 'options'
+
+      delete initOptions.options;
+      initOptions.classes = Object.assign(defaultClasses, this.classes);
+      var mergedOptions = Object.assign(initOptions, this.options);
+
+      if (this.toSlideByClick) {
+        this.goToSlideByClick();
+      }
+
+      this.glide = new glide_esm(this.$el, mergedOptions);
+      this.eventConnector(events);
+      this.glide.mount();
+      this.addEventListenerToSlide();
+      this.bindModel();
+      this.changeSlideByModel();
+    },
+
+    /**
+     * Go to the slide
+     * @param {string} pattern - special format glide.js api
+     * Available pattern:
+     * * > - Move one forward
+     * * < - Move one backward
+     * * ={i} - Go to {i} zero-based slide (eq. '=1', will go to second slide)
+     * * >> - Rewinds to end (last slide)
+     * * << - Rewinds to start (first slide)
+     */
+    go: function go(pattern) {
+      this.glide.go(pattern);
+    },
+
+    /**
+     * Go to the slide by click on slide
+     */
+    goToSlideByClick: function goToSlideByClick() {
+      var _this = this;
+
+      this.$on('glide:slide-click', function (e) {
+        return _this.go("=".concat(e));
+      });
+    },
+
+    /**
+     * Pass glide events to Vue events
+     * @param {array} - glide events
+     */
+    eventConnector: function eventConnector(events) {
+      var _this2 = this;
+
+      events.map(function (event) {
+        _this2.glide.on(event, function (e) {
+          var emitter = event.replace(/\./, '-');
+
+          _this2.$emit("glide:".concat(emitter), e);
+        });
+      });
+    },
+
+    /**
+     * Bind v-model
+     */
+    bindModel: function bindModel() {
+      var _this3 = this;
+
+      this.$on('glide:move', function () {
+        _this3.$emit('change', _this3.currentSlide);
+      });
+    },
+
+    /**
+     * Change slide by v-model
+     */
+    changeSlideByModel: function changeSlideByModel() {
+      if (this.active === null) return;
+
+      if (this.active > this.slidesCount - 1) {
+        return this.go("=".concat(this.slidesCount - 1));
+      }
+
+      if (this.active < 0) {
+        return this.go('=0');
+      }
+
+      this.go("=".concat(this.active));
+    },
+
+    /**
+     * Adding an event handler for slides, including DOM cloned slider elements
+     * When type is 'carousel', glide.js clones DOM slides
+     * @returns {number} - index of slide
+     */
+    addEventListenerToSlide: function addEventListenerToSlide() {
+      var _this4 = this;
+
+      var slides = document.querySelectorAll('.glide__slide');
+      slides = Array.from(slides);
+      slides.forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          // Recursive bubbling from nested elements to find '.glide__slide'
+          var recursive = function recursive(el) {
+            var parent = el.parentNode;
+            var contain = parent.classList.contains('glide__slide');
+
+            if (contain) {
+              return _this4.$emit('glide:slide-click', Number(parent.dataset.glideIndex));
+            } else {
+              recursive(parent);
+            }
+          };
+
+          if (!e.target.classList.contains('glide__slide')) {
+            recursive(e.target);
+          }
+
+          _this4.$emit('glide:slide-click', Number(e.target.dataset.glideIndex));
+        });
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"59701e64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GlideSlide.vue?vue&type=template&id=28f23117&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('li',{staticClass:"glide__slide",attrs:{"data-glide-index":_vm.index}},[_vm._t("default")],2)}
+var staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue?vue&type=template&id=28f23117&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/GlideSlide.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ var GlideSlidevue_type_script_lang_js_ = ({
+  name: 'VueGlideSlide',
+  computed: {
+    /**
+     * Get index of current slide
+     */
+    index: function index() {
+      var _this = this;
+
+      return this.$parent.$children.findIndex(function (slide) {
+        return slide._uid === _this._uid;
+      });
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_GlideSlidevue_type_script_lang_js_ = (GlideSlidevue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+// CONCATENATED MODULE: ./src/components/GlideSlide.vue
+
+
+
+
+
+/* normalize component */
+
+var component = normalizeComponent(
+  components_GlideSlidevue_type_script_lang_js_,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var GlideSlide = (component.exports);
+// CONCATENATED MODULE: ./src/index.js
+
+
+/* harmony default export */ var src = ({
+  install: function install(Vue, options) {
+    Vue.component(components_Glide.name, components_Glide);
+    Vue.component(GlideSlide.name, GlideSlide);
+  }
+});
+
+// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
+/* concated harmony reexport Glide */__nested_webpack_require_5060__.d(__webpack_exports__, "Glide", function() { return components_Glide; });
+/* concated harmony reexport GlideSlide */__nested_webpack_require_5060__.d(__webpack_exports__, "GlideSlide", function() { return GlideSlide; });
+
+
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src);
+
+
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=vue-glide.common.js.map
+
+/***/ }),
+
 /***/ "./node_modules/vue-infinite-loading/dist/vue-infinite-loading.js":
 /*!************************************************************************!*\
   !*** ./node_modules/vue-infinite-loading/dist/vue-infinite-loading.js ***!
@@ -5783,6 +17917,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'VuePaycard',
@@ -5798,18 +17973,18 @@ __webpack_require__.r(__webpack_exports__);
         cardName: 'v-card-name',
         cardMonth: 'v-card-month',
         cardYear: 'v-card-year',
-        cardCvv: 'v-card-cvv',
+        cardCvv: 'v-card-cvv'
       })
     },
     labels: {
       type: Object,
       default: () => ({
         cardName: 'Full Name',
-        cardHolder: 'Nama',
+        cardHolder: 'Card Holder',
         cardMonth: 'MM',
         cardYear: 'YY',
         cardExpires: 'Expires',
-        cardCvv: 'CVV',
+        cardCvv: 'CVV'
       })
     },
     isCardNumberMasked: {
@@ -5831,7 +18006,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   emits: ['get-type'],
   data () {
-    const defaultPlaceholder = '#### #### #### ####';
+    const defaultPlaceholder = '#### #### #### ####'
+
     return {
       focusElementStyle: null,
       currentFocus: null,
@@ -5886,8 +18062,6 @@ __webpack_require__.r(__webpack_exports__);
       const acceptedTypes = [
         'visaelectron',
         'visa',
-        'bri',
-        'bni',
         'elo',
         'amex',
         'mastercard',
@@ -6011,9 +18185,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     destroy () {
       this.addOrRemoveFieldListeners('removeEventListener')
-    },
-    salinNoRek() {
-      this.$swal('Berhasil menyalin Nomor Rekening')
     },
     changeFocus () {
       const target = this.$refs[this.currentFocus]
@@ -7037,7 +19208,7 @@ var render = function () {
                 _c("img", {
                   staticClass: "card-item__chip",
                   attrs: {
-                    src: "https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/chip.png",
+                    src: __webpack_require__(/*! ../assets/images/chip.png */ "./node_modules/vue-paycard/src/assets/images/chip.png"),
                     alt: "Card chip image",
                   },
                 }),
@@ -7049,10 +19220,10 @@ var render = function () {
                     _c("transition", { attrs: { name: "slide-fade-up" } }, [
                       _vm.cardType
                         ? _c("img", {
-                            key: _vm.inputFields.cardType,
+                            key: _vm.cardType,
                             staticClass: "card-item__typeImg",
                             attrs: {
-                              src: _vm.valueFields.cardLogo,
+                              src: _vm.getCreditCardImage,
                               alt: _vm.cardType + " brand image",
                             },
                           })
@@ -7073,101 +19244,55 @@ var render = function () {
                     "aria-label": "Card number",
                   },
                 },
-                [
-                  _vm._l(_vm.valueFields.cardNumber, function (n, $index) {
-                    return _c(
-                      "span",
-                      { key: $index },
-                      [
-                        _c("transition", { attrs: { name: "slide-fade-up" } }, [
-                          _c(
-                            "div",
-                            {
-                              key: _vm.currentPlaceholder,
-                              staticClass: "card-item__numberItem",
-                              class: { "-active": n.trim() === "" },
-                            },
-                            [
-                              _vm._v(
-                                "\n              " +
-                                  _vm._s(_vm.valueFields.cardNumber[$index]) +
-                                  "\n            "
-                              ),
-                            ]
-                          ),
-                        ]),
-                      ],
-                      1
-                    )
-                  }),
-                  _vm._v(" "),
-                  _c(
-                    "v-btn",
-                    {
-                      directives: [
-                        {
-                          name: "clipboard",
-                          rawName: "v-clipboard:copy",
-                          value: _vm.valueFields.cardNumber,
-                          expression: "valueFields.cardNumber",
-                          arg: "copy",
-                        },
-                      ],
-                      staticStyle: { display: "inline-block" },
-                      on: { click: _vm.salinNoRek },
-                    },
+                _vm._l(_vm.currentPlaceholder, function (n, $index) {
+                  return _c(
+                    "span",
+                    { key: $index },
                     [
-                      _c(
-                        "svg",
-                        {
-                          attrs: {
-                            width: "30px",
-                            height: "30px",
-                            viewBox: "0 0 24 24",
-                            version: "1.1",
-                            xmlns: "http://www.w3.org/2000/svg",
-                            "xmlns:xlink": "http://www.w3.org/1999/xlink",
-                          },
-                        },
-                        [
-                          _c(
-                            "g",
-                            {
-                              attrs: {
-                                id: "🔍-Product-Icons",
-                                stroke: "none",
-                                "stroke-width": "1",
-                                fill: "none",
-                                "fill-rule": "evenodd",
+                      _c("transition", { attrs: { name: "slide-fade-up" } }, [
+                        _vm.getIsNumberMasked($index, n)
+                          ? _c(
+                              "div",
+                              { staticClass: "card-item__numberItem" },
+                              [_vm._v("\n              *\n            ")]
+                            )
+                          : _vm.valueFields.cardNumber.length > $index
+                          ? _c(
+                              "div",
+                              {
+                                key: _vm.currentPlaceholder,
+                                staticClass: "card-item__numberItem",
+                                class: { "-active": n.trim() === "" },
                               },
-                            },
-                            [
-                              _c(
-                                "g",
-                                {
-                                  attrs: {
-                                    id: "ic_fluent_copy_24_regular",
-                                    fill: "#f9f9f9",
-                                    "fill-rule": "nonzero",
-                                  },
-                                },
-                                [
-                                  _c("path", {
-                                    attrs: {
-                                      d: "M5.50280381,4.62704038 L5.5,6.75 L5.5,17.2542087 C5.5,19.0491342 6.95507456,20.5042087 8.75,20.5042087 L17.3662868,20.5044622 C17.057338,21.3782241 16.2239751,22.0042087 15.2444057,22.0042087 L8.75,22.0042087 C6.12664744,22.0042087 4,19.8775613 4,17.2542087 L4,6.75 C4,5.76928848 4.62744523,4.93512464 5.50280381,4.62704038 Z M17.75,2 C18.9926407,2 20,3.00735931 20,4.25 L20,17.25 C20,18.4926407 18.9926407,19.5 17.75,19.5 L8.75,19.5 C7.50735931,19.5 6.5,18.4926407 6.5,17.25 L6.5,4.25 C6.5,3.00735931 7.50735931,2 8.75,2 L17.75,2 Z M17.75,3.5 L8.75,3.5 C8.33578644,3.5 8,3.83578644 8,4.25 L8,17.25 C8,17.6642136 8.33578644,18 8.75,18 L17.75,18 C18.1642136,18 18.5,17.6642136 18.5,17.25 L18.5,4.25 C18.5,3.83578644 18.1642136,3.5 17.75,3.5 Z",
-                                      id: "🎨-Color",
-                                    },
-                                  }),
-                                ]
-                              ),
-                            ]
-                          ),
-                        ]
-                      ),
-                    ]
-                  ),
-                ],
-                2
+                              [
+                                _vm._v(
+                                  "\n              " +
+                                    _vm._s(_vm.valueFields.cardNumber[$index]) +
+                                    "\n            "
+                                ),
+                              ]
+                            )
+                          : _c(
+                              "div",
+                              {
+                                key: _vm.currentPlaceholder + 1,
+                                staticClass: "card-item__numberItem",
+                                class: { "-active": n.trim() === "" },
+                              },
+                              [
+                                _vm._v(
+                                  "\n              " +
+                                    _vm._s(n) +
+                                    "\n            "
+                                ),
+                              ]
+                            ),
+                      ]),
+                    ],
+                    1
+                  )
+                }),
+                0
               ),
               _vm._v(" "),
               _c("div", { staticClass: "card-item__content" }, [
@@ -7185,7 +19310,7 @@ var render = function () {
                     _c("div", { staticClass: "card-item__holder" }, [
                       _vm._v(
                         "\n            " +
-                          _vm._s(_vm.labels.cardHolder || "Nama") +
+                          _vm._s(_vm.labels.cardHolder || "Card Holder") +
                           "\n          "
                       ),
                     ]),
@@ -7235,6 +19360,70 @@ var render = function () {
                   ],
                   1
                 ),
+                _vm._v(" "),
+                _c("div", { ref: "cardDate", staticClass: "card-item__date" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "card-item__dateTitle",
+                      attrs: {
+                        for: _vm.inputFields.cardMonth,
+                        "aria-label": "Expiration date",
+                      },
+                    },
+                    [_vm._v(_vm._s(_vm.labels.cardExpires || "Expires"))]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "card-item__dateItem",
+                      attrs: {
+                        for: _vm.inputFields.cardMonth,
+                        "aria-label": "Card month",
+                      },
+                    },
+                    [
+                      _c("transition", { attrs: { name: "slide-fade-up" } }, [
+                        _vm.valueFields.cardMonth
+                          ? _c("span", { key: _vm.valueFields.cardMonth }, [
+                              _vm._v(_vm._s(_vm.valueFields.cardMonth)),
+                            ])
+                          : _c("span", { key: "2" }, [
+                              _vm._v(_vm._s(_vm.labels.cardMonth || "MM")),
+                            ]),
+                      ]),
+                    ],
+                    1
+                  ),
+                  _vm._v("\n          /\n          "),
+                  _c(
+                    "label",
+                    {
+                      staticClass: "card-item__dateItem",
+                      attrs: {
+                        for: _vm.inputFields.cardYear,
+                        "aria-label": "Card year",
+                      },
+                    },
+                    [
+                      _c("transition", { attrs: { name: "slide-fade-up" } }, [
+                        _vm.valueFields.cardYear
+                          ? _c("span", { key: _vm.valueFields.cardYear }, [
+                              _vm._v(
+                                _vm._s(
+                                  String(_vm.valueFields.cardYear).slice(2, 4)
+                                )
+                              ),
+                            ])
+                          : _c("span", { key: "2" }, [
+                              _vm._v(_vm._s(_vm.labels.cardYear || "YY")),
+                            ]),
+                      ]),
+                    ],
+                    1
+                  ),
+                ]),
               ]),
             ]),
           ]),
@@ -7286,7 +19475,7 @@ var render = function () {
                   ? _c("img", {
                       staticClass: "card-item__typeImg",
                       attrs: {
-                        src: _vm.currentCardBackground,
+                        src: _vm.getCreditCardImage,
                         alt: "Dark bar image",
                       },
                     })
@@ -7638,11 +19827,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", [
-      _c(
-        "audio",
-        { attrs: { id: "audio", muted: "", autoplay: "", loop: "" } },
-        [_c("source", { attrs: { src: "assets/music/music.mp3" } })]
-      ),
+      _c("audio", { attrs: { id: "audio", autoplay: "", loop: "" } }, [
+        _c("source", { attrs: { src: "assets/music/music.mp3" } }),
+      ]),
     ])
   },
 ]
@@ -8619,62 +20806,82 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    [
+      _c(
+        "vue-glide",
+        {
+          attrs: {
+            autoplay: "true",
+            animationDuration: "4000",
+            perView: "1",
+            gap: "0",
+          },
+        },
+        _vm._l(10, function (i) {
+          return _c("vue-glide-slide", { key: i }, [
+            _c("section", {
+              staticClass: "tw-bg-cover tw-bg-center",
+              staticStyle: {
+                "background-image": "url('assets/images/gallery/cover.jpg')",
+              },
+            }),
+          ])
+        }),
+        1
+      ),
+      _vm._v(" "),
+      _vm._m(0),
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "section",
-        {
-          staticClass: "tw-bg-cover tw-bg-center",
-          staticStyle: {
-            "background-image": "url('assets/images/gallery/cover.jpg')",
-          },
-        },
-        [
-          _c("div", { staticClass: "outer-cover tw-px-2.5 tw-pt-5 tw-pb-16" }, [
-            _c("div", { staticClass: "tw-p-4" }, [
-              _c(
-                "p",
-                {
-                  staticClass:
-                    "tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-light uk-scrollspy-inview",
-                  staticStyle: { "letter-spacing": "3px", color: "#bdaa8b" },
-                },
-                [_vm._v("WEDDING INVITATION")]
-              ),
-              _vm._v(" "),
-              _c("div", { staticClass: "tw-h-64" }),
-              _vm._v(" "),
-              _c("div", { staticClass: "tw-py-4" }, [
-                _c(
-                  "h2",
-                  {
-                    staticClass:
-                      "tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-light uk-scrollspy-inview",
-                  },
-                  [_vm._v("Fawcet & Vilda")]
-                ),
-              ]),
-              _vm._v(" "),
-              _c(
-                "p",
-                {
-                  staticClass:
-                    "tw-text-center tw-font-light tw-text-xs lg:tw-text-lg lg:tw-font-normal uk-scrollspy-inview",
-                  staticStyle: { color: "#bdaa8b", "letter-spacing": "3px" },
-                },
-                [_vm._v("06.01.2024")]
-              ),
-            ]),
+    return _c(
+      "div",
+      { staticClass: "outer-cover tw-px-2.5 tw-pt-5 tw-pb-16" },
+      [
+        _c("div", { staticClass: "tw-p-4" }, [
+          _c(
+            "p",
+            {
+              staticClass:
+                "tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-light uk-scrollspy-inview",
+              staticStyle: { "letter-spacing": "3px", color: "#bdaa8b" },
+            },
+            [_vm._v("WEDDING INVITATION")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "tw-h-64" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "tw-py-4" }, [
+            _c(
+              "h2",
+              {
+                staticClass:
+                  "tw-text-4xl lg:tw-text-5xl tw-text-center tw-font-light uk-scrollspy-inview",
+              },
+              [_vm._v("Fawcet & Vilda")]
+            ),
           ]),
-        ]
-      ),
-    ])
+          _vm._v(" "),
+          _c(
+            "p",
+            {
+              staticClass:
+                "tw-text-center tw-font-light tw-text-xs lg:tw-text-lg lg:tw-font-normal uk-scrollspy-inview",
+              staticStyle: { color: "#bdaa8b", "letter-spacing": "3px" },
+            },
+            [_vm._v("06.01.2024")]
+          ),
+        ]),
+      ]
+    )
   },
 ]
 render._withStripped = true
@@ -9598,7 +21805,6 @@ webpackContext.id = "./node_modules/vue-paycard/src/assets/images sync recursive
 var map = {
 	"./amex.png": "./node_modules/vue-paycard/src/assets/images/amex.png",
 	"./aura.png": "./node_modules/vue-paycard/src/assets/images/aura.png",
-	"./bri.png": "./node_modules/vue-paycard/src/assets/images/bri.png",
 	"./chip.png": "./node_modules/vue-paycard/src/assets/images/chip.png",
 	"./dankort.png": "./node_modules/vue-paycard/src/assets/images/dankort.png",
 	"./dinersclub.png": "./node_modules/vue-paycard/src/assets/images/dinersclub.png",
@@ -9690,6 +21896,640 @@ _src_components_VuePaycard_vue__WEBPACK_IMPORTED_MODULE_0__["default"].install =
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_src_components_VuePaycard_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 // Export single (backwards compatibility)
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Emit.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Emit.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Emit": () => (/* binding */ Emit)
+/* harmony export */ });
+var __spreadArrays = (undefined && undefined.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+// Code copied from Vue/src/shared/util.js
+var hyphenateRE = /\B([A-Z])/g;
+var hyphenate = function (str) { return str.replace(hyphenateRE, '-$1').toLowerCase(); };
+/**
+ * decorator of an event-emitter function
+ * @param  event The name of the event
+ * @return MethodDecorator
+ */
+function Emit(event) {
+    return function (_target, propertyKey, descriptor) {
+        var key = hyphenate(propertyKey);
+        var original = descriptor.value;
+        descriptor.value = function emitter() {
+            var _this = this;
+            var args = [];
+            for (var _i = 0; _i < arguments.length; _i++) {
+                args[_i] = arguments[_i];
+            }
+            var emit = function (returnValue) {
+                var emitName = event || key;
+                if (returnValue === undefined) {
+                    if (args.length === 0) {
+                        _this.$emit(emitName);
+                    }
+                    else if (args.length === 1) {
+                        _this.$emit(emitName, args[0]);
+                    }
+                    else {
+                        _this.$emit.apply(_this, __spreadArrays([emitName], args));
+                    }
+                }
+                else {
+                    args.unshift(returnValue);
+                    _this.$emit.apply(_this, __spreadArrays([emitName], args));
+                }
+            };
+            var returnValue = original.apply(this, args);
+            if (isPromise(returnValue)) {
+                returnValue.then(emit);
+            }
+            else {
+                emit(returnValue);
+            }
+            return returnValue;
+        };
+    };
+}
+function isPromise(obj) {
+    return obj instanceof Promise || (obj && typeof obj.then === 'function');
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Inject.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Inject.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Inject": () => (/* binding */ Inject)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+
+/**
+ * decorator of an inject
+ * @param from key
+ * @return PropertyDecorator
+ */
+function Inject(options) {
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_0__.createDecorator)(function (componentOptions, key) {
+        if (typeof componentOptions.inject === 'undefined') {
+            componentOptions.inject = {};
+        }
+        if (!Array.isArray(componentOptions.inject)) {
+            componentOptions.inject[key] = options || key;
+        }
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/InjectReactive.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/InjectReactive.js ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "InjectReactive": () => (/* binding */ InjectReactive)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/provideInject */ "./node_modules/vue-property-decorator/lib/helpers/provideInject.js");
+
+
+/**
+ * decorator of a reactive inject
+ * @param from key
+ * @return PropertyDecorator
+ */
+function InjectReactive(options) {
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, key) {
+        if (typeof componentOptions.inject === 'undefined') {
+            componentOptions.inject = {};
+        }
+        if (!Array.isArray(componentOptions.inject)) {
+            var fromKey_1 = !!options ? options.from || options : key;
+            var defaultVal_1 = (!!options && options.default) || undefined;
+            if (!componentOptions.computed)
+                componentOptions.computed = {};
+            componentOptions.computed[key] = function () {
+                var obj = this[_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.reactiveInjectKey];
+                return obj ? obj[fromKey_1] : defaultVal_1;
+            };
+            componentOptions.inject[_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.reactiveInjectKey] = _helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.reactiveInjectKey;
+        }
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Model.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Model.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Model": () => (/* binding */ Model)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/metadata */ "./node_modules/vue-property-decorator/lib/helpers/metadata.js");
+
+
+/**
+ * decorator of model
+ * @param  event event name
+ * @param options options
+ * @return PropertyDecorator
+ */
+function Model(event, options) {
+    if (options === void 0) { options = {}; }
+    return function (target, key) {
+        (0,_helpers_metadata__WEBPACK_IMPORTED_MODULE_0__.applyMetadata)(options, target, key);
+        (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+            ;
+            (componentOptions.props || (componentOptions.props = {}))[k] = options;
+            componentOptions.model = { prop: k, event: event || k };
+        })(target, key);
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/ModelSync.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/ModelSync.js ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ModelSync": () => (/* binding */ ModelSync)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/metadata */ "./node_modules/vue-property-decorator/lib/helpers/metadata.js");
+
+
+/**
+ * decorator of synced model and prop
+ * @param propName the name to interface with from outside, must be different from decorated property
+ * @param  event event name
+ * @param options options
+ * @return PropertyDecorator
+ */
+function ModelSync(propName, event, options) {
+    if (options === void 0) { options = {}; }
+    return function (target, key) {
+        (0,_helpers_metadata__WEBPACK_IMPORTED_MODULE_0__.applyMetadata)(options, target, key);
+        (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+            ;
+            (componentOptions.props || (componentOptions.props = {}))[propName] = options;
+            componentOptions.model = { prop: propName, event: event || k };
+            (componentOptions.computed || (componentOptions.computed = {}))[k] = {
+                get: function () {
+                    return this[propName];
+                },
+                set: function (value) {
+                    // @ts-ignore
+                    this.$emit(event, value);
+                },
+            };
+        })(target, key);
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Prop.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Prop.js ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Prop": () => (/* binding */ Prop)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/metadata */ "./node_modules/vue-property-decorator/lib/helpers/metadata.js");
+
+
+/**
+ * decorator of a prop
+ * @param  options the options for the prop
+ * @return PropertyDecorator | void
+ */
+function Prop(options) {
+    if (options === void 0) { options = {}; }
+    return function (target, key) {
+        (0,_helpers_metadata__WEBPACK_IMPORTED_MODULE_0__.applyMetadata)(options, target, key);
+        (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+            ;
+            (componentOptions.props || (componentOptions.props = {}))[k] = options;
+        })(target, key);
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/PropSync.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/PropSync.js ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PropSync": () => (/* binding */ PropSync)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_metadata__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/metadata */ "./node_modules/vue-property-decorator/lib/helpers/metadata.js");
+
+
+/**
+ * decorator of a synced prop
+ * @param propName the name to interface with from outside, must be different from decorated property
+ * @param options the options for the synced prop
+ * @return PropertyDecorator | void
+ */
+function PropSync(propName, options) {
+    if (options === void 0) { options = {}; }
+    return function (target, key) {
+        (0,_helpers_metadata__WEBPACK_IMPORTED_MODULE_0__.applyMetadata)(options, target, key);
+        (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+            ;
+            (componentOptions.props || (componentOptions.props = {}))[propName] = options;
+            (componentOptions.computed || (componentOptions.computed = {}))[k] = {
+                get: function () {
+                    return this[propName];
+                },
+                set: function (value) {
+                    this.$emit("update:" + propName, value);
+                },
+            };
+        })(target, key);
+    };
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Provide.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Provide.js ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Provide": () => (/* binding */ Provide)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/provideInject */ "./node_modules/vue-property-decorator/lib/helpers/provideInject.js");
+
+
+/**
+ * decorator of a provide
+ * @param key key
+ * @return PropertyDecorator | void
+ */
+function Provide(key) {
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+        var provide = componentOptions.provide;
+        (0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.inheritInjected)(componentOptions);
+        if ((0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.needToProduceProvide)(provide)) {
+            provide = componentOptions.provide = (0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.produceProvide)(provide);
+        }
+        provide.managed[k] = key || k;
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/ProvideReactive.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/ProvideReactive.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ProvideReactive": () => (/* binding */ ProvideReactive)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers/provideInject */ "./node_modules/vue-property-decorator/lib/helpers/provideInject.js");
+
+
+/**
+ * decorator of a reactive provide
+ * @param key key
+ * @return PropertyDecorator | void
+ */
+function ProvideReactive(key) {
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_1__.createDecorator)(function (componentOptions, k) {
+        var provide = componentOptions.provide;
+        (0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.inheritInjected)(componentOptions);
+        if ((0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.needToProduceProvide)(provide)) {
+            provide = componentOptions.provide = (0,_helpers_provideInject__WEBPACK_IMPORTED_MODULE_0__.produceProvide)(provide);
+        }
+        provide.managedReactive[k] = key || k;
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Ref.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Ref.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Ref": () => (/* binding */ Ref)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+
+/**
+ * decorator of a ref prop
+ * @param refKey the ref key defined in template
+ */
+function Ref(refKey) {
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_0__.createDecorator)(function (options, key) {
+        options.computed = options.computed || {};
+        options.computed[key] = {
+            cache: false,
+            get: function () {
+                return this.$refs[refKey || key];
+            },
+        };
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/VModel.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/VModel.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "VModel": () => (/* binding */ VModel)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+
+/**
+ * decorator for capturings v-model binding to component
+ * @param options the options for the prop
+ */
+function VModel(options) {
+    if (options === void 0) { options = {}; }
+    var valueKey = 'value';
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_0__.createDecorator)(function (componentOptions, key) {
+        ;
+        (componentOptions.props || (componentOptions.props = {}))[valueKey] = options;
+        (componentOptions.computed || (componentOptions.computed = {}))[key] = {
+            get: function () {
+                return this[valueKey];
+            },
+            set: function (value) {
+                this.$emit('input', value);
+            },
+        };
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/decorators/Watch.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/decorators/Watch.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Watch": () => (/* binding */ Watch)
+/* harmony export */ });
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+
+/**
+ * decorator of a watch function
+ * @param  path the path or the expression to observe
+ * @param  WatchOption
+ * @return MethodDecorator
+ */
+function Watch(path, options) {
+    if (options === void 0) { options = {}; }
+    var _a = options.deep, deep = _a === void 0 ? false : _a, _b = options.immediate, immediate = _b === void 0 ? false : _b;
+    return (0,vue_class_component__WEBPACK_IMPORTED_MODULE_0__.createDecorator)(function (componentOptions, handler) {
+        if (typeof componentOptions.watch !== 'object') {
+            componentOptions.watch = Object.create(null);
+        }
+        var watch = componentOptions.watch;
+        if (typeof watch[path] === 'object' && !Array.isArray(watch[path])) {
+            watch[path] = [watch[path]];
+        }
+        else if (typeof watch[path] === 'undefined') {
+            watch[path] = [];
+        }
+        watch[path].push({ handler: handler, deep: deep, immediate: immediate });
+    });
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/helpers/metadata.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/helpers/metadata.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "applyMetadata": () => (/* binding */ applyMetadata)
+/* harmony export */ });
+/** @see {@link https://github.com/vuejs/vue-class-component/blob/master/src/reflect.ts} */
+var reflectMetadataIsSupported = typeof Reflect !== 'undefined' && typeof Reflect.getMetadata !== 'undefined';
+function applyMetadata(options, target, key) {
+    if (reflectMetadataIsSupported) {
+        if (!Array.isArray(options) &&
+            typeof options !== 'function' &&
+            !options.hasOwnProperty('type') &&
+            typeof options.type === 'undefined') {
+            var type = Reflect.getMetadata('design:type', target, key);
+            if (type !== Object) {
+                options.type = type;
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/helpers/provideInject.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/helpers/provideInject.js ***!
+  \**************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "needToProduceProvide": () => (/* binding */ needToProduceProvide),
+/* harmony export */   "produceProvide": () => (/* binding */ produceProvide),
+/* harmony export */   "reactiveInjectKey": () => (/* binding */ reactiveInjectKey),
+/* harmony export */   "inheritInjected": () => (/* binding */ inheritInjected)
+/* harmony export */ });
+function needToProduceProvide(original) {
+    return (typeof original !== 'function' ||
+        (!original.managed && !original.managedReactive));
+}
+function produceProvide(original) {
+    var provide = function () {
+        var _this = this;
+        var rv = typeof original === 'function' ? original.call(this) : original;
+        rv = Object.create(rv || null);
+        // set reactive services (propagates previous services if necessary)
+        rv[reactiveInjectKey] = Object.create(this[reactiveInjectKey] || {});
+        for (var i in provide.managed) {
+            rv[provide.managed[i]] = this[i];
+        }
+        var _loop_1 = function (i) {
+            rv[provide.managedReactive[i]] = this_1[i]; // Duplicates the behavior of `@Provide`
+            Object.defineProperty(rv[reactiveInjectKey], provide.managedReactive[i], {
+                enumerable: true,
+                configurable: true,
+                get: function () { return _this[i]; },
+            });
+        };
+        var this_1 = this;
+        for (var i in provide.managedReactive) {
+            _loop_1(i);
+        }
+        return rv;
+    };
+    provide.managed = {};
+    provide.managedReactive = {};
+    return provide;
+}
+/** Used for keying reactive provide/inject properties */
+var reactiveInjectKey = '__reactiveInject__';
+function inheritInjected(componentOptions) {
+    // inject parent reactive services (if any)
+    if (!Array.isArray(componentOptions.inject)) {
+        componentOptions.inject = componentOptions.inject || {};
+        componentOptions.inject[reactiveInjectKey] = {
+            from: reactiveInjectKey,
+            default: {},
+        };
+    }
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-property-decorator/lib/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/vue-property-decorator/lib/index.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Component": () => (/* reexport safe */ vue_class_component__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "Vue": () => (/* reexport safe */ vue__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "Mixins": () => (/* reexport safe */ vue_class_component__WEBPACK_IMPORTED_MODULE_0__.mixins),
+/* harmony export */   "Emit": () => (/* reexport safe */ _decorators_Emit__WEBPACK_IMPORTED_MODULE_2__.Emit),
+/* harmony export */   "Inject": () => (/* reexport safe */ _decorators_Inject__WEBPACK_IMPORTED_MODULE_3__.Inject),
+/* harmony export */   "InjectReactive": () => (/* reexport safe */ _decorators_InjectReactive__WEBPACK_IMPORTED_MODULE_4__.InjectReactive),
+/* harmony export */   "Model": () => (/* reexport safe */ _decorators_Model__WEBPACK_IMPORTED_MODULE_5__.Model),
+/* harmony export */   "ModelSync": () => (/* reexport safe */ _decorators_ModelSync__WEBPACK_IMPORTED_MODULE_6__.ModelSync),
+/* harmony export */   "Prop": () => (/* reexport safe */ _decorators_Prop__WEBPACK_IMPORTED_MODULE_7__.Prop),
+/* harmony export */   "PropSync": () => (/* reexport safe */ _decorators_PropSync__WEBPACK_IMPORTED_MODULE_8__.PropSync),
+/* harmony export */   "Provide": () => (/* reexport safe */ _decorators_Provide__WEBPACK_IMPORTED_MODULE_9__.Provide),
+/* harmony export */   "ProvideReactive": () => (/* reexport safe */ _decorators_ProvideReactive__WEBPACK_IMPORTED_MODULE_10__.ProvideReactive),
+/* harmony export */   "Ref": () => (/* reexport safe */ _decorators_Ref__WEBPACK_IMPORTED_MODULE_11__.Ref),
+/* harmony export */   "VModel": () => (/* reexport safe */ _decorators_VModel__WEBPACK_IMPORTED_MODULE_12__.VModel),
+/* harmony export */   "Watch": () => (/* reexport safe */ _decorators_Watch__WEBPACK_IMPORTED_MODULE_13__.Watch)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_class_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-class-component */ "./node_modules/vue-class-component/dist/vue-class-component.esm.js");
+/* harmony import */ var _decorators_Emit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./decorators/Emit */ "./node_modules/vue-property-decorator/lib/decorators/Emit.js");
+/* harmony import */ var _decorators_Inject__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./decorators/Inject */ "./node_modules/vue-property-decorator/lib/decorators/Inject.js");
+/* harmony import */ var _decorators_InjectReactive__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./decorators/InjectReactive */ "./node_modules/vue-property-decorator/lib/decorators/InjectReactive.js");
+/* harmony import */ var _decorators_Model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./decorators/Model */ "./node_modules/vue-property-decorator/lib/decorators/Model.js");
+/* harmony import */ var _decorators_ModelSync__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./decorators/ModelSync */ "./node_modules/vue-property-decorator/lib/decorators/ModelSync.js");
+/* harmony import */ var _decorators_Prop__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./decorators/Prop */ "./node_modules/vue-property-decorator/lib/decorators/Prop.js");
+/* harmony import */ var _decorators_PropSync__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./decorators/PropSync */ "./node_modules/vue-property-decorator/lib/decorators/PropSync.js");
+/* harmony import */ var _decorators_Provide__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./decorators/Provide */ "./node_modules/vue-property-decorator/lib/decorators/Provide.js");
+/* harmony import */ var _decorators_ProvideReactive__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./decorators/ProvideReactive */ "./node_modules/vue-property-decorator/lib/decorators/ProvideReactive.js");
+/* harmony import */ var _decorators_Ref__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./decorators/Ref */ "./node_modules/vue-property-decorator/lib/decorators/Ref.js");
+/* harmony import */ var _decorators_VModel__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./decorators/VModel */ "./node_modules/vue-property-decorator/lib/decorators/VModel.js");
+/* harmony import */ var _decorators_Watch__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./decorators/Watch */ "./node_modules/vue-property-decorator/lib/decorators/Watch.js");
+/** vue-property-decorator verson 9.1.2 MIT LICENSE copyright 2020 kaorun343 */
+/// <reference types='reflect-metadata'/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <audio id="audio" muted autoplay loop>
+    <audio id="audio" autoplay loop>
         <source src="assets/music/music.mp3">
     </audio>
   </div>
